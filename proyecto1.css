@@ -1,0 +1,59 @@
+h1 {
+	font-size: xx-large;
+	color: darkgray;
+	border: 5px red inset;
+    border-style: outset;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    border-width: 7px; 
+}
+
+#fondo {
+	backface-visibility: visible;
+	background-image: url('img/logo2.png');
+	background-size: contain;
+	height: 120px;
+	width: 200px;
+	background-color: ghostwhite;
+ 	opacity: 0.9;
+ 	background-repeat: no-repeat;
+ 	background-position: right top;
+}
+
+#fondo2 {
+	background-image: url('img/Pisosymallas.jpg');
+	background-size: cover;
+	height: 300px;
+	opacity: 1.0;
+    background-repeat: no-repeat;
+	background-position: left;
+}
+
+#imagen {
+	background-color: gainsboro;
+	background-position: center;
+	background-image: url('img/logo2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0.1;
+	border-style: groove;
+}
+
+#imagen1 img{
+	align-content: space-between;
+	display: inline-block;
+	image-rendering: optimizeQuality;
+	animation: ease;
+}
+
+#number {
+	background-color: lightgoldenrodyellow;S
+	background-size: contain;
+	border-style: outset;
+	display: table-cell;
+	border-width: 5px;
+	border-color: darkgoldenrod;
+	border-radius: 5px;
+	padding: 20px;
+	background-position: top right;
+}
