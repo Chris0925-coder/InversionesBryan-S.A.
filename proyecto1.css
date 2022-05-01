@@ -1,11 +1,10 @@
 h2 {
 	font-size: xx-large;
 	color: darkgray;
-	border: 5px;
+	border: 10px;
     border-style: outset;
     border-radius: 5px;
     border-width: 10px;
-    border-spacing: initial; 
 }
 
 #fondo {
@@ -48,9 +47,8 @@ h2 {
 
 #number {
 	background-color: lightgoldenrodyellow;S
-	background-size: contain;
+	background-size: cover;
 	border-style: outset;
-	display: table-cell;
 	border-width: 5px;
 	border-color: darkgoldenrod;
 	border-radius: 5px;
