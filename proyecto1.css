@@ -1,11 +1,11 @@
 h2 {
 	font-size: xx-large;
 	color: darkgray;
-	border: 5px red inset;
+	border: 5px;
     border-style: outset;
-    border-color: whitesmoke;
     border-radius: 5px;
-    border-width: 15px; 
+    border-width: 10px;
+    border-spacing: initial; 
 }
 
 #fondo {
