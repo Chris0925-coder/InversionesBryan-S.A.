@@ -8,11 +8,10 @@ h2 {
 }
 
 #fondo {
-	backface-visibility: visible;
-	background-image: url('img/logo2.png');
 	background-size: contain;
 	height: 120px;
 	width: 200px;
+	background-image: url('img/logo2.png');
 	background-color: ghostwhite;
  	opacity: 0.9;
  	background-repeat: no-repeat;
@@ -25,17 +24,19 @@ h2 {
 	height: 300px;
 	opacity: 1.0;
     background-repeat: no-repeat;
-	background-position: left;
+	background-position: center;
 }
 
 #imagen {
 	background-color: gainsboro;
+	border-radius: 5px;
 	background-position: center;
 	background-image: url('img/logo2.png');
 	background-repeat: no-repeat;
 	background-size: contain;
 	opacity: 0.1;
 	border-style: groove;
+
 }
 
 #imagen1 img{
