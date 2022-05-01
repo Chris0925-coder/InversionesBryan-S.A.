@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# spacework
-=======
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,4 +70,3 @@
 
 </body>
 </html>
->>>>>>> 16b4e95d4e6d26c0bc549831781d2c5acb48df3e
