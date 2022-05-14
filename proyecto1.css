@@ -104,19 +104,18 @@ h1 {
 
 }
 .texto {
-    font-size: medium;
+    font-size: smaller;
 	margin: 20px 20px;
 	padding: 10px;
-
-	
-
-
-	
-	
-
 	
 }
 
+.texto2 {
+    font-size: larger;
+	margin: 20px 20px;
+	padding: 10px;
+
+}
 .tituc {
 	column-rule-style: solid;
 	text-align: center;
