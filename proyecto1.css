@@ -38,7 +38,7 @@ h2 {
 	background-position: right;
 
 }
-
+*/
 #imagen1 {
 	background-color: gainsboro;
 	border: solid;
@@ -50,7 +50,8 @@ h2 {
 	animation: ease;
 	padding: 10px;
 	margin: 30px;
-}*/
+        border-style: inset;
+}
 
 h1 {
 	color: blanchedalmond;
