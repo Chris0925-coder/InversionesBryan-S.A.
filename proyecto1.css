@@ -112,11 +112,11 @@ h1 {
 	column-rule-style: solid;
 	text-align: center;
 	color: ghostwhite;
-    background-color: rgba:(112,128,144,0.4);
+    background-color: rgba(112,128,144,0.4);
     border-radius: 70px;
     border-style: groove;
 }
 td {
-    display: inline-block 
+    display: inline-block;
     
 }
