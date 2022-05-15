@@ -116,6 +116,6 @@ h1 {
     border-radius: 70px;
     border-style: groove;
 }
-.tbody {
+tbody {
     font-display: block-line;
 }
