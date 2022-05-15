@@ -8,13 +8,14 @@ h2 {
 }
 
 #fondo {
-	background-size: contain;
+        background-position: right;
 	height: 120px;
 	width: 200px;
 	background-image: url('img/logo2.png');
-	background-color: ghostwhite;
- 	opacity: 0.8;
+	background-color: rgba(248,248,255,0.4);
  	background-repeat: no-repeat;
+        background-size: contain;
+        
 }
 
 #fondo2 {
@@ -22,7 +23,7 @@ h2 {
 	height: 250px;
 	background-image: url('img/Pisosymallas.jpg');
 	opacity: 1.0;
-    background-repeat: no-repeat;
+        background-repeat: no-repeat;
 	background-position: center;
 }
 
