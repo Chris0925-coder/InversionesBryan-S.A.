@@ -108,10 +108,22 @@ h1 {
 	color: dimgray;
     background-color: rgba(192,192,192,0.3);
     border-radius: 70px;
+    border-style: inset;
+    border-color: rgba(184,134,11,0.8);
+    border-width: 3px;
+}
+
+.tituc2 {
+	column-rule-style: solid;
+	text-align: center;
+	color: dimgray;
+    background-color: rgba(192,192,192,0.3);
+    border-radius: 70px;
     border-style: outset;
     border-color: rgba(184,134,11,0.8);
     border-width: 3px;
 }
+
 .td1 {
     background-color: gainsboro;
     text-align: center;
