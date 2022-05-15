@@ -117,4 +117,7 @@ h1 {
     border-color: rgba(184,134,11,0.8);
     border-width: 3px;
 }
-
+td1 {
+    background-color: gainsboro;
+    text-align: center;
+}
