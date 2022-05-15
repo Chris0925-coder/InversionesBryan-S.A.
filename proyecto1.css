@@ -116,6 +116,6 @@ h1 {
     border-radius: 70px;
     border-style: groove;
 }
-tbody {
-    font-display: block-line;
+td {
+    display: inline-block;
 }
