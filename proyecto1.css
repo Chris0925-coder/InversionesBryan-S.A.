@@ -91,7 +91,7 @@ h1 {
 	border-width: 5px;
 	border-color: darkgoldenrod;
 	border-radius: 5px;
-	background-color: rgba(184,134,11,0.6);
+	background-color: rgba(128,128,128,0.6);
 	background-size: contain;
 	padding: 5px;
 	height: 150px;
@@ -117,8 +117,14 @@ h1 {
     border-color: rgba(184,134,11,0.8);
     border-width: 3px;
 }
-td1 {
+.td1 {
     background-color: gainsboro;
     text-align: center;
     
+}
+
+.wa {
+    align-content: center;
+    background-color: rgba(184,134,11,0.4);
+    background-size: contain;
 }
