@@ -92,13 +92,9 @@ h1 {
 	border-color: darkgoldenrod;
 	border-radius: 5px;
 	background-color: darkgrey;
-	background-size: cover;
+	background-size: contain;
 	padding: 5px;
-	align-items: baseline;
-
-	height: 170px;
-	
-	margin: 5px;
+	height: 150px;
 }
 
 
@@ -119,4 +115,7 @@ h1 {
     background-color: black;
     border-radius: 70px;
     border-style: groove;
+}
+.tbody {
+    font-display: block-line;
 }
