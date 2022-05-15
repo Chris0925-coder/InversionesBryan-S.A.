@@ -116,6 +116,8 @@ h1 {
     border-radius: 70px;
     border-style: outset;
     border-color: darkgoldenrod;
+    border-width: 5px;
 }
 td {
+    display: inline-block;
 }
