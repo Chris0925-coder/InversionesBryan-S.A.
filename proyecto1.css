@@ -97,7 +97,6 @@ h1 {
 	border-color: darkgoldenrod;
 	border-radius: 5px;
 	background-color: rgba(128,128,128,0.6);
-	background-size: cover;
 	background-size: contain;
 	padding: 5px;
 	height: 150px;
