@@ -91,7 +91,7 @@ h1 {
 	border-width: 5px;
 	border-color: darkgoldenrod;
 	border-radius: 5px;
-	background-color: darkgrey;
+	background-color: goldenrod;
 	background-size: contain;
 	padding: 5px;
 	height: 150px;
@@ -111,12 +111,12 @@ h1 {
 .tituc {
 	column-rule-style: solid;
 	text-align: center;
-	color: blanchedalmond;
-    background-color: black;
+	color: ghostwhite;
+    background-color: rgba:(112,128,144,0.4);
     border-radius: 70px;
     border-style: groove;
 }
 td {
-    display: block-line 
+    display: inline-block 
     
 }
