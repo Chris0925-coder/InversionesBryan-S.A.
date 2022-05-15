@@ -105,7 +105,7 @@ h1 {
 }
 
 .texto2 {
-    font-size: larger;
+    font-size: ;
 
 }
 .tituc {
@@ -114,9 +114,8 @@ h1 {
 	color: ghostwhite;
     background-color: rgba(112,128,144,0.4);
     border-radius: 70px;
-    border-style: groove;
+    border-style: outset;
+    border-color: darkgoldenrod;
 }
 td {
-    display: inline;
-    
 }
