@@ -12,7 +12,7 @@ h2 {
 	height: 120px;
 	width: 200px;
 	background-image: url('img/logo2.png');
-	background-color: rgba(248,248,255,0.4);
+	background-color: rgba(248,248,255,0.8);
  	background-repeat: no-repeat;
         background-size: contain;
         
@@ -85,6 +85,12 @@ h1 {
     color: whitesmoke;
 }
 
+.wa {
+    align-content: center;
+    background-color: rgba(184,134,11,0.7);
+    background-size: contain;
+}
+
 .number {
 	border-style: outset;
 	border-width: 5px;
@@ -110,10 +116,4 @@ h1 {
     background-color: gainsboro;
     text-align: center;
     
-}
-
-.wa {
-    align-content: center;
-    background-color: rgba(184,134,11,0.7);
-    background-size: contain;
 }
