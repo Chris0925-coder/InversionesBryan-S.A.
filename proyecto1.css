@@ -43,7 +43,7 @@ h2 {
 	background-color: gainsboro;
 	border: solid;
 	border-width: thin;
-	border-color: darkgray;
+	border-color: darkgrey;
 	text-align: center;
 	image-rendering: optimizeQuality;
 	align-content: center;
@@ -61,7 +61,7 @@ h1 {
 	font-style: oblique;
 	text-transform: capitalize;
 	flood-color: darkgray;
-	text-shadow: rgba(0, 0, 0, 0.5);
+	text-shadow: rgba(0, 0, 0, 0.9);
 	/*text-decoration-style: double;*/
 }
 
@@ -70,14 +70,13 @@ h1 {
 	background-blend-mode: luminosity;
 	align-content: flex-end;
     text-align: center;
-	text-decoration-color: dimgray;
 	background-position: center;
 	/*background-image: url('img/logo2.png');*/
 	background-size: ;
 	border-radius: 10px;
 	margin: 20px;
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(128,128,128,0.9);
 	border-style: inset;
     border-radius: 10px;
     border-width: 5px;
@@ -91,7 +90,7 @@ h1 {
 	border-width: 5px;
 	border-color: darkgray;
 	border-radius: 5px;
-	background-color: rgba(128,128,128,0.6);
+	background-color: gray;
 	background-size: contain;
 	padding: 5px;
 	height: 150px;
@@ -125,10 +124,12 @@ h1 {
     
 }
 
-.whats {   
+#whats {   
 	background-color: dimgray;
-    /*background-color: rgba(184,134,11,1);*/
-    background: center;
+    background-color: rgba(248,248,255,0.4);
+    background-position: right;
     background-size: contain;
-
+    padding: 5px;
+    border: solid;
+    
 }
