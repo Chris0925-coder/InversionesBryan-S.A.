@@ -43,14 +43,15 @@ h2 {
 	background-color: gainsboro;
 	border: solid;
 	border-width: thin;
-	border-color: darkgoldenrod;
+	border-color: darkgray;
 	text-align: center;
 	image-rendering: optimizeQuality;
 	align-content: center;
 	animation: ease;
-	padding: 10px;
-	margin: 30px;
-    border-style: inset;
+	padding: 5px;
+	margin: 10px;
+    border-style: outset;
+
 }
 
 h1 {
@@ -102,7 +103,7 @@ h1 {
 	color: ghostwhite;
     background-color: dimgray;
     border-radius: 70px;
-    border-style: inset;
+    border-style: outset;
     border-color: darkgray;
     border-width: 3px;
 }
@@ -119,7 +120,7 @@ h1 {
 }
 
 .td1 {
-    background-color: gainsboro;
+    background-color: ghostwhite;
     text-align: center;
     
 }
