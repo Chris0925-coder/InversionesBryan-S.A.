@@ -99,7 +99,7 @@ h1 {
 	column-rule-style: solid;
 	text-align: center;
 	color: ghostwhite;
-    background-color: dimgray;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 70px;
     border-style: outset;
     border-color: darkgray;
@@ -110,7 +110,7 @@ h1 {
 	column-rule-style: solid;
 	text-align: center;
 	color: ghostwhite;
-    background-color: dimgray;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 70px;
     border-style: outset;
     border-color: darkgray;
