@@ -572,6 +572,7 @@ div section a i:hover {
 	display: inline-flex;
 	position: relative;
 	flex-direction: row;
+	flex-wrap: wrap;
 	/*text-align: justify-all;
 	align-content: space-between;*/
 	text-align: center;
@@ -606,15 +607,19 @@ div section a i:hover {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-	width: 95%;
-	margin: auto;
+	grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+	width: auto;
+	height: fit-content;
+	margin: 0 auto;
 	grid-gap: 10px;
 	padding: 40px 0;
 	overflow: hidden;
-	/*align-content: center;*/
+	justify-content: center;
+	align-content: space-around;
+	align-items: center;
+	/*grid-template-columns: repeat(1, 1fr);*/
 	/*grid-template-columns: minmax(100px, 1fr);*/
-	grid-auto-rows: auto;
+	/*grid-auto-columns: auto;*/
 }
 
 .linea {
@@ -711,4 +716,7 @@ div section a i:hover {
 .galeria span {
 	display: inline-block;
 	justify-content: center;
+	align-content: center;
+	/*min-width: auto;
+	width: auto;*/
 }
