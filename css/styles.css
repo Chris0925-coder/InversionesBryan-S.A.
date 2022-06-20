@@ -161,7 +161,7 @@ li a.active {
     color: black;
 }
 
-li a:hover:not(.active) {
+.nav-item a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
@@ -322,6 +322,7 @@ body {
     grid-auto-flow: column;*/
     /*will-change: scroll-position;*/
   /*grid-template-columns: auto auto auto;*/
+  image-rendering: optimizeSpeed;
   background-color: rgba(50, 50, 50, 0.5);
   padding: 10px;
   background-size: contain;
@@ -368,15 +369,20 @@ nav {
 	display: flex;
 	/*flex: 1 1 100%;*/
 	background-color: rgba(0, 0, 0, 0.8);
-	align-content: flex-end;
+	/*align-content: flex-end;*/
 	/*align-self: flex-end;*/
 	flex-direction: row;
 	flex-flow: wrap;
 	position: relative;
 	width: 100%;
-	justify-content: right;
+	height: fit-content;
+	justify-content: space-between;
 	/*vertical-align: bottom;*/
-	margin: auto;
+	box-sizing: content-box;
+	padding-left: 0;
+	align-content: center;
+	line-height: normal;
+	flex-basis: auto;
 	/*position: sticky;*/
 }
 
@@ -421,6 +427,8 @@ nav {
 	flex-direction: row;
 	line-height: normal;
 	height: fit-content;
+	text-decoration: none;
+	tex
 
 }
 
@@ -431,6 +439,7 @@ nav {
 	box-sizing: content-box;
 	border-width: thin;
 	padding: 5px;
+	text-decoration: none;
 	/*font-display: block;
 	height: fit-content;
 	justify-content: center;
@@ -438,7 +447,7 @@ nav {
 	align-content: center;*/
 }
 
-#social {
+.social {
 	/*background: grey;
 	background-size: contain;*/
 	display: flex;
@@ -450,15 +459,43 @@ nav {
 	position: absolute;
 }
 
-a i {
+.social a i {
 	color: white;
 	margin: 5px;
 	font-size: large;
 }
 
-i:hover {
+div section a i:hover {
 	color: #0000FF;
 }
+
+.socialnav {
+	display: flex;
+	position: relative;
+	align-content: flex-start;
+	justify-items: left;
+	background-position: left;
+	flex-flow: wrap-reverse;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: left;
+	list-style: none;
+	color: dimgray;
+}
+
+.socialnav li a i {
+	color: dimgray;
+}
+
+.socialnav i:hover {
+	color: white;
+}
+
+/*.socialnav, ul {
+	list-style: none;
+	display: flex;
+}*/
 
 /*.container-fluid {
 	display: flex;
@@ -532,22 +569,25 @@ i:hover {
 	/*column-count: 2;
 	text-align: center;
 	vertical-align: text-bottom;*/
-	display: flex;
-	/*flex-direction: row;
-	text-align: justify-all;
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+	/*text-align: justify-all;
 	align-content: space-between;*/
 	text-align: center;
 	/*text-align: center;
 	justify-content: space-between;*/
 	color: white;
 	/*justify-content: space-between;*/
-	justify-items: center;
-	align-content: center;
+	/*justify-items: center;
+	align-content: center;*/
+	justify-content: center;
 	/*width: 100%;*/
 	/*align-content: space-between;
 	text-align: justify-all;
 	text-anchor: middle;*/
 }
+
 .text0 {
 	color: dimgray;
 	background: rgba(250, 250, 250, 0.6);
@@ -572,6 +612,9 @@ i:hover {
 	grid-gap: 10px;
 	padding: 40px 0;
 	overflow: hidden;
+	/*align-content: center;*/
+	/*grid-template-columns: minmax(100px, 1fr);*/
+	grid-auto-rows: auto;
 }
 
 .linea {
@@ -590,6 +633,7 @@ i:hover {
 }
 
 .galeria img {
+	image-rendering: optimizeSpeed;
 	width: 100%;
 	vertical-align: top;
 	height: 200px;
@@ -602,6 +646,7 @@ i:hover {
 	transform: scale3d(2.0, 1.0, 5.9);
 
 }
+
 .light-box {
 	position: fixed;
 	top: 0;
