@@ -370,24 +370,23 @@ body {
   gap: 20px;
   box-sizing: content-box;
   overflow: auto;
-  transition-timing-function: ;
   object-fit: cover;
 	align-self: center;
 	justify-self: center;
 }
 
-/*img*/ {
+/* img {
 	/*object-fit: cover;
 	grid-auto-columns: auto;*/
-    object-fit: cover;
+    /* object-fit: cover;
     align-content: center;
     gap: 20px;
     align-items: baseline;
-    display: inline-block;
+    display: inline-block; */
     /*will-change: scroll-position;*/
-    margin: 0 auto;
+    /* margin: 0 auto;
     align-items: center;
-}
+} */
 
 h4 {
 	font-family: monospace;	
@@ -641,7 +640,7 @@ div section a i:hover {
 	margin: 0;
 	padding: 0;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	width: auto;
 	height: fit-content;
 	margin: 0 auto;
