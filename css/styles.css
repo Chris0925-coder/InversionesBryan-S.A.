@@ -402,7 +402,7 @@ h4 {
 nav {
 	display: flex;
 	/*flex: 1 1 100%;*/
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 	/*align-content: flex-end;*/
 	/*align-self: flex-end;*/
 	flex-direction: row;
@@ -537,6 +537,10 @@ div section a i:hover {
 
 
 .text1 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	background: rgba(250, 250, 250, 0.7);
 	background-size: contain;
 	border-style: solid;
@@ -606,9 +610,11 @@ div section a i:hover {
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/*text-align: justify-all;
-	align-content: space-between;*/
+	text-align: justify-all;
+	align-content: space-between;
+	justify-content: space-between;
 	text-align: center;
+	/* width: 100%; */
 	/*text-align: center;
 	justify-content: space-between;*/
 	color: white;
@@ -739,10 +745,16 @@ div section a i:hover {
 }
 
 #tt1 {
+	/* display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; */
 	width: 50%;
 }
 
 #tt2 {
+	/* display: flex;
+	flex-direction: column;
+	flex-wrap: wrap; */
 	width: 50%;
 }
 
