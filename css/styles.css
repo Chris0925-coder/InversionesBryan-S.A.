@@ -41,64 +41,84 @@
 
 }*/
 
-nav {
-	/*width: 500px;*/
-	/*height: 200px;*/
-	/*content: open-quote;*/
-	
-	/*background-size: 99%;*/
-	
-	/*max-width: fit-content;*/
-	/*height: 65px;*/
+#navbarNav {
+	display: flex;
+	align-items: center;
+/*justify-content: space-between;
+	justify-items: space-between;
+	align-content: space-around;*/
+	object-position: right;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+	justify-content: right;
+}
+
+
+.navbar {
 	box-sizing: border-box;
 	border-style: double;
 	border-color: ghostwhite;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	/*justify-items: space-between;*/
-	/*flex-basis: auto;
-	flex-wrap: nowrap;
-	flex-flow: column;*/
-	/*align-content: space-between;;
-	justify-items: end;*/
-	/*position: absolute;*/
-	/*justify-items: space-between;*/
-	/*flex-flow: row;*/
-	/*position: relative;*/
-	/*align-items: flex-end;
-	align-content: space-between;*/
-	/*align-content: space-around;*/
-	/*object-position: right;*/
-	/*flex-direction: row-reverse;*/
-	flex-wrap: wrap;
-	/*box-sizing: content-box;*/
-	padding-right: 20px;
-	padding-left: 20px;
-	/*align-self: flex-end;*/
-	/*flex-direction: column;*/
-	/*flex-direction: row-reverse;
-	padding-right: 6px;*/
-	/*margin-right: 2px;*/
-	/*display: -webkit-flex;*/
-	/*display: -ms-flexbox;*/
-	/*flex-flow: row;*/
-	/*box-sizing: content-box;*/
-	/*flex-direction: row;*/
-	/*justify-content: space-evenly;*/
-	/*align-items: flex-end;*/
-	/*align-content: space-between;*/
-	/*gap: 10px;*/
-	/*flexbox: no-wrap;*/
-	/*justify-content: space-between;*/
-	/*flex-wrap: nowrap;*/
-	/*align-items: flex-end;*/
-	/*height: fit-content;*/
-	/*text-align-last: center;*/
-	background: rgba(105, 105, 105, 0.9);
+	padding-right: 10px;
+	padding-left: 10px;
+	/*background: rgba(105, 105, 105, 0.9);*/
 	background-size: cover;
-	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+		/*flex: 1 1 100%;*/
+	background-color: rgba(0, 0, 0, 0.9);
+	/*align-content: flex-end;
+	align-self: flex-end;*/
+	flex-direction: row;
+	position: relative;
+	height: fit-content;
+	margin: 0;
+	/*align-content: space-between;
+	justify-content: space-between;*/
+	justify-items: space-between;	
+	/*align-items: center;
+*/	width: 100%;
+	justify-content: space-between;
+	object-position: right;
+	align-content: flex-start;
+	}
+
+.flex-container {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: fit-content;
+	align-content: space-between;
+	align-items: center;
+	justify-content: space-between;
+	justify-items: space-between;
+	position: relative;
+	box-sizing: border-box;
+	align-content: center;
+	align-items: flex-start;
 }
+
+.nave {
+	display: flex;
+	align-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	justify-items: center;
+	align-content: center;
+}
+
+/* .container-fluid {
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: space-between;
+	justify-content: center;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(412px, 3fr));
+
+} */
+
 .nav-item {
 	border-style: solid;
 	text-decoration-line: none;
@@ -107,41 +127,27 @@ nav {
 	border-width: thin;
 	border-color: ghostwhite;
 	background: rgba(0, 0, 0, 0.7);
-	/*flex-direction: row-reverse;
-	align-content: flex-end;
-	align-items: flex-end;*/
-	/*text-align-last: right;*/
-	/*flex-basis: auto;
-	position: relative;*/
-	/*align-content: flex-end;*/
+	background-position: center;
+	background-size: contain;
 	padding: 5px;
 	border-radius: 5px;
 	height: fit-content;
-	/*align-items: flex-end;*/
-	/*display: inline-flex;*/
-	/*flexbox: no-wrap;*/
 	position: relative;
-	/*flex-flow: row;
-	flex-direction: row;*/
 	margin: 2px;
-	/*gap: 20px;*/
 	display: inline-flex;
+	/* column-count: 3; */
 	flex-direction: row;
 	flex-wrap: wrap;
-	/*resize: vertical;*/
-	/*flex-direction: row-reverse;
-	align-content: space-between;
-	justify-items: space-between;
-	justify-content: space-between;
-	justify-self: space-between;
+	text-align: center;
+/*	align-content: flex-end;
+	justify-items: flex-end;
+	align-self: flex-end;
+	justify-self: right;
+	position: relative;
 	object-position: right;
-	align-content: flex-end;*/
-	/*float: right;*/
-	/*text-decoration: none;*/
-	/*align-content: space-between;*/
-
-
+	float: right;*/
 }
+
 .nav-link {
 	flex-basis: auto;
 	text-decoration: none;
@@ -150,14 +156,15 @@ nav {
 	/*text-align-last: right;*/
 	/*flex-grow: 2;*/
 	/*align-content: space-around;*/
-	color: rgba(200, 200, 200, 0.8);
+	color: rgba(200, 200, 200, 0.9);
 
 }
 
 li a.active {
-	background-color: rgba(200, 200, 200, 0.3);;
+	background-color: rgba(200, 200, 200, 0.6);
+	border-radius: 10px;
     /*background-color: #BBCCDD;*/
-    color: black;
+    color: #fff;
 }
 
 .nav-item a:hover:not(.active) {
@@ -173,38 +180,16 @@ li a.active {
 	background-size: cover;
 	background-position: center;
 	background-image: url('../imagenes/pisosymallas.jpg');
-	box-sizing: content-box;
+	box-sizing: border-box;
 	margin: auto;
 	/*position: absolute;*/
 	display: flex;
-
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: space-between;
-	/*align-items: flex-start;*/
-	/*align-items: flex-end;*/
-	/*object-position: center;*/
 	object-fit: cover;
-	/*padding-left: 20px;*/
-	/*vertical-align: text-bottom;*/
-	/*text-align: ;*/
 	background-repeat: no-repeat;
 	color: white;
-	/*text-align: right;
-	position: relative;
-	box-sizing: content-box*/;
-	/*align-content: space-between;*/
-	/*caption-side: bottom;*/
-	/*text-align-last: end;
-	text-orientation: mixed;
-	text-align: center;*/
-	/*align-items: flex-end;*/
-	/*display: flex;*/
-	/*align-content: flex-end;*/
-	/*font-size: xx-large;*/
-	/*font-display: fallback;*/
-	/*display: flex;*/
-	/*align-content: space-around;*/
 	justify-content: space-between;
 	/*justify-items: space-between;
 	justify-self: space-between;*/
@@ -249,11 +234,6 @@ body {
 
 .name1 {
 	display: flex;
-	/*flex-direction: row-reverse;*/
-	/*float: right;*/
-	/*text-align: right;*/
-	/*align-self: center;*/
-	/*align-items: center;*/
 	background: rgba(105, 105, 105, 0.6);
 	background-position: center;
 	background-size: contain;
@@ -266,40 +246,6 @@ body {
 	flex-flow: row wrap;
 	position: relative;
 	float: right;
-	/*flex-direction: row-reverse;*/
-	/*vertical-align: text-bottom;*/
-	/*padding-left: 20px;*/
-	/*caption-side: bottom;*/
-	/*position: relative;*/
-	/*float: right;
-	justify-content: space-between;
-	justify-self: right;
-	justify-content: space-between;*/
-	/*align-self: center;*/
-	/*caption-side: bottom;*/
-	/*position: unset;
-	display: flex;*/
-	/*flex-flow: column;
-	flex-direction: column-reverse;
-	flex-flow: column-reverse;*/
-	/*flex-grow: 1;*/
-	/*text-align: justify;*/
-	/*box-sizing: content-box;*/
-	/*caption-side: bottom;*/
-	/*background: rgba(0, 0, 0, 1.0);
-	background-size: auto;
-	background-position: bottom;*/
-	/*background: grey;
-	background-size: contain;
-	background-color: grey;
-	background-position: center;
-	display: flex;
-	align-items: flex-end;*/
-	/*vertical-align: baseline;*/
-	/*text-align: center;*/
-	/*position: relative;
-	float: right;*/
-	/*font-display: fallback;*/
 }
 
 .img2 {
@@ -335,30 +281,12 @@ body {
 }
 
 .img2 img {
-	/*background-color: rgba(169, 169, 169, 0.7);
-	border-width: thick;
-	border-color: darkgray;
-	border-style: outset;
-	text-align: center;
-	align-content: center;
-	padding: 0px;
-	margin: 100px;
-    border-style: solid;
-    height:300px;*/
-    /*display: ruby-base-container;*/
-    /*position: static;
-    align-content: flex-end;
-    align-self: flex-end;
-    flex-direction: column-reverse;
-    grid-auto-flow: column;*/
-    /*will-change: scroll-position;*/
-  /*grid-template-columns: auto auto auto;*/
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
   image-rendering: optimizeSpeed;
   background-color: rgba(50, 50, 50, 0.5);
-  padding: 10px;
+  padding: 20px;
   background-size: contain;
   /*backgroud-position: right;*/
   border-style: solid;
@@ -399,26 +327,6 @@ h4 {
   border-radius: 10px;
 }
 
-nav {
-	display: flex;
-	/*flex: 1 1 100%;*/
-	background-color: rgba(0, 0, 0, 0.7);
-	/*align-content: flex-end;*/
-	/*align-self: flex-end;*/
-	flex-direction: row;
-	flex-flow: wrap;
-	position: relative;
-	width: 100%;
-	height: fit-content;
-	justify-content: space-between;
-	/*vertical-align: bottom;*/
-	box-sizing: border-box;
-	padding-left: 0;
-	align-content: center;
-	line-height: normal;
-	flex-basis: auto;
-	/*position: sticky;*/
-}
 
 
 .container {
@@ -430,17 +338,16 @@ nav {
 	border-radius: 5px;	
 	padding: 15px;
 	height: fit-content;
-	width: 100%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: auto;
-	width: auto;
-	box-sizing: content-box;
+	width: 100%;
+	box-sizing: border-box;
 	text-decoration: none;
 	justify-content: space-between;
-	/*align-content: flex-end;*/
+	align-content: flex-end;
 }
 
 .contacto {
@@ -465,7 +372,7 @@ nav {
 
 }
 
-.contacto a:hover {
+div.contacto:hover {
 	background: rgba(250, 250, 250, 0.3);
 	border-style: solid;
 	border-radius: 10px;
@@ -488,7 +395,8 @@ nav {
 	flex-wrap: wrap;
 	align-content: space-between;
 	list-style: none;
-	justify-content: left;
+	justify-self: left;
+	justify-content: space-between;
 	position: absolute;
 }
 
@@ -507,14 +415,17 @@ div section a i:hover {
 	position: relative;
 	align-content: flex-start;
 	justify-items: left;
-	background-position: left;
-	flex-flow: wrap-reverse;
+	/*justify-content: left;
+*/	background-position: left;
+	/*flex-flow: wrap-reverse;*/
 	flex-direction: row;
 	flex-wrap: wrap;
 	gap: 10px;
 	justify-content: left;
 	list-style: none;
 	color: dimgray;
+	align-items: flex-start;
+	justify-self: left;
 }
 
 .socialnav li a i {
@@ -535,32 +446,47 @@ div section a i:hover {
 	vertical-align: text-top;*/
 	/*align-content: space-between;*/
 
+#cont1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(412px, 2fr));
+	text-align: center;
+	justify-items: center;
+	align-content: center;
+
+}
 
 .text1 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	background: rgba(250, 250, 250, 0.7);
+	background: rgba(77, 70, 70, 0.0);
 	background-size: contain;
 	border-style: solid;
-	font-size: x-large;
+	font-size: large;
 	/*background: grey;*/
 	text-align: center;
-	color: black;
+	color: rgb(0, 0, 0);
 	/*font-style: oblique;*/
 	font: bold;
 	font: bolder;
 	border-radius: 10px;
-	border-color: darkgray;
+	border-color: rgba(128, 128, 128,0.1);
 	border-style: outset;
-	/*width: 100%*/;
-	/*vertical-align: middle;*/
-	/*align-content: center;*/
-	/*box-sizing: content-box;*/
+	margin: 0;
+	width: fit-content;
+	padding: 8px;
+	/*vertical-align: middle;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+	vertical-align: baseline;
+	line-height: normal;
+
+	align-content: center;
+	box-sizing: content-box;*/
 	/*height: 170px;*/
 	/*vertical-align: middle;*/
-
 }
 
 
@@ -588,14 +514,17 @@ div section a i:hover {
 	flex-grow: ;
 	flex-wrap: nowrap;
 	flex-basis: auto;*/
-	background: grey;
-	/*flex-direction: row;
+	background: rgba(170, 170, 170, 0.3);
+	user-select: none;
+	perspective: 150px;
+	transform-style: preserve-3d;
+  transition: ;	/*flex-direction: row;
 	flex-flow: row;
 	box-sizing: content-box;*/
 	/*align-items: flex-start;
 	align-content: center;*/
 	display: inline-flex;
-
+	border-radius: 90px;
 	/*flex-direction: column;*/
 	/*align-content: space-between;*/
 	/*text-align: justify-all;
@@ -653,7 +582,7 @@ div section a i:hover {
 	grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));	
 	height: fit-content;
 	margin: 0 auto;
-	grid-gap: 10px;
+	grid-gap: 20px;
 	padding: 40px;
 	overflow: hidden;
 	justify-content: center;
@@ -705,10 +634,10 @@ div section a i:hover {
 
 .galeria img {
 	image-rendering: optimizeSpeed;
-	width: 600px;
+	width: 300px;
 	/*vertical-align: top;*/
-	height: 200px;
-	margin: 2px;
+	height: 350px;
+	margin: 7px;
 	object-fit: cover;
 	transition: transform 0.5s;
 	max-width: 100%;
@@ -777,14 +706,26 @@ div section a i:hover {
 	/* display: flex;
 	flex-direction: column;
 	flex-wrap: wrap; */
-	width: 50%;
+	display: grid;
+	column-count: 5;
+	padding: 2%;
+	height: fit-content;
+	color: dimgrey;
+	justify-items: center;
+	/* width: 100%; */
 }
 
 #tt2 {
 	/* display: flex;
 	flex-direction: column;
 	flex-wrap: wrap; */
-	width: 50%;
+	display: grid;
+	column-count: 5;
+	padding: 2%;
+	height: fit-content;
+	color: dimgrey;
+	justify-items: center;
+	/* width: 100%; */
 }
 
 .galeria span {
