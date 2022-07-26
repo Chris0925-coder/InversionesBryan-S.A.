@@ -167,3 +167,12 @@ console.log(contarCartas("A"));
 // console.log(contacts[0].name, contacts[0].phone, contacts[0].email);
 // console.log(contacts[3].name, contacts[3].phone, contacts[3].email);
 // document.write(contacts)
+
+
+
+const navToggle = document.querySelector(".navbar-toggler")
+const navLink = document.querySelector(".navbar-nav")
+
+navToggle.addEventListener("click", () => {
+    navLink.classList.toggle("navbar-nav_visible")
+})

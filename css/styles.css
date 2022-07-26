@@ -42,6 +42,111 @@
 
 }*/
 
+
+.navbar-toggler {
+	color: ghostwhite;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	cursor: pointer;
+	display: none;
+}
+
+/*media*/
+@media (max-width: 768px) {
+	body {
+		background-color: darkgrey;
+	}
+
+	.logo {
+		display: flex;
+		position: sticky;	
+		float: right;
+		width: 140px;
+		height: 60px;
+	}
+	.header {
+		height: 160px;
+	} 
+
+	.navbar {
+		top: 0;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	.navbar-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		margin: 0;
+		background-color: rgba(250, 250, 250, 0.3);
+		position: fixed;
+		/*z-index: 1;*/
+		left: 0;
+		top: 160px;
+		padding: 20px 0;
+		width: 100%;
+		height: calc(100% - 90px);
+		overflow-y: auto;
+
+		left: 100%;
+		transition: left 0.3s;
+	}
+
+	.nav-link {
+		display: flex;		
+		flex-direction: row;
+		padding: 10px;
+		/*background-color: darkgrey;*/
+		line-height: 20px;
+		margin: 2px;
+		/*position: fixed;*/
+	}
+
+	.nav-item {
+		background-color: rgba(0, 0, 0, 0.1);
+		padding: 10px;
+		line-height: 70px;
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+	}
+
+	.nav-link:hover,
+	.nav-link_active {
+		background: none;
+		color: rgba(0, 0, 0, 0.2);
+	}
+
+	.navbar-toggler {
+		float: right;
+		border: darkgrey;
+		border-radius: 5px;
+		/*border-style: solid;
+		border-width: thin;*/
+		display: block;
+		box-sizing: border-box;
+		padding: 1px;
+		height: 50px;
+		margin: 0;
+	}
+
+	.navbar-toggler:hover {
+		color: rgba(230, 230, 230, 0.3);
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+
+	.navbar-nav_visible {
+		left: 0;
+	}
+
+}
+
+
+
 #navbarNav {
 	display: flex;
 	align-items: center;
@@ -231,6 +336,7 @@ body {
 	background: #bbbaab;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: sans-serif;
 }
 
 .name1 {
