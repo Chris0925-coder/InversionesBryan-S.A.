@@ -42,7 +42,12 @@
 
 }*/
 
-
+html {
+/*	width: 100%;
+	height: 100%;*/
+	margin: 0;
+	padding: 0;
+}
 .navbar-toggler {
 	color: ghostwhite;
 	background: none;
@@ -60,14 +65,14 @@
 		background-color: darkgrey;
 	}
 
-	.logo {
+/*	.logo {
 		display: flex;
 		position: sticky;	
 		float: right;
 		width: 140px;
 		height: 60px;
-	}
-	.header {
+	}*/
+	.flex-container {
 		height: 160px;
 	} 
 
@@ -80,16 +85,17 @@
 	.navbar-nav {
 		display: flex;
 		flex-direction: column;
-		align-items: stretch;
+		align-items:center;
+		justify-content: center;
 		margin: 0;
-		background-color: rgba(250, 250, 250, 0.3);
+		background-color: rgba(0, 0, 0, 0.3);
 		position: fixed;
 		/*z-index: 1;*/
 		left: 0;
 		top: 160px;
 		padding: 20px 0;
 		width: 100%;
-		height: calc(100% - 90px);
+		height: calc(100% - 160px);
 		overflow-y: auto;
 
 		left: 100%;
@@ -103,6 +109,8 @@
 		/*background-color: darkgrey;*/
 		line-height: 20px;
 		margin: 2px;
+		color: dimgray;
+		padding: 2px;
 		/*position: fixed;*/
 	}
 
@@ -112,13 +120,47 @@
 		line-height: 70px;
 		display: flex;
 		flex-direction: column;
+		vertical-align: middle;
+		padding: 2px;
 		margin: 5px;
-	}
+	border-style: solid;
+	text-decoration-line: none;
+	/*flood-color: rgba(100, 0, 0, 1.0);*/
+	border-width: thin;
+	border-color: dimgrey;
+	background: rgba(0, 0, 0, 0.7);
+	background-position: center;
+	background-size: cover;
+	padding: 5px;
+	border-radius: 5px;
+	height: auto;
+	position: relative;
+	margin: 2px;
+	display: inline-flex;
+	/* column-count: 3; */
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	width: 100%;
+	text-align: justify-all;
+	align-content: center;
+	justify-content: space-around;
+	padding: 0;
+	/*	align-content: flex-end;
+	justify-items: flex-end;
+	align-se100%;lf: flex-end;
+	justify-self: right;
+	position: relative;
+	object-position: right;
+	float: right;*/
+}
 
 	.nav-link:hover,
 	.nav-link_active {
 		background: none;
 		color: rgba(0, 0, 0, 0.2);
+		padding: 2px;
+		transition: 0.3s;
 	}
 
 	.navbar-toggler {
@@ -170,7 +212,7 @@
 	/*background: rgba(105, 105, 105, 0.9);*/
 	background-size: cover;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(460px, 3fr));
 		/*flex: 1 1 100%;*/
 	background-color: rgba(0, 0, 0, 0.9);
 	/*align-content: flex-end;
@@ -229,15 +271,14 @@
 	border-style: solid;
 	text-decoration-line: none;
 	/*flood-color: rgba(100, 0, 0, 1.0);*/
-	border-spacing: 20px;
 	border-width: thin;
-	border-color: ghostwhite;
+	border-color: dimgrey;
 	background: rgba(0, 0, 0, 0.7);
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	padding: 5px;
 	border-radius: 5px;
-	height: fit-content;
+	height: auto;
 	position: relative;
 	margin: 2px;
 	display: inline-flex;
@@ -245,9 +286,14 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	text-align: center;
-/*	align-content: flex-end;
+	/*width: 100%;
+*/	/*text-align: justify-all;
+	align-content: center;
+	justify-content: space-around;
+	padding: 0;*/
+	/*	align-content: flex-end;
 	justify-items: flex-end;
-	align-self: flex-end;
+	align-se100%;lf: flex-end;
 	justify-self: right;
 	position: relative;
 	object-position: right;
@@ -257,13 +303,18 @@
 .nav-link {
 	flex-basis: auto;
 	text-decoration: none;
-	padding: 5px;
+	padding: 4px;
 	font-size: small;
+	background-position: center;
+	background-size: contain;
 	/*text-align-last: right;*/
 	/*flex-grow: 2;*/
 	/*align-content: space-around;*/
-	color: rgba(200, 200, 200, 0.9);
-
+	margin: 0;
+	box-sizing: content-box;
+	color: rgba(20, 2, 3, 0.4);
+	justify-items: space-between;
+	color: grey;
 }
 
 li a.active {
@@ -479,7 +530,7 @@ h4 {
 
 }
 
-div.contacto:hover {
+div.contacto a:hover {
 	background: rgba(250, 250, 250, 0.3);
 	border-style: solid;
 	border-radius: 10px;
@@ -487,6 +538,7 @@ div.contacto:hover {
 	border-width: thin;
 	padding: 5px;
 	text-decoration: none;
+	transition: 0.5s;
 	/*font-display: block;
 	height: fit-content;
 	justify-content: center;
@@ -842,3 +894,44 @@ div section a i:hover {
 	/*min-width: auto;
 	width: auto;*/
 }
+
+
+
+/*CONTACT PAGE*/
+
+.bann {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	background-image: url("../imagenes/bannerIB.png");	
+	background-repeat: no-repeat;	
+	background-size: cover;
+	/*object-position: center;*/
+	/*object-fit: cover;*/
+	width: 100%;
+	height: 760px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
+/*	justify-content: center;
+	justify-self: center;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	box-sizing: border-box;*/
+
+}
+
+.p-5 {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-content: center;
+	align-self: center;
+
+	align-self: center;
+	justify-self: center;
+}
+
