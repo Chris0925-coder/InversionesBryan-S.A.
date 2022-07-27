@@ -42,9 +42,12 @@
 
 }*/
 
+* {
+	margin: 0;
+	padding: 2px;
+}
+
 html {
-	width: 100%;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -60,9 +63,10 @@ html {
 }
 
 /*media 768*/
-@media (max-width: 868px) {
+@media (max-width: 768px) {
 	body {
 		background-color: darkgrey;
+		width: 100%;
 	}
 
 /*	.logo {
@@ -199,15 +203,56 @@ html {
 
 	.navbar {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		flex-wrap: wrap;
 		position: relative;
 		justify-content: center;
 		justify-items: center;
-		/*align-items: center;*/
+		align-items: center;
 		align-content: center;
+		text-align: right;		
 		/*justify-items: center;*/
 	}
+
+	#logo {
+		background-image: url('../imagenes/logo2.png');
+		position: relative;
+		image-rendering: optimizeSpeed;
+		background color: rgba(200, 200, 200, 0.9);
+		display: grid;
+		column-count: 12;
+		flex-direction: row;
+		flex-wrap: wrap;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		justify-self: center;
+		align-self: center;
+		height: 100px;
+		width: 80%;
+		margin: 0;
+		padding: 0;
+		object-position: center;
+	}
+
+	.bann {
+	background-image: url("../imagenes/bannerIB.png");	
+	background-repeat: no-repeat;	
+	background-size: cover;
+	/*object-position: center;*/
+	/*object-fit: cover;*/
+	width: 100%;
+	height: 760px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.7;
+	justify-content: center;
+	justify-self: center;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	box-sizing: border-box;
+}
 
 }
 
@@ -238,7 +283,7 @@ html {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(460px, 3fr));
 		/*flex: 1 1 100%;*/
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color: rgba(0, 0, 0, 0.7);
 	/*align-content: flex-end;
 	align-self: flex-end;*/
 	flex-direction: row;
@@ -372,6 +417,7 @@ li a.active {
 	background-repeat: no-repeat;
 	color: white;
 	justify-content: space-between;
+	margin-bottom: 30px;
 	/*justify-items: space-between;
 	justify-self: space-between;*/
 }
@@ -525,7 +571,7 @@ h4 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: auto;
-	width: 100%;
+	width: auto;
 	box-sizing: border-box;
 	text-decoration: none;
 	justify-content: space-between;
@@ -749,6 +795,7 @@ div section a i:hover {
 	text-align: center;
 	background-position: center;
 	object-position: center;
+	margin-bottom: 10px;
 }
 
 .galeria {
@@ -764,7 +811,7 @@ div section a i:hover {
 	width: auto;
 	/*grid-auto-flow: row;
 	grid-auto-rows: auto;*/
-	grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));	
+	grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));	
 	height: fit-content;
 	margin: 0 auto;
 	grid-gap: 20px;
@@ -929,24 +976,23 @@ div section a i:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	position: relative;
+	position: sticky;
 	background-image: url("../imagenes/bannerIB.png");	
 	background-repeat: no-repeat;	
-	background-size: cover;
-	/*object-position: center;*/
-	/*object-fit: cover;*/
+	background-size:cover;
+	object-position: center;
+	object-fit: cover;
 	width: 100%;
-	height: 760px;
+	height: 100%;
 	margin: 0;
 	padding: 0;
 	opacity: 0.7;
-/*	justify-content: center;
+	justify-content: center;
 	justify-self: center;
 	align-content: center;
 	align-self: center;
 	align-items: center;
-	box-sizing: border-box;*/
-
+	box-sizing: content-box;
 }
 
 .p-5 {
@@ -956,8 +1002,10 @@ div section a i:hover {
 	justify-content: center;
 	align-content: center;
 	align-self: center;
-
+	line-height: 30px;
 	align-self: center;
 	justify-self: center;
+	margin: 0;
+	vertical-align: middle;
 }
 
