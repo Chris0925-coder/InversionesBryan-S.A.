@@ -59,8 +59,8 @@ html {
 	display: none;
 }
 
-/*media*/
-@media (max-width: 768px) {
+/*media 768*/
+@media (max-width: 868px) {
 	body {
 		background-color: darkgrey;
 	}
