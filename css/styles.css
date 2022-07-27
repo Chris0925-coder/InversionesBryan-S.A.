@@ -527,6 +527,8 @@ h4 {
 	line-height: normal;
 	height: fit-content;
 	text-decoration: none;
+	/*cursor: auto;*/
+	user-select: none;
 
 }
 
