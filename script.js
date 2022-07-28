@@ -168,11 +168,26 @@ console.log(contarCartas("A"));
 // console.log(contacts[3].name, contacts[3].phone, contacts[3].email);
 // document.write(contacts)
 
+// navbar-toggler navbar-nav_visible
 
+// createElement
 
-const navToggle = document.querySelector(".navbar-toggler")
-const navLink = document.querySelector(".navbar-nav")
+// .removeChild
+
+const navToggle = document.querySelector(".navbar-toggler");
+const navLink = document.querySelector(".navbar-nav");
+// const closeBtn = document.querySelector(".nana");
 
 navToggle.addEventListener("click", () => {
     navLink.classList.toggle("navbar-nav_visible")
-})
+});
+
+// const closeBtn = document.querySelector(navToggle);
+// const btn = document.querySelector('button');
+// btn.addEventListener('click', displayMessage);
+// 	closeBtn.textContent = 'x';
+// 	navLink.appendChild(closeBtn);
+
+// navLink.addEventListener('click',() => {
+// 	navLink.classList.toggle("nana")
+// });

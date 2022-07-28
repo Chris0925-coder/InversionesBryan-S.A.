@@ -48,10 +48,25 @@
 }
 
 html {
+	height: 100%;
 	margin: 0;
 	padding: 0;
 }
+
+
+
 .navbar-toggler {
+	color: ghostwhite;
+	background: none;
+	border: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 60px;
+	cursor: pointer;
+	display: none;
+}
+
+.naboton {
 	color: ghostwhite;
 	background: none;
 	border: none;
@@ -105,6 +120,8 @@ html {
 		left: 100%;
 		transition: left 0.3s;
 	}
+
+
 
 	.nav-link {
 		display: flex;		
@@ -168,8 +185,8 @@ html {
 	}
 
 	.navbar-toggler {
-		display: flex;
-		flex-direction: row;
+		/*display: flex;
+		flex-direction: row;*/
 		/*float: right;*/
 		border: darkgrey;
 		border-radius: 5px;
@@ -199,6 +216,11 @@ html {
 
 	.navbar-nav_visible {
 		left: 0;
+	}
+
+	.nana {
+		left: 100%;
+		transition: 0.3s;
 	}
 
 	.navbar {
@@ -556,50 +578,32 @@ h4 {
 }
 
 
-
-.container {
-	background-color: rgba(0, 0, 0, 0.7);
-	background-size: cover;
-	border-style: outset;
-	border-width: 5px;
-	border-color: darkgray;
-	border-radius: 5px;	
-	padding: 15px;
-	height: fit-content;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: auto;
-	width: auto;
-	box-sizing: border-box;
-	text-decoration: none;
-	justify-content: space-between;
-	align-content: flex-end;
-}
-
 .contacto {
 	border-style: solid;
 	border-style: outset;
 	font-style: oblique;
 	text-align: right;
 	background-color: grey;
-	background-position: right;
-	/*align-content: space-between;*/
+	background-position: center;
 	border-color: black;
 	box-shadow: 4px 2px rgba(0, 0, 0, 0.3);
 	box-sizing: border-box;
 	text-decoration: none;
 	color: rgba(0, 0, 0, 1.0);
 	border-radius: 20px;
-	padding: 10px;
+	padding: 15px;
+	/*width: 100%;*/
+	/*display: block;
 	flex-direction: row;
-	line-height: normal;
-	height: fit-content;
+	flex-wrap: wrap;*/
+	/*line-height: normal;*/
+/*	height: auto;*/
 	text-decoration: none;
 	/*cursor: auto;*/
 	user-select: none;
-
+	/*width: fit-content;
+	justify-content: center;
+	align-items: center;*/
 }
 
 div.contacto a:hover {
@@ -619,16 +623,22 @@ div.contacto a:hover {
 }
 
 .social {
-	/*background: grey;
-	background-size: contain;*/
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: space-between;
-	list-style: none;
-	justify-self: left;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: cover;
+	background-position: center;
+	border-style: solid;
+	border-style: outset;
+	border-radius: 20px;
+	box-shadow: 6px 4px dimgrey;
+	border-color: dimgrey;
+	margin: 0;
+	padding: 2px;
+	width: 100%;
+	height: 100%;
+	justify-items: space-between;
 	justify-content: space-between;
-	position: absolute;
 }
 
 .social a i {
@@ -637,7 +647,8 @@ div.contacto a:hover {
 	font-size: large;
 }
 
-div section a i:hover {
+
+.bibi i:hover {
 	color: #0000FF;
 }
 
@@ -655,8 +666,10 @@ div section a i:hover {
 	justify-content: left;
 	list-style: none;
 	color: dimgray;
-	align-items: flex-start;
-	justify-self: left;
+	/*align-items: flex-start;
+	justify-self: left;*/
+	padding: 5px;
+	margin: 0;
 }
 
 .socialnav li a i {
@@ -679,11 +692,13 @@ div section a i:hover {
 
 #cont1 {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(412px, 2fr));
-	text-align: center;
+	grid-template-columns: repeat(auto-fit, minmax(430px, 2fr));
+	/*text-align: center;*/
 	justify-items: center;
-	align-content: center;
-
+	/*align-content: center;
+*/	text-align: justify-all;
+	align-items:flex-start;
+	width: 100%;
 }
 
 .text1 {
@@ -706,6 +721,7 @@ div section a i:hover {
 	border-style: outset;
 	margin: 0;
 	width: fit-content;
+	height: fit-content;
 	padding: 8px;
 	/*vertical-align: middle;
 	align-items: center;
@@ -745,18 +761,26 @@ div section a i:hover {
 	flex-grow: ;
 	flex-wrap: nowrap;
 	flex-basis: auto;*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	background: rgba(190, 190, 190, 0.3);
+	/*width: auto;*/
 	user-select: none;
-	perspective: 150px;
+	/*perspective: 150px;
 	transform-style: preserve-3d;
-  transition: ;	/*flex-direction: row;
+  transition: ;	*/
+  /*flex-direction: row;
 	flex-flow: row;
 	box-sizing: content-box;*/
 	/*align-items: flex-start;
 	align-content: center;*/
-	display: inline-flex;
+	/*display: inline-flex;*/
 	border-radius: 5px;
-	/*flex-direction: column;*/
+	margin: 0;
+	padding: 0;
+	/*line-height: 10px;
+*/	/*flex-direction: column;*/
 	/*align-content: space-between;*/
 	/*text-align: justify-all;
 	text-anchor: middle;*/
@@ -774,7 +798,7 @@ div section a i:hover {
 	align-content: space-between;
 	justify-content: space-between;
 	text-align: center;
-	/* width: 100%; */
+	max-width: 100%;
 	/*text-align: center;
 	justify-content: space-between;*/
 	color: white;
@@ -939,12 +963,13 @@ div section a i:hover {
 	flex-direction: column;
 	flex-wrap: wrap; */
 	display: grid;
-	column-count: 5;
-	padding: 2%;
-	height: fit-content;
+	column-count: 4;
+	padding: 2px;
+	height: auto;
 	color: dimgrey;
 	justify-items: center;
-	/* width: 100%; */
+	text-align: justify-all;
+	 width: 80%; 
 }
 
 #tt2 {
@@ -952,12 +977,13 @@ div section a i:hover {
 	flex-direction: column;
 	flex-wrap: wrap; */
 	display: grid;
-	column-count: 5;
-	padding: 2%;
-	height: fit-content;
+	column-count: 4;
+	padding: 2px;
+	height: auto;
 	color: dimgrey;
 	justify-items: center;
-	/* width: 100%; */
+	text-align: justify-all;
+	 width: 80%; 
 }
 
 .galeria span {
@@ -976,14 +1002,14 @@ div section a i:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	position: sticky;
+	position: relative;
 	background-image: url("../imagenes/bannerIB.png");	
 	background-repeat: no-repeat;	
-	background-size:cover;
-	object-position: center;
+	background-size: contain;
+	background-position: bottom;
 	object-fit: cover;
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: 800px;
 	margin: 0;
 	padding: 0;
 	opacity: 0.7;
@@ -992,10 +1018,12 @@ div section a i:hover {
 	align-content: center;
 	align-self: center;
 	align-items: center;
-	box-sizing: content-box;
+	box-sizing: border-box;
+
 }
 
 .p-5 {
+	background-color: rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -1007,5 +1035,8 @@ div section a i:hover {
 	justify-self: center;
 	margin: 0;
 	vertical-align: middle;
+	top: 20%;
+	left: 10%;
+	z-index: 1;
 }
 
