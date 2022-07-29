@@ -44,7 +44,7 @@
 
 * {
 	margin: 0;
-	padding: 2px;
+	padding: 0;
 }
 
 html {
@@ -639,6 +639,7 @@ div.contacto a:hover {
 	height: 100%;
 	justify-items: space-between;
 	justify-content: space-between;
+	box-sizing: border-box;
 }
 
 .social a i {
@@ -986,6 +987,21 @@ div.contacto a:hover {
 	 width: 80%; 
 }
 
+#tt3 {
+		display: grid;
+	column-count: 4;
+	padding: 2px;
+	height: auto;
+	color: dimgrey;
+	justify-items: center;
+	text-align: left;
+	 width: 80%;
+}
+
+.valores {
+	list-style: circle;
+}
+
 .galeria span {
 	display: inline-block;
 	justify-content: center;
@@ -1006,7 +1022,7 @@ div.contacto a:hover {
 	background-image: url("../imagenes/bannerIB.png");	
 	background-repeat: no-repeat;	
 	background-size: contain;
-	background-position: bottom;
+	background-position: center;
 	object-fit: cover;
 	width: auto;
 	height: 800px;
@@ -1014,11 +1030,12 @@ div.contacto a:hover {
 	padding: 0;
 	opacity: 0.7;
 	justify-content: center;
-	justify-self: center;
+	line-height: 130px;
+	/*justify-self: center;
 	align-content: center;
 	align-self: center;
 	align-items: center;
-	box-sizing: border-box;
+	box-sizing: border-box;*/
 
 }
 
