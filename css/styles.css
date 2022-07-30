@@ -275,9 +275,9 @@ html {
  {
 	display: flex;
 	flex-direction: column;
-	flex-flow: column wrap;
+	flex-flow: wrap;
 	/*grid-column: 1;*/
-	width: 77%;
+	/*width: 77%;*/
 	/*grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));*/
 }
 
@@ -312,7 +312,7 @@ html {
 	justify-content: center;
 	justify-items: center;
 	margin: 0;
-	width: 70%;
+	width: 90%;
 }
 
 /*.cont1 .contenido {
@@ -858,16 +858,17 @@ div.contacto a:hover {
 
 .cont1 {
 	display: grid;
-	flex-direction: column;
+	flex-direction: row;
 	text-align: center;
 	grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
 	user-select: none;
 	margin: 1px auto;
 	grid-column: 1 span 3;
-	width: 90%;
+	width: 100%;
 	max-width: 2000px;
-	grid-gap: 20px;
-
+	/*grid-gap: 0;*/
+	box-sizing: border-box;
+	margin: 0;
 }
 
 /*prueba1*/
@@ -889,20 +890,20 @@ div.contacto a:hover {
 }
 
 .contenido {
-			display: grid;
+	display: grid;
 	flex-direction: column;
 	text-align: center;
 	grid-template-columns: repeat(auto-fit, minmax(330px, 3fr));
 	user-select: none;
-	margin: 1px auto;
+	margin: 2px auto;
 	grid-column: 1;
-
-	position: relative;
-	display: grid;
-	flex-direction: column;
-	grid-column: 3;
+	grid-gap: 5px;
+	/*position: relative;*/
+	/*display: grid;*/
+	/*flex-direction: column;*/
+	/*grid-column: 3;
 	flex-wrap: wrap;
-	grid-gap: 20px;
+	grid-gap: 20px;*/
 }
 
 .cont1 .tt1 {
