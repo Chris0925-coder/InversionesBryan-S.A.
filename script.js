@@ -174,20 +174,20 @@ console.log(contarCartas("A"));
 
 // .removeChild
 
-const navToggle = document.querySelector(".navbar-toggler");
-const navLink = document.querySelector(".navbar-nav");
-// const closeBtn = document.querySelector(".nana");
+let navToggle = document.querySelector(".navbar-toggler");
+let navLink = document.querySelector(".navbar-nav");
+let closeBtn = document.querySelector(".navbar-nav_visible");
+
 
 navToggle.addEventListener("click", () => {
-    navLink.classList.toggle("navbar-nav_visible")
+    navLink.classList.toggle("navbar-nav_visible") 
+
+    // navLink.textContent = 'x';
+	// closeBtn.appendChild("navbar-nav");
 });
 
-// const closeBtn = document.querySelector(navToggle);
-// const btn = document.querySelector('button');
-// btn.addEventListener('click', displayMessage);
-// 	closeBtn.textContent = 'x';
-// 	navLink.appendChild(closeBtn);
-
-// navLink.addEventListener('click',() => {
-// 	navLink.classList.toggle("nana")
-// });
+// const closeBtn = document.querySelector(".navbar-nav_hide");
+// const btn = document.querySelector(".navbar-toggler");
+// navToggle.addEventListener('click', displayMessage);
+	// navLink.textContent = 'x';
+	// navLink.appendChild(closeBtn);
