@@ -176,17 +176,44 @@ console.log(contarCartas("A"));
 
 let navToggle = document.querySelector(".navbar-toggler");
 let navLink = document.querySelector(".navbar-nav");
-let closeBtn = document.querySelector(".navbar-nav_visible");
-
 
 navToggle.addEventListener("click", () => {
     navLink.classList.toggle("navbar-nav_visible") 
-
-    // navLink.textContent = 'x';
-	// closeBtn.appendChild("navbar-nav");
 });
 
-// const closeBtn = document.querySelector(".navbar-nav_hide");
+let comment = document.querySelector(".btn")
+
+comment.addEventListener("click", () => {
+
+   	alert("¡Gracias!, su comentario ha sido enviado.")
+   }
+   	);
+
+
+// function sendM() {
+// 	if 	txt == String {
+// 		prompt("Favor rellenar la casillas")
+// 	}
+	
+	
+
+// 	else: {
+// 		prompt("Gracias, tu comentario ha sido enviado")
+// 	}  break;
+// };
+
+
+// const para = document.querySelector('p');
+
+// 	para.addEventListener('click', updateName);
+
+// 	function updateName() {
+// 		let name = prompt('Enter a new name');
+// 		para.textContent = 'Player 1 ' + name;
+// }
+
+
+// // const closeBtn = document.querySelector(".navbar-nav_hide");
 // const btn = document.querySelector(".navbar-toggler");
 // navToggle.addEventListener('click', displayMessage);
 	// navLink.textContent = 'x';
