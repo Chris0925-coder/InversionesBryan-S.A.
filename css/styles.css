@@ -893,19 +893,20 @@ div.contacto a:hover {
 }
 
 .contenido .tt2 {
-	display: flex;
-	flex-direction: row;
+	display: block;
+	flex-direction: column;
 	flex-wrap: wrap;
 	/*text-align: center;*/
 	/*justify-content: stretch;*/
 	/*text-align: center;*/
-	justify-content: center;
+	/*justify-content: center;*/
 	margin: 0;
-	/*width: 100%;*/
+	width: 50%;
 	padding: 5px;
 	grid-row: 2 / 3;
 	grid-column: 1 / 2;
 	font-size: small;
+	line-height: 20px;
 }
 
 .contenido .tt3 {
@@ -915,11 +916,12 @@ div.contacto a:hover {
 	text-align-last: center;
 	padding: 5px;
 	margin: 0;
-	/*width: 80%;*/
+	width: 50%;
 	/*height: 100%;*/
 	grid-column: 2 / 3;
 	grid-row: 2;
-	font-size: small
+	font-size: small;
+	line-height: 20px;
 }
 
 .valores {
