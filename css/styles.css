@@ -836,8 +836,8 @@ div.contacto a:hover {
 	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
 	user-select: none;
 	margin: 1px;
-	width: 100%;
-	max-width: 2000px;
+	width: 90%;
+	/*max-width: 2000px;*/
 	/*columns: 3;*/
 	height: fit-content;
 	margin: 0 auto;
@@ -850,7 +850,7 @@ div.contacto a:hover {
 	box-sizing: content-box;
 	grid-gap: 0;
 	text-align: center;
-	align-items: flex-start;
+	/*align-items: flex-start;*/
 	columns: 3;
 }
 
@@ -921,10 +921,10 @@ div.contacto a:hover {
 }
 
 
-.contenido .tt1 {
+.cont1 .tt1 {
 	flex-wrap: wrap;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	text-align: justify;
 	justify-content: center;
 	text-align: center;
@@ -936,7 +936,7 @@ div.contacto a:hover {
 	font-size: small
 }
 
-.contenido .tt2 {
+.cont1 .tt2 {
 	display: block;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -945,27 +945,31 @@ div.contacto a:hover {
 	/*text-align: center;*/
 	/*justify-content: center;*/
 	margin: 0;
-	width: 50%;
+	/*width: 50%;*/
 	padding: 5px;
 	grid-row: 2 / 3;
-	grid-column: 1 / 2;
+	grid-column: 1;
 	font-size: small;
-	line-height: 20px;
+	/*line-height: 20px;*/
+	grid-column-gap: 10px;
+	padding: 10px;
 }
 
-.contenido .tt3 {
+.cont1 .tt3 {
 	display: block;
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align-last: center;
 	padding: 5px;
 	margin: 0;
-	width: 50%;
+	/*width: 50%;*/
 	/*height: 100%;*/
-	grid-column: 2 / 3;
+	grid-column: 2;
 	grid-row: 2;
 	font-size: small;
-	line-height: 20px;
+	/*line-height: 20px;*/
+	grid-column-gap: 10px;
+	padding: 10px;
 }
 
 .valores {
