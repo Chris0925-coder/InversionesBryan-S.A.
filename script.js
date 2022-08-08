@@ -174,6 +174,15 @@ console.log(contarCartas("A"));
 
 // .removeChild
 
+<!-- Google tag (gtag.js) -->
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZDGVYM429H');
+
+
 let navToggle = document.querySelector(".navbar-toggler");
 let navLink = document.querySelector(".navbar-nav");
 
