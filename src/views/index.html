@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title><%= title %></title>
+
+	<%-include('partials/head.html')%>
+
+</head>
+<body>
+
+  <%-include('partials/navigation.html')%>
+
+
+
+	<section class="container-fluid">
+  		<img id="imagen2">
+	</section>
+
+  <hr>
+
+	<section class="container">
+    <div class="cont1">
+      <div class="contenido">
+            <div class="tt1">
+              <p class="text1"><b>MISIÓN</b></p>
+              <p>Somos una empresa dedicada a la construcción, especialmente en proyectos residenciales. Nuestra misión es garantizar un servicio de calidad a nuestros clientes, cumpliendo con los tiempos establecidos, y ofrecer estabilidad laboral a nuestro equipo de trabajo.</p>     
+            </div>
+            <div class="tt2"> 
+            <p class="text1"><b>VISIÓN</b></p>        
+              <p>Ser una empresa reconocida por nuestro compromiso y cumplimiento hacia nuestros clientes y colaboradores.</p>
+            </div>
+             <div class="tt3">     <!-- col-xs12-s12  -->
+              <p class="text1"><b>VALORES</b></p>
+              <ul class="valores">
+                <li>Compromiso</li>
+                <li>Eficiencia</li>
+                <li>Calidad</li>
+                <li>Seguridad</li>
+                <li>Responsabilidad social</li>
+                <li>Trabajo en equipo</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </section>
+
+  <center><h1>Proyectos</h1></center>
+    <span class="linea"></span>
+
+    <section class="container">
+        <div class="galeria">
+
+        <div class="photos"><span class="row"><h3>Proyecto Brisas de Arraíjan</h3>
+
+        <a href="#image5"><img src="/img/pisosymallas.jpg" width="300"></a>
+
+        <a href="#image6"><img src="/img/pbrisas.jpg"  alt="BrisasArraijan" width="300"></a>
+
+        <a href="#image7"><img src="/img/Lasnaves.jpg"  alt="ProyectoBrisasArraijan" width="300"></a></span></div>
+   
+        <div class="photos"><span class="row"><h3>Construcción en Zona Rural</h3>
+        <a href="#image8"><img src="/img/casap1.jpg"  width="300" alt="casarural"></a>
+
+        <a href="#image9"><img src="/img/casap2.jpg"  width="300" alt="casarural"></a>
+
+        <a href="#image10"><img src="/img/casap3.jpg"  width="300" alt="casarural"></a></span></div>
+        
+        <div class="photos"><span class="row"><h3>Zona de difícil acceso</h3>
+         
+          <a href="#image1"><img src="/img/Mejorandoelcampo.jpg" src="/img/Mejorandocaminos.jpg" alt="CaminoRural" width="300"></a>
+  
+          <a href="#image2"><img src="/img/Mejorandocaminos.jpg" alt="CaminoRural" width="300"></a>
+  
+          <a href="#image3"><img src="/img/camino.jpg"  alt="camino" width="300"  height="400"></a></span></div>
+          </div>
+    </section>  
+
+    <article class="light-box" id="image1">
+      <a href="#image10" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/Mejorandoelcampo.jpg" width="300">
+      <a href="#image2" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image2">
+      <a href="#image1" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/Mejorandocaminos.jpg" width="300">
+      <a href="#image3" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image3">
+      <a href="#image2" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/camino.jpg" width="300">
+      <a href="#image4" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <!-- <article class="light-box" id="image4">
+      <a href="#image3" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/ProyectoBrisas.jpg" width="300">
+      <a href="#image5" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article> -->
+
+    <article class="light-box" id="image5">
+      <a href="#image4" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/pisosymallas.jpg" width="300">
+      <a href="#image6" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image6">
+      <a href="#image5" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/pbrisas.jpg" width="300">
+      <a href="#image7" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image7">
+      <a href="#image6" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/Lasnaves.jpg" width="300">
+      <a href="#image8" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image8">
+      <a href="#image7" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/casap1.jpg" width="300">
+      <a href="#image9" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image9">
+      <a href="#image8" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/casap2.jpg" width="300">
+      <a href="#image10" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+    <article class="light-box" id="image10">
+      <a href="#image9" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
+      <img src="/img/casap3.jpg" width="300">
+      <a href="#image1" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
+      <a href="#" class="close">X</a>  
+    </article>
+
+  <%-include('partials/footer.html')%>
+	
+</body>
+</html>
