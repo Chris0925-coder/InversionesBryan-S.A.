@@ -89,7 +89,7 @@ function displayMessage() {
 	panel.appendChild(closeBtn);
 
 	closeBtn.addEventListener('click',() => panel.parentNode.removeChild(panel));
-*/
+}*/
 /*	var conteo = 0;
 
 	function contarCartas(carta) {
@@ -174,29 +174,46 @@ console.log(contarCartas("A"));
 
 // .removeChild
 
-<!-- Google tag (gtag.js) -->
+//   window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZDGVYM429H');
+//   gtag('config', 'G-ZDGVYM429H');
 
 
 let navToggle = document.querySelector(".navbar-toggler");
 let navLink = document.querySelector(".navbar-nav");
 
 navToggle.addEventListener("click", () => {
-    navLink.classList.toggle("navbar-nav_visible") 
+    navLink.classList.toggle("navbar-nav_visible")
+
 });
 
-let comment = document.querySelector(".btn")
+// let comment = document.querySelector(".btn"); 
+// let ff = document.querySelector("form-control"); 
 
-comment.addEventListener("click", () => {
 
-   	alert("¡Gracias!, su comentario ha sido enviado.")
-   }
-   	);
+// comment.addEventListener("click", send);
+// ff.addEventListener(Function, send);
+// 	function send() {
+		// ff.addEventListener(Function)
+// 	if (ff === String) {
+// 	alert("¡Gracias!, su comentario ha sido enviado.")
+// }
+// 	else {
+// 		alert("Rellene las casillas en blanco")
+// 	}
+// };	
+	
+
+// function mSend () {
+//    if (form-control == String) ({
+// 	alert("¡Gracias!, su comentario ha sido enviado.")
+//    }
+// 	else: {
+// 	alert("Rellene el campo vacío")
+// })
+// };
 
 
 // function sendM() {
