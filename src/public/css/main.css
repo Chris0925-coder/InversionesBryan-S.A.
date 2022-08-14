@@ -1144,11 +1144,12 @@ div.contacto a:hover {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	text-align-last: center;
+	text-align: center;
 	padding: 5px;
-	margin: 0;
-	/*width: 50%;*/
-	/*height: 100%;*/
+	margin: 0 auto;
+	align-items: center;
+	padding-left: 0;
+	height: 100%;
 	/*grid-column: 2;*/
 	grid-row: 3;
 	font-size: small;
