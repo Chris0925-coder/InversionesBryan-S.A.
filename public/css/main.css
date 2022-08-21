@@ -588,34 +588,47 @@ div.contacto a:hover {
 }*/
 
 .galeria {
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(200, 200, 200, 0.1);
 	border-style: solid;
 	border-color: rgba(0, 0, 0, 0.3);
 	border-style: outset;
-	margin: 0 auto;
-	padding: 0;
-	display: grid;
+	/*border-width: thin;*/
+	/*margin: 0 auto;*/
+	/*padding: 0;*/
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
 	/*width: auto;*/
 	/*grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));	*/
 	height: fit-content;
-	margin: 5px auto;
-	grid-gap: 20px;
-	padding: 20px;
+	margin: 0 auto;
+	grid-gap: 10px;
+	padding: 5px;
 	overflow: hidden;
-	justify-content: space-around;
-	align-content: center;
+	/*justify-content: space-around;*/
+	/*align-content: space-around;*/
 	align-items: center;
-	align-content: stretch;
+	/*align-content: stretch;*/
 	box-sizing: border-box;
 	/*align-items: stretch;*/
-	/*width: 100%;*/
+	/*width: auto;*/
 	height: fit-content;
-	/*justify-items: space-evenly;*/
+	justify-items: space-between;
 	/*align-items: stretch;*/
-	/*align-content: space-around;*/
+	align-content: space-around;
 	/*gap: 90px;*/
+	text-align: center;
+	color: white;
+	text-shadow: 2px 4px grey;
+	/*font-size: small;*/
 }
 
+.galeria > h3 {
+	font-size: small;
+	text-shadow: white;
+	align-items: center;
+}
 /*.photos {
 	align-content: space-around;
 	justify-content: space-around;
@@ -631,23 +644,26 @@ div.contacto a:hover {
 
 .galeria > a {
 	display: inline-block;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	position: relative;
 	align-content: space-around;
 	justify-content: space-evenly;
 	position: relative;
-	overflow: hidden;
+	/*overflow: auto;*/
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-	justify-items: space-evenly;
+	margin: 5px;
+	padding: 5px;
+/*	justify-items: space-evenly;
 	align-content: space-between;
-	justify-content: space-between;
-	width: 100%;
-	height: fit-content;
-	height: auto;
+	justify-content: space-between;*/
+	/*width: 100%;*/
+	/*height: fit-content;*/
+	/*height: auto;*/
+	/*width: auto;*/
 	/*gap: 90px;*/
 	/*vertical-align: middle;*/
-	align-items: stretch;
+	/*align-items: flex-end;*/
 	/*width: 100%;*/
 }
 
@@ -666,13 +682,22 @@ div.contacto a:hover {
 }*/
 
 .photos {
-	display: flex;
-	flex-direction: row;
+	display: inline-block;
+	flex-direction: column;
 	position: relative;
 	align-content: space-between;
 	justify-items: space-evenly;
-	width: 100%;
+	width: auto;
+	margin: 0 auto;
 	justify-content: space-evenly;
+	/*align-items: flex-end;*/
+	/*padding: 10px;*/
+}
+
+.photos i {
+	color: black;
+	text-decoration: none;
+	text-shadow: none;
 }
 
 /*.galeria > span {
@@ -689,12 +714,16 @@ div.contacto a:hover {
 
 .galeria img {
 	image-rendering: optimizeSpeed;
-	width: 250px;
-	height: 300px;
-	margin: 10px;
+	width: 150px;
+	height: 200px;
+	margin: 5px;
+	position: relative;
 	object-fit: cover;
 	transition: transform 0.5s;
-	max-width: 100%;
+	/*width: 100%;*/
+	/*max-width: 100%;*/
+	padding: 10px;
+	/*align-items: flex-end;*/
 }
 
 .galeria span {
@@ -1144,11 +1173,12 @@ div.contacto a:hover {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	text-align-last: center;
+	text-align: center;
 	padding: 5px;
-	margin: 0;
-	/*width: 50%;*/
-	/*height: 100%;*/
+	margin: 0 auto;
+	align-items: center;
+	padding-left: 0;
+	height: 100%;
 	/*grid-column: 2;*/
 	grid-row: 3;
 	font-size: small;
@@ -1158,16 +1188,16 @@ div.contacto a:hover {
 }
 
 .valores {
-	display: block;
+	display: flex;
 	flex-direction: column;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto;
 	padding-left: 0;
 	/*width: 80%;*/
-	columns: 2;
+	/*columns: 2;*/
 	justify-content: center;
 	padding: 0;
 	margin: 0 auto;
-	grid-gap: 10px;
+	grid-gap: 2px;
 	padding-left: 0;
 	width: 100%;
 }
@@ -1176,7 +1206,7 @@ div.contacto a:hover {
 	padding-left: 0;
 	list-style: none;
 	position: relative;
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	flex-wrap: wrap;
 	padding-top: 0;
@@ -1212,4 +1242,35 @@ div.contacto a:hover {
 	padding: 0;
 }*/
 
+}
+
+.bibi a > i {
+	margin: 5px;
+	gap: 10px;
+	color: dimgray;
+}
+
+
+.cuerpo {
+	display: inline-flex;
+	position: relative;
+	width: 97%;
+	margin: 0 auto;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	padding: 10px;
+	text-align: center;
+}
+
+.ladoA {
+	display: block;
+	position: relative;
+	width: 30%;
+}
+
+.ladoB {
+	display: block;
+	position: relative;
+	width: 70%;
 }

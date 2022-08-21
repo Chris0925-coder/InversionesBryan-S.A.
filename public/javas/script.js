@@ -25,7 +25,7 @@ navToggle.addEventListener("click", () => {
 // let nav = document.getElementById("navjava");
 // nav.innerHTML("ind1");
 
-let getImport = document.querySelector('link[rel=import]');
-let getContent = getImport.import.querySelector('#ind1');
-document.body.appendChild(document.importNode(getContent, true));
+// let getImport = document.querySelector('link[rel=import]');
+// let getContent = getImport.import.querySelector('#ind1');
+// document.body.appendChild(document.importNode(getContent, true));
 
