@@ -230,7 +230,7 @@ html {
 	padding-left: 10px;
 	background-size: cover;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	background-color: rgba(250, 250, 250, 0.3);
 	flex-direction: row;
 	position: relative;
@@ -315,13 +315,14 @@ li a.active {
 
 .imagen {
 	image-rendering: optimizeSpeed;  
-	height: 300px;
+	height: 400px;
 	width: 99%;
 	background-image: url("../img/bannerdef.png");
 	background-size: cover;
 	background-position: center;
-	box-sizing: border-box;
-	margin: auto;
+	line-height: normal;
+	box-sizing: content-box;
+	/*margin: auto;*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -330,9 +331,14 @@ li a.active {
 	background-repeat: no-repeat;
 	color: white;
 	justify-content: space-between;
-	margin-bottom: 0;
+	margin: 0 auto;
+	position: relative;
+	gap: 50px;
+	/*padding: 30px;*/
+
+	/*margin-bottom: 0;
 	padding: 0;
-	padding-bottom: 0;
+	padding-bottom: 0;*/
 }
 
 #logo {
@@ -600,7 +606,7 @@ div.contacto a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	/*width: auto;*/
-	/*grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));	*/
+	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
 	height: fit-content;
 	margin: 0 auto;
 	grid-gap: 10px;
@@ -813,7 +819,7 @@ div.contacto a:hover {
 /*	position: relative;
 	flex-direction: row;*/
 	text-align: center;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	user-select: none;
 	margin: 0 auto;
 	width: 90%;
@@ -858,7 +864,7 @@ div.contacto a:hover {
 	/*vertical-align: baseline;*/
 	/*columns: 3;*/
 	/*width: 100%;*/
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
 }
 
 .cont1 .contenido {
@@ -897,7 +903,7 @@ div.contacto a:hover {
 	width: 70%;
 	max-width: 90%;
 	/*columns: 3;*/
-	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	grid-gap: 10px;
 	column-gap: 5px;
 }
