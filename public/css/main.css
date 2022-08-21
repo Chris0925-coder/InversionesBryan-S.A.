@@ -639,14 +639,14 @@ div.contacto a:hover {
 	align-content: space-around;
 	/*gap: 90px;*/
 	text-align: center;
-	color: white;
-	text-shadow: 2px 4px grey;
+	color: darkgoldenrod;
+	/*text-shadow: 2px 4px grey;*/
 	/*font-size: small;*/
 }
 
 .galeria > h3 {
 	font-size: small;
-	text-shadow: white;
+	/*text-shadow: white;*/
 	align-items: center;
 }
 /*.photos {
