@@ -199,6 +199,8 @@ html {
 	line-height: 60px;
 	cursor: pointer;
 	/*display: none;*/
+	position: relative;
+	margin: 0 auto;
 }
 
 .navbar-nav {
@@ -206,16 +208,27 @@ html {
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
-	align-content: flex-start;
+	justify-items: center;
+	justify-content: center;
+	/*vertical-align: middle;*/
+	/*align-content: flex-start;
 	justify-content: flex-start;
 	justify-items: flex-start;
 	align-content: flex-start;
-	align-items: flex-start;
-	width: 100%;
+	align-items: flex-start;*/
+	width: auto;
+	margin: 0 auto;
 }
 
 .container-fluid {
 	width: auto;
+	margin: 0 auto;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	vertical-align: middle;
+	/*display: inline-block;*/
 }
 
 
@@ -240,6 +253,7 @@ html {
 	justify-items: center;
 	align-content: center;
 	justify-content: center;
+	vertical-align: middle;
 	width: 100%;
 	}
 
@@ -819,7 +833,7 @@ div.contacto a:hover {
 /*	position: relative;
 	flex-direction: row;*/
 	text-align: center;
-	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
 	user-select: none;
 	margin: 0 auto;
 	width: 90%;
@@ -1052,33 +1066,50 @@ div.contacto a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
-	align-content: flex-start;
+	/*align-content: flex-start;*/
 	justify-content: center;
 	justify-items: center;
-	align-content: center;
-	align-items: flex-start;
-	width: 100%;
-}
-
-.container-fluid > button {
-	width: auto;
-	justify-items: center;
-	justify-content: center;
 	align-content: center;
 	align-items: center;
+	/*align-items: flex-start;*/
+	width: auto;
 	margin: 0 auto;
 }
 
-.navbar-collapse {
+.container-fluid {
+	display: block;
+	flex-direction: row;
 	position: relative;
-	display: flex;
+	width: 100%;
+	height: fit-content;
+	align-content: center;
+	align-items: center;
+	alignment-baseline: auto;
+}
+
+/*.container-fluid button */
+	/*display: flex;*/
+	/*flex-direction: row;*/
+	/*width: auto;
+	justify-items: center;
+	justify-content: center;
+	align-content: center;
+	align-items: center;*/
+	/*vertical-align: middle;*/
+/*
+	margin: 0 auto;
+}*/
+
+.navbar-collapse {
+	/*position: relative;*/
+	display: inline-block;
 	flex-direction: row;
 	flex-wrap: wrap;
 	/*align-items: center;
 	/*object-position: right;*/
-	/*width: 100%;*/
+	width: 100%;
 	height: fit-content;
-	margin: 0 auto;
+	/*margin: 0 auto;*/
 	justify-content: center;
 	align-content: center;
 	justify-content: center;
@@ -1094,15 +1125,15 @@ div.contacto a:hover {
 	margin: 0 auto;
 	padding: 0;
 	align-content: center;
-	/*grid-template-rows: auto auto auto;*/
+	grid-template-rows: auto auto auto;
 }
 
 .cont1 .contenido {
-	/*grid-column: span 3;*/
+	grid-column: span 3;
 	padding: 5px;
 	align-content: center;
 	justify-content: center;
-	/*align-items: flex-start;*/
+	align-items: flex-start;
 	justify-items: center;
 	text-align: center;
 	display: flex;
@@ -1110,7 +1141,7 @@ div.contacto a:hover {
 	grid-gap: 0;
 	vertical-align: middle;
 	margin-bottom: 30px;
-	/*grid-template-rows: auto auto auto;*/
+	grid-template-rows: auto auto auto;
 	/*columns: 3;*/
 	grid-gap: 10px;
 }
