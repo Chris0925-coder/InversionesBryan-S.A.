@@ -230,7 +230,7 @@ html {
 	padding-left: 10px;
 	background-size: cover;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	background-color: rgba(250, 250, 250, 0.3);
 	flex-direction: row;
 	position: relative;
@@ -600,7 +600,7 @@ div.contacto a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	/*width: auto;*/
-	/*grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));	*/
+	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
 	height: fit-content;
 	margin: 0 auto;
 	grid-gap: 10px;
@@ -813,7 +813,7 @@ div.contacto a:hover {
 /*	position: relative;
 	flex-direction: row;*/
 	text-align: center;
-	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	user-select: none;
 	margin: 0 auto;
 	width: 90%;
@@ -858,7 +858,7 @@ div.contacto a:hover {
 	/*vertical-align: baseline;*/
 	/*columns: 3;*/
 	/*width: 100%;*/
-	grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
 }
 
 .cont1 .contenido {
@@ -897,7 +897,7 @@ div.contacto a:hover {
 	width: 70%;
 	max-width: 90%;
 	/*columns: 3;*/
-	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
 	grid-gap: 10px;
 	column-gap: 5px;
 }
