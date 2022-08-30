@@ -204,7 +204,7 @@ html {
 }
 
 .navbar-nav {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
@@ -216,8 +216,12 @@ html {
 	justify-items: flex-start;
 	align-content: flex-start;
 	align-items: flex-start;*/
-	width: auto;
+	width: 100%;
+	height: fit-content;
 	margin: 0 auto;
+	align-content: center;
+	align-items: center;
+	font-size: small;
 }
 
 .container-fluid {
@@ -243,11 +247,11 @@ html {
 	padding-left: 10px;
 	background-size: cover;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(530px, 3fr));
+	grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
 	background-color: rgba(250, 250, 250, 0.3);
 	flex-direction: row;
 	position: relative;
-	height: fit-content;
+	height: fit-content;s
 	margin: 0 auto;
 	padding: 0;
 	justify-items: center;
@@ -293,10 +297,11 @@ html {
 	padding: 5px;
 	border-radius: 5px;
 	height: auto;
+	width: 100px;
 	position: relative;
 	margin: 2px;
-	display: flex;
-	flex-direction: row;
+	display: block;
+	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: center;
 }
@@ -317,8 +322,8 @@ html {
 
 li a.active {
 	background-color: rgba(200, 200, 200, 0.1);
-	border-radius: 10px;
-    background-color: rgba(200, 200, 200, 0.6);
+	border-radius: 5px;
+    background-color: rgba(200, 200, 200, 0.3);
     color: rgba(200, 200, 200, 0.9);;
 }
 
@@ -1070,8 +1075,8 @@ div.contacto a:hover {
 @media (max-width: 768px) {
 
 .navbar-nav {
-	display: flex;
-	flex-direction: row;
+	/*display: inline-block;*/
+	/*flex-direction: row;*/
 	flex-wrap: wrap;
 	position: relative;
 	/*align-content: flex-start;*/
@@ -1080,19 +1085,21 @@ div.contacto a:hover {
 	align-content: center;
 	align-items: center;
 	/*align-items: flex-start;*/
-	width: auto;
+	width: 100%;
+	height: fit-content;
 	margin: 0 auto;
 }
 
 .container-fluid {
-	display: block;
+	display: inline-flex;
 	flex-direction: row;
 	position: relative;
-	width: 100%;
+	width: auto;
 	height: fit-content;
 	align-content: center;
 	align-items: center;
-	alignment-baseline: auto;
+	/*alignment-baseline: auto;*/
+	margin: 0 auto;
 }
 
 /*.container-fluid button */
@@ -1109,20 +1116,19 @@ div.contacto a:hover {
 }*/
 
 .navbar-collapse {
-	/*position: relative;*/
-	display: inline-block;
+	position: relative;
+	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/*align-items: center;
+	align-items: center;
 	/*object-position: right;*/
 	width: 100%;
 	height: fit-content;
-	/*margin: 0 auto;*/
-	justify-content: center;
+	margin: 0 auto;
+	/*justify-content: center;
 	align-content: center;
 	justify-content: center;
-	justify-items: center;
-
+	justify-items: center;*/
 }
 
 .cont1 {
@@ -1275,17 +1281,6 @@ div.contacto a:hover {
 	width: 100%;
 	/*grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));*/
 }
-
-/*.container {
-	display: inline-block;
-	flex-direction: column;
-	flex-wrap: wrap;
-	position: relative;
-	width: 100%;
-	height: fit-content;
-	margin: 0 auto;
-	padding: 0;
-}*/
 
 }
 
