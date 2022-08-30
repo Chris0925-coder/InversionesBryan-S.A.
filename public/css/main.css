@@ -1090,18 +1090,18 @@ div.contacto a:hover {
 	margin: 0 auto;
 }
 
-.container-fluid {
+/*.container-fluid {
 	display: inline-flex;
-	flex-direction: row;
+	flex-direction: column;
 	position: relative;
-	width: auto;
+	width: 100%;
 	height: fit-content;
 	align-content: center;
 	align-items: center;
-	/*alignment-baseline: auto;*/
+	alignment-baseline: auto;
 	margin: 0 auto;
 }
-
+*/
 /*.container-fluid button */
 	/*display: flex;*/
 	/*flex-direction: row;*/
