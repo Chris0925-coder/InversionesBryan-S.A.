@@ -195,16 +195,26 @@ html {
 	background: none;
 	border: none;
 	font-size: 30px;
-	padding: 0 20px;
-	line-height: 60px;
+	padding: 0;
+	/*line-height: 60px;*/
 	cursor: pointer;
-	/*display: none;*/
+	display: flex;
 	position: relative;
-	margin: 0 auto;
+	margin: 0;
+	justify-self: flex-end;
+	align-self: flex-end;
+	height: auto;
+	width: auto;
 }
 
+.navbar-toggler i:hover {
+	color: goldenrod;
+}
+
+
+
 .navbar-nav {
-	display: inline-flex;
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
@@ -216,22 +226,24 @@ html {
 	justify-items: flex-start;
 	align-content: flex-start;
 	align-items: flex-start;*/
-	width: 100%;
-	height: fit-content;
-	margin: 0 auto;
-	align-content: center;
+	width: auto;
+	height: auto;
+	margin: 0;
+	/*align-content: center;*/
 	align-items: center;
+	/*width: auto;*/
 	font-size: small;
+
 }
 
 .container-fluid {
-	width: auto;
+	/*width: 100%;*/
 	margin: 0 auto;
-	align-content: center;
+	/*align-content: center;
 	justify-content: center;
 	justify-items: center;
-	align-items: center;
-	vertical-align: middle;
+	align-items: center;*/
+	/*vertical-align: middle;*/
 	/*display: inline-block;*/
 }
 
@@ -241,25 +253,55 @@ html {
 
 .navbar {
 	box-sizing: border-box;
-	border-style: double;
+	border-style: groove;
 	border-color: rgba(184, 134, 11, 0.5);
-	padding-right: 10px;
-	padding-left: 10px;
+	/*padding-right: 10px;
+	padding-left: 10px;*/
 	background-size: cover;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
-	background-color: rgba(250, 250, 250, 0.3);
+	/*background-color: rgba(250, 250, 250, 0.3);*/
 	flex-direction: row;
 	position: relative;
-	height: fit-content;s
+	height: fit-content;
 	margin: 0 auto;
 	padding: 0;
-	justify-items: center;
-	align-content: center;
-	justify-content: center;
-	vertical-align: middle;
+	justify-items: space-between;
+	align-content: space-between;
+	justify-content: space-between;
+	/*align-items: stretch;*/
+	object-position: center;
+	/*vertical-align: middle;*/
 	width: 100%;
-	}
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	/*object-position: right;*/
+	align-content: flex-end;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.navbar-brand {
+	display: flex;
+	position: relative;
+	text-align: right;
+	color: white;
+	/*align-self: stretch;*/
+	justify-self: flex-end;
+	margin: 0 auto;
+	width: auto;
+	/*pointer-events: none;*/
+	user-select: none;
+	cursor: unset;
+}
 
 .flex-container {
 	display: flex;
@@ -343,7 +385,7 @@ li a.active {
 	box-sizing: content-box;
 	/*margin: auto;*/
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	align-content: space-between;
 	object-fit: cover;
@@ -514,7 +556,7 @@ div.contacto a:hover {
 }
 
 .socialnav {
-	display: inline-flex;
+	display: inline-block;
 	position: relative;
 	align-content: center;
 	justify-items: center;
@@ -527,7 +569,10 @@ div.contacto a:hover {
 	/*color: white;*/
 	padding: 5px;
 	margin: 0 2px;
-	/*width: 100%;*/
+	width: 20%;
+	height: auto;
+	box-sizing: border-box;
+	align-content: center;
 
 }
 
@@ -1074,20 +1119,59 @@ div.contacto a:hover {
 
 @media (max-width: 768px) {
 
-.navbar-nav {
-	/*display: inline-block;*/
-	/*flex-direction: row;*/
+.navbar-toggler i.active {
+	color: grey;
+}
+
+.navbar {
+	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
+	justify-content: space-between;
+	align-content: space-between;
+	justify-items: space-evenly;
+	align-items: center;
 	/*align-content: flex-start;*/
 	justify-content: center;
 	justify-items: center;
-	align-content: center;
+	align-content: flex-end;
 	align-items: center;
 	/*align-items: flex-start;*/
-	width: 100%;
-	height: fit-content;
+	width: auto;
+	height: auto;
 	margin: 0 auto;
+	align-self: center;
+	justify-self: center;
+	/*justify-self: center;*/
+	align-self: center;
+}
+
+.socialnav {
+	width: auto;
+}
+
+.navbar-brand {
+	text-align: right;
+	width: auto;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+	align-content: flex-end;
+	/*text-align: right;*/
+	margin: 0 auto;
+	width: auto;
+	height: fit-content;
+	justify-content: flex-end;
+	justify-items: flex-end;
+	align-content: flex-end;
+	align-items: center;
+	justify-self: center;
+	align-self: center;
 }
 
 /*.container-fluid {
@@ -1117,14 +1201,14 @@ div.contacto a:hover {
 
 .navbar-collapse {
 	position: relative;
-	display: inline-flex;
+	display: inline-block;
 	flex-direction: row;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 	align-items: center;
 	/*object-position: right;*/
-	width: 100%;
+	width: auto;
 	height: fit-content;
-	margin: 0 auto;
+	margin: 0;
 	/*justify-content: center;
 	align-content: center;
 	justify-content: center;
@@ -1285,22 +1369,25 @@ div.contacto a:hover {
 }
 
 .bibi a > i {
+	display: block;
 	margin: 5px;
 	gap: 10px;
 	color: white;
 }
 
 
-.cuerpo {
+#cuerpo {
 	display: inline-flex;
 	position: relative;
-	width: 97%;
-	margin: 0 auto;
+	width: 100%;
+	height: fit-content;
+	margin: 20px auto;
 	align-items: center;
 	align-content: center;
 	justify-content: center;
 	padding: 10px;
 	text-align: center;
+	max-width: 2900px;
 }
 
 .ladoA {
