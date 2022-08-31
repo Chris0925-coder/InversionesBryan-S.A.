@@ -288,7 +288,7 @@ html {
 	align-content: flex-end;
 	align-items: center;
 	justify-content: flex-end;
-	width: 100%;
+	width: 40%;
 	height: auto;
 	margin: 0 auto;
 }
@@ -576,7 +576,7 @@ div.contacto a:hover {
 	width: 20%;
 	height: auto;
 	box-sizing: border-box;
-	align-content: center;
+	align-content: left;
 
 }
 
