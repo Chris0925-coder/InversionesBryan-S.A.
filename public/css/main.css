@@ -870,19 +870,20 @@ div.contacto a:hover {
 	background-position: center;
 }
 
-.container {
-/*	display: flex;
+/*.container {*/
+	/*display: flex;
 	position: relative;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
 	justify-items: center;
-	position: relative;*/
+	position: relative;
 	width: 100%;
-	/*height: auto;	*/
-	margin: 0 auto;
-	padding: 0;
-}
+	height: auto;	
+	margin: 0 20px;
+	padding: 0;*/
+	/*box-shadow: 0 0 0 0 lavender;*/
+/*}*/
 
 .cont1 {
 	display: grid;
@@ -1396,18 +1397,21 @@ div.contacto a:hover {
 }
 
 
-#cuerpo {
-	display: inline-flex;
+.cuerpo {
+	display: flex;
 	position: relative;
-	width: 100%;
-	height: fit-content;
+	/*width: auto;*/
+	height: auto;
 	margin: 20px auto;
-	align-items: center;
+	align-items: top;
 	align-content: center;
 	justify-content: center;
+	justify-items: center;
 	padding: 10px;
 	text-align: center;
+	width: 100%;
 	max-width: 2900px;
+	/*background-color: grey;*/
 }
 
 .ladoA {
