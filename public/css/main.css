@@ -1413,7 +1413,7 @@ div.contacto a:hover {
 	max-width: 2900px;
 	justify-content: space-between;
 	justify-items: space-between;
-	vertical-align: baseline;
+	/*vertical-align: baseline;*/
 	/*background-color: grey;*/
 }
 
@@ -1426,7 +1426,7 @@ div.contacto a:hover {
 .ladoB {
 	display: block;
 	position: relative;
-	width: 60%;
+	width: 70%;
 }
 
 .wordColor {
