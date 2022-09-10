@@ -1138,7 +1138,7 @@ div.contacto a:hover {
 }
 
 .navbar-brand {
-	text-align: right;
+	/*text-align: right;*/
 	/*width: auto;*/
 }
 
@@ -1160,14 +1160,14 @@ div.contacto a:hover {
 	align-self: right;*/
 }
 
-.navbar-nav {
+/*.navbar-nav {
 	display: flex;
 	position: relative;
 	flex-direction: row;
 	margin: 0 auto;
 	width: auto;
 	height: auto;
-}
+}*/
 
 /*.navbar-nav > li {
 	display: flex;
