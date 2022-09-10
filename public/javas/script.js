@@ -29,3 +29,4 @@ navToggle.addEventListener("click", () => {
 // let getContent = getImport.import.querySelector('#ind1');
 // document.body.appendChild(document.importNode(getContent, true));
 
+// import __ from '../../partials/navigation.html';
