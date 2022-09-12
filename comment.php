@@ -1,5 +1,5 @@
 <?php
-$email = $POST['email'];
+$email = $_POST['email'];
 $control = $_POST['control'];
 
 $header = 'From ' . $email . " \r\n";
