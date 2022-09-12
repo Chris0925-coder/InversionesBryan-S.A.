@@ -16,5 +16,5 @@ $asunto = 'Comentario de la Webpage';
 
 mail($para, $asunto, utf8_decode($control), $header);
 
-header("Location:contacto.html");
+header("Location: contacto.html");
 ?>
