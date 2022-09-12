@@ -3,7 +3,6 @@ let navLink = document.querySelector(".navbar-nav");
 
 navToggle.addEventListener("click", () => {
     navLink.classList.toggle("navbar-nav_visible")
-
 });
 
 // let comment = document.querySelector(".btn"); 
@@ -30,3 +29,37 @@ navToggle.addEventListener("click", () => {
 // document.body.appendChild(document.importNode(getContent, true));
 
 // import __ from '../../partials/navigation.html';
+
+const send = document.querySelector(".btn");
+document.querySelector(".form-control").focus();
+
+
+// function message() {
+    
+//     if (mail !== "") {
+//         alert("¡GRACIAS POR SU COMENTARIO!")
+//     } else {
+//         alert("Rellene los espacios en blanco")
+//     }
+// };
+
+// const meg = mail.addEventListener("keywords", () => {
+//     if (mail !== String) {
+//         return alert("¡GRACIAS POR SU COMENTARIO!")
+//     } else {
+//         alert("Rellene los espacios en blanco")
+//     }
+// });
+// console.log(mail);
+
+send.addEventListener("click", () => {
+    mail = document.querySelector(".form-control").value;
+    // window.alert('¡GRACIAS POR SU COMENTARIO!');
+    // console.log(meg);
+    if (mail == "") {
+    alert("Rellene los espacios en blanco");
+} else {
+    alert("¡GRACIAS POR SU COMENTARIO!");
+}
+});
+

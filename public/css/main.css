@@ -1402,7 +1402,7 @@ div.contacto a:hover {
 
 
 .cuerpo {
-	display: flex;
+	display: inline-flex;
 	position: relative;
 	/*width: auto;*/
 	height: auto;

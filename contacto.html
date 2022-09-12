@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,9 +18,11 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
 
-  <script src="public/javas/script.js" defer></script>
+  <script defer src="public/javas/script.js"></script>
 
   <link rel="shortcut icon" href="public/img/logotipo.png" type="image/png">
+
+
 </head>
 <body>
 
@@ -96,15 +99,15 @@
               <h3 style="color: whitesmoke;">CONTACTO</h3>
             </div>
             <div class="card-body">
-              <form action="">
+              <form action="comment.php" method="post">
                 <div class="form-group">
-                  <input type="E-Mail" name="form-control" class="form-control" placeholder="Email" required>
+                  <input type="email" name="email" class="form-control" placeholder="Email" required>
                 </div>
               </form>
             <br>
-              <form action="">
+              <form action="comment.php" method="post">
                 <div class="form-group">
-                  <textarea class="form-control" name="form-control" placeholder="Comentarios" cols="30" rows="10" required></textarea>
+                  <textarea class="form-control" name="control"  placeholder="Comentarios" cols="30" rows="10" required></textarea>
                 </div>
               <br>
                 <div class="form-group">
