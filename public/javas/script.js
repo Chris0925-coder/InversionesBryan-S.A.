@@ -31,6 +31,7 @@ navToggle.addEventListener("click", () => {
 // import __ from '../../partials/navigation.html';
 
 const send = document.querySelector(".btn");
+// const coments = document.querySelector(".comentarios");
 document.querySelector(".form-control").focus();
 
 
@@ -60,6 +61,23 @@ send.addEventListener("click", () => {
     alert("Rellene los espacios en blanco");
 } else {
     alert("¡GRACIAS POR SU COMENTARIO!");
+    let addM = document.querySelector(".comentarios").innerHTML = `"<p>${mail}</p>"` + "<br>";
+    addM;    
+    // let addM = document.querySelector(".comentarios").innerHTML = `${mail}` + "<p>Hola</p>";
+    // addM;
 }
 });
 
+let mail = document.querySelector(".form-control").value;
+// let addM = document.querySelector(".comentarios").innerHTML;
+console.log(`"<p>${mail}</p>"` + "<br>");
+
+
+// console.log(addM);
+
+// function comments() {
+    // document.querySelector(".comentarios").innerHTML = `"<p>${mail}</p>"` + "<br>";
+
+// };
+
+// comments();

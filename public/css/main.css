@@ -176,18 +176,19 @@
 
 }*/
 
-* {
+/** {
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 html {
 	/*width: auto;*/
-	height: 100%;
+	height: 100vh;
 	/*box-sizing: border-box;*/
-	margin: 0;
-	padding: 0;
+	/*margin: 0;
+	padding: 0;*/
 }
+
 
 
 .navbar-toggler {
@@ -218,22 +219,22 @@ html {
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
-	justify-items: center;
-	justify-content: center;
+/*	justify-items: center;*/
+/*	justify-content: center;*/
 	/*vertical-align: middle;*/
 	/*align-content: flex-start;
 	justify-content: flex-start;
 	justify-items: flex-start;
 	align-content: flex-start;
 	align-items: flex-start;*/
-	width: 100%;
+	width: auto;
 	height: auto;
-	margin: 0;
+	margin: 0 auto;
 	/*align-content: center;*/
-	align-items: center;
-	/*width: auto;*/
+/*	align-items: center;*/
+/*	width: auto;*/
 	font-size: small;
-
+	background-size: cover;
 }
 
 .container-fluid {
@@ -252,39 +253,42 @@ html {
 
 
 .navbar {
-	box-sizing: border-box;
+	box-sizing: content-box;
 	border-style: groove;
 	border-color: rgba(184, 134, 11, 0.5);
 	/*padding-right: 10px;
 	padding-left: 10px;*/
 	background-size: cover;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(530px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));
 	/*background-color: rgba(250, 250, 250, 0.3);*/
 	flex-direction: row;
 	position: relative;
 	height: fit-content;
-	align-content: center;
-	justify-content: center;
+	align-content: space-between;
+	justify-content: space-around;
 	width: 100%;
-	justify-items: center;
-	margin: 0;
+/*	justify-items: center;*/
+	margin: 0 auto;
 	padding: 2px;
 }
 
-.menu {
+/*.menu {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
-	/*object-position: right;*/
 	align-content: flex-end;
 	align-items: center;
+	justify-content: flex-end;
+	object-position: right;
 	justify-content: flex-end;
 	width: 100%;
 	height: auto;
 	margin: 0 auto;
-}
+}*/
+
+
 
 .navbar-brand {
 	display: flex;
@@ -325,40 +329,49 @@ html {
 	align-content: center;
 }
 
+
+
+
+
 .nav-item {
 	border-style: solid;
 	text-decoration-line: none;
 	border-width: thin;
 	border-color: dimgrey;
-	background: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 	background-position: center;
 	background-size: cover;
-	padding: 5px;
+/*	padding: 5px;*/
 	border-radius: 5px;
 	height: auto;
-	width: auto;
+	width: 100%;
 	position: relative;
-	margin: 2px;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+
+	flex-flow: row wrap;
 	text-align: center;
+	box-sizing: border-box;
 }
 
 .nav-link {
-	flex-basis: auto;
+/*	flex-basis: auto;*/
 	text-decoration: none;
-	padding: 4px;
+/*	padding: 4px;*/
 	font-size: small;
-	background-position: center;
-	background-size: contain;
+/*	background: center;*/
+/*	background-position: center;*/
+	background-size: cover;
 	width: 100%;
 	margin: 0 auto;
-	box-sizing: content-box;
+/*	box-sizing: content-box;*/
 	color: rgba(20, 2, 3, 0.4);
-	justify-items: space-between;
+/*	justify-items: space-between;*/
 	color: grey;
+/*	box-sizing: border-box;*/
 }
+
+
 
 li a.active {
 	background-color: rgba(200, 200, 200, 0.1);
@@ -404,24 +417,23 @@ li a.active {
 	image-rendering: optimizeSpeed;
 	background: rgba(200, 200, 200, 0.1);
 	display: flex;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
+	object-fit: cover;
 	height: 100px;
 	width: 190px;
 	background-image: url('../img/logo2.png');
-	float: right;
+/*	float: right;*/
+	z-index: 1;
 }
 
 body {
 	background: #ADA996;  /* fallback for old browsers 
 background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Roboto', sans-serif;
-	
-	width: auto;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+	font-family: 'Roboto', serif;
+	height: 100vh;
+/*	margin: 0 auto;*/
 }
  /*"Arial",*/
 .name1 {
@@ -496,7 +508,7 @@ h4 {
 .contacto {
 	border-style: solid;
 	border-style: outset;
-	font-style: oblique;
+/*	font-style: oblique;*/
 	text-align: right;
 	background-color: rgba(0, 0, 0, 0.3);
 	background-position: center;
@@ -525,7 +537,7 @@ div.contacto a:hover {
 .social {
 	display: flex;
 	position: relative;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.8);
 	background-size: cover;
 	background-position: center;
 	border-style: solid;
@@ -659,9 +671,9 @@ div.contacto a:hover {
 
 .galeria {
 	background: rgba(200, 200, 200, 0.1);
-	border-style: solid;
+	/*border-style: solid;
 	border-color: rgba(0, 0, 0, 0.3);
-	border-style: outset;
+	border-style: outset;*/
 	/*border-width: thin;*/
 	/*margin: 0 auto;*/
 	/*padding: 0;*/
@@ -669,23 +681,23 @@ div.contacto a:hover {
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
-	/*width: auto;*/
+	width: 100%;
 	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
 	height: fit-content;
-	margin: 0 auto;
+	margin: 0;
 	grid-gap: 10px;
 	padding: 15px;
 	overflow: hidden;
-	/*justify-content: space-around;*/
-	/*align-content: space-around;*/
-	align-items: center;
+	justify-content: space-around;
+	align-content: space-around;
+/*	align-items: center;*/
 	/*align-content: stretch;*/
-	box-sizing: border-box;
-	/*align-items: stretch;*/
+	box-sizing: content-box;
+/*	align-items: stretch;*/
 	/*width: auto;*/
 	height: fit-content;
 	justify-items: space-between;
-	/*align-items: stretch;*/
+	align-items: stretch;
 	align-content: space-around;
 	/*gap: 90px;*/
 	text-align: center;
@@ -761,7 +773,9 @@ div.contacto a:hover {
 	margin: 0 auto;
 	justify-content: space-evenly;
 	/*align-items: flex-end;*/
-	/*padding: 10px;*/
+	padding: 10px;
+	box-shadow: 0 0 10px grey;
+	image-rendering: ;
 }
 
 .photos i:hover {
@@ -794,6 +808,7 @@ div.contacto a:hover {
 	/*width: 100%;*/
 	/*max-width: 100%;*/
 	padding: 10px;
+
 	/*align-items: flex-end;*/
 }
 
@@ -914,7 +929,7 @@ div.contacto a:hover {
 	padding: 5px;
 	align-content: center;
 	justify-content: center;
-	/*align-items: flex-start;*/
+/*	align-items: flex-start;*/
 	justify-items: center;
 	text-align: center;
 	display: grid;
@@ -954,10 +969,11 @@ div.contacto a:hover {
 
 
 .cuerpo .tt1 {
-	flex-wrap: wrap;
+	
 	display: flex;
 	flex-direction: column;
-	text-align: justify-all;
+	/*text-align: justify;*/
+	flex-wrap: wrap;
 	justify-content: center;
 	text-align: center;
 	padding: 5px;
@@ -970,7 +986,7 @@ div.contacto a:hover {
 	/*border-color: black;*/
 	/*border-style: solid;*/
 	box-shadow: 0 0 10px grey;
-
+	box-sizing: border-box;
 }
 
 .cuerpo .tt2 {
@@ -988,7 +1004,7 @@ div.contacto a:hover {
 	grid-column: 1;
 	font-size: small;
 	/*line-height: 20px;*/
-	grid-column-gap: 10px;
+	/*grid-column-gap: 10px;*/
 	padding: 10px;
 	color: dimgrey;
 	box-shadow: 0 0 10px grey;
@@ -998,8 +1014,8 @@ div.contacto a:hover {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	text-align-last: center;
-	padding: 5px;
+	/*text-align-last: center;*/
+	padding: 10px;
 	margin: 20px 0;
 	/*width: 50%;*/
 	/*height: 100%;*/
@@ -1007,8 +1023,9 @@ div.contacto a:hover {
 	grid-row: 2 / 3;
 	font-size: small;
 	/*line-height: 20px;*/
-	grid-column-gap: 5px;
-	padding: 10px;
+	/*grid-column-gap: 10px;*/
+	/*padding: 10px;*/
+	text-transform: uppercase;
 	color: dimgrey;
 	box-shadow: 0 0 10px grey;
 }
@@ -1098,6 +1115,76 @@ div.contacto a:hover {
 	padding: 0;
 }
 
+.boton {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	object-position: center;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.bibi a > i {
+	display: block;
+	margin: 5px;
+	gap: 10px;
+	color: white;
+}
+
+
+.cuerpo {
+	display: inline-flex;
+	position: relative;
+	/*width: auto;*/
+	height: auto;
+	margin: 80px auto;
+	align-items: stretch;
+	align-content: center;
+	/*justify-content: center;
+	justify-items: center;*/
+	padding: 10px;
+	text-align: center;
+	width: auto;
+	height: auto;
+	max-width: 2900px;
+	justify-content: space-between;
+	justify-items: space-between;
+	vertical-align: baseline;
+	/*background-color: grey;*/
+}
+
+.ladoA {
+	display: block;
+	position: relative;
+	width: 25%;
+	margin: 40px auto;
+/*	line-height: 25px;*/
+}
+
+.ladoB {
+	display: inline-flex;
+	flex-direction: column;
+	position: relative;
+
+	width: 100%;
+	margin: 0;
+	align-content: stretch;
+	align-items: stretch;
+	justify-content: space-between;
+
+}
+
+.wordColor {
+	color: black;
+}
+
+/*768px*/
+
 @media (max-width: 768px) {
 
 .navbar-toggler i.active {
@@ -1138,8 +1225,8 @@ div.contacto a:hover {
 }
 
 .menu {
-	display: inline-block;
-	flex-direction: column;
+	display: inline-flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
 	/*align-content: flex-end;*/
@@ -1155,17 +1242,12 @@ div.contacto a:hover {
 	align-self: right;*/
 }
 
-/*.navbar-nav {
+.navbar-nav {
 	display: flex;
-	position: relative;
-	flex-direction: row;
-	margin: 0 auto;
-	width: auto;
-	height: auto;
-}*/
+}
 
 .navbar-nav > li {
-	display: flex;
+	display: inline-flex;
 	position: relative;
 	flex-direction: row;
 	width: auto;
@@ -1186,48 +1268,50 @@ div.contacto a:hover {
 	margin: 0 auto;
 }*/
 
-/*.container-fluid button */
-	/*display: flex;*/
-	/*flex-direction: row;*/
-	/*width: auto;
+/*.container-fluid button {
+	 
+	display: flex;
+	flex-direction: row;
+	width: auto;
 	justify-items: center;
 	justify-content: center;
 	align-content: center;
-	align-items: center;*/
-	/*vertical-align: middle;*/
-/*
-	margin: 0 auto;
-}*/
-
-.navbar-collapse {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	/*flex-wrap: wrap;*/
 	align-items: center;
+	vertical-align: middle;*/
+/*	padding: 5px;*/
+/*	margin: 0 auto;
+}
+*/
+/*.navbar-collapse {*/
+	/*position: relative;
+	display: flex;
+	flex-direction: row;*/
+	/*flex-wrap: wrap;*/
+/*	align-items: center;*/
 	/*object-position: right;*/
-	width: auto;
+/*	width: auto;
 	height: fit-content;
 	margin: 0 auto;
 	justify-content: center;
 	align-content: center;
 	justify-content: center;
 	justify-items: center;
-}
+}*/
 
 /*.cuerpo {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	position: relative;
-	margin: 0 auto;
-	padding: 0;
-	align-content: center;
-	grid-template-rows: auto auto auto;
-	width: 100%;
-}
+	margin: 30px auto;
+	padding: 0;*/
+/*	align-content: center;*/
+/*	grid-template-rows: auto auto auto;*/
+/*	width: auto;
+	align-items: stretch;
+}*/
 
-.cuerpo .contenido {
+/*.cuerpo .contenido {
 	grid-column: span 3;
 	padding: 5px;
 	align-content: center;
@@ -1272,14 +1356,15 @@ div.contacto a:hover {
 
 
 .cuerpo .tt1 {
-	flex-wrap: wrap;
+	
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	text-align: center;
 	justify-content: center;
 	text-align: center;
-	padding: 0;
-	margin: 0;
+	padding: 5px;
+	margin: 0 auto;
 	/*width: 90%;*/
 	/*grid-column: 1 / 3;*/
 	grid-row: 1;
@@ -1294,7 +1379,7 @@ div.contacto a:hover {
 	/*justify-content: stretch;*/
 	/*text-align: center;*/
 	/*justify-content: center;*/
-	margin: 20px 0;
+	margin: 0 auto;
 	/*width: 50%;*/
 	padding: 5px;
 	grid-row: 2;
@@ -1306,21 +1391,23 @@ div.contacto a:hover {
 }
 
 .cuerpo .tt3 {
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
 	flex-wrap: wrap;
 	text-align: center;
 	padding: 5px;
 	margin: 0 auto;
-	align-items: center;
+	/*align-items: center;*/
 	padding-left: 0;
-	height: 100%;
+	height: auto;
 	/*grid-column: 2;*/
 	grid-row: 3;
 	font-size: small;
 	/*line-height: 20px;*/
-	grid-column-gap: 5px;
-	padding: 10px;
+	grid-column-gap: 10px;
+	padding: 5px;
+/*	scroll-behavior: auto;*/
+
 }
 
 .valores {
@@ -1349,7 +1436,7 @@ div.contacto a:hover {
 	align-content: stretch;
 }
 
-.cuerpo > div
+/*.cuerpo > div
 .cuerpo .contenido {
 	text-align: center;
 	align-content: center;
@@ -1360,81 +1447,86 @@ div.contacto a:hover {
 	justify-items: center;
 	align-content: center;
 	grid-gap: 0;
-	margin: 0 auto;
+	margin: 0 auto;*/
 	/*vertical-align: baseline;*/
 	/*columns: 3;*/
-	width: 100%;
+/*	width: 100%;*/
 	/*grid-template-rows: repeat(auto-fit, minmax(430px, 3fr));*/
-}
+/*}*/
 
 .cuerpo {
 	display: flex;
 	flex-direction: row;
 	position: relative;
 	align-items: flex-start;
-	/*align-items: top;*/
+	justify-content: space-between;
 	vertical-align: top;
+	grid-row-gap: 20px;
+	gap: 20px;
+	/*margin: 10px 20px;*/
 }
 
-}
-
-
-.boton {
+.ladoA {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	position: relative;
-	object-position: center;
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-	justify-items: center;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
+	/*vertical-align: text-top;*/
+	margin: 60px auto;
+	/*align-items: stretch;*/
+	justify-content: space-evenly;
+	justify-items: space-evenly;
+	gap: 20px;
+	/*padding: 10px;*/
 }
 
-.bibi a > i {
-	display: block;
-	margin: 5px;
-	gap: 10px;
-	color: white;
 }
 
 
 .cuerpo {
-	display: inline-flex;
+	display: flex;
 	position: relative;
-	/*width: auto;*/
-	height: auto;
-	margin: 20px auto;
-	align-items: center;
-	align-content: center;
-	/*justify-content: center;
-	justify-items: center;*/
-	padding: 10px;
-	text-align: center;
+	align-items: flex-start;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+.collapse {
+	display: inline-block;
+	position: relative;
+	flex-direction: column;
+/*	align-items: flex-end;*/
+	margin: 0 auto;
 	width: 100%;
-	max-width: 2900px;
+	height: auto;
+/*	background-color: white;*/
+	align-content: space-between;
+/*	align-content: space-between;*/
 	justify-content: space-between;
 	justify-items: space-between;
-	/*vertical-align: baseline;*/
-	/*background-color: grey;*/
+	align-items: center;
+
 }
 
-.ladoA {
-	display: block;
+.navbar-nav {
+	display: inline-block;
+	flex-direction: row;
 	position: relative;
-	width: 30%;
-	line-height: 25px;
+	align-items: center;
+	margin: 0 auto;
+	height: auto;
+	align-content: space-between;
+	justify-content: space-between;
+	justify-self: space-between;
+	align-self: stretch;
 }
 
-.ladoB {
-	display: block;
+.nav-item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 auto;
+	height: auto;
 	position: relative;
-	width: 70%;
-
-}
-
-.wordColor {
-	color: black;
 }

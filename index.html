@@ -20,7 +20,7 @@
 <!-- <%-include('partials/head.html')%> -->
 <!-- <script defer src="/javas/script.js"></script> -->
 
-<!-- <script defer src="public/javas/script.js"></script> -->
+<script defer src="public/javas/script.js"></script>
 
 </head>
 <body>
@@ -38,16 +38,16 @@
           <li><a href="https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249" target="_blank"><i class="bi bi-facebook"></i></a></li>
           <li><a href="#"><i class="bi bi-twitter"></i></a></li>
         </ul>
-        <section class="menu ms-auto">
+        <section class="container">
           <!-- <a class="navbar-brand" style="font-family: impact, serif; color: grey; text-align: right;" href="#">Inversiones Bryan, S.A.</a> -->
           <button class="navbar-toggler navbar-nav_visible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">  <!-- ms-auto -->
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Inicio </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto </a>
+                <a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i>Contacto</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="galeria1.html"><i class="bi bi-images"></i> Galería </a>
@@ -62,7 +62,8 @@
     <img id="imagen2">
   </section>
   <span class="linea"></span>
-  <div  class="flex-container">
+
+  <div  class="container">
     <div class="cuerpo">
       <section class="ladoA">
         <div class="tt1">
@@ -77,23 +78,25 @@
           <p class="text1"><b>VALORES</b></p>
           <ul class="valores">
             <li>Compromiso</li>
-            <li>eficiencia</li>
-            <li>calidad</li>
-            <li>seguridad</li>
-            <li>responsabilidad social</li>
-            <li>trabajo en equipo</li>
+            <li>Eficiencia</li>
+            <li>Calidad</li>
+            <li>Seguridad</li>
+            <li>Responsabilidad Social</li>
+            <li>Trabajo en Equipo</li>
           </ul>
         </div> 
       </section>
 
-      <section class="ladoB">
-        <center><h2 style="font-family: impact; color: dimgrey;">PROYECTOS</h2></center>
-        <div class="container">
+
+
+      <section>
+        <div class="ladoB">
+          <h2 style="font-family: serif; color: dimgrey; text-align: left; text-indent: 18px;">PROYECTOS </h2>
           <div class="galeria">
 
-            <div class="photos"><h5>Proyecto Brisas de Arraíjan</h5>
-              <span><a href="#image5"><img src="public/img/pisosymallas.jpg" width="150"></a>
-              <a href="#image6"><img src="public/img/pbrisas.jpg"  alt="BrisasArraijan" width="150"><article><i class="bi bi-caret-right"></i></article></a>
+            <div class="photos"><h5>Proyecto Brisas del Golf Arraíjan</h5>
+              <span><a href="#image5"><img src="public/img/pisosymallas.jpg" width="150" loading="lazy"></a>
+              <a href="#image6"><img src="public/img/pbrisas.jpg" loading="lazy" alt="BrisasArraijan" width="150"><article><i class="bi bi-caret-right"></i></article></a>
               </span>
             </div>
 
@@ -101,21 +104,29 @@
         
             <div class="photos"><h5>Construcción en Zona Rural</h5>
               <span>
-              <a href="#image8"><img src="public/img/casap1.jpg"  width="150" alt="casarural"></a>
+              <a href="#image8"><img src="public/img/casap1.jpg"  width="150" alt="casarural" loading="lazy"></a>
 
-              <a href="#image9"><img src="public/img/casap2.jpg"  width="150" alt="casarural"><article><i class="bi bi-caret-right"></i></article></a></span>
+              <a href="#image9"><img src="public/img/casap2.jpg"  width="150" alt="casarural" loading="lazy"><article><i class="bi bi-caret-right"></i></article></a></span>
             </div>
 
         <!-- <a href="#image10"><img src="public/img/casap3.jpg"  width="300" alt="casarural"></a></span></div> -->
         
             <div class="photos"><h5>Zona de Difícil Acceso</h5>
               <span>
-              <a href="#image1"><img src="public/img/Mejorandoelcampo.jpg" src="public/img/Mejorandocaminos.jpg" alt="CaminoRural" width="150"></a>
+              <a href="#image1"><img src="public/img/Mejorandoelcampo.jpg" src="public/img/Mejorandocaminos.jpg" alt="CaminoRural" loading="lazy" width="150"></a>
   
-              <a href="#image2"><img src="public/img/Mejorandocaminos.jpg" alt="CaminoRural" width="150"><article><i class="bi bi-caret-right"></i></article></a></span>
+              <a href="#image2"><img src="public/img/Mejorandocaminos.jpg" alt="CaminoRural" width="150" loading="lazy"><article><i class="bi bi-caret-right"></i></article></a></span>
             </div>
   
           <!-- <a href="#image3"><img src="public/img/camino.jpg"  alt="camino" width="300"  height="400"></a></span></div> -->
+
+          <!-- <div class="photos"><h5>Remodelaciones</h5>
+              <span>
+              <a href="#"><img src="public/img/#" src="public/img/#" alt="Remodelaciones" loading="lazy" width="150"></a>
+  
+              <a href="#"><img src="public/img/#.jpg" alt="Remodelaciones" loading="lazy" width="150"><article><i class="bi bi-caret-right"></i></article></a></span>
+            </div> -->
+
           </div>
         </div> 
       </section>
@@ -197,23 +208,32 @@
   <!-- <%-include('partials/footer.html')%> -->
 
   <footer>
+
+
+
       <a name="abajo"></a>
-      <div class="container-fluid"> 
-        <div>
+      <div class="container-fluid">
+
+
+
+
+        <div>     
           <div class="social">
-            <section class="bibi">
-              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="#"><i class="bi bi-twitter"></i></a>
-            </section>
-           
-            <div class="contacto">  
-              <caption style="color: white; text-decoration: none;" href="mailto:inversbryan@gmail.com"><strong>Contacto</strong></caption>             
+            
+            
+           <div class="contacto">  
+              <caption style="color: white; text-decoration: none; font-family: serif;" href="mailto:inversbryan@gmail.com"><strong><b>Contacto</b></strong></caption>             
                 <br>
               <span><a style="color: white; text-decoration: none;" href="mailto:inversbryan@gmail.com" > E-Mail: inversbryan@gmail.com <i class="bi bi-envelope-fill"></i></a></span>
                 <br>
               <span><a style="color: white; text-decoration: none;" target="_blank" href="https://api.whatsapp.com/send?phone=50760267234"> +507 6026-7234 <img src="public/img/whatsapp.png" width="30px" height="30px"></a></span>
             </div>
+            <span id="logo" style="background-color: transparent; align-self: center;"></span>
+            <section class="bibi">
+              <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter"></i></a>
+            </section>
           </div>    
         </div>   
       </div>
