@@ -417,15 +417,31 @@ li a.active {
 .logo {
 	image-rendering: optimizeSpeed;
 	background: rgba(200, 200, 200, 0.1);
+	border-radius: 40px 20px;
 	display: flex;
 	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: cover;
+	background-position: center;
 	height: 100px;
 	width: 190px;
 	background-image: url('../img/logo2.png');
 /*	float: right;*/
 	z-index: 1;
+}
+
+.logoPie {
+	position: relative;
+	background-image: url('../img/logo2.png');
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 140px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: fill;
+	box-sizing: border-box;
 }
 
 body {
@@ -549,7 +565,7 @@ div.contacto a:hover {
 	margin: 0 auto;
 	padding: 5px;
 	width: 100%;
-	height: 100%;
+	height: fit-content;
 	justify-items: space-between;
 	justify-content: space-between;
 	box-sizing: border-box;
@@ -1502,10 +1518,51 @@ div.contacto a:hover {
 	position: relative;
 	flex-direction: row;
 	align-self: flex-end;
+/*	float: end;*/
+/*	backface-visibility: hidden;*/
+/*	background-size: contain;*/
+/*z-index: -1;*/
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: auto;
+}
+
+.logo {
+	z-index: 1000;
+	margin: 0 auto;
+	width: 100%;
+	height: 40%;
+	background-position: center;
+	object-fit: cover;
+	background-size: contain;
+/*	background-image: center;*/
+}
+
+.logoPie {
+/*	background-color: rgba(0, 0, 0, 1.0);*/
+	background-image: url('../img/logo2.png');
+/*	z-index: 1000;*/
+	margin: 0 auto;
+	width: 200px;
+	height: 100px;
+	background-position: center;
+	object-fit: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+/*	box-sizing: border-box;*/
+/*	background-image: center;*/
 }
 
 }
 
+
+
+
+/*.bibi {
+	z-index: -1;
+}*/
 
 /*.cuerpo {
 	display: flex;
