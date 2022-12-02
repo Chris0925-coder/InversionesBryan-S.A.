@@ -510,7 +510,7 @@ h4 {
 	border-style: solid;
 	border-style: outset;
 /*	font-style: oblique;*/
-	text-align: right;
+	text-align: left;
 	background-color: rgba(0, 0, 0, 0.3);
 	background-position: center;
 	/*border-color: black;*/
@@ -1026,9 +1026,10 @@ div.contacto a:hover {
 	/*line-height: 20px;*/
 	/*grid-column-gap: 10px;*/
 	/*padding: 10px;*/
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: dimgrey;
 	box-shadow: 0 0 10px grey;
+	overflow: hidden;
 }
 
 .valores {
@@ -1043,7 +1044,8 @@ div.contacto a:hover {
 	margin: 0 auto;
 	grid-gap: 10px;
 	padding-left: 0;
-	width: 100%;
+	width: auto;
+
 }
 
 .valores > li {
@@ -1055,6 +1057,7 @@ div.contacto a:hover {
 	flex-wrap: wrap;
 	padding-top: 0;
 	align-content: stretch;
+	overflow: hidden;
 }
 
 
@@ -1150,7 +1153,7 @@ div.contacto a:hover {
 	justify-items: center;*/
 	padding: 10px;
 	text-align: center;
-	width: auto;
+	width: 100%;
 	height: auto;
 	max-width: 2900px;
 	justify-content: space-between;
@@ -1162,20 +1165,20 @@ div.contacto a:hover {
 .ladoA {
 	display: block;
 	position: relative;
-	width: 25%;
-	margin: 40px auto;
+	width: 30%;
+	margin: 55px auto;
 /*	line-height: 25px;*/
 }
 
 .ladoB {
-	display: inline-flex;
+	display: inline-block;
 	flex-direction: column;
 	position: relative;
 
 	width: 100%;
-	margin: 0;
-	align-content: stretch;
-	align-items: stretch;
+	margin: 0 auto;
+	align-content: space-around;
+/*	align-items: stretch;*/
 	justify-content: space-between;
 
 }
@@ -1186,7 +1189,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
 
 .navbar-toggler i.active {
 	color: grey;
@@ -1400,6 +1403,7 @@ div.contacto a:hover {
 	margin: 0 auto;
 	/*align-items: center;*/
 	padding-left: 0;
+	width: auto;
 	height: auto;
 	/*grid-column: 2;*/
 	grid-row: 3;
@@ -1430,11 +1434,14 @@ div.contacto a:hover {
 	padding-left: 0;
 	list-style: none;
 	position: relative;
-	display: inline-block;
+	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding-top: 0;
-	align-content: stretch;
+
+/*	padding-top: 0;*/
+/*	padding: 5px;*/
+	margin: 0 auto;
+	align-content: center;
 }
 
 /*.cuerpo > div
@@ -1456,11 +1463,11 @@ div.contacto a:hover {
 /*}*/
 
 .cuerpo {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	position: relative;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	vertical-align: top;
 	grid-row-gap: 20px;
 	gap: 20px;
@@ -1472,8 +1479,8 @@ div.contacto a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
-	/*vertical-align: text-top;*/
-	margin: 60px auto;
+/*	vertical-align: baseline;*/
+	margin: 65px auto;
 	/*align-items: stretch;*/
 	justify-content: space-evenly;
 	justify-items: space-evenly;
@@ -1481,16 +1488,32 @@ div.contacto a:hover {
 	/*padding: 10px;*/
 }
 
+.ladoB {
+	display: inline-block;
+	position: relative;
+	flex-flow: wrap row;
+	width: auto;
+	height: fit-content;
+	margin: 0 auto;
+}
+
+.bibi {
+	display: inline-flex;
+	position: relative;
+	flex-direction: row;
+	align-self: flex-end;
+}
+
 }
 
 
-.cuerpo {
+/*.cuerpo {
 	display: flex;
 	position: relative;
 	align-items: flex-start;
 	margin: 0 auto;
 	padding: 0;
-}
+}*/
 
 
 .navbar-collapse {
