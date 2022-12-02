@@ -1543,16 +1543,20 @@ div.contacto a:hover {
 /*	background-color: rgba(0, 0, 0, 1.0);*/
 	background-image: url('../img/logo2.png');
 /*	z-index: 1000;*/
-	margin: 0 auto;
+	margin: 0;
 	width: 200px;
 	height: 100px;
 	background-position: center;
-	object-fit: cover;
+	object-fit: fill;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: absolute;
 /*	box-sizing: border-box;*/
 /*	background-image: center;*/
+}
+
+.social {
+	overflow: hidden;
 }
 
 }
