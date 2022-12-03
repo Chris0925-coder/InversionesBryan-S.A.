@@ -1208,7 +1208,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
 
 .navbar-toggler i.active {
 	color: grey;
@@ -1653,4 +1653,11 @@ div.contacto a:hover {
 	margin: 0 auto;
 	height: auto;
 	position: relative;
+}
+
+.contacto > span {
+	display: flex;
+	position: relative;
+	flex-wrap: nowrap;
+	gap: 5px;
 }
