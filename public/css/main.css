@@ -417,7 +417,7 @@ li a.active {
 .logo {
 	image-rendering: optimizeSpeed;
 	background: rgba(200, 200, 200, 0.1);
-	border-radius: 40px 20px;
+	border-radius: 40px;
 	display: flex;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -435,12 +435,12 @@ li a.active {
 	background-image: url('../img/logo2.png');
 	margin: 0;
 	padding: 0;
-	width: 500px;
+	width: 400px;
 	height: 140px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: fill;
+	object-fit: cover;
 	box-sizing: border-box;
 }
 
@@ -523,21 +523,24 @@ h4 {
 
 
 .contacto {
-	border-style: solid;
-	border-style: outset;
+	position: static;
+/*	border-style: solid;*/
+/*	border-style: outset;*/
 /*	font-style: oblique;*/
 	text-align: left;
-	background-color: rgba(0, 0, 0, 0.3);
+/*	background-color: rgba(0, 0, 0, 0.3);*/
 	background-position: center;
 	/*border-color: black;*/
-	box-shadow: 4px 2px rgba(0, 0, 0, 0.3);
-	box-sizing: border-box;
+/*	box-shadow: 4px 2px rgba(0, 0, 0, 0.3);*/
+	box-sizing: content-box;
 	text-decoration: none;
 	color: white;
 	border-radius: 2px;
 	padding: 15px;
 	text-decoration: none;
 	user-select: none;
+	width: 100%;
+
 }
 
 div.contacto a:hover {
@@ -1515,17 +1518,22 @@ div.contacto a:hover {
 
 .bibi {
 	display: inline-flex;
-	position: relative;
-	flex-direction: row;
+/*	flex-direction: row;*/
+	flex-flow: row wrap;
+	position: sticky;
+/*	flex-direction: row;*/
 	align-self: flex-end;
 /*	float: end;*/
 /*	backface-visibility: hidden;*/
 /*	background-size: contain;*/
 /*z-index: -1;*/
-	margin: 0;
+/*float: right;*/
+	margin: 0 auto;
 	padding: 0;
 	height: auto;
-	width: auto;
+	width: 100%;
+/*	scroll-behavior: auto;*/
+
 }
 
 .logo {
@@ -1539,6 +1547,21 @@ div.contacto a:hover {
 /*	background-image: center;*/
 }
 
+.contacto {
+/*	display: grid;*/
+/*	columns: 2;*/
+	grid-area: 1 span 2;
+/*	grid-column: auto auto;*/
+/*	flex-direction: column;*/
+	background: unset;
+	position: inherit;
+	width: auto;
+	height: fit-content;
+	margin: 0;
+	flex-wrap: nowrap;
+/*	display: flex;*/
+}
+
 .logoPie {
 /*	background-color: rgba(0, 0, 0, 1.0);*/
 	background-image: url('../img/logo2.png');
@@ -1547,16 +1570,31 @@ div.contacto a:hover {
 	width: 200px;
 	height: 100px;
 	background-position: center;
-	object-fit: fill;
+	object-fit: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: absolute;
+/*	position: absolute;*/
+	z-index: 1000;
+	grid-area: 2 span 4;
+	grid-column-gap: 10px;
+	/*float: right;
+	justify-self: right;*/
+/*	align-self: flex-end;*/
 /*	box-sizing: border-box;*/
 /*	background-image: center;*/
 }
 
 .social {
+	display: grid;
+	flex-flow: row nowrap;
+	flex-grow: revert;
+	box-sizing: border-box;
+	position: relative;
 	overflow: hidden;
+	align-content: space-between;
+	justify-content: space-between;
+	justify-items: space-between;
+	grid-template-columns: auto auto auto;
 }
 
 }
