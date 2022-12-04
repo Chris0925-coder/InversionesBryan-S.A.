@@ -697,7 +697,7 @@ div.contacto a:hover {
 	/*border-width: thin;*/
 	/*margin: 0 auto;*/
 	/*padding: 0;*/
-	display: inline-flex;
+	display: inline-block;
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -705,14 +705,14 @@ div.contacto a:hover {
 	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
 	height: fit-content;
 	margin: 0;
-	grid-gap: 10px;
+	grid-gap: 20px;
 	padding: 15px;
 	overflow: hidden;
 	justify-content: space-around;
 	align-content: space-around;
 /*	align-items: center;*/
 	/*align-content: stretch;*/
-	box-sizing: content-box;
+	box-sizing: border-box;
 /*	align-items: stretch;*/
 	/*width: auto;*/
 	height: fit-content;
@@ -721,7 +721,8 @@ div.contacto a:hover {
 	align-content: space-around;
 	/*gap: 90px;*/
 	text-align: center;
-	color: rgb(210, 150, 0);
+	color: rgb(260, 160, 0);
+
 	/*text-shadow: 2px 4px grey;*/
 	/*font-size: small;*/
 }
@@ -767,6 +768,12 @@ div.contacto a:hover {
 	/*vertical-align: middle;*/
 	/*align-items: flex-end;*/
 	/*width: 100%;*/
+}
+
+.galeria .photos {
+/*	gap: 10px;*/
+	margin: 10px;
+	box-sizing: border-box;
 }
 
 /*.galeria .photos {
@@ -1486,10 +1493,12 @@ div.contacto a:hover {
 	flex-direction: row;
 	position: relative;
 	align-items: flex-start;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	vertical-align: top;
 	grid-row-gap: 20px;
 	gap: 20px;
+	width: 100%;
+	height: auto;
 	/*margin: 10px 20px;*/
 }
 
@@ -1499,11 +1508,11 @@ div.contacto a:hover {
 	flex-wrap: wrap;
 	position: relative;
 /*	vertical-align: baseline;*/
-	margin: 65px auto;
+	margin: 67px 0;
 	/*align-items: stretch;*/
 	justify-content: space-evenly;
 	justify-items: space-evenly;
-	gap: 20px;
+	gap: 10px;
 	/*padding: 10px;*/
 }
 
@@ -1513,7 +1522,8 @@ div.contacto a:hover {
 	flex-flow: wrap row;
 	width: auto;
 	height: fit-content;
-	margin: 0 auto;
+	margin: 0;
+/*	gap: 10px;*/
 }
 
 .bibi {
@@ -1595,6 +1605,17 @@ div.contacto a:hover {
 	justify-content: space-between;
 	justify-items: space-between;
 	grid-template-columns: auto auto auto;
+}
+
+.galeria span {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+/*	margin: 0 auto;*/
+/*	width: auto;*/
+/*	height: fit-content;*/
+
 }
 
 }
