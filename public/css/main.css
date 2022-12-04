@@ -1607,16 +1607,16 @@ div.contacto a:hover {
 	grid-template-columns: auto auto auto;
 }
 
-.galeria span {
-	display: flex;
+/*.galeria span {*/
+	/*display: flex;
 	position: relative;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 /*	margin: 0 auto;*/
 /*	width: auto;*/
 /*	height: fit-content;*/
 
-}
+/*}*/
 
 }
 
