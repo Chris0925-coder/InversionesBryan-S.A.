@@ -1700,6 +1700,6 @@ div.contacto a:hover {
 
 
 .photos i {
-	color: ghostwhite;
-	filter: drop-shadow(1px 1px);
+	color: gray;
+	filter: opacity(50%);
 }
