@@ -435,13 +435,14 @@ li a.active {
 	background-image: url('../img/logo2.png');
 	margin: 0;
 	padding: 0;
-	width: 400px;
+	width: 250px;
 	height: 140px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	object-fit: cover;
 	box-sizing: border-box;
+	z-index: 1;
 }
 
 body {
