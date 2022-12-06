@@ -861,6 +861,7 @@ div.contacto a:hover {
 .light-box img {
 	width: 75vw;
 	max-height: 70vh;
+	background: center;
 	object-fit: cover;
 }
 
@@ -873,8 +874,6 @@ div.contacto a:hover {
 	position: absolute;
 	top: 40px;
 	right: 40px;
-/*	background: #851919;*/
-/*	background-color: rgba(0, 0, 0, 0.3);*/
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
@@ -1201,7 +1200,7 @@ div.contacto a:hover {
 	position: relative;
 
 	width: 100%;
-	margin: 10px 0 auto;
+	margin: 0 auto;
 	align-content: space-around;
 	align-items: stretch;
 	justify-content: space-between;
@@ -1507,7 +1506,7 @@ div.contacto a:hover {
 	flex-wrap: wrap;
 	position: relative;
 /*	vertical-align: baseline;*/
-	margin: 0;
+	margin: 10px 0;
 	/*align-items: stretch;*/
 	justify-content: space-evenly;
 	justify-items: space-evenly;
