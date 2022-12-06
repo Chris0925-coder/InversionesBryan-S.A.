@@ -430,20 +430,6 @@ li a.active {
 	z-index: 1;
 }
 
-.logoPie {
-	position: relative;
-	background-image: url('../img/logo2.png');
-	margin: 0;
-	padding: 0;
-	width: 250px;
-	height: 140px;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	object-fit: cover;
-	box-sizing: border-box;
-	z-index: 1;
-}
 
 body {
 	background: #ADA996;  /* fallback for old browsers 
@@ -530,18 +516,17 @@ h4 {
 /*	font-style: oblique;*/
 	text-align: left;
 /*	background-color: rgba(0, 0, 0, 0.3);*/
-	background-position: center;
+/*	background-position: center;*/
 	/*border-color: black;*/
 /*	box-shadow: 4px 2px rgba(0, 0, 0, 0.3);*/
-	box-sizing: content-box;
+/*	box-sizing: content-box;*/
 	text-decoration: none;
 	color: white;
-	border-radius: 2px;
+/*	border-radius: 2px;*/
 	padding: 15px;
 	text-decoration: none;
 	user-select: none;
-	width: 100%;
-
+	width: auto;
 }
 
 div.contacto a:hover {
@@ -1185,7 +1170,7 @@ div.contacto a:hover {
 	position: relative;
 	/*width: auto;*/
 	height: auto;
-	margin: 80px auto;
+	margin: 20px auto;
 /*	align-items: stretch;*/
 	align-content: center;
 	/*justify-content: center;
@@ -1575,13 +1560,13 @@ div.contacto a:hover {
 .contacto {
 /*	display: grid;*/
 /*	columns: 2;*/
-	grid-area: 1 span 2;
+	grid-area: 1;
 /*	grid-column: auto auto;*/
 /*	flex-direction: column;*/
-	background: unset;
-	position: inherit;
-	width: auto;
-	height: fit-content;
+/*	background: unset;*/
+	position: relative;
+/*	width: 40%;*/
+/*	height: fit-content;*/
 	margin: 0;
 	flex-wrap: nowrap;
 /*	display: flex;*/
@@ -1591,17 +1576,17 @@ div.contacto a:hover {
 /*	background-color: rgba(0, 0, 0, 1.0);*/
 	background-image: url('../img/logo2.png');
 /*	z-index: 1000;*/
-	margin: 0;
+	margin: 0 auto;
 	width: 200px;
 	height: 100px;
-	background-position: center;
+/*	background-position: center;*/
 	object-fit: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 /*	position: absolute;*/
-	z-index: 1000;
-	grid-area: 2 span 4;
-	grid-column-gap: 10px;
+	z-index: 1;
+	grid-area: 1 / 3;
+/*	grid-column-gap: 10px;*/
 	/*float: right;
 	justify-self: right;*/
 /*	align-self: flex-end;*/
@@ -1693,6 +1678,7 @@ div.contacto a:hover {
 
 .contacto > span {
 	display: flex;
+	flex-direction: row;
 	position: relative;
 	flex-wrap: nowrap;
 	gap: 5px;
@@ -1703,4 +1689,20 @@ div.contacto a:hover {
 .photos i {
 	color: gray;
 	filter: opacity(50%);
+}
+
+.logoPie {
+	position: relative;
+	background-image: url('../img/logo2.png');
+	
+/*	padding: 0;*/
+	width: 200px;
+	height: 140px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: fill;
+	margin: 0 auto;
+	box-sizing: border-box;
+	z-index: 1000;
 }
