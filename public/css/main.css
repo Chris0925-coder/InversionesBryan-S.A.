@@ -1224,16 +1224,16 @@ div.contacto a:hover {
 /*	width: 200%;*/
 }
 
-/*html {
-	width: 300%;
+html {
+	width: 140%;
 	margin: 0;
 	height: 100vh;
 }
 
 body {
-	width: 150%;
+/*	width: 150%;*/
 	height: 100vh;
-}*/
+}
 
 .navbar-toggler i.active {
 	color: grey;
