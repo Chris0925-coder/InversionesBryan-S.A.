@@ -98,6 +98,7 @@
 	display: flex;
 	position: relative;
 	background-image: url('../img/pisosymallas.jpg');
+/*	image-resolution: from-image;*/
 	background-size: cover;
 	background-position: center;
 	object-fit: cover;
@@ -683,14 +684,14 @@ div.contacto a:hover {
 	/*border-width: thin;*/
 	/*margin: 0 auto;*/
 	/*padding: 0;*/
-	display: flex;
+	display: block;
 	position: relative;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 /*	width: 100%;*/
 	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
-	height: fit-content;
-	margin: 0;
+/*	height: fit-content;*/
+	margin: 0 auto;
 /*	grid-gap: 20px;*/
 	padding: 0;
 	overflow: hidden;
@@ -698,7 +699,7 @@ div.contacto a:hover {
 	align-content: space-around;
 /*	align-items: center;*/
 	/*align-content: stretch;*/
-	box-sizing: border-box;
+/*	box-sizing: border-box;*/
 /*	align-items: stretch;*/
 	/*width: auto;*/
 	height: auto;
@@ -758,7 +759,9 @@ div.contacto a:hover {
 
 .galeria .photos {
 /*	gap: 10px;*/
+/*display: block;*/
 	margin: 10px;
+/*	margin-top: 0;*/
 /*	box-sizing: border-box;*/
 }
 
@@ -1056,12 +1059,13 @@ div.contacto a:hover {
 }
 
 .valores {
-	display: block;
+	display: inline-block;
 	flex-direction: column;
+	flex-wrap: wrap;
 	grid-template-columns: auto auto;
 	padding-left: 0;
 	/*width: 80%;*/
-	columns: 2;
+/*	columns: 2;*/
 	justify-content: center;
 	padding: 0;
 	margin: 0 auto;
@@ -1168,8 +1172,8 @@ div.contacto a:hover {
 	display: flex;
 	position: relative;
 	/*width: auto;*/
-	height: auto;
-	margin: 0;
+/*	height: auto;*/
+	margin: 0 auto;
 /*	align-items: stretch;*/
 	align-content: center;
 	/*justify-content: center;
@@ -1181,28 +1185,44 @@ div.contacto a:hover {
 	max-width: 2900px;
 	justify-content: space-between;
 	justify-items: space-between;
-	vertical-align: top;
+/*	vertical-align: middle;*/
 	align-items: flex-start;
 	/*background-color: grey;*/
 }
 
-.ladoA {
-	display: block;
+.container-fluid {
+	display: flex;
 	position: relative;
-	width: 25%;
-	margin: 0;
-/*	line-height: 25px;*/
+	width: 100%;
+	height: auto;
+/*	position: relative;*/
+/*	width: 100%;*/
+/*	height: fit-content;*/
+/*	margin: 59px 100px;*/
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.ladoA {
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	margin-top: -10px;
+/*	margin-top: 20px;*/
+/*	line-height: 55px;*/
 }
 
 .ladoB {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-
-/*	width: 100%;*/
+/*	width: 60%;*/
+	width: 100%;
 	margin: 0;
 /*	align-content: space-around;*/
-	align-items: stretch;
+	align-items: flex-start;
 	justify-content: space-between;
 
 }
@@ -1216,16 +1236,16 @@ div.contacto a:hover {
 @media (max-width: 768px) {
 
 .galeria {
-	display: flex;
-/*	width: 100%;*/
+	display: inline-block;
+	width: 100%;
 	height: fit-content;
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 /*	width: 200%;*/
 }
 
 html {
-	width: 140%;
+/*	width: 10%;*/
 	margin: 0;
 	height: 100vh;
 }
@@ -1507,7 +1527,7 @@ body {
 /*}*/
 
 .cuerpo {
-	display: flex;
+	display: inline-block;
 	flex-direction: row;
 	position: relative;
 	align-items: flex-start;
@@ -1518,8 +1538,6 @@ body {
 	width: 100%;
 	height: fit-content;
 	margin-bottom: 80px;
-	margin-top: 0;
-	margin-left: 0;
 }
 
 .ladoA {
@@ -1528,22 +1546,24 @@ body {
 	flex-wrap: wrap;
 	position: relative;
 /*	vertical-align: baseline;*/
-	margin: 0;
+	margin: 0 auto;
+	margin-top: 10px;
 	/*align-items: stretch;*/
 	justify-content: space-between;
 	justify-items: space-between;
 	gap: 10px;
 	width: 30%;
+	height: fit-content;
 	/*padding: 10px;*/
 }
 
 .ladoB {
-	display: flex;
+	display: inline-block;
 	position: relative;
 	flex-flow: row;
-/*	width: auto;*/
+	width: auto;
 	height: fit-content;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 /*	width: 100%;*/
 /*	gap: 10px;*/
@@ -1713,7 +1733,7 @@ body {
 
 .photos i {
 	color: gray;
-	filter: opacity(50%);
+	filter: opacity(70%);
 }
 
 .logoPie {
@@ -1733,41 +1753,43 @@ body {
 }
 
 
-#remode {
+.remode {
 /*	display: inline-flex;*/
 	position: relative;
 	flex-direction: row;
 	flex-wrap: wrap;
 /*	background-size: cover;*/
 	background-size: cover;
-	
-/*	width: auto;*/
-/*	height: auto;*/
+	width: auto;
+	height: auto;
 /*	margin: 0 auto;*/
 
 }
 
-#remode img {
+.remode img {
 /*	margin-top: 10px;*/
-	margin: 5px 85px;
+	margin: 10px auto 0 0;
+	padding-top: 10px;
 }
 
 .cuerpo {
 	width: 100%;
 /*	position: static;*/
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin-top: 50px;
 	margin-bottom: 100px;
 	align-items: flex-start;
+	align-content: space-between;
+	justify-content: space-between;
 }
 
 
 
 .galeria {
-	display: flex;
-/*	width: 300%;*/
+	display: inline-block;
+	width: 100%;
 	height: fit-content;
 	margin: 0;
 }
@@ -1776,7 +1798,7 @@ body {
 /*	transform: scale(0.5);*/
 /*	width: 100%;*/
 	display: flex;
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 }
 
