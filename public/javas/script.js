@@ -70,7 +70,7 @@ send.addEventListener("click", () => {
 
 let mail = document.querySelector(".form-control").value;
 // let addM = document.querySelector(".comentarios").innerHTML;
-console.log(`"<p>${mail}</p>"` + "<br>");
+// console.log(`"<p>${mail}</p>"` + "<br>");
 
 
 // console.log(addM);
