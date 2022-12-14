@@ -196,16 +196,16 @@ html {
 	color: dimgrey;
 	background: none;
 	border: none;
-	font-size: 40px;
+	font-size: 30px;
 	padding: 0;
 	line-height: 60px;
 	cursor: pointer;
-	display: inline-block;
+	display: flex;
 	position: relative;
 	flex-direction: row;
-	margin: 0 auto;
-	justify-self: flex-end;
-	align-self: flex-end;
+	margin: 0;
+/*	justify-self: flex-end;*/
+/*	align-self: flex-end;*/
 	height: auto;
 	width: auto;
 /*	align-self: end;*/
@@ -225,63 +225,68 @@ html {
 }
 */
 .navbar-nav .nav-item {
-	display: inline-flex;
-	position: relative;
-	flex-direction: row;
-	align-content: flex-end;
-	justify-content: flex-end;
-	object-position: right;
-	width: auto;
-	height: fit-content;
-	margin: 5px;
+/*	display: inline-block;*/
+/*	position: relative;*/
+/*	flex-direction: column;*/
+/*	align-content: flex-end;*/
+/*	justify-content: flex-end;*/
+/*	object-position: right;*/
+/*	width: auto;*/
+/*	height: fit-content;*/
+/*	margin: 5px;*/
 }
 
-.navbar .navbar-nav {
-	display: inline-flex;
+.navbar-nav {
+	display: flex;
 	position: relative;
 	flex-direction: row;
 	align-content: flex-end;
 	justify-content: flex-end;
 	width: 100%;
-	margin: 0 auto;
+	margin: 0;
+/*	align-self: flex-end;*/
+	justify-self: end;
+	object-position: right;
 }
 
 
 .navbar-nav li {
 	display: inline-flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
 /*	justify-items: center;*/
 /*	justify-content: center;*/
 	/*vertical-align: middle;*/
-	/*align-content: flex-start;
-	justify-content: flex-start;
-	justify-items: flex-start;
-	align-content: flex-start;
-	align-items: flex-start;*/
-	width: auto;
+/*	align-content: flex-start;*/
+/*	justify-content: flex-start;*/
+/*	justify-items: flex-start;*/
+/*	align-content: flex-start;*/
+	align-items: center;
+	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 0;
 	align-content: flex-end;
-	align-items: flex-end;
+/*	align-items: flex-end;*/
 /*	width: auto;*/
 	font-size: small;
 /*	background-size: cover;*/
 }
 
 
-.navbar-collapse {
+.navbar-collapse .navbar-nav {
 	display: inline-flex;
-	position: absolute;
+	position: relative;
 	flex-direction: row;
-	position: sticky;
+/*	position: sticky;*/
 	z-index: 1000;
-	margin: 10px;
+	margin: 10px auto;
 	gap: 10px;
-/*	align-content: flex-end;*/
+	align-content: flex-end;
 /*	vertical-align: middle;*/
-/*	justify-content: flex-end;*/
+	justify-content: flex-end;
+	justify-items: center;
+/*	align-items: center;*/
 }
 
 
@@ -307,7 +312,7 @@ html {
 	/*padding-right: 10px;
 	padding-left: 10px;*/
 	background-size: cover;
-	display: inline-flex;
+	display: flex;
 /*	grid-template-columns: repeat(auto-fit, minmax(430px, 3fr));*/
 /*	background-color: rgba(250, 250, 250, 0.3);*/
 	flex-direction: row;
@@ -317,12 +322,12 @@ html {
 	align-content: space-between;
 	justify-content: space-between;
 	width: 100%;
-	height: 100px;
-/*	justify-items: center;*/
-	align-items: center;
-/*	justify-items: space-around;*/
-	margin: 0;
+	height: 150px;
+	justify-items: center;
+	margin: 0 auto;
 	padding: 2px;
+	align-items: center;
+	justify-content: space-between;
 }
 
 /*.menu {
@@ -401,14 +406,14 @@ html {
 	position: relative;
 	margin: 0 auto;
 	display: inline-flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-flow: row wrap;
 	text-align: center;
 	box-sizing: border-box;
 }
 
 .nav-link {
-	font-family: arial;
+/*	font-family: arial;*/
 /*	flex-basis: auto;*/
 	text-decoration: none;
 /*	padding: 4px;*/
@@ -474,19 +479,20 @@ li a.active {
 /*	border-radius: 40px;*/
 	display: flex;
 	flex-wrap: wrap;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	object-fit: fill;
-/*	background-position: center;*/
-	height: 90px;
-	width: 200px;
+	background-position: center;
+	height: 150px;
+	width: 300px;
 	position: relative;
 	background-image: url('../img/logo2.png');
 /*	float: right;*/
 	z-index: 1000;
-	align-content: flex-start;
-	justify-content: flex-start;
+	align-content: center;
+	justify-content: center;
 	object-position: left;
+	justify-items: center;
 }
 
 
@@ -613,8 +619,10 @@ div.contacto a:hover {
 	padding: 5px;
 	width: auto;
 	height: fit-content;
-	justify-items: space-between;
+	justify-items: center;
+	vertical-align: middle;
 	justify-content: space-between;
+	align-content: space-between;
 	box-sizing: border-box;
 }
 
@@ -1295,7 +1303,10 @@ div.contacto a:hover {
 
 
 /*.bibi {
-	z-index: -1;
+	width: auto;
+	height: auto;
+	margin: 0;
+	z-index: 1;
 }*/
 
 /*.cuerpo {
@@ -1345,19 +1356,19 @@ div.contacto a:hover {
 }
 
 .logoPie {
-	position: relative;
+	position: absolute;
 	background-image: url('../img/logo2.png');
 	
 /*	padding: 0;*/
-	width: 200px;
-	height: 140px;
+	width: 300px;
+	height: 200px;
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: cover;
+	object-fit: fill;
 	margin: 0 auto;
-	box-sizing: border-box;
-	z-index: 1000;
+/*	box-sizing: border-box;*/
+/*	z-index: 1000;*/
 }
 
 
@@ -2102,7 +2113,8 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	height: auto;
-	width: 100%;
+	width: auto;
+	z-index: 1000;
 /*	scroll-behavior: auto;*/
 
 }
