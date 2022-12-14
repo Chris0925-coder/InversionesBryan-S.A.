@@ -1228,7 +1228,7 @@ div.contacto a:hover {
 	text-align: center;
 	width: 100%;
 	height: auto;
-	max-width: 2900px;
+/*	max-width: 2900px;*/
 /*	justify-content: space-between;*/
 /*	justify-items: space-between;*/
 /*	vertical-align: middle;*/
@@ -2208,4 +2208,8 @@ body {
 	justify-content: space-between;
 	align-content: space-between;
 	box-sizing: content-box;
+}
+
+#closed {
+	margin-top: 80px;
 }
