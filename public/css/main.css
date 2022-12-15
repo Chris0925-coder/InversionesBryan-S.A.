@@ -394,7 +394,7 @@ html {
 	border-style: solid;
 	text-decoration-line: none;
 	border-width: thin;
-	border-color: dimgrey;
+	border-color: black;
 	background-color: rgba(190, 190, 190, 0.7);
 	background-position: center;
 	background-size: cover;
@@ -424,9 +424,9 @@ html {
 	width: 100%;
 	margin: 0 auto;
 /*	box-sizing: content-box;*/
-	color: rgba(20, 2, 3, 0.4);
+/*	color: rgba(20, 2, 3, 0.8);*/
 /*	justify-items: space-between;*/
-	color: grey;
+	color: black;
 /*	box-sizing: border-box;*/
 text-transform: uppercase;
 }
@@ -436,13 +436,15 @@ text-transform: uppercase;
 li a.active {
 /*	background-color: rgba(200, 200, 200, 1);*/
 	border-radius: 5px;
-    background-color: rgba(200, 200, 200, 1.0);
+    background-color: ghostwhite;
+/*    filter: drop-shadow(1px 1px 10px);*/
     color: black;
 }
 
 .nav-item a:hover:not(.active) {
-    background-color: #555;
+    background-color: #aaa;
     color: rgba(250, 250, 250, 1);
+/*    filter: drop-shadow(1px 1px 5px);*/
 }
 
 .imagen {
@@ -736,24 +738,26 @@ div.contacto a:hover {
 /*	width: 100%;*/
 	/*grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	*/
 /*	height: fit-content;*/
-	margin: 0 auto;
+	margin: 0;
 /*	grid-gap: 20px;*/
 	padding: 0;
-	overflow: hidden;
-	justify-content: space-between;
-	align-content: space-between;
+/*	overflow: hidden;*/
+/*	justify-content: space-between;*/
+/*	align-content: space-between;*/
 /*	align-items: center;*/
 	/*align-content: stretch;*/
 /*	box-sizing: border-box;*/
 /*	align-items: stretch;*/
-	width: 100%;
+	width: auto;
 	height: auto;
-	justify-items: space-between;
-	align-items: flex-start;
+	justify-items: center;
+/*	align-items: flex-start;*/
 	align-content: space-around;
 	/*gap: 90px;*/
 	text-align: center;
 	color: rgb(230, 170, 0);
+	justify-content: center;
+
 /*	vertical-align: top;*/
 	/*text-shadow: 2px 4px grey;*/
 	/*font-size: small;*/
@@ -803,14 +807,6 @@ div.contacto a:hover {
 	/*width: 100%;*/
 }
 
-.galeria .photos {
-/*	gap: 10px;*/
-/*display: block;*/
-	margin: 10px;
-/*	margin-top: 0;*/
-/*	box-sizing: border-box;*/
-}
-
 /*.galeria .photos {
 	display: inline-block;
 	flex-direction: column;
@@ -831,15 +827,26 @@ div.contacto a:hover {
 	position: relative;
 /*	align-content: space-between;*/
 	justify-items: center;
-	width: auto;
+	width: 100%;
 	margin: 0;
 /*	justify-content: space-evenly;*/
-	align-items: stretch;
-	padding: 5px 0 0 0;
+/*	align-items: stretch;*/
+	padding: 5px;
 	box-shadow: 0 0 10px grey;
 /*	background-position: var(300);*/
 /*	vertical-align: top;*/
 /*	image-rendering: ;*/
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.photos span {
+	align-content: center;
+	justify-content: center;
+	margin: 0 auto;
+	justify-content: space-around;
 }
 
 .photos i:hover {
@@ -861,29 +868,31 @@ div.contacto a:hover {
 	align-content: space-around;
 }*/
 
-.galeria img {
+.photos img {
 	image-rendering: optimizeSpeed;
-	width: 150px;
-	height: 200px;
-	margin: 5px;
+	width: 250px;
+	height: 300px;
+	margin: 0;
 	position: relative;
 	object-fit: cover;
 	transition: transform 0.5s;
 	/*width: 100%;*/
-	/*max-width: 100%;*/
-	padding: 10px;
+	max-width: 100%;
+	padding: 5px;
+	align-content: center;
+	justify-content: center;
 
 	/*align-items: flex-end;*/
 }
 
-.galeria span {
+.galeria .photos {
 	display: inline-block;
 	align-content: space-between;
 	justify-items: space-evenly;
-	width: 100%;
+	width: auto;
 	align-items: center;
 	text-align: center;
-	margin: 0 auto;
+	margin: 10px 10px 0 0;
 	height: auto;
 }
 
@@ -1261,15 +1270,16 @@ div.contacto a:hover {
 }
 
 .ladoB {
-	display: flex;
+	display: inline-block;
 	flex-direction: row;
 	position: relative;
 /*	width: 60%;*/
 	width: 100%;
-	margin: 0 auto;
+	margin: 0;
 	align-content: center;
-	align-items: flex-start;
+/*	align-items: flex-start;*/
 	justify-content: space-between;
+	justify-items: center;
 
 }
 
@@ -1374,7 +1384,7 @@ div.contacto a:hover {
 
 
 .galeria {
-	display: inline-block;
+/*	display: inline-block;*/
 	width: 100%;
 	height: fit-content;
 	margin: 0;
@@ -2212,4 +2222,7 @@ body {
 
 #closed {
 	margin-top: 80px;
+	text-align: left;
+	margin: 20px;
+	vertical-align: middle;
 }
