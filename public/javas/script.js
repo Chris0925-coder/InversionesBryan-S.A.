@@ -32,7 +32,7 @@ navToggle.addEventListener("click", () => {
 
 const send = document.querySelector(".btn");
 // const coments = document.querySelector(".comentarios");
-document.querySelector(".form-control").focus();
+//** document.querySelector(".form-control").focus();
 
 
 // function message() {
@@ -81,3 +81,9 @@ let mail = document.querySelector(".form-control").value;
 // };
 
 // comments();
+
+
+
+
+
+
