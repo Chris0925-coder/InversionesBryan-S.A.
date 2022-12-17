@@ -30,9 +30,9 @@ navToggle.addEventListener("click", () => {
 
 // import __ from '../../partials/navigation.html';
 
-const send = document.querySelector(".btn");
+let send = document.querySelector(".btn");
 // const coments = document.querySelector(".comentarios");
-//** document.querySelector(".form-control").focus();
+document.querySelector(".form-control").focus();
 
 
 // function message() {
@@ -52,24 +52,26 @@ const send = document.querySelector(".btn");
 //     }
 // });
 // console.log(mail);
+let mail = document.querySelector(".form-control");
 
 send.addEventListener("click", () => {
     mail = document.querySelector(".form-control").value;
+    // mail.focus() = tt9;
     // window.alert('¡GRACIAS POR SU COMENTARIO!');
-    // console.log(meg);
+    console.log(mail);
     if (mail == "") {
     alert("Rellene los espacios en blanco");
 } else {
     alert("¡GRACIAS POR SU COMENTARIO!");
-    let addM = document.querySelector(".comentarios").innerHTML = `"<p>${mail}</p>"` + "<br>";
-    addM;    
+    // let addM = document.querySelector(".comentarios").innerHTML = `"<p>${mail}</p>"` + "<br>";
+    // addM;    
     // let addM = document.querySelector(".comentarios").innerHTML = `${mail}` + "<p>Hola</p>";
     // addM;
 }
 });
 
-let mail = document.querySelector(".form-control").value;
-// let addM = document.querySelector(".comentarios").innerHTML;
+// let mail = document.querySelector(".form-control").value;
+// let addM = document.querySelector(mail).innerHTML(".comentarios");
 // console.log(`"<p>${mail}</p>"` + "<br>");
 
 
