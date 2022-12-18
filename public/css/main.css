@@ -236,7 +236,7 @@ html {
 /*	margin: 5px;*/
 }
 
-.navbar-nav {
+.navbar .navbar-nav {
 	display: flex;
 	position: relative;
 	flex-direction: row;
@@ -245,12 +245,13 @@ html {
 	width: 100%;
 	margin: 0;
 /*	align-self: flex-end;*/
-	justify-self: end;
+/*	justify-self: end;*/
 	object-position: right;
+	justify-self: right;
 }
 
 
-.navbar-nav li {
+.navbar-nav ul {
 	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -265,27 +266,29 @@ html {
 	align-items: center;
 	width: 100%;
 	height: auto;
-	margin: 0;
+	margin: 0 auto;
 	align-content: flex-end;
+	justify-content: flex-end;
 /*	align-items: flex-end;*/
 /*	width: auto;*/
-	font-size: small;
+	font-size: xx-small;
 /*	background-size: cover;*/
 }
 
 
-.navbar-collapse .navbar-nav {
+.navbar-collapse {
 	display: inline-flex;
 	position: relative;
 	flex-direction: row;
 /*	position: sticky;*/
 	z-index: 1000;
-	margin: 10px auto;
+	margin: 10px;
 	gap: 10px;
 	align-content: flex-end;
 /*	vertical-align: middle;*/
 	justify-content: flex-end;
 	justify-items: center;
+	object-position: right;
 /*	align-items: center;*/
 }
 
@@ -319,15 +322,15 @@ html {
 	flex-wrap: wrap;
 	position: relative;
 /*	height: fit-content;*/
-	align-content: space-between;
-	justify-content: space-between;
+/*	align-content: space-between;*/
+/*	justify-content: space-between;*/
 	width: 100%;
 	height: 150px;
 	justify-items: center;
-	margin: 0 auto;
+	margin: 0;
 	padding: 2px;
 	align-items: center;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 }
 
 /*.menu {
@@ -347,19 +350,16 @@ html {
 
 
 
-.navbar-brand {
+/*.navbar-brand {
 	display: flex;
 	position: relative;
 	text-align: right;
 	color: white;
-	/*align-self: stretch;*/
-/*	justify-self: flex-end;*/
 	margin: 0 auto;
 	width: 100%;
-	/*pointer-events: none;*/
 	user-select: none;
 	cursor: unset;
-}
+}*/
 
 /*.flex-container {
 	display: flex;
@@ -390,26 +390,33 @@ html {
 
 
 
-.nav-item {
+.navbar-nav .nav-item {
 	border-style: solid;
 	text-decoration-line: none;
 	border-width: thin;
-	border-color: black;
+	border-color: dimgrey;
 	background-color: rgba(190, 190, 190, 0.7);
 	background-position: center;
-	background-size: cover;
-/*	padding: 5px;*/
-	border-radius: 5px;
-	height: auto;
-	width: 100%;
+	background-size: auto;
 	padding: 2px;
+	border-radius: 1px;
+/*	height: auto;*/
+/*	width: auto;*/
+	padding: 0;
 	position: relative;
-	margin: 0 auto;
+	margin: 0 2px;
 	display: inline-flex;
-	flex-direction: column;
+/*	flex-direction: row;*/
 	flex-flow: row wrap;
 	text-align: center;
-	box-sizing: border-box;
+/*	box-sizing: border-box;*/
+}
+
+.nav-item .nav-link {
+/*	width: auto;*/
+	padding: 0;
+	margin: 2px;
+	font-size: xx-small;
 }
 
 .nav-link {
@@ -417,33 +424,34 @@ html {
 /*	flex-basis: auto;*/
 	text-decoration: none;
 /*	padding: 4px;*/
-	font-size: small;
+	font-size: xx-small;
 /*	background: center;*/
 /*	background-position: center;*/
 	background-size: cover;
-	width: 100%;
-	margin: 0 auto;
+/*	width: 100%;*/
+	margin: 0;
 /*	box-sizing: content-box;*/
 /*	color: rgba(20, 2, 3, 0.8);*/
 /*	justify-items: space-between;*/
 	color: black;
 /*	box-sizing: border-box;*/
-text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 
 
 li a.active {
 /*	background-color: rgba(200, 200, 200, 1);*/
-	border-radius: 5px;
-    background-color: ghostwhite;
+	border-radius: 1px;
+    background-color: rgba(248, 248, 255, 0.9);
+    padding: 1px;
 /*    filter: drop-shadow(1px 1px 10px);*/
     color: black;
 }
 
 .nav-item a:hover:not(.active) {
     background-color: #aaa;
-    color: rgba(250, 250, 250, 1);
+    color: rgba(250, 250, 250, 0.9);
 /*    filter: drop-shadow(1px 1px 5px);*/
 }
 
@@ -778,7 +786,7 @@ div.contacto a:hover {
 	height: 3px;
 	max-width: none;
 	display: block;
-	margin: 10px 0 auto auto;
+	margin: 10px 0 0 0;
 
 }
 
@@ -1321,14 +1329,14 @@ div.contacto a:hover {
 }*/
 
 
-.nav-item {
+/*.nav-item {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	margin: 0 auto;
 	height: auto;
 	position: relative;
-}
+}*/
 
 .contacto > span {
 	display: flex;
