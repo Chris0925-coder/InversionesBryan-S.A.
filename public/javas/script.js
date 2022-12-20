@@ -11,15 +11,15 @@ navToggle.addEventListener("click", () => {
 
 // comment.addEventListener("click", send);
 // ff.addEventListener(Function, send);
-// 	function send() {
-// 		ff.addEventListener()
-// 	if (ff === String) {
-// 	alert("¡Gracias!, su comentario ha sido enviado.")
+//  function send() {
+//      ff.addEventListener()
+//  if (ff === String) {
+//  alert("¡Gracias!, su comentario ha sido enviado.")
 // }
-// 	else {
-// 		alert("Rellene las casillas en blanco")
-// 	}
-// };	
+//  else {
+//      alert("Rellene las casillas en blanco")
+//  }
+// };   
 
 // let nav = document.getElementById("navjava");
 // nav.innerHTML("ind1");
@@ -83,7 +83,6 @@ send.addEventListener("click", () => {
 // };
 
 // comments();
-
 
 
 
