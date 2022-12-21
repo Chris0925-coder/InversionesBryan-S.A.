@@ -94,6 +94,11 @@
 	color: ghostwhite;
 }*/
 
+.icon {
+	width: 48px;
+	height: 48px;
+}
+
 #imagen2 {
 	display: flex;
 	position: relative;
