@@ -397,7 +397,7 @@ html {
 	border-color: dimgrey;
 	background-color: rgba(190, 190, 190, 0.7);
 	background-position: center;
-	background-size: auto;
+	background-size: contain;
 	padding: 2px;
 	border-radius: 1px;
 /*	height: auto;*/
@@ -414,9 +414,9 @@ html {
 
 .nav-item .nav-link {
 /*	width: auto;*/
-	padding: 0;
+	padding: 2px;
 	margin: 2px;
-	font-size: xx-small;
+	font-size: x-small;
 }
 
 .nav-link {
@@ -424,12 +424,12 @@ html {
 /*	flex-basis: auto;*/
 	text-decoration: none;
 /*	padding: 4px;*/
-	font-size: xx-small;
+	font-size: x-small;
 /*	background: center;*/
 /*	background-position: center;*/
-	background-size: cover;
+	background-size: contain;
 /*	width: 100%;*/
-	margin: 0;
+	margin: auto;
 /*	box-sizing: content-box;*/
 /*	color: rgba(20, 2, 3, 0.8);*/
 /*	justify-items: space-between;*/
@@ -922,6 +922,7 @@ div.contacto a:hover {
 	justify-content: center;
 	align-items: center;
 	transform: scale(0);
+	backface-visibility: hidden;
 }
 
 .light-box img {
@@ -1516,6 +1517,7 @@ div.contacto a:hover {
 
 
 .tt0a1 {
+
 	margin: 100px auto;
 	position: fixed;
 	top: 0;
@@ -1536,6 +1538,8 @@ div.contacto a:hover {
 	color: black;
 	box-shadow: 0px 8px 16px 0px rgba(170, 180, 90, 0.8);
 	text-shadow: 1px 0 1px 6px whitesmoke;
+/*	text-decoration: none;*/
+	backface-visibility: hidden;
 }
 
 .tt1a1 {
@@ -1578,6 +1582,7 @@ div.contacto a:hover {
 
 .tt0a1:hover {
 	text-decoration: none;
+	color: black;
 /*	transform: scale3d(1.0, 1.0, 3.9);*/
 }
 
@@ -1627,6 +1632,12 @@ div.contacto a:hover {
 	text-decoration: none;
 	text-align: center;
 	background-position: center;
+}
+
+.next2:hover {
+	color: black;
+/*	transform: scale(1.5);*/
+
 }
 
 
