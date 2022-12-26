@@ -222,24 +222,6 @@ html {
 	color: goldenrod;
 }
 
-/*.navbar .navbar-toggler {
-	display: flex;
-	flex-direction: row;
-	position: relative;
-	align-content: center;
-}
-*/
-.navbar-nav .nav-item {
-/*	display: inline-block;*/
-/*	position: relative;*/
-/*	flex-direction: column;*/
-/*	align-content: flex-end;*/
-/*	justify-content: flex-end;*/
-/*	object-position: right;*/
-/*	width: auto;*/
-/*	height: fit-content;*/
-/*	margin: 5px;*/
-}
 
 .navbar .navbar-nav {
 	display: flex;
@@ -1737,7 +1719,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
 
 .logo {
 	display: flex;
@@ -2269,7 +2251,7 @@ body {
 
 .polt {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	align-content: flex-end;
 	justify-content: flex-end;
 	margin: 0 auto;
