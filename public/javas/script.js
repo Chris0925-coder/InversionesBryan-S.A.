@@ -32,7 +32,7 @@ navToggle.addEventListener("click", () => {
 
 let send = document.querySelector(".btn");
 // const coments = document.querySelector(".comentarios");
-document.querySelector(".form-control").focus();
+// document.querySelector(".form-control").focus();
 
 
 // function message() {
@@ -52,23 +52,79 @@ document.querySelector(".form-control").focus();
 //     }
 // });
 // console.log(mail);
-let mail = document.querySelector(".form-control");
+// let mail = document.querySelector(".form-group .form-control");
+var comments = document.querySelector(".task");
+var mail = document.querySelector(".form-group .form-control").value;
 
 send.addEventListener("click", () => {
-    mail = document.querySelector(".form-control").value;
-    // mail.focus() = tt9;
-    // window.alert('¡GRACIAS POR SU COMENTARIO!');
-    console.log(mail);
+	mail = document.querySelector(".form-group .form-control").value;// mail = document.querySelector(".form-group .form-control").value;
+    // console.log(mail);
     if (mail == "") {
     alert("Rellene los espacios en blanco");
 } else {
+    comments.innerHTML +=
+        `<div class="task">
+            <span id="taskname">
+                ${mail};
+            </span>
+            <button class="delete">
+                <i class="bi bi.trash-alt"></i>
+            </button>
+        </div>`;
+
+        // add.appendChild("#taskname");
+        // let local = Storage.getItem(mail);
+        // add = mail;
+        // comments.push(mail);
+      	// console.log(mail);
+        // comm.push(mail);
     alert("¡GRACIAS POR SU COMENTARIO!");
-    // let addM = document.querySelector(".comentarios").innerHTML = `"<p>${mail}</p>"` + "<br>";
-    // addM;    
-    // let addM = document.querySelector(".comentarios").innerHTML = `${mail}` + "<p>Hola</p>";
-    // addM;
-}
+    // mail.innerHTML = comments;
+}	
 });
+
+// comments.push(mail);
+
+// const comm = comments;
+// comm.push(mail)
+// comm;
+
+// const comments = document.querySelector(".demo");
+
+
+
+
+// let comments = document.querySelector(".demo").innerHTML += 
+//         `<div class="task">
+//             <span id="taskname">
+//                 ${document.querySelector(".form-group input").value}
+//             </span>
+//             <button class="delete">
+//                 <i class="far fa.trash-alt"></i>
+//             </button>
+//         </div>`;
+
+// comments.push(4);
+
+
+// console.log(mail);
+
+// const x = document.forms["form"]; console.log(x);
+// let text = document.querySelector(".form-control").value;
+// for (let i = 0; i < x.length; i++) {
+//   text += x.elements[i].value + "<br>";
+// } 
+// let demo = document.querySelector(".demo");
+// let mail = document.querySelector(".form-control").value;
+// console.log(text);
+// send.addEventListener("click", () => {
+//     mail = document.querySelector(".form-control").value;
+//     console.log(text);
+//     document.querySelector(".demo").innerHTML = text + `<div><div>`;
+
+//     document.appendChild(text) = demo;
+// });
+
 
 // let mail = document.querySelector(".form-control").value;
 // let addM = document.querySelector(mail).innerHTML(".comentarios");
@@ -86,5 +142,10 @@ send.addEventListener("click", () => {
 
 
 
+// let come = querySelector("img.bien");
+// let bien = querySelector(".bienvenido");
 
+// bien.addEventListener("", () => {
+//     come.classList.toggle("#");
+// });
 
