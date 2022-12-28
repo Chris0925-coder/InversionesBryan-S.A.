@@ -9,9 +9,39 @@ function aceptarCookies() {
         cajacookies.style.display = 'none';
 };
 
+// $(document).ready(function() {
+//     compruebaAceptaCookies();
+// });
+
+
+
+function ventana(url) {
+	localStorage.aceptaCookies == 'true';
+    let show = window.confirm("Esta pagina contiene cookies de terceros!");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=200 scrollbars=YES");
+    } else {
+        window.close("https://www.inversionesbryan.com");
+    }
+    
+};
+
+
+
+ventana();
+
+
 $(document).ready(function() {
-    compruebaAceptaCookies();
+    compruebaAceptaCookies()
 });
 
 
-
+// if(confirm('Are you sure you want to do this?'))
+// {
+      // Do these things
+//       $('input[type=text]').each(function(index, value) {
+//            total += parseInt($(value).val() || 0);
+//       });
+//       $("#chkTotal").html(total);
+// }

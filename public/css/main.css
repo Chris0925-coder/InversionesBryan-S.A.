@@ -2330,3 +2330,15 @@ body {
 	color: ghostwhite;
 	background-color: black;
 }
+
+.cook {
+	font-size: xx-small;
+	text-indent: 5px;
+	text-align: center;
+	margin: 0 20px;
+}
+
+.ventana {
+	background: rgba(0, 0, 0, 1);
+	background-color: white;
+}

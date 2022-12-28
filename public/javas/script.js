@@ -180,16 +180,5 @@ send.addEventListener("click", () => {
 
 
 
-// COOKIES
-// function ventana(URL) {
-//     let show = window.confirm("Esta pagina contiene cookies de terceros!")
-//     if (true) {
-//         window.open("https://www.inversionesbryan.com/cookies.html", "COOKIES", "width=120", "height=300", "scrollbars=NO");
-//     } else {
-//         window.close("https://www.inversionesbryan.com");
-//     }
-    
-// }
 
-// ventana();
 
