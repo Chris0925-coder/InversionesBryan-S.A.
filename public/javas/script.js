@@ -53,35 +53,64 @@ let send = document.querySelector(".btn");
 // });
 // console.log(mail);
 // let mail = document.querySelector(".form-group .form-control");
-var comments = document.querySelector(".task");
-var mail = document.querySelector(".form-group .form-control").value;
+let comments = document.querySelector(".task");
+let mail = document.querySelector(".form-group .form-control").value;
 
 send.addEventListener("click", () => {
-	mail = document.querySelector(".form-group .form-control").value;// mail = document.querySelector(".form-group .form-control").value;
-    // console.log(mail);
+    mail = document.querySelector(".form-group .form-control").value;
     if (mail == "") {
     alert("Rellene los espacios en blanco");
 } else {
+    localStorage.aceptaCookies = "true";
     comments.innerHTML +=
         `<div class="task">
             <span id="taskname">
-                ${mail};
+                ${mail}
             </span>
             <button class="delete">
                 <i class="bi bi.trash-alt"></i>
             </button>
         </div>`;
-
-        // add.appendChild("#taskname");
-        // let local = Storage.getItem(mail);
-        // add = mail;
-        // comments.push(mail);
-      	// console.log(mail);
-        // comm.push(mail);
     alert("¡GRACIAS POR SU COMENTARIO!");
-    // mail.innerHTML = comments;
 }	
 });
+
+// function orne (click) {
+//      mail = document.querySelector(".form-group .form-control").value;
+//       comments = document.querySelector(".task");
+//     if (mail == "") {
+//     alert("Rellene los espacios en blanco");
+// } else {
+    // localStorage.aceptaCookies = "true";
+    // comments.innerHTML +=
+    //     `<div class="task">
+    //         <span id="taskname">
+    //             ${mail}
+    //         </span>
+    //         <button class="delete">
+    //             <i class="bi bitrash-alt"></i>
+    //         </button>
+    //     </div>`;
+    // alert("¡GRACIAS POR SU COMENTARIO!");
+    // comments.push = mail;
+// }
+// };
+
+// function ana () {
+//      localStorage.aceptaCookies = "true";
+//     comments.innerHTML +=
+//         `<div class="task">
+//             <span id="taskname">
+//                 ${mail}
+//             </span>
+//             <button class="delete">
+//                 <i class="bi bitrash-alt"></i>
+//             </button>
+//         </div>`;
+//     alert("¡GRACIAS POR SU COMENTARIO!");
+// }
+
+// orne();
 
 // comments.push(mail);
 

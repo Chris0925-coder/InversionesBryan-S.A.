@@ -12,3 +12,6 @@ function aceptarCookies() {
 $(document).ready(function() {
     compruebaAceptaCookies();
 });
+
+
+
