@@ -16,20 +16,18 @@ function aceptarCookies() {
 
 
 function ventana(url) {
-	localStorage.aceptaCookies == 'true';
-    let show = window.confirm("Esta pagina contiene cookies de terceros!");
+	localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Política de privacidad");
     if (show === true) {
 
-        window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=200 scrollbars=YES");
+        window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
     } else {
         window.close("https://www.inversionesbryan.com");
     }
     
 };
 
-
-
-ventana();
+// ventana();
 
 
 $(document).ready(function() {
@@ -45,3 +43,5 @@ $(document).ready(function() {
 //       });
 //       $("#chkTotal").html(total);
 // }
+
+// document.querySelector("")
