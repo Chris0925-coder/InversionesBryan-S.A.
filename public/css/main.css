@@ -1719,7 +1719,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 400px) and (max-width: 600px) {
 
 .logo {
 	display: flex;
@@ -2264,6 +2264,7 @@ body {
 #closed {
 	margin-top: 80px;
 	text-align: left;
+	text-indent: 60px;
 	margin: 20px;
 	vertical-align: middle;
 }
