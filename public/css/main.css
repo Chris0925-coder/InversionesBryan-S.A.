@@ -583,7 +583,7 @@ div.contacto a:hover {
 /*	width: 100%;*/
 	grid-template-rows: repeat(auto-fit, minmax(530px, 3fr));	
 /*	height: fit-content;*/
-	margin: 0;
+	margin: 0 auto;
 /*	grid-gap: 20px;*/
 	padding: 0;
 /*	overflow: hidden;*/
@@ -627,7 +627,7 @@ div.contacto a:hover {
 	position: relative;
 	/*overflow: auto;*/
 /*	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);*/
-	margin: 5px;
+	margin: 5px auto;
 	padding: 5px;
 /*	justify-items: space-evenly;
 	align-content: space-between;
@@ -651,10 +651,10 @@ div.contacto a:hover {
 /*	align-content: space-between;*/
 	justify-items: center;
 	width: auto;
-	margin: 10px;
+	margin: 10px 0;
 /*	justify-content: space-evenly;*/
 /*	align-items: stretch;*/
-	padding: 5px;
+	padding: 0;
 	box-shadow: 0 0 10px grey;
 /*	background-position: var(300);*/
 /*	vertical-align: top;*/
@@ -664,6 +664,10 @@ div.contacto a:hover {
 	justify-content: center;
 	justify-items: center;
 /*	gap: 10px 10px;*/
+}
+
+.photos {
+	margin: 0 auto;
 }
 
 .photos i:hover {
