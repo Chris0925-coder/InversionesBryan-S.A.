@@ -86,7 +86,7 @@ send.addEventListener("click", () => {
     localStorage.aceptaCookies = "true";
     
     if (mail !== "" || control !== "") {
-        enviarFormulario();
+        
         // comm = document.querySelector("#task");
 
      
