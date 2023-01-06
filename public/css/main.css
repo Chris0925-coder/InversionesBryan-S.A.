@@ -962,11 +962,17 @@ div.contacto a:hover {
 /*CONTACT PAGE*/
 
 .banner {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
+	
 	background-image: url("../img/banner2.png");
 	background-image: rgba(0, 0, 0, 0.5);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: contain;
+	margin: 0 auto;
+	width: auto;
+/*	height: 100%;*/
+
 }
 
 .bann {
