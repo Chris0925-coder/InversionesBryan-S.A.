@@ -48,7 +48,7 @@ function ventana(url) {
 
 
 let slides = document.getElementsByClassName("proyecto");
-let slideIndex = 0;
+var slideIndex = 0;
 
 
 
@@ -76,5 +76,33 @@ function showSlides() {
 
 showSlides();
 
+function plusSlidesA() {
+    let i;
+    slides = document.getElementsByClassName("proyecto");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+        slideIndex++;
+
+    if(true) {
+        slides[slideIndex]}
+    slides[slideIndex-1].style.display = "block";
+    
+};
+
+function plusSlidesB() {
+    let i;
+    slides = document.getElementsByClassName("proyecto");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    slideIndex--;
+
+    if(true) {
+        slides[slideIndex-1]}
+    slides[slideIndex-1].style.display = "block";
+};
 
 
