@@ -730,6 +730,8 @@ div.contacto a:hover {
 	align-items: center;
 	transform: scale(0);
 	backface-visibility: hidden;
+/*	transition: width 2s;*/
+/*  	transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
 }
 
 .light-box img {
@@ -1177,14 +1179,14 @@ div.contacto a:hover {
 
 
 
-#remode img {
+/*#remode img {*/
 /*	display: inline-block;*/
 /*	margin-top: 10px;*/
 /*	margin: 10px auto 0 0;*/
 /*	padding-top: 10px;*/
 /*	display: inline-block;*/
-	width: 160px;
-}
+/*	width: 160px;*/
+/*}*/
 
 .cuerpo {
 	width: 100%;
@@ -2152,12 +2154,12 @@ body {
 /*	transform: scale(0);*/
 }
 
-#proyectos0 {
+/*#proyectos0 {
 	display: inline-block;
 	visibility: visible;
 	position: relative;
 }
-
+*/
 /*#proyectos1 {
 	visibility: hidden;
 	left: 100%;
@@ -2172,46 +2174,47 @@ body {
 /*	flex-wrap: wrap;*/
 	width: 100%;
 	z-index: 2000;
-	align-content: center;
+	align-content: space-between;
 	justify-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	justify-content: space-between;
 	align-content: space-between;
+	margin: 0;
 }
 
 .proyecto img {
 	box-sizing: border-box;
 	max-width: 1028px;
-	max-height: 500px;
+	height: 500px;
 	position: relative;
 	margin: auto;
 	object-fit: fill;
 }
 
-#proyectos2 img,
-#proyectos3 img,
-#proyectos4 img {
-	object-fit: cover;
-}
 
-.slideshow-container {
-	max-width: 1028px;
+/*.slideshow-container {
+	max-width: 100%;
 	position: relative;
 	margin: 0;
-}
+}*/
 
 .prev,
 .nextt {
+	position: relative;
+	display: flex;
 	cursor: pointer;
 /*	z-index: 1000;*/
 	width: auto;
 	text-decoration: none;
-/*	align-self: flex-end;*/
-/*	justify-self: end;*/
-	color: goldenrod;
-	padding: auto;
-	margin: 0;
+	align-content: space-between;
+	align-items: center;
+	align-content: flex-end;
+	align-self: flex-end;
+	justify-self: flex-end;
+	color: black;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .prev:hover, 
@@ -2219,10 +2222,17 @@ body {
 	text-decoration: none;
 	background-color:rgba(0,0,0,0.3);
 	background-position: center;
-	background-size: cover;
+	border-radius: 20% 10% 0 5% ;
+/*	background-size: cover;*/
 	color: white;
-	margin: 0;
+/*	margin: 0;*/
 	padding: 0 10px;
+	transform: scale3d(1.5, 1.5, 2.0);
+	
+}
+
+.prev:target {
+
 }
 
 
@@ -2252,4 +2262,6 @@ body {
 	position: relative;
 	margin: auto;
 /*	width: 50px;*/
+/*	transition: width 2s;*/
+/*  	transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
 }

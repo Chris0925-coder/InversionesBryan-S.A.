@@ -56,7 +56,7 @@ const send = document.querySelector(".btn");
 const comm = document.querySelector("#taskname");
 let mail = document.querySelector("[name=email]").value;
 let control = document.querySelector("[name=control]").value;
-const form = document.querySelector("#formulario");
+const form = document.querySelector("#form1");
 
 
 const enviarFormulario = (event) => {
@@ -86,9 +86,16 @@ send.addEventListener("click", () => {
     localStorage.aceptaCookies = "true";
     
     if (mail !== "" || control !== "") {
-        
-        // comm = document.querySelector("#task");
 
+        // comm = document.querySelector("#task");
+        const enviarFormulario = (event) => {
+        // event.preventDefault();
+    
+        console.log(
+            event.target.email.value, 
+            event.target.control.value
+        );
+};
      
     let html = 
         `<div id="task">
