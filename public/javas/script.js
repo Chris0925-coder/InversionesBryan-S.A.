@@ -60,7 +60,7 @@ const form = document.querySelector("#formulario");
 
 
 const enviarFormulario = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     
     console.log(
         event.target.email.value, 
@@ -86,7 +86,7 @@ send.addEventListener("click", () => {
     localStorage.aceptaCookies = "true";
     
     if (mail !== "" || control !== "") {
-
+        enviarFormulario();
         // comm = document.querySelector("#task");
 
      
@@ -95,9 +95,6 @@ send.addEventListener("click", () => {
             <span id="taskname">
                 ${"Usuario: " + mail + "<br>" + "Comenta: " + control}
             </span>
-            <button class="delete">
-                <i class="bi bi-trash"></i>
-            </button>
         </div>`;
 
     comm.insertAdjacentHTML("afterend", html);
@@ -111,8 +108,6 @@ send.addEventListener("click", () => {
     
 }
 });
-
-
 
 
 
