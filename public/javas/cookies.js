@@ -30,9 +30,9 @@ function ventana(url) {
 // ventana();
 
 
-$(document).ready(function() {
-    compruebaAceptaCookies()
-});
+// $(document).ready(function() {
+//     compruebaAceptaCookies()
+// });
 
 
 // if(confirm('Are you sure you want to do this?'))
@@ -45,3 +45,36 @@ $(document).ready(function() {
 // }
 
 // document.querySelector("")
+
+
+let slides = document.getElementsByClassName("proyecto");
+let slideIndex = 0;
+
+
+
+// console.log(slides);
+
+function showSlides() {
+    let i;
+    // slides = document.getElementsByClassName("proyecto");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+
+    // slideIndex = 0;
+
+    slideIndex++;
+
+    if(slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides,4000);
+    // console.log(slideIndex);
+};
+
+
+
+
+showSlides();
+
+
+

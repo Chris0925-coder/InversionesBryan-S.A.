@@ -30,7 +30,7 @@ navToggle.addEventListener("click", () => {
 
 // import __ from '../../partials/navigation.html';
 
-let send = document.querySelector(".btn");
+const send = document.querySelector(".btn");
 // const coments = document.querySelector(".comentarios");
 // document.querySelector(".form-control").focus();
 
@@ -53,36 +53,80 @@ let send = document.querySelector(".btn");
 // });
 // console.log(mail);
 // let mail = document.querySelector(".form-group .form-control");
-let comments = document.querySelector(".task");
-let mail = document.querySelector(".form-group .form-control").value;
+const comm = document.querySelector("#taskname");
+let mail = document.querySelector("[name=email]").value;
+let control = document.querySelector("[name=control]").value;
+const form = document.querySelector("#formulario");
+
+
+const enviarFormulario = (event) => {
+    event.preventDefault();
+    
+    console.log(
+        event.target.email.value, 
+        event.target.control.value
+        );
+};
+
+
+// form.addEventListener('submit', enviarFormulario);
+
+// comm.appendChild(mail);
+
+// console.log(mail);
+
 
 send.addEventListener("click", () => {
-    mail = document.querySelector(".form-group .form-control").value;
-    if (mail == "") {
-    alert("Rellene los espacios en blanco");
-} else {
+    mail = document.querySelector("[name=email]").value;
+    control = document.querySelector("[name=control]").value;
+    // mail = document.querySelector("[name=email]").value;
+    // form = document.querySelector("#formulario");
+    // const mail = document.getElementsByName("mail").value;
+    // const control = document.getElementsByName("control").value;
     localStorage.aceptaCookies = "true";
-    comments.innerHTML +=
-        `<div class="task">
+    
+    if (mail !== "" || control !== "") {
+
+        // comm = document.querySelector("#task");
+
+     
+    let html = 
+        `<div id="task">
             <span id="taskname">
-                ${mail}
+                ${"Usuario: " + mail + "<br>" + "Comenta: " + control}
             </span>
             <button class="delete">
-                <i class="bi bi.trash-alt"></i>
+                <i class="bi bi-trash"></i>
             </button>
         </div>`;
+
+    comm.insertAdjacentHTML("afterend", html);
     alert("¡GRACIAS POR SU COMENTARIO!");
-}	
+    form.addEventListener('submit', enviarFormulario);
+
+    document.querySelector(".form-control").value="";
+
+} else {
+    alert("Rellene los espacios en blanco");
+    
+}
 });
+
+
+
+
+
+
+
 
 // function orne (click) {
 //      mail = document.querySelector(".form-group .form-control").value;
-//       comments = document.querySelector(".task");
+//       comm = document.querySelector(".task");
 //     if (mail == "") {
 //     alert("Rellene los espacios en blanco");
 // } else {
     // localStorage.aceptaCookies = "true";
-    // comments.innerHTML +=
+    // comm.innerHTML +=
     //     `<div class="task">
     //         <span id="taskname">
     //             ${mail}
@@ -98,7 +142,7 @@ send.addEventListener("click", () => {
 
 // function ana () {
 //      localStorage.aceptaCookies = "true";
-//     comments.innerHTML +=
+//     comm.innerHTML +=
 //         `<div class="task">
 //             <span id="taskname">
 //                 ${mail}
@@ -112,18 +156,18 @@ send.addEventListener("click", () => {
 
 // orne();
 
-// comments.push(mail);
+// comm.push(mail);
 
 // const comm = comments;
 // comm.push(mail)
 // comm;
 
-// const comments = document.querySelector(".demo");
+// const comm = document.querySelector(".demo");
 
 
 
 
-// let comments = document.querySelector(".demo").innerHTML += 
+// let comm = document.querySelector(".demo").innerHTML += 
 //         `<div class="task">
 //             <span id="taskname">
 //                 ${document.querySelector(".form-group input").value}
@@ -133,7 +177,7 @@ send.addEventListener("click", () => {
 //             </button>
 //         </div>`;
 
-// comments.push(4);
+// comm.push(4);
 
 
 // console.log(mail);
@@ -180,5 +224,13 @@ send.addEventListener("click", () => {
 
 
 
+
+
+// const arrow = document.querySelectorAll(".arrow");
+// const pro = document.querySelectorAll(".proyectos1");
+
+// arrow.addEventListener("click", () => {
+//     pro.classList.toggle("proyecto")
+// });
 
 
