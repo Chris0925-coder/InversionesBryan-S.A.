@@ -2271,7 +2271,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	margin: auto;
+	margin: 0;
 /*	width: 50px;*/
 /*	transition: width 2s;*/
 /*  	transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/

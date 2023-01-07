@@ -55,18 +55,18 @@ const send = document.querySelector(".btn");
 // let mail = document.querySelector(".form-group .form-control");
 const comm = document.querySelector("#taskname");
 let mail = document.querySelector("[name=email]").value;
-let control = document.querySelector("[name=control]").value;
+let message = document.querySelector("[name=control]").value;
 let form = document.querySelector("#form1");
 
 
-const enviarFormulario = (event) => {
+// const enviarFormulario = (event) => {
     // event.preventDefault();
     
-    console.log(
-        event.target.email.value, 
-        event.target.control.value
-        );
-};
+//     console.log(
+//         event.target.email.value, 
+//         event.target.message.value
+//         );
+// };
 
 
 // form.addEventListener('submit', enviarFormulario);
@@ -78,70 +78,35 @@ const enviarFormulario = (event) => {
 
 send.addEventListener("click", () => {
     mail = document.querySelector("[name=email]").value;
-    control = document.querySelector("[name=control]").value;
+    message = document.querySelector("[name=control]").value;
     // mail = document.querySelector("[name=email]").value;
     // form = document.querySelector("#formulario");
     // const mail = document.getElementsByName("mail").value;
     // const control = document.getElementsByName("control").value;
     localStorage.aceptaCookies === "true";
     
-    if (mail !== "" || control !== "") {
+    if (mail !== "" || message !== "") {
 
         // comm = document.querySelector("#task");
-        const enviarFormulario = (event) => {
+        // const enviarFormulario = (event) => {
         // event.preventDefault();
     
-        console.log(
-            event.target.email.value, 
-            event.target.control.value
-        );
+        // console.log(
+        //     event.target.email.value, 
+        //     event.target.control.value
+        // );
 };
      
-    var message = 
+    var message1 = 
         `<div id="task">
             <span id="taskname">
-                ${"Usuario: " + mail + "<br>" + "Comenta: " + control}
+                ${"Usuario: " + mail + "<br>" + "Comenta: " + message}
             </span>
         </div>`;
 
-    comm.insertAdjacentHTML("afterend", message);
+    comm.insertAdjacentHTML("afterend", message1);
     alert("¡GRACIAS POR SU COMENTARIO!");
     
-
-    // document.querySelector(".form-control").value="";
-
-
-
-//     function sendMail(name, email, subject, message) {
-//   const myHeaders = new Headers();
-//   myHeaders.append("Content-Type", "application/json");
-//   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
-
-//   const data = JSON.stringify({
-//     "Messages": [{
-//       "From": {"Email": "christianguardia@outlook.es", "Name": "Christian"},
-//       "To": [{"Email": email, "Name": name}],
-//       "Subject": subject,
-//       "TextPart": message
-//     }]
-//   });
-
-//   const requestOptions = {
-//     method: 'POST',
-//     headers: myHeaders,
-//     body: data,
-//   };
-
-//   fetch("https://api.mailjet.com/v3.1/send", requestOptions)
-//     .then(response => response.text())
-//     .then(result => console.log(result))
-//     .catch(error => console.log('error', error));
-// };
-
-// form.addEventListener('submit', enviarFormulario);
-
-
-
 
 } else {
     alert("Rellene los espacios en blanco");
@@ -149,28 +114,32 @@ send.addEventListener("click", () => {
 }
 });
 
+
 function sendMail(name, email, subject, message) {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
   localStorage.aceptaCookies === "true";
 
-  // const enviarFormulario = (event) => {
-  //       event.preventDefault();
+  const enviarFormulario = (event) => {
+        event.preventDefault();
     
-  //       console.log(
-  //           event.target.email.value, 
-  //           event.target.control.value
-  //       );
-  //   };
+        console.log(
+            event.target.email.value, 
+            event.target.control.value
+        );
+    };
 
 
   const data = JSON.stringify({
     "Messages": [{
-      "From": {"Email": "admin@inversionesbryan.com", "Name": "IB"},
-      "To": [{"Email": email, "Name": name}],
+      "From": {"christianguardia@outlook.es": "", "Christian": ""},
+      "To": [{"Email": admin@inversionesbryan.com, "Name": name}],
+      "TemplateID": 4480517,
+        "TemplateLanguage": true,
       "Subject": subject,
       "TextPart": message
+      "Variables": {mail, message}
     }]
   });
 
