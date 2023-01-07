@@ -138,7 +138,7 @@ send.addEventListener("click", () => {
 //     .catch(error => console.log('error', error));
 // };
 
-form.addEventListener('submit', sendMail);
+form.addEventListener('submit', enviarFormulario);
 
 
 
@@ -167,7 +167,7 @@ function sendMail(name, email, subject, message) {
 
   const data = JSON.stringify({
     "Messages": [{
-      "From": {"Email": "christianguardia@outlook.es", "Name": "Christian"},
+      "From": {"Email": "admin@inversionesbryan.com", "Name": "IB"},
       "To": [{"Email": email, "Name": name}],
       "Subject": subject,
       "TextPart": message
