@@ -89,7 +89,7 @@ send.addEventListener("click", () => {
 
         // comm = document.querySelector("#task");
         const enviarFormulario = (event) => {
-        event.preventDefault();
+        // event.preventDefault();
     
         console.log(
             event.target.email.value, 
@@ -108,7 +108,7 @@ send.addEventListener("click", () => {
     alert("¡GRACIAS POR SU COMENTARIO!");
     
 
-    document.querySelector(".form-control").value="";
+    // document.querySelector(".form-control").value="";
 
 
 
@@ -138,7 +138,7 @@ send.addEventListener("click", () => {
 //     .catch(error => console.log('error', error));
 // };
 
-form.addEventListener('submit', enviarFormulario);
+// form.addEventListener('submit', enviarFormulario);
 
 
 
@@ -155,14 +155,14 @@ function sendMail(name, email, subject, message) {
   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
 
 
-  const enviarFormulario = (event) => {
-        event.preventDefault();
+  // const enviarFormulario = (event) => {
+  //       event.preventDefault();
     
-        console.log(
-            event.target.email.value, 
-            event.target.control.value
-        );
-    };
+  //       console.log(
+  //           event.target.email.value, 
+  //           event.target.control.value
+  //       );
+  //   };
 
 
   const data = JSON.stringify({

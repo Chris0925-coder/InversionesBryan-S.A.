@@ -2150,7 +2150,7 @@ body {
 /*	display: inline-block;*/
 	justify-content: center;
 	align-items: center;
-	display: none;
+/*	display: none;*/
 /*	transform: scale(0);*/
 }
 
@@ -2191,6 +2191,8 @@ body {
 	position: relative;
 	margin: auto;
 	object-fit: fill;
+	transition: all;
+
 }
 
 
@@ -2237,12 +2239,22 @@ body {
 }
 
 
-.fade { 
-	-webkit-animation-name:fade; 
-	-webkit-animation-duration:1.5s; 
-	animation-name:fade; 
-	animation-duration:1.5s;
-}
+/*.fade img { */
+/*	-webkit-animation-name:fade; */
+/*	-webkit-animation-duration:2s; */
+/*width: 100px;*/
+/*height: 100px;*/
+/*	background-color: black;*/
+/*	animation-name:fade; */
+/*	animation-duration:2s;*/
+/*	animation: mymove 5s infinite;*/
+/*	animation-timing-function: ease;*/
+/*	animation-delay: 2s;*/
+/*	background-color: red;*/
+/*transition: width 2s;*/
+/*  	transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
+
+/*}*/
 
 
 /*.galeria #construccion {
@@ -2266,3 +2278,17 @@ body {
 /*	transition: width 2s;*/
 /*  	transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
 }
+
+
+/*@keyframes fade {
+
+	from {left: 0px;}
+  to {left: 4300px;}*/
+	
+	/*0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}*/
+
+/*}*/
