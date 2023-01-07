@@ -2191,7 +2191,8 @@ body {
 	position: relative;
 	margin: auto;
 	object-fit: fill;
-	transition: all;
+/*	transition: all;*/
+	transition: transform 0.3s ease-in-out;
 
 }
 
@@ -2234,9 +2235,6 @@ body {
 	
 }
 
-.prev:target {
-
-}
 
 
 /*.fade img { */

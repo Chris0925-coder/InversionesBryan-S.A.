@@ -67,6 +67,7 @@ function showSlides() {
 
     if(slideIndex > slides.length) {slideIndex = 1}
     slides[slideIndex-1].style.display = "block";
+    // slides[slideIndex-1].style.transition = "transform 0.6s ease-in-out";
     setTimeout(showSlides,6000);
     // console.log(slideIndex);
 };

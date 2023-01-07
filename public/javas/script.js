@@ -83,7 +83,7 @@ send.addEventListener("click", () => {
     // form = document.querySelector("#formulario");
     // const mail = document.getElementsByName("mail").value;
     // const control = document.getElementsByName("control").value;
-    localStorage.aceptaCookies = "true";
+    localStorage.aceptaCookies === "true";
     
     if (mail !== "" || control !== "") {
 
@@ -153,7 +153,7 @@ function sendMail(name, email, subject, message) {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
-
+  localStorage.aceptaCookies === "true";
 
   // const enviarFormulario = (event) => {
   //       event.preventDefault();
