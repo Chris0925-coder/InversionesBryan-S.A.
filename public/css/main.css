@@ -968,13 +968,13 @@ div.contacto a:hover {
 	background-image: url("../img/banner2.png");
 	background-color: rgba(0, 0, 0, 0.5); 
 	background-size: contain;
-	background-position: top;
+	background-position: center;
 	background-repeat: no-repeat;
 	object-fit: fill;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: fit-content;
+	height: 100vh;
 
 }
 
@@ -2154,12 +2154,13 @@ body {
 /*	transform: scale(0);*/
 }
 
-/*#proyectos0 {
-	display: inline-block;
+#proyectos0 {
+	/*display: inline-block;
 	visibility: visible;
-	position: relative;
+	position: relative*/;
+	
 }
-*/
+
 /*#proyectos1 {
 	visibility: hidden;
 	left: 100%;

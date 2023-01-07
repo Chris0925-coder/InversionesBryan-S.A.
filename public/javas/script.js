@@ -106,9 +106,44 @@ send.addEventListener("click", () => {
 
     comm.insertAdjacentHTML("afterend", html);
     alert("¡GRACIAS POR SU COMENTARIO!");
-    form.addEventListener('submit', enviarFormulario);
+    
 
     document.querySelector(".form-control").value="";
+
+
+
+    function sendMail(name, email, subject, message) {
+  const myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
+
+  const data = JSON.stringify({
+    "Messages": [{
+      "From": {"Email": "christianguardia@outlook.es", "Name": "Christian"},
+      "To": [{"Email": email, "Name": name}],
+      "Subject": subject,
+      "TextPart": message
+    }]
+  });
+
+  const requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: data,
+  };
+
+  fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+    .then(response => response.text())
+    .then(result => console.log(result))
+    .catch(error => console.log('error', error));
+};
+
+sendMail();
+
+form.addEventListener('submit', sendMail);
+
+
+
 
 } else {
     alert("Rellene los espacios en blanco");
@@ -236,3 +271,34 @@ send.addEventListener("click", () => {
 // });
 
 
+
+
+
+
+
+
+// function sendMail(name, email, subject, message) {
+//   const myHeaders = new Headers();
+//   myHeaders.append("Content-Type", "application/json");
+//   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
+
+//   const data = JSON.stringify({
+//     "Messages": [{
+//       "From": {"Email": "christianguardia@outlook.es", "Name": "Christian"},
+//       "To": [{"Email": email, "Name": name}],
+//       "Subject": subject,
+//       "TextPart": message
+//     }]
+//   });
+
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: myHeaders,
+//     body: data,
+//   };
+
+//   fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+//     .then(response => response.text())
+//     .then(result => console.log(result))
+//     .catch(error => console.log('error', error));
+// }
