@@ -95,7 +95,7 @@ send.addEventListener("click", () => {
         //     event.target.email.value, 
         //     event.target.control.value
         // );
-};
+    // };
      
     var message1 = 
         `<div id="task">
@@ -134,12 +134,12 @@ function sendMail(name, email, subject, message) {
   const data = JSON.stringify({
     "Messages": [{
       "From": {"christianguardia@outlook.es": "", "Christian": ""},
-      "To": [{"Email": admin@inversionesbryan.com, "Name": name}],
+      "To": [{"Email": email, "Name": name}],
       "TemplateID": 4480517,
         "TemplateLanguage": true,
       "Subject": subject,
       "TextPart": message
-      "Variables": {mail, message}
+      // "Variables": {mail, message}
     }]
   });
 
