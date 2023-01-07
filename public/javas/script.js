@@ -56,7 +56,7 @@ const send = document.querySelector(".btn");
 const comm = document.querySelector("#taskname");
 let mail = document.querySelector("[name=email]").value;
 let control = document.querySelector("[name=control]").value;
-const form = document.querySelector("#form1");
+let form = document.querySelector("#form1");
 
 
 const enviarFormulario = (event) => {
@@ -89,7 +89,7 @@ send.addEventListener("click", () => {
 
         // comm = document.querySelector("#task");
         const enviarFormulario = (event) => {
-        // event.preventDefault();
+        event.preventDefault();
     
         console.log(
             event.target.email.value, 
@@ -97,14 +97,14 @@ send.addEventListener("click", () => {
         );
 };
      
-    let html = 
+    var message = 
         `<div id="task">
             <span id="taskname">
                 ${"Usuario: " + mail + "<br>" + "Comenta: " + control}
             </span>
         </div>`;
 
-    comm.insertAdjacentHTML("afterend", html);
+    comm.insertAdjacentHTML("afterend", message);
     alert("¡GRACIAS POR SU COMENTARIO!");
     
 
@@ -112,10 +112,58 @@ send.addEventListener("click", () => {
 
 
 
-    function sendMail(name, email, subject, message) {
+//     function sendMail(name, email, subject, message) {
+//   const myHeaders = new Headers();
+//   myHeaders.append("Content-Type", "application/json");
+//   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
+
+//   const data = JSON.stringify({
+//     "Messages": [{
+//       "From": {"Email": "christianguardia@outlook.es", "Name": "Christian"},
+//       "To": [{"Email": email, "Name": name}],
+//       "Subject": subject,
+//       "TextPart": message
+//     }]
+//   });
+
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: myHeaders,
+//     body: data,
+//   };
+
+//   fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+//     .then(response => response.text())
+//     .then(result => console.log(result))
+//     .catch(error => console.log('error', error));
+// };
+
+form.addEventListener('submit', sendMail);
+
+
+
+
+} else {
+    alert("Rellene los espacios en blanco");
+    
+}
+});
+
+function sendMail(name, email, subject, message) {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/json");
   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
+
+
+  const enviarFormulario = (event) => {
+        event.preventDefault();
+    
+        console.log(
+            event.target.email.value, 
+            event.target.control.value
+        );
+    };
+
 
   const data = JSON.stringify({
     "Messages": [{
@@ -138,21 +186,10 @@ send.addEventListener("click", () => {
     .catch(error => console.log('error', error));
 };
 
-sendMail();
+// sendMail();
 
+// sendMail();
 form.addEventListener('submit', sendMail);
-
-
-
-
-} else {
-    alert("Rellene los espacios en blanco");
-    
-}
-});
-
-
-
 
 
 
