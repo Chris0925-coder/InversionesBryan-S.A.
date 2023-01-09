@@ -97,7 +97,7 @@ send.addEventListener("click", () => {
         // );
     // };
      
-    var message1 = 
+    let message1 = 
         `<div id="task">
             <span id="taskname">
                 ${"Usuario: " + mail + "<br>" + "Comenta: " + message}
@@ -115,50 +115,50 @@ send.addEventListener("click", () => {
 });
 
 
-function sendMail(name, email, subject, message) {
-  const myHeaders = new Headers();
-  myHeaders.append("Content-Type", "application/json");
-  myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
-  localStorage.aceptaCookies === "true";
+// function sendMail(name, email, subject, message) {
+//   const myHeaders = new Headers();
+//   myHeaders.append("Content-Type", "application/json");
+//   myHeaders.set('Authorization', 'Basic ' + base64.encode('2f6d5a98b80a1972ba267fe3d24b20e8'+":" +'94767ea856c646e40d8d93a717f5c80f'));
+//   localStorage.aceptaCookies === "true";
 
-  const enviarFormulario = (event) => {
-        event.preventDefault();
+//   const enviarFormulario = (event) => {
+//         event.preventDefault();
     
-        console.log(
-            event.target.email.value, 
-            event.target.control.value
-        );
-    };
+//         console.log(
+//             event.target.email.value, 
+//             event.target.control.value
+//         );
+//     };
 
 
-  const data = JSON.stringify({
-    "Messages": [{
-      "From": {"christianguardia@outlook.es": "", "Christian": ""},
-      "To": [{"Email": email, "Name": name}],
-      "TemplateID": 4480517,
-        "TemplateLanguage": true,
-      "Subject": subject,
-      "TextPart": message
-      // "Variables": {mail, message}
-    }]
-  });
+//   const data = JSON.stringify({
+//     "Messages": [{
+//       "From": {"christianguardia@outlook.es": "", "Christian": ""},
+//       "To": [{"Email": email, "Name": name}],
+//       "TemplateID": 4480517,
+//         "TemplateLanguage": true,
+//       "Subject": subject,
+//       "TextPart": message
+//       "Variables": {mail, message}
+//     }]
+//   });
 
-  const requestOptions = {
-    method: 'POST',
-    headers: myHeaders,
-    body: data,
-  };
+//   const requestOptions = {
+//     method: 'POST',
+//     headers: myHeaders,
+//     body: data,
+//   };
 
-  fetch("https://api.mailjet.com/v3.1/send", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-};
-
-// sendMail();
+//   fetch("https://api.mailjet.com/v3.1/send", requestOptions)
+//     .then(response => response.text())
+//     .then(result => console.log(result))
+//     .catch(error => console.log('error', error));
+// };
 
 // sendMail();
-form.addEventListener('submit', sendMail);
+
+// sendMail();
+// form.addEventListener('submit', sendMail);
 
 
 
