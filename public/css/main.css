@@ -79,14 +79,14 @@ body {
 /*	justify-self: end;*/
 	object-position: right;
 /*	justify-self: right;*/
-/*	background-color: rgba(0, 0, 0, 0.2);*/
+	background-color: rgba(0, 0, 0, 0.1);
 	background-size: contain;
 /*	background-position: right;*/
 /*	background-repeat: no-repeat;*/
 /*	box-sizing: border-box;*/
-/*	box-shadow: 5px 5px 10px;*/
+	box-shadow: 1px 1px 4px;
 /*	border-radius: 20px 10px;*/
-	padding: 10px;
+	padding: 5px;
 }
 
 
@@ -283,18 +283,18 @@ body {
 
 li a.active {
 /*	background-color: rgba(200, 200, 200, 1);*/
-	border-radius: 5px;
-    background-color: rgba(140, 150, 160, 0.3);
-    padding: 1px;
-/*    filter: drop-shadow(1px 1px 10px);*/
-    color: darkgoldenrod;
+	border-radius: 3px;
+    background-color: rgba(140, 150, 160, 0.9);
+    padding: 3px;
+/*    filter: drop-shadow(1px 1px 3px);*/
+/*    color: white;*/
 }
 
 .nav-item a:hover:not(.active) {
-    background-color: rgba(170, 170, 170, 0.7);
-    color: rgba(250, 250, 250, 0.5);
+    background-color: rgba(170, 170, 170, 0.6);
+    color: rgba(250, 250, 250, 0.9);
 /*    filter: drop-shadow(1px 1px 5px);*/
-	color: whitesmoke;
+/*	color: whitesmoke;*/
 }
 
 .imagen {
@@ -1545,13 +1545,21 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (min-width: 280px) and (max-width: 600px) {
 
 .logo {
-	display: flex;
 	position: relative;
+	display: flex;
+	background-size: contain;
+	background-position: center;
+/*	position: relative;*/
 	align-content: flex-start;
 	align-self: flex-start;
+	width: 70%;
+	height: fit-content;
+	margin: 0;
+	object-fit: fill;
+/*	z-index: -1;*/
 }
 
 .galeria .photos {
@@ -1581,29 +1589,51 @@ body {
 /*	margin: 0 auto;*/
 }
 
-.navbar-toggler i.active {
-	color: grey;
+.navbar-toggler {
+	display: flex;
 	position: relative;
+	justify-self: flex-end;
+	align-self: flex-end;
+	flex-direction: row;
+/*	flex-flow: column wrap;*/
+/*	width: 100%;*/
+	z-index: 2000;
+/*	background-color: white;*/
 }
 
-/*.navbar {
-	display: inline-flex;
+/*.navbar-collapse {
+	width: auto;
+	height: fit-content;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.2);
+}*/
+
+
+.navbar-toggler i.active {
+	color: grey;
+/*	z-index: 2000;*/
+/*	float: right;*/
+/*	position: absolute;*/
+}
+
+.navbar {
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	position: relative;*/
-/*	justify-content: space-between;*/
+	position: relative;
+	justify-content: space-between;
 /*	align-content: space-between;*/
-/*	justify-items: space-between;*/
-/*	align-items: center;*/
+	justify-items: space-between;
+	align-items: center;
 	/*align-content: flex-start;*/
-/*	justify-content: center;
-	justify-items: center;
-	align-content: flex-end;
-	align-items: center;*/
+/*	justify-content: center;*/
+/*	justify-items: center;*/
+/*	align-content: flex-end;*/
+	align-items: center;
 	/*align-items: flex-start;*/
-/*	width: 100%;
+	width: 100%;
 	height: 150px;
-	margin: 0;*/
+	margin: 0 auto;
 	/*align-self: center;*/
 	/*justify-self: center;*/
 	/*justify-self: center;*/
@@ -1938,16 +1968,25 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
 .logoPie {
 	display: flex;
 	flex-direction: row;
-	position: absolute;
+	position: relative;
 	background-image: url('../img/logo2.png');
 /*	padding: 0;*/
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: cover;
+	object-fit: fill;
 	margin: 0 auto;
 	align-self: center;
 	justify-self: center;
@@ -2187,15 +2226,20 @@ body {
 .proyecto img {
 	box-sizing: border-box;
 	max-width: 1028px;
-	height: 500px;
+	max-height: 500px;
 	position: relative;
-	margin: auto;
+
+	margin: 2px;
 	object-fit: fill;
 /*	transition: all;*/
 	transition: transform 0.3s ease-in-out;
 
 }
 
+/*.proyecto a img {
+	margin: 25px;
+}
+*/
 
 /*.slideshow-container {
 	max-width: 100%;
