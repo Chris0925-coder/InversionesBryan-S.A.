@@ -27,6 +27,18 @@ function ventana(url) {
     
 };
 
+function ventana2(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Términos y Condiciones");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        window.close("https://www.inversionesbryan.com");
+    }
+    
+};
+
 // ventana();
 
 
