@@ -9,9 +9,9 @@ function aceptarCookies() {
         cajacookies.style.display = 'none';
 };
 
-// $(document).ready(function() {
-//     compruebaAceptaCookies();
-// });
+$(document).ready(function() {
+    compruebaAceptaCookies();
+});
 
 
 
