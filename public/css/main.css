@@ -627,8 +627,8 @@ div.contacto a:hover {
 	position: relative;
 	/*overflow: auto;*/
 /*	box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);*/
-	margin: 5px auto;
-	padding: 5px;
+	margin: 0;
+	padding: 0;
 /*	justify-items: space-evenly;
 	align-content: space-between;
 	justify-content: space-between;*/
@@ -1973,8 +1973,8 @@ body {
 	flex-direction: row;
 	align-items: center;
 	text-align: left;
-	margin: 0;
-	padding: 0;
+/*	margin: 0;*/
+/*	padding: 0;*/
 /*	background-color: white;*/
 }
 
@@ -2060,9 +2060,10 @@ body {
 #closed {
 	margin-top: 80px;
 	text-align: left;
-	text-indent: 60px;
-	margin: 20px;
-	vertical-align: middle;
+	color: dimgrey;
+	text-indent: 10px;
+/*	margin: 20px;*/
+/*	vertical-align: middle;*/
 }
 
 
@@ -2189,6 +2190,8 @@ body {
 	transition: transform 0.3s ease-in-out;
 	width: 100%;
 	height: auto;
+	margin: 0;
+	padding: 0;
 /*	z-index: 1000;*/
 /*	display: inline-block;*/
 	justify-content: center;
@@ -2233,7 +2236,8 @@ body {
 	max-height: 500px;
 	position: relative;
 
-	margin: 2px;
+	margin: 0;
+	padding: 0;
 	object-fit: fill;
 /*	transition: all;*/
 	transition: transform 0.3s ease-in-out;
