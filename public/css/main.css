@@ -329,24 +329,26 @@ li a.active {
 /*	image-rendering: optimizeSpeed;*/
 /*	background: rgba(200, 200, 200, 0.1);*/
 /*	border-radius: 40px;*/
+	
+	background-image: url('../img/logo2.png');
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
-	object-fit: cover;
+/*	eobjct-fit: cover;*/
 	background-position: center;
-	height: fit-content;
-	width: 300px;
+	height: auto;
+	width: 400px;
 /*	position: relative;*/
 	margin: 0;
-	background-image: url('../img/logo2.png');
 /*	float: right;*/
-	z-index: 2000;
+/*	z-index: 1000;*/
 	align-content: center;
 	justify-content: center;
-	object-position: left;
+/*	object-position: left;*/
 	justify-items: center;
+	object-fit: contain;
 }
 
 
@@ -1545,27 +1547,28 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media screen and (min-width: 280px) and (max-width: 600px) {
+@media screen and (min-width: 240px) and (max-width: 768px) {
 
 .logo {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	background-size: contain;
 	background-position: center;
 /*	position: relative;*/
 	align-content: flex-start;
 	align-self: flex-start;
-	width: 70%;
-	height: fit-content;
+	width: 60%;
+	height: auto;
 	margin: 0;
-	object-fit: fill;
+	object-fit: cover;
 /*	z-index: -1;*/
 }
 
 .galeria .photos {
 	display: flex;
 	width: 100%;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	height: fit-content;
 	margin: 5px;
@@ -1591,13 +1594,15 @@ body {
 
 .navbar-toggler {
 	display: flex;
-	position: relative;
+	position: static;
 	justify-self: flex-end;
 	align-self: flex-end;
 	flex-direction: row;
 /*	flex-flow: column wrap;*/
 /*	width: 100%;*/
 	z-index: 2000;
+	margin: 0;
+/*	float: right;*/
 /*	background-color: white;*/
 }
 
@@ -1617,7 +1622,7 @@ body {
 }
 
 .navbar {
-	display: flex;
+	display: inline-flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
@@ -1632,7 +1637,7 @@ body {
 	align-items: center;
 	/*align-items: flex-start;*/
 	width: 100%;
-	height: 150px;
+	height: auto;
 	margin: 0 auto;
 	/*align-self: center;*/
 	/*justify-self: center;*/
@@ -1657,7 +1662,7 @@ body {
 
 .menu {
 	display: inline-flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 	position: relative;
 	/*align-content: flex-end;*/
@@ -1674,8 +1679,8 @@ body {
 }
 
 .navbar-nav {
-	display: inline-block;
-	flex-direction: row;
+	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
 	position: relative;
 	/*align-items: center;
