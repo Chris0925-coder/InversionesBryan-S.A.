@@ -1547,7 +1547,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media screen and (min-width: 240px) and (max-width: 768px) {
+@media screen and (min-width: 240px) and (max-width: 1028px) {
 
 .logo {
 	position: relative;
@@ -2062,11 +2062,13 @@ body {
 }
 
 
-#closed {
+#closed h3 {
+	font-weight: 700;
 	margin-top: 80px;
 	text-align: left;
 	color: dimgrey;
 	text-indent: 10px;
+	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
 /*	margin: 20px;*/
 /*	vertical-align: middle;*/
 }
@@ -2238,7 +2240,7 @@ body {
 .proyecto img {
 	box-sizing: border-box;
 	max-width: 1028px;
-	max-height: 500px;
+	height: 366px;
 	position: relative;
 
 	margin: 0;
@@ -2347,3 +2349,37 @@ body {
   100% {background-color:red; left:0px; top:0px;}*/
 
 /*}*/
+/*
+.modal-gallery__background {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: fit-content;
+	margin: 0;
+}
+
+.modal-gallery {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	width: 100%;
+}*/
+
+.modal-gallery__thumnails {
+	display: flex;
+	gap: 10px;
+	justify-items: center;
+	justify-content: center;
+	width: 100%;
+/*	border: 2px black;*/
+/*	box-shadow: 2px 2px 2px black;*/
+/*	cursor: pointer;*/
+/*	border: 1px solid white;*/
+}
+
+
+.modal-gallery__thumnail {
+	border-radius: 50%;
+	box-shadow: 2px 2px 5px black;
+	cursor: pointer;
+}
