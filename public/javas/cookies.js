@@ -12,7 +12,7 @@ function aceptarCookies() {
 $(document).ready(function() {
     compruebaAceptaCookies();
 });
-
+// let st = setTimeout(showSlides,6000);
 
 
 function ventana(url) {
@@ -59,9 +59,9 @@ function ventana2(url) {
 // document.querySelector("")
 
 
-let slides = document.getElementsByClassName("proyecto");
+let slides = document.querySelectorAll(".proyecto");
 var slideIndex = 0;
-
+// slides = [...slides];
 
 
 // console.log(slides);
@@ -101,7 +101,7 @@ function plusSlidesA() {
 
 function plusSlidesB() {
     let i;
-    slides = document.getElementsByClassName("proyecto");
+    slides = document.querySelectorAll(".proyecto");
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     };
@@ -120,18 +120,18 @@ function plusSlidesB() {
 };
 
 
-// let galleries = document.getElementsByClassName('modal-gallery__thumnail');
-// let slideThumnail = 0;
+let galleries = document.querySelectorAll('.modal-gallery__thumnail');
+galleries = [...galleries];
+let slideThumnail = 0;
 
-// const thumnails = [
-//     '../public/img/proyecto9(1).jpg',
-//     '../public/img/casap1(1).jpg',
-//     '../public/img/Mejorandoelcampo(1).jpg',
-//     '../public/img/remode1(1).jpg'
-// ];
+const thumnails = [
+    '../img/proyecto9(1).jpg',
+    '../img/casap1(1).jpg',
+    '../img/Mejorandoelcampo(1).jpg',
+    '../img/remode1(1).jpg'
+];
 
-
-
+// console.log(type(thumnails));
 
 // function thumnail() {
 
@@ -168,15 +168,49 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     };
-
-
+    // for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
+    // };
+    
     slideIndex++;
 
     if(slideIndex > slides.length) {slideIndex = 1};
-    
     slides[slideIndex-1].style.display = "block";
-
+    
     setTimeout(showSlides,6000);
-
 };
+
+
 showSlides();
+
+
+
+// function showSlidesThum() {
+//     let i;
+//     for (i = 0; i < thumnails.length; i++) {
+//     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideThumnail]}')`;
+//     };
+
+//     slideThumnail++;
+
+//     if(slideThumnail > thumnails.length) {slideThumnail = 1};
+
+//     setTimeout(showSlides,6000);
+// }
+
+
+
+
+
+
+
+
+
+
+
+galleries.forEach(thumbnail => {
+    
+    thumbnail.addEventListener('click', () => {
+         slides.length[0];
+    });
+});
