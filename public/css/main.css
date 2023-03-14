@@ -961,20 +961,19 @@ div.contacto a:hover {
 
 
 /*CONTACT PAGE*/
-/*body {*/
-		banner {
-			background-image: url("../img/banner2.png");
-			background-color: rgba(0, 0, 0, 0.5); 
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-			object-fit: fill;
-			margin: 0;
-			padding: 0;
-			width: 100%;
-			height: 100vh;
-		}
-/*}*/
+.banner {
+	background-image: url("../img/bannerIB.png");
+	background-color: rgba(0, 0, 0, 0.5); 
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	object-fit: contain;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+/*	height: ;*/
+}
+
 .bann {
 	display: flex;
 	flex-direction: row;
@@ -1922,16 +1921,16 @@ overflow-x: hidden;
 /*	background-color: rgba(0, 0, 0, 1.0);*/
 	background-image: url('../img/logo2.png');
 /*	z-index: 1000;*/
-	margin: 0 auto;
-	width: 200px;
+	margin: 0;
+	width: 100px;
 	height: 100px;
 /*	background-position: center;*/
 	object-fit: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
 /*	position: absolute;*/
-	z-index: 1;
-	grid-area: 1 / 3;
+/*	z-index: 1;*/
+/*	grid-area: 1 / 3;*/
 /*	grid-column-gap: 10px;*/
 	/*float: right;
 	justify-self: right;*/
@@ -2175,7 +2174,7 @@ overflow-x: hidden;
 	justify-content: center;
 	text-align: center;
 */
-	background-image: url('img/proyecto9(1).jpg');
+/*	background-image: url('img/proyecto9(1).jpg');*/
 	position: relative;
 	top: 30px;
 /*	left: 0;*/

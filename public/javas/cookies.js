@@ -24,7 +24,6 @@ function ventana(url) {
     } else {
         window.close("https://www.inversionesbryan.com");
     }
-    
 };
 
 function ventana2(url) {
@@ -124,12 +123,18 @@ let galleries = document.querySelectorAll('.modal-gallery__thumnail');
 galleries = [...galleries];
 let slideThumnail = 0;
 
-const thumnails = [
-    '../img/proyecto9(1).jpg',
-    '../img/casap1(1).jpg',
-    '../img/Mejorandoelcampo(1).jpg',
-    '../img/remode1(1).jpg'
-];
+// const thumnails = [
+//     '../img/proyecto9(1).jpg',
+//     '../img/casap1(1).jpg',
+//     '../img/Mejorandoelcampo(1).jpg',
+//     '../img/remode1(1).jpg'
+// ];
+
+// slides.addEventListener('touchmove', () => {
+
+// })
+
+
 
 // console.log(type(thumnails));
 
@@ -185,6 +190,7 @@ showSlides();
 
 
 
+
 // function showSlidesThum() {
 //     let i;
 //     for (i = 0; i < thumnails.length; i++) {
@@ -208,9 +214,9 @@ showSlides();
 
 
 
-galleries.forEach(thumbnail => {
+// galleries.forEach(thumbnail => {
     
-    thumbnail.addEventListener('click', () => {
-         slides.length[0];
-    });
-});
+//     thumbnail.addEventListener('click', () => {
+//          slides.length[0];
+//     });
+// });
