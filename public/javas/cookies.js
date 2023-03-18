@@ -220,3 +220,11 @@ showSlides();
 //          slides.length[0];
 //     });
 // });
+
+
+
+const terreno = document.querySelector('.publicidadIB');
+
+terreno.addEventListener('click', () => {
+    terreno.classList.toggle("terreno_invisible")
+});
