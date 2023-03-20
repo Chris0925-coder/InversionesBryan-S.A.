@@ -224,7 +224,117 @@ showSlides();
 
 
 const terreno = document.querySelector('.publicidadIB');
+const close = document.querySelector('.closeP');
+// const invisible = document.querySelector('.terreno_invisible');
+const body = document.querySelector('body');
+
+// let ads = function showAds() {
+    // body.addEventListener('scroll', () => {
+    //     terreno.style.display = 'flex';
+    //     close.style.display = 'flex';
+        // setTimeout(ad, 5000)
+        
+        // setTimeout(function(){
+        //     function showAds() {
+        //         body.addEventListener('scroll', (callback) => {
+        //             terreno.style.display = 'flex';
+        //             close.style.display = 'flex';
+        // }, 5500);
+
+    // });
+
+// };
+
+// terreno.addEventListener('scroll', ());
+
+
+// ads;
+// setTimeout(ads, 5000);
+// setTimeout(ads,5500);
+
+// clearTimeout(ads);
+// ads();
+ 
+// showAds();
+// setTimeout(ads(showAds), 5000);
+// ads(setTimeout(5000));
+
+
+
+// let closed = 
+// terreno.style.display = 'none';
+
+// setTimeout(ad, 5500);
+// ad();
+// 
+
+
+
+close.addEventListener('click', () => {
+    // e.preventDefault();
+    // terreno.style.display = 'none';
+    close.style.display = 'none';
+    // terreno.style.right = '100%';
+    terreno.classList.toggle('terreno_invisible');
+
+    // terreno.style.transform = 'scaleX(0.0)';
+    // return;
+    // if (true) {
+    //     ads = false;
+    // }
+    // clearTimeout();
+    // showAds() = break;
+    // return
+    
+
+    // terreno.classList.toggle("terreno_invisible")
+    // body.removeEventListener('scroll', ads);
+    ;
+    // return {
+        // ads.close
+    // };
+    // return
+});
+
+
+
+// ad;
+// ads = false;
+
+    // return;
+
+
+// close.addEventListener('click', () => {
+
+// })
 
 terreno.addEventListener('click', () => {
-    terreno.classList.toggle("terreno_invisible")
+    window.open("https://api.whatsapp.com/send?phone=50762926292", "ventana", "width=120 height=300 scrollbars=YES");
 });
+
+// setTimeout(terreno, 3000);
+
+
+
+// let inner = function() {
+//     console.log('inner 1');
+//     }
+    
+//     let outer = function(callback) {
+//     console.log('outer 1');
+//     let timerId = setInterval(callback, 1000) /*ms*/;
+//     console.log('outer 2');
+    
+//     setTimeout(function(){
+//         clearInterval(timerId);
+//     }, 5500);
+//     }
+    
+//     console.log('test 1');
+//     outer(inner);
+//     console.log('test 2');
+
+    
+    // window.addEventListener("click", function() {
+    //     console.log("clicked!");
+    // });

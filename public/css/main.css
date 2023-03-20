@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-
 * {
 	margin: 0;
 	padding: 0;
@@ -12,7 +11,7 @@ body {
 	background: #ADA996;   /*fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Open Sans', sans-serif;
+	font-family: sans-serif;
 	overflow-x: hidden;
 	height: 100vh;
 }
@@ -963,15 +962,15 @@ div.contacto a:hover {
 /*CONTACT PAGE*/
 .banner {
 	background-image: url("../img/bannerIB.png");
-	background-color: rgba(0, 0, 0, 0.5); 
+	background-color: rgba(0, 0, 0, 0.3); 
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: contain;
-	margin: auto;
+	object-fit: cover;
+	margin: 0;
 	padding: 0;
 	width: 100%;
-/*	height: ;*/
+	height: fit-content;
 }
 
 .bann {
@@ -1256,13 +1255,13 @@ div.contacto a:hover {
 	display: flex;
 	position: static;
 	flex-direction: row;
-	align-content: flex-end;
+/*	align-content: flex-end;*/
 	justify-content: center;
 	width: auto;
 /*	height: fit-content;*/
 	margin: 0;
 	padding: 5px;
-	text-align: center;
+/*	text-align: center;*/
 /*	float: left;*/
 	justify-content: flex-start;
 /*	box-shadow: 0px 8px 16px 0px rgba(170, 180, 90, 0.5);*/
@@ -1309,9 +1308,9 @@ div.contacto a:hover {
 
 .valoresa1 {
 	margin: 0;
-	padding: 0;
+	padding: 3px;
 	list-style: none;
-	text-align: center;
+/*	text-align: center;*/
 /*	text-align: left;*/
 }
 
@@ -1326,7 +1325,6 @@ div.contacto a:hover {
 
 
 .tt0a1 {
-
 	margin: 100px auto;
 	position: fixed;
 	top: 0;
@@ -1396,7 +1394,7 @@ div.contacto a:hover {
 }
 
 .text1 {
-	text-align: center;
+/*	text-align: center;*/
 /*	text-decoration: underline black;*/
 /*	color: darkgoldenrod;*/
 }
@@ -1406,34 +1404,35 @@ div.contacto a:hover {
 /*	flex-direction: row;*/
 	z-index: 1000;
 	color: black;
-	background-color: rgba(250, 250, 250, 1.0);
+	background-color: rgba(250, 250, 250, 0.8);
 	width: 300px;
 	height: fit-content;
-	text-align: center;
+	text-align: left;
 
 }
 
 #misV {
 	z-index: 1000;
 	color: black;
-	background-color: rgba(250, 250, 250, 1.0);
+	background-color: rgba(250, 250, 250, 0.8);
 /*	width: auto;*/
 	width: 200px;
 	height: auto;
 	margin: 0 auto;
 /*	text-align: left;*/
-	text-align: center;
+	text-align: left;
 }
 
 #misVal .nav-itema1 {
 	z-index: 1000;
 	color: black;
-	background-color: rgba(250, 250, 250, 1.0);
-/*	text-align: left;*/
-	text-align: center;
-	justify-content: center;
+	background-color: rgba(250, 250, 250, 0.8);
+	text-align: left;
+	padding: 3px;
+/*	text-align: center;*/
+	/*justify-content: center;
 	align-content: center;
-	align-self: center;
+	align-self: center;*/
 }
 
 .next2 {
@@ -1538,11 +1537,112 @@ div.contacto a:hover {
 
 
 
+.publicidadIB {
+	display: flex;
+/*	flex-direction: column-reverse;*/
+	position: fixed;
+/*	vertical-align: middle;*/
+	background-image: url('../img/terreno.jpg');
+	
+/*	left: 100%;*/
+/*	right: 0;*/
+/*	object-position: center;*/
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+	object-fit: fill;
+	text-align: center;
+/*	color: black;*/
+/*	text-shadow: ;*/
+	background-color: rgba(0, 0, 0, 0.6);
+	box-sizing: border-box;
+	cursor: pointer;
+/*	float: right;*/
+/*	justify-content: flex-end;*/
+/*	align-self: flex-end;*/
+/*	justify-self: flex-end;*/
+	width: 250px;
+	height: 600px;
+	padding: 3px;
+	margin: 0;
+	right: 100%;
+/*	margin-bottom: 0;*/
+	transition: transform 0.8s ease-in-out;
+/*	transform: scaleX(0.0);*/
+}
+
+
+.terreno_invisible {
+/*	visibility: hidden;*/
+	right: 0;
+/*	transform: scaleX(0.0);*/
+	transition: transform 0.8s ease-in-out;
+}
+
+
+
+
+figcaption {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+/*	flex-direction: column-reverse;*/
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: fit-content;
+	padding: 5px;
+	margin: 0 auto;
+/*	touch-action: cross-slide-x;*/
+}
+
+.closeP {
+	display: flex;
+	position: fixed;
+/*	object-position: bottom;*/
+	flex-direction: column-reverse;
+	color: black;
+/*	font-weight: 400;*/
+	z-index: 3000;
+	background-color: rgba(250, 250, 250, 0.9);
+	height: fit-content;
+/*	background-position: bottom;*/
+/*	background-size: contain;*/
+/*	background-size: cover;*/
+	cursor: context-menu;
+	right: 0;
+	padding: 2px;
+	transform: rotateZ(45deg);
+	font-size: xx-small;
+/*	touch-action: cross-slide-y;*/
+/*	bottom: 0;*/
+/*	flex-direction: column-reverse;*/
+}
 
 /*768px*/
 
 @media screen and (min-width: 240px) and (max-width: 768px) {
 
+	.publicidadIB {
+/*		display: none;*/
+		width: 200px;
+	/*line-height: 130px;*/
+		max-height: 300px;
+		background-size: cover;
+		background-position: center;
+		object-fit: contain;
+		margin: 0 auto;
+		transition: transform 0.8s ease-in-out;
+	}
+
+	figcaption {
+/*		font-family: sans-serif;*/
+		font-weight: 700;
+		font-size: x-small;
+/*		background-size: cover;*/
+		padding: 5px;
+	}
 /*.logo {
 	position: relative;
 	display: flex;
@@ -1917,27 +2017,7 @@ overflow-x: hidden;
 /*	display: flex;*/
 }
 
-.logoPie {
-/*	background-color: rgba(0, 0, 0, 1.0);*/
-	background-image: url('../img/logo2.png');
-/*	z-index: 1000;*/
-	margin: 0;
-	width: 100px;
-	height: 100px;
-/*	background-position: center;*/
-	object-fit: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
-/*	position: absolute;*/
-/*	z-index: 1;*/
-/*	grid-area: 1 / 3;*/
-/*	grid-column-gap: 10px;*/
-	/*float: right;
-	justify-self: right;*/
-/*	align-self: flex-end;*/
-/*	box-sizing: border-box;*/
-/*	background-image: center;*/
-}
+
 
 .social {
 	display: flex;
@@ -1968,13 +2048,6 @@ overflow-x: hidden;
 /*	background-color: white;*/
 }
 
-
-
-
-
-
-
-
 .logoPie {
 	display: flex;
 	flex-direction: row;
@@ -1991,7 +2064,7 @@ overflow-x: hidden;
 /*	box-sizing: border-box;*/
 /*	z-index: 1000;*/
 	width: 300px;
-	height: 200px;
+	height: 300px;
 }
 
 .social {
@@ -2049,7 +2122,7 @@ overflow-x: hidden;
 
 #closed h3 {
 	font-weight: 700;
-	margin-top: 80px;
+	margin-top: 30px;
 	text-align: left;
 	color: dimgrey;
 	text-indent: 10px;
@@ -2190,8 +2263,8 @@ overflow-x: hidden;
 	align-items: center;
 /*	display: none;*/
 /*	transform: scale(0);*/
-	background-size: contain;
-	background-repeat: no-repeat;
+/*	background-size: contain;
+	background-repeat: no-repeat;*/
 	background-position: center;
 	box-sizing: border-box;
 }
@@ -2210,41 +2283,33 @@ overflow-x: hidden;
 	background-color: black;
 }*/
 
-.nextt1 {
-	display: inline-flex;
-	position: relative;
-	flex-direction: row;
-/*	flex-wrap: wrap;*/
-	width: 100%;
-	z-index: 2000;
-	align-content: space-between;
-	justify-items: center;
-	justify-content: space-between;
-	align-items: center;
-	justify-content: space-between;
-	align-content: space-between;
-	margin: 0;
-}
+
 
 .proyecto img {
 	box-sizing: border-box;
 	max-width: 1028px;
 	height: 366px;
 	position: relative;
-
 	margin: 0;
 	padding: 0;
-	object-fit: cover;
+	object-fit: contain;
+	background-size: cover;
 /*	background-position: center;*/
 /*	transition: all;*/
 /*	transition: transform 0.3s ease-in-out;*/
 
 }
 
-/*.proyecto a img {
-	margin: 25px;
+#proyectos1 img {
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-content: center;
+	column-gap: 0;
+	background-size: cover;
+	object-fit: fill;
 }
-*/
+
 
 /*.slideshow-container {
 	max-width: 100%;
@@ -2257,17 +2322,20 @@ overflow-x: hidden;
 	position: relative;
 	display: flex;
 	cursor: pointer;
-/*	z-index: 1000;*/
+	z-index: 2000;
 	width: auto;
 	text-decoration: none;
-	align-content: space-between;
+	/*align-content: space-between;
 	align-items: center;
 	align-content: flex-end;
 	align-self: flex-end;
-	justify-self: flex-end;
-	color: black;
-	padding: 0;
-	margin: 0 auto;
+	justify-self: flex-end;*/
+/*	justify-content: space-between;*/
+	color: rgba(0, 0, 0, 0.2);
+	padding: 0 10px;
+	margin: 0;
+	background-color: rgba(250, 250, 250, 0.3);
+	border-radius: 20% 10% 0 5% ;
 }
 
 .prev:hover, 
@@ -2277,14 +2345,36 @@ overflow-x: hidden;
 	background-position: center;
 	border-radius: 20% 10% 0 5% ;
 /*	background-size: cover;*/
-	color: white;
+	color: rgba(250, 250, 250, 0.7);
 /*	margin: 0;*/
 	padding: 0 10px;
 	transform: scale3d(1.5, 1.5, 2.0);
 	
 }
 
+.nextt1 {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-between;
+	justify-items: flex-end;
+	align-items: center;
+/*	border: 1px solid black;*/
+	width: 80%;
+	height: 100%;
+	z-index: 2000;
+}
 
+/*.arrows {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	align-content: space-between;
+	border: 1px solid dimgrey;
+}
+*/
 
 /*.fade img { */
 /*	-webkit-animation-name:fade; */
@@ -2374,37 +2464,3 @@ overflow-x: hidden;
 	cursor: pointer;
 }
 
-.publicidadIB {
-	display: flex;
-	position: fixed;
-	background-image: url('../img/terreno.jpg');
-	width: 300px;
-	height: 400px;
-	padding: 3px;
-	margin: 10px;
-	left: 100%;
-	object-position: center;
-	background-position: top;
-	background-size:contain;
-	background-repeat: no-repeat;
-	z-index: 3;
-	object-fit: fill;
-	text-align: center;
-/*	color: black;*/
-	text-shadow: ;
-	background-color: rgba(0, 0, 0, 0.6);
-
-}
-
-.terreno_invisible {
-/*	display: none;*/
-	left: 0;
-}
-
-figcaption {
-	color: white;
-	background-color: rgba(0, 0, 0, 0.4);
-	width: auto;
-	height: fit-content;
-	padding: 5px;
-}
