@@ -65,7 +65,26 @@ var slideIndex = 0;
 
 // console.log(slides);
 
+function showSlides() {
+    
+    let i;
 
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    };
+    // for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
+    // };
+    
+    slideIndex++;
+
+    if(slideIndex > slides.length) {slideIndex = 1};
+    slides[slideIndex-1].style.display = "flex";
+    
+    setTimeout(showSlides,6000);
+};
+
+showSlides();
 
 
 
@@ -82,6 +101,7 @@ function plusSlidesA() {
         
 
     if(true) {
+        // clearTimeout(showSlides, 6000);
         slideIndex++;
         // slides[slideIndex]
         // let i;
@@ -116,6 +136,8 @@ function plusSlidesB() {
     // }
     slides[slideIndex-1].style.display = "block";
     thumnail();
+
+    // clearTimeout(showSlides,6000);
 };
 
 
@@ -166,27 +188,10 @@ let slideThumnail = 0;
 // });
 
 
-function showSlides() {
-    
-    let i;
-
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    };
-    // for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
-    // };
-    
-    slideIndex++;
-
-    if(slideIndex > slides.length) {slideIndex = 1};
-    slides[slideIndex-1].style.display = "block";
-    
-    setTimeout(showSlides,6000);
-};
 
 
-showSlides();
+
+
 
 
 
