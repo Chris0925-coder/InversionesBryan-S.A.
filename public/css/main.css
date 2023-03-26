@@ -2270,25 +2270,26 @@ overflow-x: hidden;
 /*	align-content: flex-start;*/
 /*	justify-content: flex-start;*/
 justify-items: flex-start;
-	margin: 0 auto;
-	overflow: visible;
+	margin: 0;
+/*	overflow: visible;*/
 }
 
-.proyecto h3 {
+.galeria .proyecto h3 {
 	display: flex;
 	position: relative;
 	width: 90%;
-/*	text-align: left;*/
+	text-align: center;
 }
 
 .proyecto img {
-	width: 180px;
-	height: 200px;
+	max-width: auto;
+	height: 300px;
 	margin: 3px;
+	object-fit: fill;
 }
 .galeria {
 	overflow: auto;
-/*	overscroll-behavior-inline: auto;
+	/*overscroll-behavior-inline: auto;
 	overscroll-behavior-block: auto;
 	overscroll-behavior: auto;
 	overflow-anchor: auto;

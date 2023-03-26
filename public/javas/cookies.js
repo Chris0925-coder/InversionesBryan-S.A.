@@ -81,7 +81,7 @@ function showSlides() {
     if(slideIndex > slides.length) {slideIndex = 1};
     slides[slideIndex-1].style.display = "flex";
     
-    setTimeout(showSlides,6000);
+    setTimeout(showSlides,8000);
 };
 
 showSlides();
