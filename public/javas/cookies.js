@@ -22,7 +22,9 @@ function ventana(url) {
 
         window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
     } else {
-        window.close("https://www.inversionesbryan.com");
+        window.close();
+        // history.back()
+        // window.close("https://www.inversionesbryan.com");
     }
 };
 
@@ -31,9 +33,10 @@ function ventana2(url) {
     let show = window.confirm("Términos y Condiciones");
     if (show === true) {
 
-        window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+        let uno = window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
     } else {
-        window.close("https://www.inversionesbryan.com");
+        window.close();
+        // window.close("https://www.inversionesbryan.com");
     }
     
 };
@@ -231,7 +234,7 @@ let slideThumnail = 0;
 const terreno = document.querySelector('.publicidadIB');
 const close = document.querySelector('.closeP');
 // const invisible = document.querySelector('.terreno_invisible');
-const body = document.querySelector('body');
+// const body = document.querySelector('body');
 
 // let ads = function showAds() {
     // body.addEventListener('scroll', () => {
@@ -251,8 +254,13 @@ const body = document.querySelector('body');
 // };
 
 // terreno.addEventListener('scroll', ());
+function showAds() {
+    terreno.style.display = 'flex'
+    close.style.display = 'flex'
+};
 
-
+// showAds();
+setTimeout(showAds,4000);
 // ads;
 // setTimeout(ads, 5000);
 // setTimeout(ads,5500);
@@ -307,6 +315,7 @@ close.addEventListener('click', () => {
 // ads = false;
 
     // return;
+
 
 
 // close.addEventListener('click', () => {
