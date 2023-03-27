@@ -5,6 +5,53 @@ navToggle.addEventListener("click", () => {
     navLink.classList.toggle("navbar-nav_visible")
 });
 
+
+
+
+
+function compruebaAceptaCookies() {
+    if (localStorage.aceptaCookies == 'true') {
+        cajacookies.style.display = 'none';
+    }
+};
+
+function aceptarCookies() {
+    localStorage.aceptaCookies == 'true';
+        cajacookies.style.display = 'none';
+};
+
+$(document).ready(function() {
+    compruebaAceptaCookies();
+});
+// let st = setTimeout(showSlides,6000);
+
+
+function ventana(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Política de privacidad");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        window.close();
+        // history.back()
+        // window.close("https://www.inversionesbryan.com");
+    }
+};
+
+function ventana2(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Términos y Condiciones");
+    if (show === true) {
+
+        let uno = window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        window.close();
+        // window.close("https://www.inversionesbryan.com");
+    }
+    
+};
+
 // let comment = document.querySelector(".btn"); 
 // let ff = document.querySelector("form-control"); 
 

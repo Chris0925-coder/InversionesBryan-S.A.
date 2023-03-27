@@ -1642,11 +1642,11 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 	justify-content: center;
 /*	justify-items: center;*/
 /*	gap: 10px;*/
-/*	text-align: left;*/
+	text-align: left;
 	overflow: auto;
 /*	vertical-align: middle;*/
 /*	overflow-y: scroll;*/
-text-align: left;
+/*text-align: left;*/
 }
 
 .proyecto span a {
@@ -1660,20 +1660,20 @@ flex-direction: row;
 width: 100%;
 height: auto;
 	margin: 0 auto;
-	vertical-align: middle;
+/*	vertical-align: middle;*/
 /*	overflow: visible;*/
 }
 
 
 
-.proyecto span h3 {
+.proyecto span {
 	display: flex;
 	position: relative;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
-	vertical-align: middle;
+/*	vertical-align: middle;*/
 /*	width: 90%;*/
-	text-align: left;
+/*	text-align: left;*/
 }
 
 .proyecto span a > img {
@@ -2123,6 +2123,8 @@ overflow-x: hidden;
 	width: 70%;
 }
 .galeria .proyecto {
+/*	display: flex;*/
+/*	flex-direction: column;*/
 	width: 100%;
 	height: auto;
 	margin: 0;
@@ -2131,7 +2133,8 @@ overflow-x: hidden;
 }
 
 .proyecto span a {
-	display: flex;
+/*	display: flex;*/
+/*	flex-direction: column;*/
 	justify-content: flex-start;
 	width: 100%;
 	height: auto;
