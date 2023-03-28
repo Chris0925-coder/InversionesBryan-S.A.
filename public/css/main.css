@@ -1686,7 +1686,7 @@ height: auto;
 
 
 
-.galeria .proyectos {
+.galeria  {
 	display: grid;
 /*	flex-direction: row;*/
 /*	columns: 3;*/
@@ -1695,6 +1695,7 @@ height: auto;
 	width: auto;
 	height: auto;
 	overflow: auto;
+	color: rgb(220, 170, 0);
 }
 
 .proyectos .proyecto {
@@ -1713,7 +1714,7 @@ height: auto;
 	flex-direction: row;
 }*/
 
-.proyectos .proyecto span a {
+.proyecto span a {
 	display: flex;
 	position: relative;
 	width: auto;
@@ -1730,11 +1731,6 @@ height: auto;
 	margin: 0 4px;
 	object-fit: fill;
 
-}
-
-.proyecto h3 {
-	color: rgb(220, 170, 0);
-/*	color: ;*/
 }
 
 
@@ -2167,26 +2163,8 @@ overflow-x: hidden;
 	object-fit: contain;
 	width: 70%;
 }
-.galeria .proyecto {
-/*	display: flex;*/
-/*	flex-direction: column;*/
-	width: 100%;
-	height: auto;
-	margin: 0;
-	justify-content: center;
-	align-content: center;
-}
 
-.galeria .proyecto span a {
-/*	display: flex;*/
-/*	flex-direction: column;*/
-	justify-content: flex-start;
-	width: 100%;
-	height: auto;
-	margin: 0 auto;
-}
-
-.galeria .proyecto span a img {
+.proyectos .proyecto img {
 	object-fit: fill;
 	width: 200px;
 	height: 300px;
