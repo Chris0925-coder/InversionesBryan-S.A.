@@ -62,8 +62,8 @@ function ventana2(url) {
 
 
 let slides = document.querySelectorAll(".proyecto");
-var slideIndex = 0;
-let p2 = document.querySelectorAll(".proyecto2");
+let slideIndex = 0;
+// let p2 = document.querySelectorAll(".proyecto2");
 
 // slides = [...slides];
 
@@ -71,13 +71,8 @@ let p2 = document.querySelectorAll(".proyecto2");
 // console.log(slides);
 
 function showSlides() {
-    
-    // let i;
-
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    // p2[i].style.opacity = "3s ease-in-out";
-    // p2[i].style.opacity = "0";
     };
     // for (i = 0; i < slides.length; i++) {
     //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
@@ -88,10 +83,7 @@ function showSlides() {
     if(slideIndex > slides.length) {slideIndex = 1};
     
     // p2[slideIndex-1].style.transition = "opacity 3s ease-in-out";
-    slides[slideIndex-1].style.display = "flex";
-    // p2[slideIndex-1].style.opacity = "0";
-    
-    // setInterval(showSlides,8000);
+    slides[slideIndex-1].style.display = "block";
 };
 
 let tiempoSlide = setInterval(showSlides, 6000);
@@ -99,7 +91,7 @@ let tiempoSlide = setInterval(showSlides, 6000);
 // showSlides();
 
 
-tiempoSlide;
+// tiempoSlide;
 
 
 

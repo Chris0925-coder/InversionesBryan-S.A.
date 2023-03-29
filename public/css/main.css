@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap');
 
 * {
 	margin: 0;
@@ -11,9 +11,10 @@ body {
 	background: #ADA996;   /*fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: sans-serif;
+	font-family: 'Optional';
+	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	height: 100vh;
+	height: 100lvh;
 }
 
 .icon {
@@ -1519,7 +1520,7 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	z-index: 2;
+	z-index: 2000;
 	object-fit: fill;
 	text-align: center;
 /*	color: black;*/
@@ -1543,7 +1544,6 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 /*	margin-bottom: 0;*/
 /*	transform: 0.8s ease-in-out;*/
 /*	transition: right 0.8s;*/
-
 	font-weight: 700;
 /*	transform: scaleX(0.0);*/
 }
