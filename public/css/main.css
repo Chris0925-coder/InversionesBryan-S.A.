@@ -1694,8 +1694,12 @@ height: auto;
 /*	position: relative;*/
 	width: auto;
 	height: auto;
-	overflow: auto;
+/*	overflow: auto;*/
 	color: rgb(220, 170, 0);
+}
+
+.proyectos {
+	overflow: auto;
 }
 
 .proyectos .proyecto {
@@ -1705,6 +1709,7 @@ height: auto;
 	align-content: center;
 	justify-content: center;
 	margin: 0 auto;
+/*	overflow: auto;*/
 
 }
 

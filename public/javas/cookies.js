@@ -260,7 +260,7 @@ function showAds() {
 };
 
 // showAds();
-setTimeout(showAds,4000);
+setTimeout(showAds,2000);
 // ads;
 // setTimeout(ads, 5000);
 // setTimeout(ads,5500);
