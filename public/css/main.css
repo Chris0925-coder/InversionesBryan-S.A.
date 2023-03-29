@@ -1536,13 +1536,13 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 	padding: 5px;
 	margin: 0;
 	object-position: center;
-	transition-delay: 0.4;
+/*	transition-delay: 0.4;*/
 /*	left: 0;*/
-	right: 100%;
+/*	right: 100%;*/
 /*	line-height: 100px;*/
 /*	margin-bottom: 0;*/
-	transform: 0.8s ease-in-out;
-	transition: right 0.8s;
+/*	transform: 0.8s ease-in-out;*/
+/*	transition: right 0.8s;*/
 
 	font-weight: 700;
 /*	transform: scaleX(0.0);*/
@@ -1694,37 +1694,53 @@ height: auto;
 /*	position: relative;*/
 	width: auto;
 	height: auto;
-/*	overflow: auto;*/
+	margin: 0 auto;
+	justify-content: center;
+	/*	overflow: auto;*/
 	color: rgb(220, 170, 0);
+/*	text-anchor: start;*/
 }
 
 .proyectos {
+/*	display: flex;*/
+/*	position: relative;*/
+/*	justify-content: center;*/
+/*	justify-items: center;*/
+/*text-anchor: start;*/
 	overflow: auto;
 }
 
 .proyectos .proyecto {
+	text-anchor: start;
 	display: flex;
 	position: relative;
 	flex-direction: column;
-	align-content: center;
-	justify-content: center;
+/*	align-content: center;*/
+/*	justify-content: center;*/
 	margin: 0 auto;
 /*	overflow: auto;*/
+	
 
 }
 
-/*.proyectos {
-	display: flex;
-	position: relative;
-	flex-direction: row;
-}*/
+/*.proyecto2 {*/
+/*	display: flex;*/
+/*	position: relative;*/
+/*	flex-direction: row;*/
+/*	transition: opacity 3s ease-in-out;*/
+/*}*/
 
 .proyecto span a {
 	display: flex;
 	position: relative;
 	width: auto;
 	height: auto;
+/*	transition: opacity 0.3s ease-in-out;*/
+/*	text-anchor: end;*/
+/*	justify-content: center;*/
 /*	overflow: visible;*/
+	
+
 }
 
 .proyecto span a img {
@@ -1743,7 +1759,7 @@ height: auto;
 
 /*768px*/
 
-@media screen  and (min-width: 100px) and (max-width: 568px) {
+@media screen  and (min-width: 100px) and (max-width: 768px) {
 
 	.publicidadIB {
 /*		display: none;*/

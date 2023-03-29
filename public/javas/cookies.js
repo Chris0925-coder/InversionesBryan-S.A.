@@ -63,6 +63,8 @@ function ventana2(url) {
 
 let slides = document.querySelectorAll(".proyecto");
 var slideIndex = 0;
+let p2 = document.querySelectorAll(".proyecto2");
+
 // slides = [...slides];
 
 
@@ -70,10 +72,12 @@ var slideIndex = 0;
 
 function showSlides() {
     
-    let i;
+    // let i;
 
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    // p2[i].style.opacity = "3s ease-in-out";
+    // p2[i].style.opacity = "0";
     };
     // for (i = 0; i < slides.length; i++) {
     //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
@@ -82,28 +86,34 @@ function showSlides() {
     slideIndex++;
 
     if(slideIndex > slides.length) {slideIndex = 1};
-    slides[slideIndex-1].style.display = "flex";
     
-    setTimeout(showSlides,8000);
+    // p2[slideIndex-1].style.transition = "opacity 3s ease-in-out";
+    slides[slideIndex-1].style.display = "flex";
+    // p2[slideIndex-1].style.opacity = "0";
+    
+    // setInterval(showSlides,8000);
 };
 
-showSlides();
+let tiempoSlide = setInterval(showSlides, 6000);
+
+// showSlides();
 
 
-
+tiempoSlide;
 
 
 
 function plusSlidesA() {
+    clearInterval(tiempoSlide);
+    // tiempoSlide;
+        // clearTimeout(showSlides);
     // let i;
     // slides = document.getElementsByClassName("proyecto");
     // for (i = 0; i < slides.length; i++) {
     // slides[i].style.display = "none";
     // }
-
-        
-
     if(true) {
+
         // clearTimeout(showSlides, 6000);
         slideIndex++;
         // slides[slideIndex]
@@ -111,19 +121,18 @@ function plusSlidesA() {
         // slides = document.getElementsByClassName("proyecto");
         for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        }
-        
-    }
+        };
+        // setTimeout(showSlides, 12000);
+    };
 
     if (slideIndex > slides.length) {slideIndex = 1};
     slides[slideIndex-1].style.display = "block";
-
-    
 };
 
 function plusSlidesB() {
-    let i;
-    slides = document.querySelectorAll(".proyecto");
+    clearInterval(tiempoSlide);
+    // let i;
+    // slides = document.querySelectorAll(".proyecto");
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     };
@@ -131,22 +140,24 @@ function plusSlidesB() {
     slideIndex--;
 
     if(slideIndex <= 0) {
-        // slides[slideIndex]
+        slides[slideIndex]
         slideIndex = 4;
-    } 
+    };
     // else if (slideIndex === 0) {
     //     slideIndex = -1;
     // }
     slides[slideIndex-1].style.display = "block";
-    thumnail();
+    // thumnail();
 
     // clearTimeout(showSlides,6000);
 };
 
+// clearTimeout(tiempoSlide);
 
-let galleries = document.querySelectorAll('.modal-gallery__thumnail');
-galleries = [...galleries];
-let slideThumnail = 0;
+
+// let galleries = document.querySelectorAll('.modal-gallery__thumnail');
+// galleries = [...galleries];
+// let slideThumnail = 0;
 
 // const thumnails = [
 //     '../img/proyecto9(1).jpg',
@@ -285,12 +296,23 @@ setTimeout(showAds,2000);
 
 close.addEventListener('click', () => {
     // e.preventDefault();
-    // terreno.style.display = 'none';
+    let opacity = terreno.style.opacity = '0';
+    terreno.style.transition = "opacity 3s ease-in-out"
     close.style.display = 'none';
-    // terreno.style.right = '100%';
-    terreno.classList.toggle('terreno_invisible');
 
-    // terreno.style.transform = 'scaleX(0.0)';
+    // if (true) {
+        // terreno.style.zIndex = "0"
+        // let timeSet = terreno.style.display = "none"
+        // let timeSet;
+    opacity = function(){ terreno.style.display = 'none'};
+    setTimeout(opacity, 6000);
+    // }
+
+    // terreno.style.display = "none"
+    // terreno.style.right = '100%';
+    // terreno.classList.toggle('terreno_invisible');
+
+    // terreno.style.transform = 'scaleX(3.0)';
     // return;
     // if (true) {
     //     ads = false;
