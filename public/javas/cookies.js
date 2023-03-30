@@ -74,17 +74,14 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     };
-    // for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.backgroundImage = `url('../pdefinitivo/public/img/${thumnails[slideIndex]}')`;
-    // };
-    
+
     slideIndex++;
 
     if(slideIndex > slides.length) {slideIndex = 1};
-    
-    // p2[slideIndex-1].style.transition = "opacity 3s ease-in-out";
     slides[slideIndex-1].style.display = "block";
 };
+
+showSlides();
 
 let tiempoSlide = setInterval(showSlides, 6000);
 
