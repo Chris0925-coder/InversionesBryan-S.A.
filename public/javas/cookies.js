@@ -213,15 +213,6 @@ function plusSlidesB() {
 // }
 
 
-
-
-
-
-
-
-
-
-
 // galleries.forEach(thumbnail => {
     
 //     thumbnail.addEventListener('click', () => {
@@ -260,7 +251,7 @@ function showAds() {
 };
 
 // showAds();
-setTimeout(showAds,2000);
+setTimeout(showAds,2500);
 // ads;
 // setTimeout(ads, 5000);
 // setTimeout(ads,5500);
@@ -285,7 +276,7 @@ setTimeout(showAds,2000);
 
 close.addEventListener('click', () => {
     // e.preventDefault();
-    let opacity = terreno.style.opacity = '0';
+    let fadeOut = terreno.style.opacity = '0';
     terreno.style.transition = "opacity 3s ease-in-out"
     close.style.display = 'none';
 
@@ -293,8 +284,8 @@ close.addEventListener('click', () => {
         // terreno.style.zIndex = "0"
         // let timeSet = terreno.style.display = "none"
         // let timeSet;
-    opacity = function(){ terreno.style.display = 'none'};
-    setTimeout(opacity, 6000);
+    fadeOut = function(){ terreno.style.display = 'none'};
+    setTimeout(fadeOut, 4000);
     // }
 
     // terreno.style.display = "none"
