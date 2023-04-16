@@ -17,6 +17,16 @@ body {
 	height: 100lvh;
 }
 
+.div_class {
+	display: flex;
+	position: relative;
+	align-items: center;
+	color: white;
+	justify-content: center;
+	font-weight: 600;
+
+}
+
 .icon {
 	width: 48px;
 	height: 48px;
@@ -1566,14 +1576,12 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 	display: flex;
 	flex-direction: row-reverse;
 	position: relative;
-/*	flex-direction: column-reverse;*/
 	background-color: rgba(0, 0, 0, 0.4);
 	width: auto;
 	height: 30px;
 	padding: 5px;
 	margin: 0;
-	font-weight: 900;
-/*	touch-action: cross-slide-x;*/
+	font-weight: 700;
 }
 
 .closeP {
@@ -1584,7 +1592,7 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 /*	flex-direction: column-reverse;*/
 	color: black;
 /*	font-weight: 400;*/
-	z-index: 3000;
+/*	z-index: 3000;*/
 	background-color: rgba(250, 250, 250, 0.9);
 	height: fit-content;
 /*	background-position: bottom;*/
@@ -1595,6 +1603,7 @@ box-shadow: 1px 2px 3px 4px dimgrey;
 	padding: 2px;
 	transform: rotateZ(45deg);
 	font-size: x-small;
+	z-index: 3000;
 /*	touch-action: cross-slide-y;*/
 /*	bottom: 0;*/
 /*	flex-direction: column-reverse;*/
@@ -1759,17 +1768,27 @@ height: auto;
 
 /*768px*/
 
-@media screen  and (min-width: 100px) and (max-width: 768px) {
+@media screen  and (min-width: 100px) and (max-width: 1028px) {
 
 	.publicidadIB {
-/*		display: none;*/
+/*		float: inline-start;*/
 /*	display: flex;*/
 /*	position: relative;*/
 		width: 200px;
-	/*line-height: 130px;*/
+/*	line-height: auto;*/
 		height: 300px;
 		background-size: cover;
-		background-position: center;
+		/*background-position: top;
+		justify-content: flex-start;
+		object-position: top;
+		align-content: flex-start;
+		align-items: flex-start;
+		justify-items: flex-start;
+		align-items: flex-start;*/
+/*		top: 0;*/
+/*		vertical-align: top;*/
+		margin-top: 0;
+		padding-top: 0;
 		object-fit: contain;
 		margin: 0;
 /*		transition: transform 0.8s ease-in-out;*/

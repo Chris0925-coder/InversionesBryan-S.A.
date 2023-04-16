@@ -100,7 +100,7 @@ const send = document.querySelector(".btn");
 // });
 // console.log(mail);
 // let mail = document.querySelector(".form-group .form-control");
-const comm = document.querySelector("#taskname");
+let comm = document.querySelector("#taskname");
 let mail = document.querySelector("[name=email]").value;
 let message = document.querySelector("[name=control]").value;
 let form = document.querySelector("#form1");
@@ -114,6 +114,8 @@ let form = document.querySelector("#form1");
 //         event.target.message.value
 //         );
 // };
+
+// event.preventDefault();
 
 
 // form.addEventListener('submit', enviarFormulario);
@@ -144,17 +146,38 @@ send.addEventListener("click", () => {
         // );
     // };
      
-    let message1 = 
+    let message1 =
         `<div id="task">
             <span id="taskname">
                 ${"Usuario: " + mail + "<br>" + "Comenta: " + message}
             </span>
         </div>`;
 
-    comm.insertAdjacentHTML("afterend", message1);
-    alert("¡GRACIAS POR SU COMENTARIO!");
-    
+        // comm = message1;
 
+    
+    alert("¡GRACIAS POR SU COMENTARIO!");
+
+    let div = document.createElement("div");
+    div.id = "div_id";
+    div.className = "div_class";
+    // div.style.display = "flex";
+    // div.style.position = "relative";
+    // message1.style = "color: white"
+    div.style = "background-color: rgba(0,0,0,0.7)";
+    // message1.style = "align-items: center";
+    div.style.maxWidth = "400px";
+    div.style.height = "200px";
+
+    // div = message1;
+    // div.insertAdjacentHTML("afterend", message1);
+    div.innerHTML = `${message1}`;
+    comm.append(div);
+
+
+
+    // mes.insertAdjacentHTML("afterend", message1);
+    
 } else {
     alert("Rellene los espacios en blanco");
     
@@ -355,3 +378,10 @@ send.addEventListener("click", () => {
 //     .then(result => console.log(result))
 //     .catch(error => console.log('error', error));
 // }
+
+
+// function preventDefault() {
+//     window.pop("Hola Mundo");
+// };
+
+// preventDefault();
