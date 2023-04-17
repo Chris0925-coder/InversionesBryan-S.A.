@@ -354,3 +354,4 @@ terreno.addEventListener('click', () => {
     // window.addEventListener("click", function() {
     //     console.log("clicked!");
     // });
+
