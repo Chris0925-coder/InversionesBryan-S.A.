@@ -250,8 +250,8 @@ function showAds() {
     close.style.display = 'flex'
 };
 
-// showAds();
-setTimeout(showAds,2500);
+showAds();
+// setTimeout(showAds,2500);
 // ads;
 // setTimeout(ads, 5000);
 // setTimeout(ads,5500);
