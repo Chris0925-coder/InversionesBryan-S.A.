@@ -872,7 +872,15 @@ div.contacto a:hover {
 	height: auto;
 	margin: 0 auto;
 	justify-content: center;
-	color: rgb(220, 170, 0);
+/*	color: rgb(220, 170, 0);*/
+/*	color: black;
+	font-weight: 700;
+*/
+}
+
+.galeria h3 {
+	font-size: x-large;
+	font-weight: 700;
 }
 
 .proyectos {
