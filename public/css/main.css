@@ -655,7 +655,7 @@ div.contacto a:hover {
 	transform: scale(0);
 	margin: 20px 20px;
 	padding: 25px;
-	color: black;
+	color: #1B1C1E;
 	box-shadow: 0px 8px 16px rgba(170, 180, 90, 0.8);
 	text-shadow: 1px 1px 1px whitesmoke;
 }
@@ -675,13 +675,13 @@ div.contacto a:hover {
 
 .tt0a1:target {
 	text-decoration: none;
-	color: black;
+	color: #1B1C1E;
 	transform: scale(1.0);
 }
 
 #mis {
 	z-index: 1000;
-	color: black;
+	color: #1B1C1E;
 	background-color: rgba(250, 250, 250, 0.8);
 	width: 300px;
 	height: fit-content;
@@ -690,7 +690,7 @@ div.contacto a:hover {
 
 #misV {
 	z-index: 1000;
-	color: black;
+	color: #1B1C1E;
 	background-color: rgba(250, 250, 250, 0.8);
 	width: 200px;
 	height: auto;
@@ -700,7 +700,7 @@ div.contacto a:hover {
 
 #misVal .nav-itema1 {
 	z-index: 1000;
-	color: black;
+	color: #1B1C1E;
 	background-color: rgba(250, 250, 250, 0.8);
 	text-align: left;
 	padding: 3px;
@@ -799,18 +799,16 @@ div.contacto a:hover {
 	display: none;
 	flex-direction: row;
 	position: fixed;
-	background-image: url('../img/terreno.jpg') !important;
+	background-image: url('../img/terreno.jpg');
 	image-rendering: optimizeSpeed;
-	background-position: center;
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
 	z-index: 2000;
 	object-fit: fill;
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.6);
-	box-sizing: border-box;
 	cursor: pointer;
-	width: 250px;
+	width: 300px;
 	height: 600px;
 	padding: 5px;
 	margin: 0;
@@ -838,7 +836,7 @@ div.contacto a:hover {
 	display: none;
 	position: fixed;
 	flex-direction: row-reverse;
-	color: black;
+	color: #2B2B2B;;
 	background-color: rgba(250, 250, 250, 1.0);
 	height: fit-content;
 	cursor: context-menu;
@@ -872,13 +870,10 @@ div.contacto a:hover {
 	height: auto;
 	margin: 0 auto;
 	justify-content: center;
-/*	color: rgb(220, 170, 0);*/
-/*	color: black;
-	font-weight: 700;
-*/
 }
 
 .galeria h3 {
+	color: #2B2B2B;
 	font-size: x-large;
 	font-weight: 700;
 }
@@ -902,7 +897,7 @@ div.contacto a:hover {
 	height: auto;
 }
 
-.proyecto span a img {
+.proyecto img {
 	display: flex;
 	flex-direction: row;
 	position: relative;
@@ -1168,7 +1163,7 @@ div.contacto a:hover {
 	font-weight: 700;
 	margin-top: 30px;
 	text-align: left;
-	color: black;
+	color: #2B2B2B;;
 	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
 }
 
@@ -1183,7 +1178,7 @@ div.contacto a:hover {
 	margin: 10px;
 	padding: 10px;
 	box-shadow: 0px 0px 5px 5px #000000;
-	color: black;
+	color: #2B2B2B;;
 	background-color: rgba(250, 250, 250, 0.3);
 	border-radius: 20px;
 	width: 50%;
