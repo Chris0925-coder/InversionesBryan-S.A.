@@ -246,7 +246,7 @@ const close = document.querySelector('.closeP');
 
 // terreno.addEventListener('scroll', ());
 function showAds() {
-    terreno.style.display = 'flex'
+    // terreno.style.display = 'flex'
     close.style.display = 'flex'
 };
 

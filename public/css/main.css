@@ -796,10 +796,10 @@ div.contacto a:hover {
 
 
 .publicidadIB {
-	display: none;
+	display: flex;
 	flex-direction: row;
 	position: fixed;
-	background-image: url('../img/terreno.jpg');
+	background-image: url('../img/terreno.jpg') !important;
 	image-rendering: optimizeSpeed;
 	background-position: top;
 	background-size: contain;
