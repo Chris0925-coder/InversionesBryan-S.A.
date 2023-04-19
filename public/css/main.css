@@ -31,6 +31,61 @@ body {
 	height: 48px;
 }
 
+
+.publicidadIB {
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	background-image: url('../img/terrenonew.png') !important;
+	image-rendering: optimizeSpeed;
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2000;
+	object-fit: fill;
+	text-align: center;
+	cursor: pointer;
+	width: 300px;
+	height: 600px;
+	padding: 5px;
+	margin: 0;
+	object-position: center;
+}
+
+.terreno_invisible {
+	right: 0;
+}
+
+
+.publicidadIB figcaption {
+	color: white;
+	display: flex;
+	flex-direction: row-reverse;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: auto;
+	height: 30px;
+	padding: 5px;
+	margin: 0;
+}
+
+.closeP {
+	display: none;
+	position: fixed;
+	flex-direction: row-reverse;
+	color: #2B2B2B;;
+	background-color: rgba(250, 250, 250, 1.0);
+	height: fit-content;
+	cursor: context-menu;
+	right: 0;
+	padding: 2px;
+	transform: rotateZ(45deg);
+	font-size: x-small;
+	z-index: 3000;
+}
+
+
+
 #imagen2 {
 	display: flex;
 	position: relative;
@@ -718,7 +773,6 @@ div.contacto a:hover {
 }
 
 
-
 /*NAVBAR*/
 
 .nav-bara1 {
@@ -795,57 +849,7 @@ div.contacto a:hover {
 }
 
 
-.publicidadIB {
-	display: flex;
-	flex-direction: row;
-	position: fixed;
-	background-image: url('../img/terreno.jpg') !important;
-	image-rendering: optimizeSpeed;
-	background-position: top;
-	background-size: contain;
-	background-repeat: no-repeat;
-	z-index: 2000;
-	object-fit: fill;
-	text-align: center;
-	cursor: pointer;
-	width: 300px;
-	height: 600px;
-	padding: 5px;
-	margin: 0;
-	object-position: center;
-}
 
-.terreno_invisible {
-	right: 0;
-}
-
-
-.publicidadIB figcaption {
-	color: white;
-	display: flex;
-	flex-direction: row-reverse;
-	position: relative;
-	background-color: rgba(0, 0, 0, 0.4);
-	width: auto;
-	height: 30px;
-	padding: 5px;
-	margin: 0;
-}
-
-.closeP {
-	display: none;
-	position: fixed;
-	flex-direction: row-reverse;
-	color: #2B2B2B;;
-	background-color: rgba(250, 250, 250, 1.0);
-	height: fit-content;
-	cursor: context-menu;
-	right: 0;
-	padding: 2px;
-	transform: rotateZ(45deg);
-	font-size: x-small;
-	z-index: 3000;
-}
 
 
 .logoPie {
@@ -866,10 +870,12 @@ div.contacto a:hover {
 
 .galeria  {
 	display: grid;
-	width: auto;
+	width: 100%;
 	height: auto;
-	margin: 0 auto;
+	margin: 0;
 	justify-content: center;
+	align-content: stretch;
+/*	overflow: auto;*/
 }
 
 .galeria h3 {
@@ -878,32 +884,36 @@ div.contacto a:hover {
 	font-weight: 700;
 }
 
-.proyectos {
+.galeria .proyectos {
+	display: flex;
+	flex-direction: row;
+	overflow: auto;
+	width: 100%;
+}
+
+.proyecto .proyectos {
+	display: flex;
+	flex-flow: row wrap;
+	position: relative;
 	overflow: auto;
 }
 
-.proyectos .proyecto {
-	text-anchor: start;
+.proyectos a {
 	display: flex;
+	flex-direction: row;
 	position: relative;
-	flex-direction: column;
-	margin: 0 auto;
-}
-
-.proyecto span a {
-	display: flex;
-	position: relative;
+	align-content: space-between;
 	width: auto;
 	height: auto;
+	column-gap: 4px;
 }
 
 .proyecto img {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	width: 800px;
+	width: 600px;
 	height: 600px;
-	margin: 0 4px;
 	object-fit: fill;
 }
 
