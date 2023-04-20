@@ -8,9 +8,7 @@
 
 
 body {
-	background: #ADA996;   /*fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
 	height: 100lvh;
@@ -37,7 +35,8 @@ body {
 	flex-direction: row;
 	position: fixed;
 	background-image: url('../img/terrenonew.png') !important;
-	image-rendering: optimizeSpeed;
+/*	image-rendering: optimizeSpeed;*/
+/*	image-rendering: ;*/
 	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -438,7 +437,7 @@ div.contacto a:hover {
 }
 
 
-.fotos {
+/*.fotos {
 	box-sizing: border-box;
 }
 
@@ -458,9 +457,9 @@ div.contacto a:hover {
 	justify-content: center;
 	justify-items: center;
 	gap: 10px 10px;
-}
+}*/
 
-.photos i:hover {
+/*.photos i:hover {
 	color: black;
 	text-decoration: none;
 	text-shadow: none;
@@ -478,14 +477,16 @@ div.contacto a:hover {
 	padding: 5px;
 	align-content: center;
 	justify-content: center;
-}
+}*/
 
-.photos a:hover img {
+/*.photos a:hover img {
 	transform: scale3d(2.0, 1.0, 5.9);
+}*/
 
-}
+
 
 .light-box {
+/*	display: none;*/
 	position: fixed;
 	top: 30px;
 	left: 0;
@@ -498,14 +499,19 @@ div.contacto a:hover {
 	justify-content: center;
 	align-items: center;
 	transform: scale(0);
-	backface-visibility: hidden;
+/*	backface-visibility: hidden;*/
 }
 
 .light-box img {
+/*	display: none;*/
 	width: 75vw;
 	max-height: 70vh;
 	background: center;
 	object-fit: fill;
+}
+
+.light {
+	display: none;
 }
 
 .light-box:target {
@@ -930,10 +936,9 @@ div.contacto a:hover {
 		width: 200px;
 		height: 300px;
 		background-size: cover;
-		margin-top: 0;
+/*		margin-top: 0;*/
 		padding-top: 0;
 		object-fit: contain;
-		margin: 0;
 	}
 
 	.publicidadIB figcaption {

@@ -50,8 +50,6 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";
 };
 
-showSlides();
-
 let tiempoSlide = setInterval(showSlides, 6000);
 
 
@@ -108,3 +106,31 @@ close.addEventListener('click', () => {
 terreno.addEventListener('click', () => {
     window.open("https://api.whatsapp.com/send?phone=50762926292", "ventana", "width=120 height=300 scrollbars=YES");
 });
+
+
+let galeria = document.querySelector(".proyecto");
+
+galeria.addEventListener('click', sliderGaleria); 
+
+
+function sliderGaleria() {
+
+    let lightBox = document.querySelectorAll(".light-box");
+    let light = document.querySelector(".light");
+    light.style.display = "flex";
+};
+
+
+// sliderGaleria();
+
+        
+        
+
+        
+        // light.slider.src = lightBox[0];
+        // lightBox.style.transform = "scale(1)";
+    
+    // let img = document.getElementsByTagName('img');
+// };
+
+// sliderGaleria();

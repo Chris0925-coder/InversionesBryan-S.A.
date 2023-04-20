@@ -24,7 +24,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 
   <script defer src="public/javas/cookies.js"></script>
 </head>
@@ -214,23 +214,23 @@
             </div>
           </section>
           </article>
-            </div>
+        </div>
 
             <br>
             <br>
    
       
-      <section>
+      <div class="light">
         <article class="light-box" id="image1">
           <a href="#image11" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
-          <img src="public/img/Mejorandoelcampo-n.jpg" width="300" loading="lazy" alt="fotocamino">
+          <img id="foto" src="public/img/Mejorandoelcampo-n.jpg" width="300" loading="lazy" alt="fotocamino">
           <a href="#image2" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
           <a href="#closed" class="close"><i class="bi bi-x-circle"></i></a>  
         </article>
 
         <article class="light-box" id="image2">
           <a href="#image1" class="next"><i class="bi bi-box-arrow-in-left"></i></a>
-          <img src="public/img/Mejorandocaminos-n.jpg" width="300" loading="lazy" alt="fotocamino" style="object-fit: cover;">
+          <img id="foto1" src="public/img/Mejorandocaminos-n.jpg" width="300" loading="lazy" alt="fotocamino" style="object-fit: cover;">
           <a href="#image3" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
           <a href="#closed" class="close"><i class="bi bi-x-circle"></i></a>  
         </article>
@@ -318,10 +318,10 @@
           <a href="#image1" class="next"><i class="bi bi-box-arrow-in-right"></i></a>
           <a href="#closed" class="close"><i class="bi bi-x-circle"></i></a>  
         </article>
-      </section>
+      </div>
     </div>
 
-  <script type="text/javascript">
+ <!--  <script type="text/javascript">
   atOptions = {
     'key' : '638b7fd582d3552f669464c66705827a',
     'format' : 'iframe',
@@ -330,7 +330,9 @@
     'params' : {}
   };
   document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivecreativeformat.com/638b7fd582d3552f669464c66705827a/invoke.js"></scr' + 'ipt>');
-  </script>
+  </script> -->
+
+
   <!-- <%-include('partials/footer.html')%> -->
   <article class="flex-container">
     <iframe id="imagen2"></iframe>
@@ -384,6 +386,7 @@
         </div>
     </div>
   </footer>
+
 
   
 </body>
