@@ -498,27 +498,45 @@ div.contacto a:hover {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transform: scale(0);
+/*	transform: scale(0);*/
 /*	backface-visibility: hidden;*/
 }
 
-.light-box img {
+
+/*.light-box img {*/
 /*	display: none;*/
-	width: 75vw;
+	/*width: 75vw;
 	max-height: 70vh;
 	background: center;
 	object-fit: fill;
+}*/
+
+.imagenX {
+	display: flex;
+	position: relative;
+	background-image: url('../img/pbrisas.jpg');
+	background-size: contain;
+	background-position: center;
+/*	background: center;*/
+	object-fit: fill;
+	background-repeat: no-repeat;
+	width: 75vw;
+	height: 70vh;
 }
+
 
 .light {
 	display: none;
 }
 
-.light-box:target {
-	transform: scale(1.0);
+/*.lightcierre {
+	display: none;
 }
+*//*.light-box:target {
+	transform: scale(1.0);
+}*/
 
-.close {
+.closePhoto {
 	display: block;
 	position: absolute;
 	top: 40px;
@@ -536,8 +554,17 @@ div.contacto a:hover {
 	color: goldenrod;
 }
 
+/*#photo {
+	background-image: url('');
+}
 
-.next {
+.slidePhoto {
+	display: flex;
+}*/
+
+
+.next,
+.back {
 	display: block;
 	color: #fff;
 	height: 50px;
@@ -547,6 +574,8 @@ div.contacto a:hover {
 	text-align: center;
 	background-position: center;
 }
+
+
 
 /*CONTACT PAGE*/
 .banner {
@@ -885,13 +914,14 @@ div.contacto a:hover {
 }
 
 .galeria h3 {
+	text-indent: 20px;
 	color: #2B2B2B;
 	font-size: x-large;
 	font-weight: 700;
 }
 
 .galeria .proyectos {
-	display: flex;
+	display: block;
 	flex-direction: row;
 	overflow: auto;
 	width: 100%;
@@ -1175,6 +1205,7 @@ div.contacto a:hover {
 
 
 #closed h3 {
+	text-indent: 20px;
 	font-weight: 700;
 	margin-top: 30px;
 	text-align: left;
