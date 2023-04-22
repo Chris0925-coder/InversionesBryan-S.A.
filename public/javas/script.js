@@ -23,6 +23,7 @@ function aceptarCookies() {
 $(document).ready(function() {
     compruebaAceptaCookies();
 });
+
 // let st = setTimeout(showSlides,6000);
 
 
