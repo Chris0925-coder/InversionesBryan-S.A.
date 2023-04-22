@@ -941,7 +941,8 @@ div.contacto a:hover {
 	align-content: space-between;
 	width: auto;
 	height: auto;
-	column-gap: 4px;
+/*	column-gap: 4px;*/
+/*	margin: 4px;*/
 }
 
 .proyecto img {
@@ -951,6 +952,7 @@ div.contacto a:hover {
 	width: 600px;
 	height: 600px;
 	object-fit: fill;
+	margin: 1px;
 }
 
 
