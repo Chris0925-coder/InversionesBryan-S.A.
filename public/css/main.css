@@ -912,7 +912,7 @@ div.contacto a:hover {
 /*	align-content: stretch;*/
 /*	justify-content: space-between;*/
 /*	align-content: space-between;*/
-	margin: 0;
+	margin: 0 auto;
 	width: 100%;
 	height: auto;
 /*	overflow: auto;*/
@@ -951,12 +951,13 @@ div.contacto a:hover {
 	justify-content: space-between;
 	width: 100%;
 	height: auto;
+	cursor: pointer;
 }
 
 
 
 .proyecto article {
-	display: flex;
+	display: block;
 	flex-direction: row;
 	position: relative;
 	align-content: space-around;
@@ -966,12 +967,12 @@ div.contacto a:hover {
 /*	column-gap: 4px;*/
 }
 
-.proyecto img {
+.proyecto article img {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	width: 100%;
-	height: 600px;
+	max-width: 100%;
+	height: 700px;
 	justify-content: space-between;
 	align-content: space-between;
 	object-fit: fill;
@@ -980,20 +981,31 @@ div.contacto a:hover {
 
 .remodelaciones {
 	display: none;
-	position: relative;
+	margin: 3px;
+	align-content: center;
+	justify-content: space-between;
 	width: 600px;
-	height: 600px;
-	margin: 5px;
+	height: auto;
 }
 
-.remodelaciones img{
-	display: flex;
+.remodelaciones article {
+/*	display: flex;*/
 	flex-direction: row;
 	position: relative;
+	align-content: space-around;
+	justify-content: space-around;
 	max-width: 100%;
+	height: auto;
+/*	column-gap: 4px;*/}
+
+.remodelaciones img {
+/*	display: flex;*/
+	flex-direction: row;
+	position: relative;
+	max-width: 600px;
 	height: 600px;
-	/*justify-content: space-between;
-	align-content: space-between;*/
+	justify-content: space-between;
+	align-content: space-between;
 	object-fit: fill;
 /*	margin: 1px;*/
 }
@@ -1051,17 +1063,23 @@ div.contacto a:hover {
 	left: 90%;
 	padding: 5px;
 	border-style: none;
+	color: dimgrey;
+	border-radius: 5px;
 }
 
+.more:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
 
 
 .detalles {
 /*	text-indent: 15px;*/
 /*	text-align: left;*/
-	font-size: x-small;
+	font-size: small;
 /*	text-justify: center;*/
 	text-justify: center;
 	justify-content: center;
+	color: #2b2b2b;
 	/*	margin: 15px;*/
 }
 
@@ -1079,7 +1097,7 @@ div.contacto a:hover {
 
 /*768px*/
 
-@media screen and (min-width: 300px) and (max-width: 1028px) {
+@media screen and (min-width: 100px) and (max-width: 1028px) {
 
 	body {
 		overflow-x: hidden;
@@ -1266,12 +1284,24 @@ div.contacto a:hover {
 	.re {
 	display: block;
 	}*/
-	.remodelaciones img{
+	.remodelaciones h5 {
+		text-align: left;
+	}
+
+	.remodelaciones article {
+/*		display: n;*/
+		position: relative;
+/*		align-content: center;*/
+/*		justify-content:;*/
+justify-items: center;
+		margin: 0 auto;
+	}
+	.remodelaciones article img{
 	/*display: flex;
 	flex-direction: row;
 	position: relative;*/
-	max-width: 900px;
-	height: 600px;
+	width: 400px;
+	height: 400px;
 	/*justify-content: space-between;
 	align-content: space-between;
 	object-fit: fill;
@@ -1290,7 +1320,7 @@ div.contacto a:hover {
 		position: relative;
 		flex-direction: row;
 		flex-wrap: wrap;
-		left: 65%;
+		left: 80%;
 		margin: 10px;
 	}
 

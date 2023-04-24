@@ -79,7 +79,7 @@ function showSlides() {
     slides3[slideIndex3-1].style.display = "block";
 };
 
-let tiempoSlide = setInterval(showSlides, 6000);
+let tiempoSlide = setInterval(showSlides, 8000);
 
 
 function plusSlidesA() {
