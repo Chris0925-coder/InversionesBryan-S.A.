@@ -918,7 +918,7 @@ div.contacto a:hover {
 /*	overflow: auto;*/
 }
 
-.galeria h5 {
+.galeria h3 {
 /*	position: static;*/
 /*	left: 0;*/
 /*	text-indent: 17px;*/
@@ -1077,7 +1077,7 @@ div.contacto a:hover {
 .detalles {
 /*	text-indent: 15px;*/
 /*	text-align: left;*/
-	font-size: medium;
+	font-size: 1rem;
 /*	text-justify: center;*/
 	/*text-justify: center;
 	justify-content: center;*/
@@ -1279,7 +1279,7 @@ div.contacto a:hover {
 	 	margin: 0 auto;
 	 }
 	 .proyecto .fotos {
-	 	display: flex;
+	 	display: block;
 	 	position: relative;
 	 	margin: 0 auto;
 	 }

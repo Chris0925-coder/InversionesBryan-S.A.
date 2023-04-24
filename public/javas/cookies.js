@@ -1,3 +1,29 @@
+const terreno = document.querySelector('.publicidadIB');
+const close = document.querySelector('.closeP');
+
+function showAds() {
+    // terreno.style.display = 'flex'
+    close.style.display = 'flex'
+};
+
+// showAds();
+setTimeout(showAds,3000);
+
+close.addEventListener('click', () => {
+    let fadeOut = terreno.style.opacity = '0';
+    terreno.style.transition = "opacity 3s ease-in-out"
+    close.style.display = 'none';
+
+    fadeOut = function(){ terreno.style.display = 'none'};
+    setTimeout(fadeOut, 4000);
+});
+
+terreno.addEventListener('click', () => {
+    window.open("https://api.whatsapp.com/send?phone=50762926292", "ventana", "width=120 height=300 scrollbars=YES");
+});
+
+
+
 function compruebaAceptaCookies() {
     if (localStorage.aceptaCookies == 'true') {
         cajacookies.style.display = 'none';
@@ -126,29 +152,6 @@ function plusSlidesB() {
 
 
 
-const terreno = document.querySelector('.publicidadIB');
-const close = document.querySelector('.closeP');
-
-function showAds() {
-    // terreno.style.display = 'flex'
-    close.style.display = 'flex'
-};
-
-// showAds();
-setTimeout(showAds,3000);
-
-close.addEventListener('click', () => {
-    let fadeOut = terreno.style.opacity = '0';
-    terreno.style.transition = "opacity 3s ease-in-out"
-    close.style.display = 'none';
-
-    fadeOut = function(){ terreno.style.display = 'none'};
-    setTimeout(fadeOut, 4000);
-});
-
-terreno.addEventListener('click', () => {
-    window.open("https://api.whatsapp.com/send?phone=50762926292", "ventana", "width=120 height=300 scrollbars=YES");
-});
 
 
 
