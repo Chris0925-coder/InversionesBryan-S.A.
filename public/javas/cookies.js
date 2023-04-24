@@ -35,19 +35,48 @@ function ventana2(url) {
     }
     
 };
-
-let slides = document.querySelectorAll(".proyecto");
+// let vix = document.querySelector(".ver");
+let cajaProjectos =document.querySelector(".proyectos");
+let slides = document.querySelectorAll(".pro");
+let slides1 = document.querySelectorAll(".pro1");
+let slides2 = document.querySelectorAll(".pro2");
+let slides3 = document.querySelectorAll(".pro3");
+let more = document.querySelector(".more");
+let remodelaciones = document.querySelector(".remodelaciones");
 let slideIndex = 0;
+let slideIndex1 = 0;
+let slideIndex2 = 0;
+let slideIndex3 = 0;
+
+more.addEventListener('click', () => {
+    // cajaProjectos.style.display="none";
+    cajaProjectos.classList.toggle("ver");
+    remodelaciones.classList.toggle("re");
+});
 
 function showSlides() {
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides1[i].style.display = "none";
+    slides2[i].style.display = "none";
+    slides3[i].style.display = "none";
     };
 
     slideIndex++;
+    slideIndex1++;
+    slideIndex2++;
+    slideIndex3++;
 
-    if(slideIndex > slides.length) {slideIndex = 1};
+    if(slideIndex > slides.length) {
+        slideIndex = 1;
+        slideIndex1 = 1;
+        slideIndex2 = 1;
+        slideIndex3 = 1;
+};
     slides[slideIndex-1].style.display = "block";
+    slides1[slideIndex1-1].style.display = "block";
+    slides2[slideIndex2-1].style.display = "block";
+    slides3[slideIndex3-1].style.display = "block";
 };
 
 let tiempoSlide = setInterval(showSlides, 6000);
@@ -59,26 +88,39 @@ function plusSlidesA() {
         slideIndex++;
         for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+        slides1[i].style.display = "none";
+        slides2[i].style.display = "none";
+        slides3[i].style.display = "none";
         };
     };
 
     if (slideIndex > slides.length) {slideIndex = 1};
     slides[slideIndex-1].style.display = "block";
+    slides1[slideIndex-1].style.display = "block";
+    slides2[slideIndex-1].style.display = "block";
+    slides3[slideIndex-1].style.display = "block";
 };
 
 function plusSlidesB() {
     clearInterval(tiempoSlide);
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    slides1[i].style.display = "none";
+    slides2[i].style.display = "none";
+    slides3[i].style.display = "none";
     };
 
     slideIndex--;
 
     if(slideIndex <= 0) {
         slides[slideIndex]
-        slideIndex = 4;
+        slideIndex = 3;
     };
     slides[slideIndex-1].style.display = "block";
+    slides1[slideIndex-1].style.display = "block";
+    slides2[slideIndex-1].style.display = "block";
+    slides3[slideIndex-1].style.display = "block";
+
 };
 
 
@@ -113,7 +155,7 @@ terreno.addEventListener('click', () => {
 
 
 
-let galeria = document.querySelector(".proyectos");
+let fotos = document.querySelector(".fotos");
 
 // galeria.addEventListener('click', sliderGaleria); 
 
@@ -161,7 +203,7 @@ let cerrar = document.querySelector(".closePhoto");
 let atras = document.querySelector(".back");
 // let lightcierre = document.querySelector(".lightcierre")
  
-galeria.addEventListener('click', addPhotos);
+fotos.addEventListener('click', addPhotos);
 
 
 // let crear = document.createElement("div");
