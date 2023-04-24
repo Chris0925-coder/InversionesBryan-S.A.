@@ -6,11 +6,14 @@
 	box-sizing: border-box;
 }
 
+html {
+	overflow-x: hidden;
+}
 
 body {
  	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: 'Open Sans', sans-serif;
-/*	overflow-x: hidden;*/
+	overflow-x: hidden;
 	height: 100lvh;
 }
 
@@ -987,10 +990,10 @@ div.contacto a:hover {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	width: 100%;
+	max-width: 100%;
 	height: 600px;
-	justify-content: space-between;
-	align-content: space-between;
+	/*justify-content: space-between;
+	align-content: space-between;*/
 	object-fit: fill;
 /*	margin: 1px;*/
 }
@@ -1035,6 +1038,21 @@ div.contacto a:hover {
 
 }
 */
+.re {
+	display: block;
+}
+.ver {
+	display: none;
+}
+
+.more {
+	display: flex;
+	position: relative;
+	left: 90%;
+	padding: 5px;
+	border-style: none;
+}
+
 
 
 .detalles {
@@ -1063,7 +1081,7 @@ div.contacto a:hover {
 
 @media screen and (min-width: 300px) and (max-width: 1028px) {
 
-	html {
+	body {
 		overflow-x: hidden;
 	}
 
@@ -1240,43 +1258,46 @@ div.contacto a:hover {
 		max-width: 900px;
 		height: 300px;
 	}
-
+/*
 	.ver {
 	display: none;
 	}
 
 	.re {
 	display: block;
-	}
+	}*/
+	.remodelaciones img{
+	/*display: flex;
+	flex-direction: row;
+	position: relative;*/
+	max-width: 900px;
+	height: 600px;
+	/*justify-content: space-between;
+	align-content: space-between;
+	object-fit: fill;
+*//*	margin: 1px;*/
+}
+.ver {
+	display: none;
+}
 
-
-
+	.re {
+	display: block;
+}
 
 	.more {
-
+		display: flex;
+		position: relative;
 		flex-direction: row;
 		flex-wrap: wrap;
-		left: 75%;
+		left: 65%;
 		margin: 10px;
 	}
 
 }
 
 
-.re {
-	display: block;
-}
-.ver {
-	display: none;
-}
 
-.more {
-	display: flex;
-	position: relative;
-	left: 90%;
-	padding: 5px;
-	border-style: none;
-}
 
 
 
