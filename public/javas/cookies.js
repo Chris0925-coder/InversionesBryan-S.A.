@@ -125,6 +125,7 @@ function plusSlidesB() {
 
 
 
+
 const terreno = document.querySelector('.publicidadIB');
 const close = document.querySelector('.closeP');
 
@@ -155,7 +156,7 @@ terreno.addEventListener('click', () => {
 
 
 
-let fotos = document.querySelector(".fotos");
+// let fotos = document.getElementsByClassName("fotos");
 
 // galeria.addEventListener('click', sliderGaleria); 
 
@@ -178,7 +179,7 @@ let fotos = document.querySelector(".fotos");
 const slidePhoto = [
     'public/img/Mejorandocaminos.jpg',
     'public/img/camino.jpg',
-    'public/img/proyecto9.jpg',
+    'public/img/proyecto9-n.jpg',
     'public/img/pbrisas.jpg',
     'public/img/Lasnaves.jpg',
     'public/img/casap1.jpg',
@@ -189,7 +190,7 @@ const slidePhoto = [
     'public/img/remode3.jpg',
     'public/img/remode4.jpg',
     'public/img/remode5.jpg',
-    'public/img/proyecto9-n.jpg'
+    'public/img/proyecto4.jpg'
 ];
 
 var album = 0;
@@ -203,7 +204,7 @@ let cerrar = document.querySelector(".closePhoto");
 let atras = document.querySelector(".back");
 // let lightcierre = document.querySelector(".lightcierre")
  
-fotos.addEventListener('click', addPhotos);
+cajaProjectos.addEventListener('click', addPhotos);
 
 
 // let crear = document.createElement("div");
@@ -248,7 +249,7 @@ atras.addEventListener('click', () => {
     // };
      if (album <= 0) {album = 12};
      imageX.style.backgroundImage = `url(${slidePhoto[album]})`;
-})
+});
 
 // function siguiente() {
     // clearInterval(tiempoSlide);
@@ -276,7 +277,7 @@ function addPhotos() {
     // for (i = 0; i < slidePhoto.length; i++) {
     // if (album < slidePhoto.length) { 
         //    if (j < slidePhoto[i]) {
-        //     light.style.display = "none";
+            // light.style.display = "flex";
         //     slidePhoto[j];
         // };
     // };

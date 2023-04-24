@@ -969,7 +969,7 @@ div.contacto a:hover {
 }
 
 .proyecto .fotos img {
-	display: flex;
+/*	display: flex;*/
 	flex-direction: row;
 	position: relative;
 	max-width: 100%;
@@ -1077,24 +1077,23 @@ div.contacto a:hover {
 .detalles {
 /*	text-indent: 15px;*/
 /*	text-align: left;*/
-	font-size: small;
+	font-size: medium;
 /*	text-justify: center;*/
-	text-justify: center;
-	justify-content: center;
+	/*text-justify: center;
+	justify-content: center;*/
 	color: #2b2b2b;
 	/*	margin: 15px;*/
 }
 
 .detalles p {
+/*
 	display: flex;
-	flex-direction: column;
-	margin: 10px;
+	flex-direction: column;*/
+	margin: 5px;
+/*	margin: 10px;*/
 	text-align: justify;
-
-/*text-align-last: left;*/
-	justify-content: center;
-	text-justify: auto;
-
+/*	justify-content: center;*/
+/*	text-justify: auto;*/
 }
 
 /*768px*/
