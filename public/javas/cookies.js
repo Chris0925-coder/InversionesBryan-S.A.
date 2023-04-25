@@ -179,12 +179,13 @@ function plusSlidesB() {
 // const photos = document.querySelector('#photo');
 
 
-const slidePhoto = [
-    'public/img/Mejorandocaminos.jpg',
-    'public/img/camino.jpg',
+let slidePhoto = [
     'public/img/proyecto9-n.jpg',
     'public/img/pbrisas.jpg',
-    'public/img/Lasnaves.jpg',
+    'public/img/proyecto4.jpg',
+    'public/img/Mejorandocaminos.jpg',
+    'public/img/camino.jpg',
+    'public/img/Mejorandoelcampo.jpg',
     'public/img/casap1.jpg',
     'public/img/casap2.jpg',
     'public/img/casap3.jpg',
@@ -192,11 +193,13 @@ const slidePhoto = [
     'public/img/remode2.jpg',
     'public/img/remode3.jpg',
     'public/img/remode4.jpg',
-    'public/img/remode5.jpg',
-    'public/img/proyecto4.jpg'
+    'public/img/remode5.jpg'
 ];
 
-var album = 0;
+let album = 0;
+let album1 = 0;
+let album2 = 0;
+let album3 = 0;
 // var j = 0;
 
 let lightBox = document.querySelectorAll(".light-box");
@@ -205,9 +208,123 @@ let next = document.querySelector(".next");
 let imageX = document.querySelector(".imagenX");
 let cerrar = document.querySelector(".closePhoto");
 let atras = document.querySelector(".back");
+let caja1 = document.querySelector('#caja1');
+let caja2 = document.querySelector('#caja2');
+let caja3 = document.querySelector('#caja3');
+let caja4 = document.querySelector('#caja4');
 // let lightcierre = document.querySelector(".lightcierre")
  
-cajaProjectos.addEventListener('click', addPhotos);
+caja1.addEventListener('click', () => {
+    addPhotos();
+    
+
+    imageX.style.backgroundImage = "url('public/img/proyecto4.jpg')";
+    slidePhoto = [
+        'public/img/proyecto9.jpg',
+        'public/img/proyecto1.jpg',
+        'public/img/proyecto2.jpg',
+        'public/img/proyecto3.jpg',
+        'public/img/proyecto5.jpg',
+        'public/img/proyecto6.jpg',
+        'public/img/proyecto7.jpg',
+        'public/img/proyecto8.jpg',
+        'public/img/proyecto4.jpg'
+    ];
+    // retroceso();
+    // album = 2;
+    atras.addEventListener('click', () => {
+        album--;
+        if (album < 0) {
+            album = 8;
+            };
+            imageX.style.backgroundImage = `url(${slidePhoto[album]})`;   
+    });
+});
+caja2.addEventListener('click', () => {
+    addPhotos();
+    // album = 0;
+    // album = 2;
+    slidePhoto = [
+        'public/img/casap1.jpg',
+        'public/img/casap2.jpg',
+        'public/img/casapenonome.jpg',
+        'public/img/casap3.jpg'
+    ];
+
+    imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
+    // album = 0;
+    atras.addEventListener('click', () => {
+        // for (i = 0; i < slidePhoto.length; i++) {
+            // console.log(i);
+        //     imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
+        // };
+    //     slidePhoto = [
+    //     'public/img/casap1.jpg',
+    //     'public/img/casap2.jpg',
+    //     'public/img/casapenonome.jpg',
+    //     'public/img/casap3.jpg'
+    // ];
+        // slidePhoto;
+        // album = 0;
+        album1--;
+        if (album1 < 0) {album1 = 3};
+        imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;   
+    });
+});
+
+caja3.addEventListener('click', () => {
+    addPhotos();
+    // album = 0;
+    slidePhoto = [
+        'public/img/Mejorandocaminos.jpg',
+        'public/img/camino.jpg',
+        'public/img/Mejorandoelcampo.jpg'
+    ];
+    imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;
+    
+    // album = 2;
+    // album++;
+     atras.addEventListener('click', () => {
+        // for (i = 0; i < slidePhoto.length; i++) {
+            // console.log(i);
+        //     imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
+        // };
+    //     slidePhoto = [
+    //     'public/img/Mejorandocaminos.jpg',
+    //     'public/img/camino.jpg',
+    //     'public/img/Mejorandoelcampo.jpg'
+    // ];
+    // album = 0;
+        album2--;
+        if (album2 < 0) {album2 = 2};
+        imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;   
+    });
+});
+
+caja4.addEventListener('click', () => {
+    addPhotos();
+    // album = 0;
+    imageX.style.backgroundImage = "url('public/img/remode5.jpg')";
+    slidePhoto = [
+        'public/img/remode1.jpg',
+        'public/img/remode2.jpg',
+        'public/img/remode3.jpg',
+        'public/img/remode4.jpg',
+        'public/img/remode5.jpg'
+    ];
+
+    
+    // album++;
+    atras.addEventListener('click', () => {
+        // album3 = 0;
+        album3--;
+        if (album3 < 0) {album3 = 4};
+            imageX.style.backgroundImage = `url(${slidePhoto[album3]})`;   
+    });
+
+});
+
+
 
 
 // let crear = document.createElement("div");
@@ -237,23 +354,9 @@ cerrar.addEventListener('click', () => {
     light.style.display = 'none';
 });
 
-atras.addEventListener('click', () => {
-    for (i = 0; i < slidePhoto.length; i++) {
-        // console.log(i);
-        imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
-    };
 
-    // album++;
-    album--;
-
-    // if(album <= 0) {
-        // slidePhoto[album]
-        // slidePhoto = -1;
-    // };
-     if (album <= 0) {album = 12};
-     imageX.style.backgroundImage = `url(${slidePhoto[album]})`;
-});
-
+// function retroceso() {
+    
 // function siguiente() {
     // clearInterval(tiempoSlide);
     // if(true) {
@@ -285,11 +388,11 @@ function addPhotos() {
         // };
     // };
 
-        // j++
+        // i++;
 
         // };
     // album++;
-    // if (j > slidePhoto.length) {j = 1};
+    // if (i > slidePhoto.length) {i = 1};
     //     article = `
     //         <article class="light-box" id="image1">
     //         <a class="next"><i class="bi bi-box-arrow-in-left"></i></a>

@@ -517,7 +517,7 @@ div.contacto a:hover {
 .imagenX {
 	display: flex;
 	position: relative;
-	background-image: url('../img/proyecto4.jpg');
+	background-image: url('');
 	background-size: contain;
 	background-position: center;
 /*	background: center;*/
