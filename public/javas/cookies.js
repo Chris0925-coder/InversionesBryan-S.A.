@@ -1,5 +1,43 @@
 const terreno = document.querySelector('.publicidadIB');
 const close = document.querySelector('.closeP');
+let slides = document.querySelectorAll(".pro");
+let slides1 = document.querySelectorAll(".pro1");
+let slides2 = document.querySelectorAll(".pro2");
+let slides3 = document.querySelectorAll(".pro3");
+let slideIndex = 0;
+let slideIndex1 = 0;
+let slideIndex2 = 0;
+let slideIndex3 = 0;
+
+function showSlides() {
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    slides1[i].style.display = "none";
+    slides2[i].style.display = "none";
+    slides3[i].style.display = "none";
+    };
+
+    slideIndex++;
+    slideIndex1++;
+    slideIndex2++;
+    slideIndex3++;
+
+    if(slideIndex > slides.length) {
+        slideIndex = 1;
+        slideIndex1 = 1;
+        slideIndex2 = 1;
+        slideIndex3 = 1;
+};
+    slides[slideIndex-1].style.display = "block";
+    slides1[slideIndex1-1].style.display = "block";
+    slides2[slideIndex2-1].style.display = "block";
+    slides3[slideIndex3-1].style.display = "block";
+};
+
+let tiempoSlide = setInterval(showSlides, 8000);
+
+
+
 
 function showAds() {
     // terreno.style.display = 'flex'
@@ -63,16 +101,10 @@ function ventana2(url) {
 };
 // let vix = document.querySelector(".ver");
 let cajaProjectos =document.querySelector(".proyectos");
-let slides = document.querySelectorAll(".pro");
-let slides1 = document.querySelectorAll(".pro1");
-let slides2 = document.querySelectorAll(".pro2");
-let slides3 = document.querySelectorAll(".pro3");
+
 let more = document.querySelector(".more");
 let remodelaciones = document.querySelector(".remodelaciones");
-let slideIndex = 0;
-let slideIndex1 = 0;
-let slideIndex2 = 0;
-let slideIndex3 = 0;
+
 
 more.addEventListener('click', () => {
     // cajaProjectos.style.display="none";
@@ -80,32 +112,7 @@ more.addEventListener('click', () => {
     remodelaciones.classList.toggle("re");
 });
 
-function showSlides() {
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    slides1[i].style.display = "none";
-    slides2[i].style.display = "none";
-    slides3[i].style.display = "none";
-    };
 
-    slideIndex++;
-    slideIndex1++;
-    slideIndex2++;
-    slideIndex3++;
-
-    if(slideIndex > slides.length) {
-        slideIndex = 1;
-        slideIndex1 = 1;
-        slideIndex2 = 1;
-        slideIndex3 = 1;
-};
-    slides[slideIndex-1].style.display = "block";
-    slides1[slideIndex1-1].style.display = "block";
-    slides2[slideIndex2-1].style.display = "block";
-    slides3[slideIndex3-1].style.display = "block";
-};
-
-let tiempoSlide = setInterval(showSlides, 8000);
 
 
 function plusSlidesA() {
