@@ -1,5 +1,6 @@
 const terreno = document.querySelector('.publicidadIB');
 const close = document.querySelector('.closeP');
+let cerrar = document.querySelector(".closePhoto2");
 let slides = document.querySelectorAll(".pro");
 let slides1 = document.querySelectorAll(".pro1");
 let slides2 = document.querySelectorAll(".pro2");
@@ -213,7 +214,6 @@ let lightBox = document.querySelectorAll(".light-box");
 let light = document.querySelector(".light");
 let next = document.querySelector(".next");
 let imageX = document.querySelector(".imagenX");
-let cerrar = document.querySelector(".closePhoto");
 let atras = document.querySelector(".back");
 let caja1 = document.querySelector('#caja1');
 let caja2 = document.querySelector('#caja2');
@@ -356,10 +356,7 @@ next.addEventListener('click', () => {
 
 
 
-cerrar.addEventListener('click', () => {
-    // light.classList.toggle = lightcierre;
-    light.style.display = 'none';
-});
+
 
 
 // function retroceso() {
@@ -429,7 +426,10 @@ function addPhotos() {
     // photos.insertAdjacentHTML("afterend", article);
 };
 
-
+cerrar.addEventListener('click', () => {
+    // light.classList.toggle = lightcierre;
+    light.style.display = 'none';
+});
 
 
 // function plusSlidesA() {

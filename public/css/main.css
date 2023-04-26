@@ -507,13 +507,13 @@ div.contacto a:hover {
 }
 
 
-/*.light-box img {*/
+.light-box img {
 /*	display: none;*/
-	/*width: 75vw;
+	width: 75vw;
 	max-height: 70vh;
 	background: center;
 	object-fit: fill;
-}*/
+}
 
 .imagenX {
 	display: flex;
@@ -536,9 +536,10 @@ div.contacto a:hover {
 /*.lightcierre {
 	display: none;
 }
-*//*.light-box:target {
+*/
+/*.light-box:target {
 	transform: scale(1.0);
-}*/
+}
 
 .closePhoto {
 	display: block;
@@ -555,7 +556,7 @@ div.contacto a:hover {
 }
 
 .light-box a:hover {
-	color: goldenrod;
+	color: #b2bbbb;
 }
 
 /*#photo {
@@ -1439,6 +1440,31 @@ justify-items: center;
 	text-align: left;
 	color: #2B2B2B;;
 	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
+}
+
+.closePhoto,
+.closePhoto2 {
+	display: flex;
+	position: sticky;
+/*	flex-direction: column;*/
+	text-decoration: none;
+	color: ghostwhite;
+
+/*	bottom: 0;*/
+	justify-items: flex-start;
+	justify-self: flex-start;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: auto;
+	height: 80%;
+	margin-right: 20px;
+/*	height: 200px;*/
+/*	top: 0;*/
+}
+
+.closePhoto:hover,
+.closePhoto2:hover {
+	color: #2B2B2B;
 }
 
 .redes .bibi {
