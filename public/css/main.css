@@ -38,7 +38,7 @@ body {
 	flex-direction: row;
 	position: fixed;
 	background-image: url('../img/terrenonew.png') !important;
-/*	image-rendering: optimizeSpeed;*/
+	image-rendering: optimizeSpeed;
 /*	image-rendering: ;*/
 	background-position: top;
 	background-size: contain;
@@ -67,8 +67,9 @@ body {
 	background-color: rgba(0, 0, 0, 0.4);
 	width: auto;
 	height: 30px;
-	padding: 5px;
-	margin: 0;
+	padding: 4px;
+/*	margin: 0;*/
+	font-size: 0.7rem;
 }
 
 .closeP {
@@ -82,7 +83,7 @@ body {
 	right: 0;
 	padding: 2px;
 	transform: rotateZ(45deg);
-	font-size: x-small;
+	font-size: 0.5rem;
 	z-index: 3000;
 }
 
@@ -1210,26 +1211,6 @@ div.contacto a:hover {
 		margin: 5px;
 	}
 
-	.bibi {
-		display: inline-flex;
-		flex-flow: column wrap;
-		position: sticky;
-		align-self: flex-end;
-		justify-content: flex-end;
-		align-items: flex-end;
-		margin: 0 auto;
-		padding: 0;
-		height: auto;
-		width: auto;
-		z-index: 1000;
-	}
-
-	.bibi a {
-		display: flex;
-		position: relative;
-		margin: 0;
-		align-content: flex-end;
-	}
 
 	.contacto {
 		grid-area: 1;
@@ -1239,7 +1220,7 @@ div.contacto a:hover {
 		flex-wrap: wrap;
 	}
 
-	.social {
+	/*.social {
 		display: flex;
 		position: relative;
 		overflow: hidden;
@@ -1250,7 +1231,7 @@ div.contacto a:hover {
 		margin: 0 auto;
 		overflow: auto;
 	}
-
+*/
 	.logoPie {
 		margin: 0;
 		padding: 0;
@@ -1417,6 +1398,11 @@ justify-items: center;
 	align-items: top;
 }
 
+.polt p {
+	color: #1B1C1E;
+	font-size: 0.7rem;
+}
+
 .terminos {
 	display: flex;
 	position: relative;
@@ -1424,6 +1410,25 @@ justify-items: center;
 	align-content: flex-end;
 	justify-items: end;
 	text-align: right;
+	font-size: 0.6rem;
+	color: #1B1C1E;
+	cursor: default;
+}
+
+.terminos span {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #113aff;
+}
+
+.pp {
+	cursor: default;
+}
+
+.pp span {
+	cursor: pointer;
+	color: #113aff;
+	text-decoration: underline;
 }
 
 
@@ -1436,11 +1441,35 @@ justify-items: center;
 	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
 }
 
-.redes {
+.redes .bibi {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+/*	align-content: space-between;*/
+
+}
+
+.redes i {
 	display: flex;
 	position: relative;
-	flex-direction: row-reverse;
+	vertical-align: middle;
+	margin: 5px;
+	justify-content: space-between;
+	
 }
+
+.mail a, 
+.num a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+/* a {
+	 color: white; 
+	 text-decoration: none; 
+	 font-size: small;
+}*/
 
 
 #cajacookies {
@@ -1465,7 +1494,7 @@ justify-items: center;
 }
 
 .cook {
-	font-size: xx-small;
+	font-size: 1rem;
 	text-indent: 5px;
 	text-align: center;
 	margin: 0 20px;
