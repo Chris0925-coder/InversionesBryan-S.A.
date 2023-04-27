@@ -1,6 +1,29 @@
-const terreno = document.querySelector('.publicidadIB');
-const close = document.querySelector('.closeP');
-let cerrar = document.querySelector(".closePhoto2");
+function compruebaAceptaCookies() {
+    if (localStorage.aceptaCookies == 'true') {
+        cajacookies.style.display = 'none';
+    }
+};
+
+function aceptarCookies() {
+    localStorage.aceptaCookies == 'true';
+        cajacookies.style.display = 'none';
+};
+
+$(document).ready(function() {
+    compruebaAceptaCookies();
+});
+
+let about = document.querySelector('.about');
+let sobre = document.querySelector('.sobre');
+
+about.addEventListener('click', () => {
+    sobre.classList.toggle('closeSobre');
+    // sobre.style.animation = 'fadein 6s';
+});
+
+
+
+
 let slides = document.querySelectorAll(".pro");
 let slides1 = document.querySelectorAll(".pro1");
 let slides2 = document.querySelectorAll(".pro2");
@@ -9,6 +32,8 @@ let slideIndex = 0;
 let slideIndex1 = 0;
 let slideIndex2 = 0;
 // let slideIndex3 = 0;
+
+
 
 function showSlides() {
     for (i = 0; i < slides.length; i++) {
@@ -53,6 +78,11 @@ let tiempoSlide = setInterval(showSlides, 8000);
 
 
 
+
+const terreno = document.querySelector('.publicidadIB');
+const close = document.querySelector('.closeP');
+
+
 function showAds() {
     // terreno.style.display = 'flex'
     close.style.display = 'flex'
@@ -76,20 +106,7 @@ terreno.addEventListener('click', () => {
 
 
 
-function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies == 'true') {
-        cajacookies.style.display = 'none';
-    }
-};
 
-function aceptarCookies() {
-    localStorage.aceptaCookies == 'true';
-        cajacookies.style.display = 'none';
-};
-
-$(document).ready(function() {
-    compruebaAceptaCookies();
-});
 
 function ventana(url) {
 	localStorage.aceptaCookies === 'true';
@@ -435,6 +452,10 @@ next.addEventListener('click', () => {
 // };
 
 // next.addEventListener('click', siguiente);
+
+
+
+let cerrar = document.querySelector(".closePhoto2");
 
 
 function addPhotos() {
