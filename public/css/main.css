@@ -914,7 +914,7 @@ div.contacto a:hover {
 /*	align-content: stretch;*/
 /*	justify-content: space-between;*/
 /*	align-content: space-between;*/
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 	height: auto;
 /*	overflow: auto;*/
@@ -930,27 +930,39 @@ div.contacto a:hover {
 	text-align: center;
 }
 
-.proyectos {
-	display: flex;
-	position: relative;
-/*	flex-direction: row;*/
-/*	overflow: auto;*/
-	width: 100%;
-	margin: 0 auto;
-	height: fit-content;
-	justify-content: space-between;
-/*	justify-items: center;*/
-/*	align-content: space-around;*/
-}
-
-.proyecto {
-	display: block;
+.pro, 
+.pro1, 
+.pro2, {
+/*	display: block;*/
 /*	flex-flow: row wrap;*/
 /*	position: relative;*/
 /*	overflow: auto;*/
-	margin: 3px;
+	/*margin: 3px;
 	align-content: center;
 	justify-content: space-between;
+	width: 100%;
+	height: auto;
+	flex-direction: row;
+	position: relative;
+	max-width: 100%;
+	height: 600px;
+	margin: 10px auto;
+*/
+}
+
+
+.proyectos {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	height: fit-content;
+}
+
+.proyectos .proyecto {
+	display: block;
+	margin: 3px;
 	width: 100%;
 	height: auto;
 	cursor: pointer;
@@ -962,28 +974,22 @@ div.contacto a:hover {
 	display: block;
 	flex-direction: row;
 	position: relative;
-/*	align-content: space-around;*/
-/*	justify-content: space-around;*/
 	width: auto;
 	height: auto;
 	margin: 0 auto;
 /*	column-gap: 4px;*/
 }
 
-.proyecto .fotos img {
-/*	display: flex;*/
+.fotos img {
 	flex-direction: row;
 	position: relative;
-	max-width: 100%;
-	height: 600px;
-	margin: 10px auto;
-/*	justify-content: space-between;*/
-/*	align-content: space-between;*/
+	width: 100%;
+	height: 900px;
+	margin: 1px;
 	object-fit: fill;
-/*	margin: 1px;*/
 }
 
-.remodelaciones {
+/*.remodelaciones {
 	display: none;
 	margin: 3px;
 	align-content: center;
@@ -1000,10 +1006,9 @@ div.contacto a:hover {
 	justify-content: space-around;
 	max-width: 100%;
 	height: auto;
-/*	column-gap: 4px;*/}
+}
 
 .remodelaciones img {
-/*	display: flex;*/
 	flex-direction: row;
 	position: relative;
 	max-width: 600px;
@@ -1011,25 +1016,10 @@ div.contacto a:hover {
 	justify-content: space-between;
 	align-content: space-between;
 	object-fit: fill;
-/*	margin: 1px;*/
 }
+*/
 
 
-
-.pro, 
-.pro1, 
-.pro2, 
-.pro3 {
-	display: block;
-/*	flex-flow: row wrap;*/
-/*	position: relative;*/
-/*	overflow: auto;*/
-	margin: 3px;
-	align-content: center;
-	justify-content: space-between;
-	width: 100%;
-	height: auto;
-}
 
 
 
@@ -1058,7 +1048,7 @@ div.contacto a:hover {
 
 
 
-.ver {
+/*.ver {
 	display: none;
 }
 
@@ -1076,14 +1066,21 @@ div.contacto a:hover {
 	color:#303030;
 	border-radius: 5px;
 }
-
+*/
 /*.hidden1 {
 	display: none;
 }*/
 
-.more:hover {
+/*.more:hover {
 	background-color: rgba(0, 0, 0, 0.3);
-}
+}*/
+
+
+
+
+
+
+
 
 /*#show1 {
 	display: flex;
@@ -1303,7 +1300,7 @@ div.contacto a:hover {
 	.proyecto img {
 		object-fit: fill;
 		max-width: 900px;
-		height: 300px;
+		height: 900px;
 	}
 /*
 	.ver {
@@ -1313,28 +1310,19 @@ div.contacto a:hover {
 	.re {
 	display: block;
 	}*/
-	.remodelaciones h5 {
+
+	/*.remodelaciones h5 {
 		text-align: left;
 	}
 
 	.remodelaciones article {
-/*		display: n;*/
 		position: relative;
-/*		align-content: center;*/
-/*		justify-content:;*/
-justify-items: center;
+		justify-items: center;
 		margin: 0 auto;
 	}
 	.remodelaciones article img{
-	/*display: flex;
-	flex-direction: row;
-	position: relative;*/
 	width: 400px;
 	height: 400px;
-	/*justify-content: space-between;
-	align-content: space-between;
-	object-fit: fill;
-*//*	margin: 1px;*/
 }
 .ver {
 	display: none;
@@ -1351,7 +1339,7 @@ justify-items: center;
 		flex-wrap: wrap;
 		left: 80%;
 		margin: 10px;
-	}
+	}*/
 
 }
 

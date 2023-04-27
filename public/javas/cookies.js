@@ -4,35 +4,48 @@ let cerrar = document.querySelector(".closePhoto2");
 let slides = document.querySelectorAll(".pro");
 let slides1 = document.querySelectorAll(".pro1");
 let slides2 = document.querySelectorAll(".pro2");
-let slides3 = document.querySelectorAll(".pro3");
+// let slides3 = document.querySelectorAll(".pro3");
 let slideIndex = 0;
 let slideIndex1 = 0;
 let slideIndex2 = 0;
-let slideIndex3 = 0;
+// let slideIndex3 = 0;
 
 function showSlides() {
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    slides1[i].style.display = "none";
+    // slides1[i].style.display = "none";
     slides2[i].style.display = "none";
-    slides3[i].style.display = "none";
+    // slides3[i].style.display = "none";
     };
+
+    for (j = 0; j < slides1.length; j++) {
+        slides1[j].style.display = "none";
+    }
 
     slideIndex++;
     slideIndex1++;
     slideIndex2++;
-    slideIndex3++;
+    // slideIndex3++;
 
     if(slideIndex > slides.length) {
         slideIndex = 1;
-        slideIndex1 = 1;
+        // slideIndex1 = 1;
         slideIndex2 = 1;
-        slideIndex3 = 1;
+        // slideIndex3 = 1;
 };
+
+    if(slideIndex1 > slides1.length) {
+        // slideIndex = 1;
+        slideIndex1 = 1;
+        // slideIndex2 = 1;
+        // slideIndex3 = 1;
+};
+
+
     slides[slideIndex-1].style.display = "block";
     slides1[slideIndex1-1].style.display = "block";
     slides2[slideIndex2-1].style.display = "block";
-    slides3[slideIndex3-1].style.display = "block";
+    // slides3[slideIndex3-1].style.display = "block";
 };
 
 let tiempoSlide = setInterval(showSlides, 8000);
@@ -101,44 +114,41 @@ function ventana2(url) {
     
 };
 // let vix = document.querySelector(".ver");
-let cajaProjectos =document.querySelector(".proyectos");
+// let cajaProjectos =document.querySelector(".proyectos");
 
-let more = document.querySelector(".more");
-let more1 = document.querySelector(".more1");
-let remodelaciones = document.querySelector(".remodelaciones");
-let suma = 1;
 
-more.addEventListener('click', () => {
-    // cajaProjectos.style.display="none";
-    cajaProjectos.classList.toggle("ver");
-    remodelaciones.classList.toggle("re");
-    // remodelaciones.style.display = 'block';
-    // cajaProjectos.style.display = 'none';
-    // if (true) {
-        // more.style.display = 'none';
-        // more1.style.display = 'flex';
-    // }
-    
-    suma++;
-    // suma = 0;
-    console.log(suma );
-    if (suma % 2 == 0) {
-        more.innerHTML = "Regresar";
-        // suma--;
-    } else {
-        more.innerHTML = "Más";
-    }
-    // suma++;
-    // suma--;
-    // console.log(suma);
 
-    
-            // else {
-         // more.innerHTML = 'más';
-        
-    // }
-    // write.innerHTML = "atras"
-});
+
+
+
+
+// ***BOTON DE VER MAS***
+
+// let more = document.querySelector(".more");
+// let more1 = document.querySelector(".more1");
+// let remodelaciones = document.querySelector(".remodelaciones");
+// let suma = 1;
+
+// more.addEventListener('click', () => {
+//     cajaProjectos.classList.toggle("ver");
+//     remodelaciones.classList.toggle("re");
+//     suma++;
+//     console.log(suma );
+//     if (suma % 2 == 0) {
+//         more.innerHTML = "Regresar";
+//     } else {
+//         more.innerHTML = "Más";
+//     }
+// });
+
+
+// ***BOTON DE VER MAS***
+
+
+
+
+
+
 
 // more1.addEventListener('click', () => {
 //     remodelaciones.style.display = 'none';
@@ -147,7 +157,7 @@ more.addEventListener('click', () => {
 //         more.style.display = 'flex'; 
 // });
 
-
+let slideIndexA = 0;
 
 
 function plusSlidesA() {
@@ -158,7 +168,7 @@ function plusSlidesA() {
         slides[i].style.display = "none";
         slides1[i].style.display = "none";
         slides2[i].style.display = "none";
-        slides3[i].style.display = "none";
+        // slides3[i].style.display = "none";
         };
     };
 
@@ -166,29 +176,42 @@ function plusSlidesA() {
     slides[slideIndex-1].style.display = "block";
     slides1[slideIndex-1].style.display = "block";
     slides2[slideIndex-1].style.display = "block";
-    slides3[slideIndex-1].style.display = "block";
+    // slides3[slideIndex-1].style.display = "block";
 };
 
 function plusSlidesB() {
     clearInterval(tiempoSlide);
     for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    slides1[i].style.display = "none";
+    // slides1[i].style.display = "none";
     slides2[i].style.display = "none";
-    slides3[i].style.display = "none";
+    // slides3[i].style.display = "none";
+    };
+
+    for (j = 0; j < slides1.length; j++) {
+    // slides[i].style.display = "none";
+    slides1[j].style.display = "none";
+    // console.log(slides1[j]);
+    // slides2[i].style.display = "none";
+    // slides3[i].style.display = "none";
     };
 
     slideIndex--;
+    slideIndexA--;
 
-    if(slideIndex <= 0) {
-        slides[slideIndex]
-        slideIndex = 3;
+    if(slideIndex < 0) {
+        // slides[slideIndex];
+        // slides1[slideIndex1];
+        slideIndex = 2;
+        // slideIndexA = 3;
     };
-    slides[slideIndex-1].style.display = "block";
-    slides1[slideIndex-1].style.display = "block";
-    slides2[slideIndex-1].style.display = "block";
-    slides3[slideIndex-1].style.display = "block";
-
+    if(slideIndexA < 0) {
+        slideIndexA = 3;
+    }
+    slides[slideIndex].style.display = "block";
+    slides1[slideIndexA].style.display = "block";
+    slides2[slideIndex].style.display = "block";
+    // slides3[slideIndex-1].style.display = "block";
 };
 
 
@@ -252,7 +275,7 @@ let atras = document.querySelector(".back");
 let caja1 = document.querySelector('#caja1');
 let caja2 = document.querySelector('#caja2');
 let caja3 = document.querySelector('#caja3');
-let caja4 = document.querySelector('#caja4');
+// let caja4 = document.querySelector('#caja4');
 // let lightcierre = document.querySelector(".lightcierre")
  
 caja1.addEventListener('click', () => {
@@ -289,6 +312,11 @@ caja2.addEventListener('click', () => {
         'public/img/casap1.jpg',
         'public/img/casap2.jpg',
         'public/img/casapenonome.jpg',
+        'public/img/remode1.jpg',
+        'public/img/remode2.jpg',
+        'public/img/remode3.jpg',
+        'public/img/remode4.jpg',
+        'public/img/remode5.jpg',
         'public/img/casap3.jpg'
     ];
 
@@ -308,7 +336,7 @@ caja2.addEventListener('click', () => {
         // slidePhoto;
         // album = 0;
         album1--;
-        if (album1 < 0) {album1 = 3};
+        if (album1 < 0) {album1 = 8};
         imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;   
     });
 });
@@ -342,28 +370,23 @@ caja3.addEventListener('click', () => {
     });
 });
 
-caja4.addEventListener('click', () => {
-    addPhotos();
-    // album = 0;
-    imageX.style.backgroundImage = "url('public/img/remode5.jpg')";
-    slidePhoto = [
-        'public/img/remode1.jpg',
-        'public/img/remode2.jpg',
-        'public/img/remode3.jpg',
-        'public/img/remode4.jpg',
-        'public/img/remode5.jpg'
-    ];
+// caja4.addEventListener('click', () => {
+//     addPhotos();
+//     imageX.style.backgroundImage = "url('public/img/remode5.jpg')";
+//     slidePhoto = [
+//         'public/img/remode1.jpg',
+//         'public/img/remode2.jpg',
+//         'public/img/remode3.jpg',
+//         'public/img/remode4.jpg',
+//         'public/img/remode5.jpg'
+//     ];
+//     atras.addEventListener('click', () => {
+//         album3--;
+//         if (album3 < 0) {album3 = 4};
+//             imageX.style.backgroundImage = `url(${slidePhoto[album3]})`;   
+//     });
 
-    
-    // album++;
-    atras.addEventListener('click', () => {
-        // album3 = 0;
-        album3--;
-        if (album3 < 0) {album3 = 4};
-            imageX.style.backgroundImage = `url(${slidePhoto[album3]})`;   
-    });
-
-});
+// });
 
 
 
