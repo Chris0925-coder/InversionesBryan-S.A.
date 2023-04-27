@@ -50,7 +50,7 @@ setTimeout(showAds,3000);
 
 close.addEventListener('click', () => {
     let fadeOut = terreno.style.opacity = '0';
-    terreno.style.transition = "opacity 3s ease-in-out"
+    terreno.style.transition = "opacity 3s ease-in-out";
     close.style.display = 'none';
 
     fadeOut = function(){ terreno.style.display = 'none'};
@@ -104,14 +104,48 @@ function ventana2(url) {
 let cajaProjectos =document.querySelector(".proyectos");
 
 let more = document.querySelector(".more");
+let more1 = document.querySelector(".more1");
 let remodelaciones = document.querySelector(".remodelaciones");
-
+let suma = 1;
 
 more.addEventListener('click', () => {
     // cajaProjectos.style.display="none";
     cajaProjectos.classList.toggle("ver");
     remodelaciones.classList.toggle("re");
+    // remodelaciones.style.display = 'block';
+    // cajaProjectos.style.display = 'none';
+    // if (true) {
+        // more.style.display = 'none';
+        // more1.style.display = 'flex';
+    // }
+    
+    suma++;
+    // suma = 0;
+    console.log(suma );
+    if (suma % 2 == 0) {
+        more.innerHTML = "Regresar";
+        // suma--;
+    } else {
+        more.innerHTML = "Más";
+    }
+    // suma++;
+    // suma--;
+    // console.log(suma);
+
+    
+            // else {
+         // more.innerHTML = 'más';
+        
+    // }
+    // write.innerHTML = "atras"
 });
+
+// more1.addEventListener('click', () => {
+//     remodelaciones.style.display = 'none';
+//     cajaProjectos.style.display = 'block';
+//         more1.style.display = 'none';
+//         more.style.display = 'flex'; 
+// });
 
 
 
