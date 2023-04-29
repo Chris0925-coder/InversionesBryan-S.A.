@@ -13,15 +13,11 @@ $(document).ready(function() {
     compruebaAceptaCookies();
 });
 
-let about = document.querySelector('.about');
-let sobre = document.querySelector('.sobre');
-
-about.addEventListener('click', () => {
-    sobre.classList.toggle('closeSobre');
-    // sobre.style.animation = 'fadein 6s';
-});
-
-
+// let about = document.querySelector('.about');
+// let sobre = document.querySelector('.sobre');
+//     about.addEventListener('mouseover', () => {    
+//         sobre.classList.toggle('closeSobre');
+//     });
 
 
 let slides = document.querySelectorAll(".pro");

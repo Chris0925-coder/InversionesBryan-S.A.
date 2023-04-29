@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 
-  <script src="public/javas/cookies.js" defer></script>
+  <script src="public/javas/about.js" defer></script>
 
 
   <!-- Google tag (gtag.js) --> 
@@ -22,7 +22,7 @@
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script> -->
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
   <link rel="stylesheet" type="text/css" href="public/css/main.css">
 
@@ -53,6 +53,10 @@
               <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Inicio </a>
             </li>
             <li class="nav-item">
+              <span class="mv"><a class="nav-link" href="#"><i class="bi bi-people"></i> Nosotros </a>
+              <a class="mv-link" href="aboutus.html">Mision y Vision</a></span>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a>
             </li>
             <li class="nav-item">
@@ -63,7 +67,9 @@
       </nav>
       </header>
 
-      <div>
+
+        <!-- ***ANUNCIO*** -->
+      <!-- <div>
         <div class="publicidadIB terreno_invisible">
             <figcaption>PUBLICIDAD</figcaption>
         </div>
@@ -71,7 +77,7 @@
         <section>
           <article class="closeP">CERRAR</article>
         </section>
-      </div>
+      </div> -->
 
 
     </div>
@@ -83,13 +89,15 @@
   </main>
 
   <section class="ladoA1">
-    <button class="about closeSobre">Sobre nosotros</button>
+    <button class="about closeSobre"> NOSOTROS </button>
     <div class="sobre">
       <!-- <a href="#" class="quitar"></a> -->
     <article class="tt1a1">
 
       <section class="nav-bara1" id="tt01">
-        <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#mision" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="misionB">MISIÓN</button>
+        <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#mision" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation" id="misionB"><h5>MISIÓN</h5>
+          <!-- <p>Somos una empresa dedicada a la construcción, especialmente en proyectos residenciales. Nuestra misión es garantizar un servicio de calidad a nuestros clientes, cumpliendo con los tiempos establecidos, y ofrecer estabilidad laboral a nuestro equipo de trabajo.</p> -->
+          </button>
 
         <ul class="navbara1">
           <li class="nav-itema1">
@@ -100,7 +108,7 @@
       </article>
       <article class="tt2a1" id="tt02">
         <section class="nav-bara1">
-          <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="misionB1">VISIÓN</button>
+          <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation" id="misionB1"><h5>VISIÓN</h5></button>
 
           <ul class="navbara1">
             <li class="nav-itema1">
@@ -112,17 +120,17 @@
 
         <article class="tt3a1" id="tt03">    
           <section class="nav-bara1">
-            <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="misionB2">VALORES</button>
+            <button class="navbar-togglera1 navbar-nav_visible" type="button" data-bs-toggle="collapse1" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation" id="misionB2"><h5>VALORES</h5></button>
 
               <ul class="navbara1 valoresa1">
-                <a class="nav-linka1 inicio active" href="#val" role="button" aria-expanded="true" id="misVal">
-                  <li class="nav-itema1">Compromiso</li>
-                      <li class="nav-itema1">Eficiencia</li>
-                      <li class="nav-itema1">Calidad</li>
-                      <li class="nav-itema1">Seguridad</li>
-                      <li class="nav-itema1">Responsabilidad Social
+                <a class="nav-linka1 inicio" href="#val" role="button" aria-expanded="true" id="misVal">
+                  <li class="nav-itema1">Compromiso,</li>
+                      <li class="nav-itema1">eficiencia,</li>
+                      <li class="nav-itema1">calidad,</li>
+                      <li class="nav-itema1">seguridad,</li>
+                      <li class="nav-itema1">responsabilidad social,
                       </li>
-                      <li class="nav-itema1"> Trabajo en Equipo
+                      <li class="nav-itema1"> trabajo en equipo.
                       </li></a>
               </ul>
             </section>
@@ -191,7 +199,7 @@
                   </p>
               </div>
 
-              <div class="proyecto">         
+              <div class="proyecto">
                 <article class="fotos" id="caja2">
                   <!-- <a href="#image8"> -->
                     <img class="pro1" src="public/img/casap1new.png" alt="casarural">
@@ -237,8 +245,8 @@
 
           <section class="container-fluid arrows">
             <div class="nextt1">
-              <a class="prev" onclick="plusSlidesB()">&#10094;</a>
-              <a class="nextt" onclick="plusSlidesA()">&#10095;</a>
+              <article><a class="prev" onclick="plusSlidesB()">&#10094;</a></article>
+              <article><a class="nextt" onclick="plusSlidesA()">&#10095;</a></article>
             </div>
           </section>
 
