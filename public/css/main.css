@@ -209,17 +209,12 @@ body {
 	border-radius: 5px;
 	padding: 0;
 	position: relative;
-	margin: 0 20px;
-	display: inline-flex;
-	flex-flow: row wrap;
-	text-align: center;
+	margin: 20px;
+	display: flex;
+/*	flex-flow: row wrap;*/
+/*	text-align: center;*/
 }
 
-.nav-item .nav-link {
-	padding: 2px;
-	margin: 2px;
-/*	font-size: x-small;*/
-}
 
 .nav-link {
 	text-decoration: none;
@@ -227,6 +222,8 @@ body {
 	background-size: contain;
 	margin: auto;
 	color: #1b1c1c;
+	padding: 2px;
+	margin: 2px;
 	text-transform: uppercase;
 }
 
@@ -712,6 +709,7 @@ h4 {
 	flex-direction: column;
 	justify-content: center;
 	width: auto;
+	height: auto;
 	margin: 0;
 	padding: 5px;
 	justify-content: flex-start;
@@ -734,7 +732,7 @@ h4 {
 }*/
 
 .about {
-	display: block;
+	display: flex;
 	position: relative;
 	margin: 10px;
 	padding: 5px;
@@ -745,7 +743,6 @@ h4 {
 	color: #303030;
 	width: fit-content;
 	height: fit-content;
-/*	transition: transform 0.9s ease-in-out;*/
 }
 
 
@@ -758,27 +755,19 @@ h4 {
 	left: 0;
 	top: 65px;
 	width: fit-content;
-/*	height: auto;*/
-/*	width: auto;*/
 	height: fit-content;
 	z-index: 2000;
 	transform: scale(1);
 	background-color: rgba(250, 250, 250, 1);
-/*  justify-content: space-around;*/
-/*  animation: fadein 1s;*/
   font-size: 0.8rem;
-/*  text-align: left;*/
-/*  align-content: center;*/
-/*  justify-items: center;*/
   padding: 15px;
-/*  align-items: center;*/
 }
 
 
 
 
-.ladoA1:hover .sobre {
-	display: flex;
+/*.ladoA1:hover .sobre {*/
+/*	display: flex;*/
 /*	border-radius: 5px;*/
 /*	background-color: rgba(250, 250, 250, 0.2);*/
 /*	color: #fff;*/
@@ -786,7 +775,7 @@ h4 {
 	transition-delay: 0.3s;*/
 /*	transition-duration: 0.4s;*/
 /*	transition-property: ;*/
-}
+/*}*/
 
 /*@keyframes fadein {
     0% {
@@ -1201,7 +1190,7 @@ text-align: center;
 .fotos img {
 	flex-direction: row;
 	width: 100%;
-	height: 900px;
+	height: 600px;
 	margin: 1px auto;
 	object-fit: fill;
 /*	gap: 5px;*/
@@ -1397,25 +1386,26 @@ text-align: center;
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin: 0 auto;
-
+	margin: 0;
+	justify-content: center;
 }
 
-/*.mv .nav-link {
-	position: static;
-}*/
+.mv > a {
+	text-decoration: none;
+/*	position: static;*/
+}
 
 .mv:hover .mv-link {
-	display: block;
+	display: flex;
+/*	position: absolute;*/
 	width: auto;
 	height: auto;
 	text-decoration: none;
 	opacity: 1;
+	color: black;
 /*	transition: opacity 2s ease-in;*/
 	transition-property: opacity;
-	transition-duration: 3s;
-	
-
+	transition-duration: 0.3s;
 }
 
 .mv-link {
@@ -1426,16 +1416,56 @@ text-align: center;
 	font-size: 0.9rem;
 	text-decoration: none;
 	color: #1c1b1b;
+	z-index: 2000;
 	width: 100%;
 	height: auto;
 	padding: 5px;
-	margin: 0 auto;
+	margin: 0;
 	background-color: rgba(250, 250, 250, 1);
 	opacity: 0;
+/*	text-align: left;*/
+	list-style: none;
+	list-style-type: none;
+	margin-left: 0;
+}
+
+.mv-link ul {
+	/*justify-content: center;
+	align-content: center;*/
+/*	margin: 0;*/
+	position: relative;
+	text-align: left;
+	color: black;
+	list-style: none;
+	text-decoration: none;
+	list-style-type: none;
+/*	border: 1px solid black;*/
+/*	margin-left: 0;*/
+	padding-left: 0;
+/*	list-style-position: inside;*/
 }
 
 .mv-link:hover {
-	color: #505050;
+	text-decoration: none;
+	border-bottom: 2px solid black;
+}
+
+.mv-link li {
+	width: 100%;
+	height: auto;
+/*	border: 1px solid black;*/
+	text-align: left;
+/*	margin-left: 100%;*/
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 5px 0;
+	padding-left: 0;
+	color: #303030;
+}
+
+.mv-link li:hover {
+	background-color: rgba(80, 80, 80, 0.1);
+/*	color: #f1f1f1;*/
 }
 
 @media screen and (min-width: 100px) and (max-width: 900px) {
@@ -1628,7 +1658,7 @@ text-align: center;
 	.fotos img {
 		object-fit: fill;
 		max-width: 900px;
-		height: 700px;
+		height: 600px;
 		margin: 0 auto;
 /*		margin-right: 10px;*/
 	}
@@ -1840,26 +1870,28 @@ text-align: center;
 .closePhoto,
 .closePhoto2 {
 	display: flex;
-	position: sticky;
-/*	flex-direction: column;*/
+	position: relative;
+	flex-direction: column;
 	text-decoration: none;
-	color: #2B2B2B;
+/*	color: #2B2B2B;*/
+	color: white;
 
 /*	bottom: 0;*/
-	justify-items: flex-start;
+	/*justify-items: flex-start;
 	justify-self: flex-start;
-	align-items: flex-start;
+	align-items: flex-start;*/
 	justify-content: flex-start;
 	width: auto;
-	height: 80%;
+/*	height: 80%;*/
 	margin-right: 20px;
 /*	height: 200px;*/
-/*	top: 0;*/
+	bottom: 35%;
 }
 
 .closePhoto:hover,
 .closePhoto2:hover {
 	color: #2B2B2B;
+/*	box-shadow: 2px 2px 2px 2px;*/
 }
 
 .redes .bibi {

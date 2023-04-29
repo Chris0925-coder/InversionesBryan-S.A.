@@ -175,19 +175,31 @@ let slideIndexA = 0;
 
 function plusSlidesA() {
     clearInterval(tiempoSlide);
-    if(true) {
-        slideIndex++;
+    // if(true) {
+        
         for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        slides1[i].style.display = "none";
+        // slides1[i].style.display = "none";
         slides2[i].style.display = "none";
         // slides3[i].style.display = "none";
         };
-    };
+
+        for (j = 0; j < slides1.length; j++) {
+        // slides[i].style.display = "none";
+        slides1[j].style.display = "none";
+        // slides2[i].style.display = "none";
+        // slides3[i].style.display = "none";
+        };
+    // };
+
+    slideIndex++;
+    slideIndexA++;
+    // };
 
     if (slideIndex > slides.length) {slideIndex = 1};
+    if (slideIndexA > slides1.length) {slideIndexA = 1};
     slides[slideIndex-1].style.display = "block";
-    slides1[slideIndex-1].style.display = "block";
+    slides1[slideIndexA-1].style.display = "block";
     slides2[slideIndex-1].style.display = "block";
     // slides3[slideIndex-1].style.display = "block";
 };
