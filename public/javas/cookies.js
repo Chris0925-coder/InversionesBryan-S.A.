@@ -25,7 +25,7 @@ $(document).ready(function() {
 let slides = document.querySelectorAll(".pro");
 let slides1 = document.querySelectorAll(".pro1");
 let slides2 = document.querySelectorAll(".pro2");
-// let slides3 = document.querySelectorAll(".pro3");
+// let slides3 = documlastent.querySelectorAll(".pro3");
 let slideIndex = 0;
 let slideIndex1 = 0;
 let slideIndex2 = 0;
@@ -547,4 +547,4 @@ cerrar.addEventListener('click', () => {
 
 // displayPhotos();
 // setTimeout(p, 4000);
-// setTimeout(displayPhotos,6000);
+// setTimeout(displayPhotos,8000);
