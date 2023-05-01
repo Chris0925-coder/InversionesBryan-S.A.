@@ -597,7 +597,7 @@ h4 {
 
 
 /*CONTACT PAGE*/
-.banner {
+/*.banner {
 	background-image: url("../img/banner2.png");
 	background-color: rgba(0, 0, 0, 0.3); 
 	background-size: cover;
@@ -608,38 +608,60 @@ h4 {
 	padding: 0;
 	width: 100%;
 	height: 100%;
-}
+}*/
 
 .bann {
 	width: 100%;
-	height: fit-content;
+	height: auto;
 	margin: 0;
 	padding: 0;
-	opacity: 0.8;
+/*	opacity: 0.8;*/
 }
 
 .p5 {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.6);
 	display: block;
-	flex-direction: column;
+/*	flex-direction: column;*/
 	position: relative;
-	justify-content: center;
+/*	justify-content: center;*/
 	align-content: center;
-	align-self: center;
-	align-self: center;
-	justify-self: center;
+/*	align-self: center;*/
+/*	align-self: center;*/
+/*	justify-self: center;*/
 	margin: 0 auto;
-	bottom: 20%;
+/*	bottom: 20%;*/
+top: 0;
 	width: 100%;
-	height: fit-content;
+	height: 100%;
+/*	justify-content: center;
+	object-position: center;
+	justify-items: center;
+	place-items: center;
+	place-content: center;
+	align-items: center;
+	place-self: center;*/
 }
 
 .card {
-	display: block;
-	flex-direction: column;
+	display: grid;
+/*	flex-direction: column;*/
 	position: relative;
 	box-sizing: border-box;
 	padding: 0;
+	width: auto;
+	height: auto;
+	place-items: center;
+/*	place-content: center;*/
+/*	align-items: center;*/
+/*	place-self: center;*/
+/*	justify-content: center;*/
+/*	align-content: center;*/
+/*	align-self: center;*/
+/*	justify-items: center;*/
+/*	margin: auto auto;*/
+/*	height: 100%;
+	width: 100%;*/
+/*	height: 20lvh;*/
 }
 
 .boton {
@@ -1188,9 +1210,7 @@ text-align: center;
 /*	gap: 4px;*/
 }
 
-/*.proyectos {
-	display: none;
-}*/
+
 
 .fotos img {
 /*	display: none;*/
@@ -1202,7 +1222,7 @@ text-align: center;
 /*	gap: 5px;*/
 }
 
-/*#cargando {
+#cargando {
 	display: flex;
 	position: relative;
 	background-image: url('../img/logo2.png');
@@ -1216,7 +1236,7 @@ text-align: center;
 	width: 100%;
 	object-position: center;
 }
-*/
+
 
 
 /*.remodelaciones {
@@ -1491,6 +1511,7 @@ text-align: center;
 /*	color: #f1f1f1;*/
 }
 
+
 @media screen and (min-width: 100px) and (max-width: 900px) {
 
 	body {
@@ -1728,49 +1749,16 @@ text-align: center;
 		left: 30%;
 	}
 
-
-/*
-	.ver {
-	display: none;
+	.p5 {
+		background: none;
 	}
 
-	.re {
-	display: block;
-	}*/
-
-	/*.remodelaciones h5 {
-		text-align: left;
-	}
-
-	.remodelaciones article {
-		position: relative;
-		justify-items: center;
-		margin: 0 auto;
-	}
-	.remodelaciones article img{
-	width: 400px;
-	height: 400px;
 }
-.ver {
+
+
+.proyectos {
 	display: none;
 }
-
-	.re {
-	display: block;
-}
-
-	.more {
-		display: flex;
-		position: relative;
-		flex-direction: row;
-		flex-wrap: wrap;
-		left: 80%;
-		margin: 10px;
-	}*/
-
-}
-
-
 
 
 

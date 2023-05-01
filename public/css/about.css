@@ -467,12 +467,6 @@
 /*		overflow: auto;*/
 	}
 
-	{
-		display: block;
-		position: relative;
-/*		overflow: visible;*/
-	}
-
 
 	.imgAbout img {
 		display: flex;
