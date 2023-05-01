@@ -13,11 +13,13 @@ $(document).ready(function() {
     compruebaAceptaCookies();
 });
 
-let about = document.querySelector('.about');
-let sobre = document.querySelector('.sobre');
-    about.addEventListener('mouseover', () => {    
-        sobre.classList.toggle('closeSobre');
-    });
+
+
+// let about = document.querySelector('.about');
+// let sobre = document.querySelector('.sobre');
+//     about.addEventListener('mouseover', () => {    
+//         sobre.classList.toggle('closeSobre');
+//     });
 
 
 let slides = document.querySelectorAll(".pro");
@@ -86,7 +88,6 @@ function showAds() {
 
 // showAds();
 setTimeout(showAds,3000);
-
 close.addEventListener('click', () => {
     let fadeOut = terreno.style.opacity = '0';
     terreno.style.transition = "opacity 3s ease-in-out";
@@ -531,3 +532,19 @@ cerrar.addEventListener('click', () => {
 // };
 
 // sliderGaleria();
+// let fotos = document.querySelector('.proyectos');
+// let load = document.querySelector('#cargando');
+
+// function displayPhotos() {
+    // if (tiempoSlide) {
+        // fotos.style.display = 'flex';
+        // load.style.display = 'none';
+// };
+
+// fotos.addEventListener('load',fotos.style.display = 'flex');
+// let p = fotos.style.display = 'flex';
+
+
+// displayPhotos();
+// setTimeout(p, 4000);
+// setTimeout(displayPhotos,6000);

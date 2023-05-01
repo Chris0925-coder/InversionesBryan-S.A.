@@ -598,16 +598,16 @@ h4 {
 
 /*CONTACT PAGE*/
 .banner {
-	background-image: url("../img/bannerIB.png");
+	background-image: url("../img/banner2.png");
 	background-color: rgba(0, 0, 0, 0.3); 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	object-fit: fill;
+	object-fit: cover;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: fit-content;
+	height: 100%;
 }
 
 .bann {
@@ -790,7 +790,7 @@ h4 {
 }*/
 
 
-.closeSobre {
+/*.closeSobre {*/
 /*	display: block;*/
 	/*transition: transform 1.8s ease-in-out;
 	transition: height 7s, transform 5s;
@@ -798,7 +798,7 @@ h4 {
 */  
 /*	width: 60%;*/
 /*  height: auto;*/
-}
+/*}*/
 
 
 
@@ -1138,7 +1138,8 @@ text-align: center;
 .pro, 
 .pro1, 
 .pro2, {
-/*	display: block;*/
+	display: none;
+	visibility: hidden;
 /*	flex-flow: row wrap;*/
 /*	position: relative;*/
 /*	overflow: auto;*/
@@ -1178,7 +1179,7 @@ text-align: center;
 
 
 .proyecto .fotos {
-	display: block;
+/*	display: ;*/
 	flex-direction: row;
 	position: relative;
 	width: auto;
@@ -1187,7 +1188,12 @@ text-align: center;
 /*	gap: 4px;*/
 }
 
+/*.proyectos {
+	display: none;
+}*/
+
 .fotos img {
+/*	display: none;*/
 	flex-direction: row;
 	width: 100%;
 	height: 600px;
@@ -1195,6 +1201,23 @@ text-align: center;
 	object-fit: fill;
 /*	gap: 5px;*/
 }
+
+/*#cargando {
+	display: flex;
+	position: relative;
+	background-image: url('../img/logo2.png');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 416px;
+	height: 416px;
+	z-index: 5000;
+	transform: scale(1.0);
+	width: 100%;
+	object-position: center;
+}
+*/
+
 
 /*.remodelaciones {
 	display: none;
@@ -1908,6 +1931,13 @@ text-align: center;
 	vertical-align: middle;
 	margin: 5px;
 	justify-content: space-between;
+	display: block;
+	position: relative;
+	padding: 5px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
 	
 }
 

@@ -1,13 +1,13 @@
-* {
+/** {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
+}*/
 
-body {
+/*html {
 	width: 100%;
 	height: 100lvh;
-}
+}*/
 
 .navbar {
 	display: flex;
@@ -85,9 +85,11 @@ body {
 .nav-linka1 {
 	display: block;
 	position: relative;
-	padding: 0 100px;
-	text-justify: justify-all;
-	margin: 20px;
+	padding: 0;
+	text-justify: justify;
+	margin:0 auto;
+	width: auto ;
+	justify-items: center;
 }
 
 
@@ -105,10 +107,10 @@ body {
 	transition: opacity 3s;
 */}
 
-.mv {
+/*.mv {*/
 /*	display: block;*/
 /*	position: relative;*/
-}
+/*}*/
 
 .mv:hover .mv-link {
 	display: block;
@@ -156,64 +158,348 @@ body {
 .cont-mision {
 	display: block;
 	position: relative;
+	padding: 0;
 	margin: 0 auto;
 	width: 100%;
 	height: 100%;
 	justify-content: center;
 	align-content: center;
+	/*align-content: center;
 	justify-items: center;
-/*	text-align: center;*/
+	align-items: center;
+	text-align: center;*/
 }
 
 .mision-cajas {
 	display: flex;
 	position: relative;
-	margin: 80px 0;
+	margin: 180px 0;
+	padding: 0 200px;
+/*	margin: 80px 0 100px 0;
+/*	align-items: center;*/
+	width: 100%;
+	height: auto;
 /*	text-align: right;*/
 /*	text-decoration: none;*/
-/*justify-content: center;*/
+	justify-content: center;
 	
 /*	font-size: 2.5rem;*/
+}
+
+.mision-box {
+	display: flex;
+	position: relative;
+	width: auto;
+	height: auto;
+	padding: 0 10px;
+	margin: 0 80px;
+
 }
 
 .mision-button > h2 {
 	position: relative;
 	text-align: right;
 	padding: 5px;
-	font-size: 2.8rem;
+	font-size: 2.5rem;
+	color: #771100;
 }
 
 .mision-button {
 	background: none;
 	border-style: none;
 	color: #303030;
-	margin-right: 20px;
+	margin-right: 10px;
+	align-items: center;
 /*	text-align: left;*/
 /*	font-size: 4rem;*/
 }
 
-.mision-items {
-/*	margin: 30px;*/
-}
-
-.mision-box a,
-.mision-items {
-	text-decoration: none;
+.mision-box a {
 	color: #303030;
-	list-style: none;
-	font-size: 1.5rem;
-	justify-content: center;
+	text-decoration: none;
 	text-justify: justify;
-/*	margin: 110px;*/
+/*	align-items: center;*/
+	width: 100%;
 }
 
+
+.mision-items {
+ 	width: 100%;
+ 	height: auto;
+	text-decoration: none;
+	list-style: none;
+	font-size: 1.3rem;
+/*	justify-content: center;*/
+	text-justify: justify;
+	padding: 20px;
+	padding-left: 0;
+/*	margin: 110px 0;*/
+}
+.imgAbout {
+	display: flex;
+	position: relative;
+	width: 100%;
+}
+.imgAbout img {
+	width: 100%;
+	max-height: 800px;
+	background-size: cover;
+	object-fit: fill;
+
+}
+
+.bibi i,
+.bibi a {
+	display: block;
+	margin: 5px;
+	gap: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.photos i {
+	color: gray;
+	filter: opacity(70%);
+}
+
+.logoPie {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	background-image: url('../img/logo2.png');
+	background-size: contain;
+	background-position: top;
+	background-repeat: no-repeat;
+	object-fit: fill;
+	margin: 0;
+	padding: 0;
+	object-position: right;
+	width: 300px;
+	height: 200px;
+}
+
+
+.footLogo {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	background-size: contain;
+	margin: 0;
+	width: 100%;
+	height: fit-content;
+	justify-content: flex-end;
+	object-position: top;
+}
+
+.foot {
+	display: block;
+	position: relative;
+	padding: 5px;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+
+
+.social {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: left;
+}
+
+
+
+.social {
+	display: inline-block;
+	flex-direction: row;
+	position: static;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-size: cover;
+	background-position: center;
+	border-radius: 2px;
+	margin: 0 auto;
+	padding: 5px;
+	width: 100%;
+	height: auto;
+	justify-content: space-between;
+	align-content: space-between;
+	box-sizing: border-box;
+}
+
+.contacto {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+
+.contacto address {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.polt {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0;
+	align-content: space-between;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.polt p {
+	color: #1B1C1E;
+	font-size: 0.7rem;
+}
+
+.terminos {
+	display: flex;
+	position: relative;
+	justify-content: flex-end;
+	align-content: flex-end;
+	justify-items: end;
+	text-align: right;
+	font-size: 0.6rem;
+	color: #1B1C1E;
+	cursor: default;
+}
+
+.terminos span {
+	text-decoration: underline;
+	cursor: pointer;
+	color: #113aff;
+}
+
+.pp {
+	cursor: default;
+}
+
+.pp span {
+	cursor: pointer;
+	color: #113aff;
+	text-decoration: underline;
+}
+
+.redes .bibi {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+/*	align-content: space-between;*/
+
+}
+
+.redes i {
+	display: flex;
+	position: relative;
+	vertical-align: middle;
+	margin: 5px;
+	justify-content: space-between;
+	
+}
+
+.mail a, 
+.num a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+#cajacookies {
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 5px 5px #000000;
+	color: #2B2B2B;;
+	background-color: rgba(250, 250, 250, 0.3);
+	border-radius: 20px;
+	width: 50%;
+	font-size: x-small;
+	z-index: 1;
+}
+
+#cajacookies button {
+	margin: 3px;
+	padding: 7px;
+	font-size: 0.9rem;
+	border-radius: 20px;
+	color: ghostwhite;
+	background-color: black;
+}
+
+.cook {
+	font-size: 1rem;
+	text-indent: 5px;
+	text-align: center;
+	margin: 0 20px;
+}
+
+.ventana {
+	background: rgba(0, 0, 0, 1);
+	background-color: white;
+}
 
 @media screen and (max-width: 900px) {
-	.mision-cajas {
+	/*html {
+		width: 100%;
+	}*/
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: content-box;
+	}
+	.cont-mision .mision-cajas  {
 		display: block;
+		position: relative;
+		width: auto;
+		margin: 0;
+		padding: 0;
+/*		overflow: auto;*/
 	}
 
-	.nav-linka1 {
+	{
+		display: block;
+		position: relative;
+/*		overflow: visible;*/
+	}
+
+
+	.imgAbout img {
+		display: flex;
+		position: relative;
+		margin: 0;
+		width: 100%;
+		height: 300px;
+	}
+
+	.contacto {
+		grid-area: 1;
+		flex-direction: row;
+		position: relative;
+		margin: 0;
+		flex-wrap: wrap;
+	}
+
+	.logoPie {
+		margin: 0;
 		padding: 0;
+		background-size: contain;
+		object-fit: contain;
+		width: 70%;
+	}
+
+	.mision-items {
+		padding: 0;
+		margin: 0;
 	}
 }
