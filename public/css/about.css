@@ -163,26 +163,31 @@ body {
 	width: auto;
 	height: 100%;
 	justify-content: center;
+	place-items: center;
+	place-content: center;
 	align-content: center;
-	/*align-content: center;
+/*	align-content: center;*/
 	justify-items: center;
 	align-items: center;
-	text-align: center;*/
+/*	text-align: center;*/
 }
 
 .mision-cajas {
 	display: flex;
-	position: relative;
-	margin: 100px 0;
-	padding: 0 200px;
+	position: relative;	
+	padding: 20px;
 /*	margin: 80px 0 100px 0;
 /*	align-items: center;*/
-	width: 100%;
+	max-width: 900px;
 	height: auto;
-/*	text-align: right;*/
+	place-items: center;
+	align-content: flex-start;
+	place-content: center;
+	text-align: left;
 /*	text-decoration: none;*/
-/*	justify-content: center;*/
-	
+	justify-content: flex-start;
+	margin: 100px auto;
+	justify-items: center;
 /*	font-size: 2.5rem;*/
 }
 
@@ -247,7 +252,7 @@ body {
 	font-size: 1.3rem;
 /*	justify-content: center;*/
 	text-justify: justify;
-	padding: 20px;
+	padding: 80px;
 	padding-left: 0;
 /*	margin: 110px 0;*/
 }
