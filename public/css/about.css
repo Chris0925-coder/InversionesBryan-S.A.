@@ -83,7 +83,7 @@ body {
 }
 
 .nav-linka1 {
-	display: block;
+	display: flex;
 	position: relative;
 	padding: 0;
 	text-justify: justify;
