@@ -357,7 +357,8 @@ h4 {
 	width: auto;
 }
 
-.contacto a:hover {
+.mail a:hover,
+.num a:hover {
 	border-radius: 1px;
 	box-sizing: content-box;
 	box-shadow: 1px 2px 1px 1px dimgrey;
@@ -369,14 +370,14 @@ h4 {
 .social i {
 	color: white;
 	margin: 2px;
-	font-size: 1.2rem;
+/*	font-size: 1.2rem;*/
 /*	font-size: large;*/
 }
 
 
-.bibi i:hover {
-	color: dimgrey;
-}
+/*.bibi i:hover {*/
+/*	color: dimgrey;
+}*/
 
 /*.socialnav {
 	display: flex;
@@ -1823,8 +1824,13 @@ text-align: center;
 
 .contacto {
 	display: flex;
+	flex-direction: row;
 	position: relative;
 	justify-content: space-between;
+	align-content: flex-end;
+	justify-items: flex-end;
+	width: auto;
+	height: auto;
 }
 
 
@@ -1933,12 +1939,23 @@ margin-bottom: 0;
 /*	box-shadow: 2px 2px 2px 2px;*/
 }
 
-.redes .bibi {
+.redes {
 	display: flex;
 	flex-direction: column;
 	position: relative;
-/*	align-content: space-between;*/
-
+	/*align-content: space-between;
+	justify-content: space-between;
+	justify-items: end;*/
+/*	margin: auto auto;*/
+	/*align-items: flex-end;
+	place-items: end;
+	place-content: center;
+	width: auto;
+	height: auto;*/
+	/*place-content: center;
+	align-content: flex-end;*/
+	justify-content: center;
+/*	gap: 20px;*/
 }
 
 .redes i {
@@ -1950,12 +1967,19 @@ margin-bottom: 0;
 	display: block;
 	position: relative;
 	padding: 1px;
-	justify-content: center;
+	/*justify-content: center;
 	align-content: center;
 	align-items: center;
-	justify-items: center;
+	justify-items: center;*/
 	
 }
+
+.redes i:hover {
+	border: 1px solid white;
+	border-radius: 30%;
+	padding: 2px;
+}
+
 
 .mail a, 
 .num a {
