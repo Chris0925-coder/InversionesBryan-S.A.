@@ -34,11 +34,11 @@ body {
 }
 
 .navbar-collapse {
-	display: flex;
-	position: relative;
+/*	display: flex;*/
+/*	position: relative;*/
 	width: auto;
 	height: auto;
-/*	justify-content: start;*/
+	justify-content: end;
 /*	background-color: white;*/
 }
 
@@ -80,11 +80,12 @@ body {
 	flex-direction: column;
 	width: auto;
 	height: auto;
-/*	margin: 20px;*/
+	margin: 20px;
 	top: 0;
 	margin-top: 0;
 	z-index: 2000;
-	left:50%;
+	text-align: center;
+/*	left:50%;*/
 	background-color: white;
 }
 
@@ -246,7 +247,8 @@ body {
 .mision-box a {
 	color: #303030;
 	text-decoration: none;
-	text-justify: justify;
+/*	text-justify: justify;*/
+	text-align: justify;
 /*	align-items: center;*/
 	width: 100%;
 }
@@ -527,13 +529,22 @@ body {
 	.mision-cajas {
 		display: block;
 		position: relative;
+		margin: 100px 0;
+		padding: 0;
+
 	}
 
 	#misVal {
 		display: block;
 		position: relative;
 		flex-direction: column;
+		margin: 0;
+		padding: 0;
 		columns: 2;
+	}
+
+	.mision-items {
+		padding: 0;
 	}
 
 
@@ -541,6 +552,8 @@ body {
 		display: block;
 		position: relative;
 		flex-direction: row;
+		text-align: justify;
+		text-justify: inter-word;
 /*		column-count: 2;*/
 /*		columns: 2;*/
 	}
