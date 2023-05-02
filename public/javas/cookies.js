@@ -13,8 +13,6 @@ $(document).ready(function() {
     compruebaAceptaCookies();
 });
 
-
-
 // let about = document.querySelector('.about');
 // let sobre = document.querySelector('.sobre');
 //     about.addEventListener('mouseover', () => {    
@@ -101,7 +99,7 @@ terreno.addEventListener('click', () => {
     window.open("https://api.whatsapp.com/send?phone=50762926292", "ventana", "width=120 height=300 scrollbars=YES");
 });
 
-
+// let myPage = ("https://www.inversionesbryan.com/");
 
 
 
@@ -112,8 +110,15 @@ function ventana(url) {
 
         window.open("https://www.inversionesbryan.com/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
     } else {
+        localStorage.aceptaCookies === 'false';
+        // history.go(-1);
+        // let one = 
+        window.open("https://www.google.com/", "_self");
+        
         window.close();
+        // return false;
     }
+    // return false;
 };
 
 function ventana2(url) {
@@ -121,9 +126,15 @@ function ventana2(url) {
     let show = window.confirm("Términos y Condiciones");
     if (show === true) {
 
-        let uno = window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+        window.open("https://www.inversionesbryan.com/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
     } else {
+        localStorage.aceptaCookies === 'false';
+        // history.go(-1);
+        // let one = 
+        window.open("https://www.google.com/", "_self");
+        
         window.close();
+        // return false;
     }
     
 };
@@ -537,21 +548,24 @@ let load = document.querySelector('#cargando');
 // let bodyW = document.querySelector("body");
 const bodyW = $(document).width();
 // W = fotos.width();
-console.log(bodyW);
+// console.log(load);
 
 
 
 function displayPhotos() {
     // if (tiempoSlide) {
-    fotos.style.display = 'flex';
+    
     load.style.display = 'none';
     if (bodyW <= 900) {
         fotos.style.display = 'block';
+    } else {
+        fotos.style.display = 'flex';
     }
     // if (bodyW.width() <= 900) {
     //     fotos.style.display = 'block';
     // }
 };
+
 
 
 

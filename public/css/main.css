@@ -209,7 +209,7 @@ body {
 	border-radius: 5px;
 	padding: 0;
 	position: relative;
-	margin: 20px;
+	margin: 40px;
 	display: flex;
 /*	flex-flow: row wrap;*/
 /*	text-align: center;*/
@@ -1229,8 +1229,8 @@ text-align: center;
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	width: 416px;
-	height: 416px;
+	width: 216px;
+	height: 216px;
 	z-index: 5000;
 	transform: scale(1.0);
 	width: 100%;
