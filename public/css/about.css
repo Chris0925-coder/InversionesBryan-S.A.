@@ -370,20 +370,27 @@ body {
 
 .polt {
 	display: flex;
-	flex-direction: row;
+/*	flex-direction: row;*/
 	flex-wrap: wrap;
 	width: auto;
 	height: auto;
 	margin: 0 auto;
-	padding: 0;
-	align-content: center;
+	padding: 5px;
+	align-content: space-between;
 	justify-content: space-between;
-	align-items: top;
+/*	align-items: center;*/
+
 }
 
 .polt p {
+/*	display: flex;*/
+	position: relative;
 	color: #1B1C1E;
 	font-size: 0.7rem;
+	/*align-items: center;
+	align-content: center;*/
+/*	justify-content: space-between;*/
+	margin-bottom: 0;
 }
 
 .terminos {
@@ -391,12 +398,12 @@ body {
 	position: relative;
 	justify-content: flex-end;
 	align-content: flex-end;
-/*	justify-items: end;*/
+	justify-items: end;
 	text-align: right;
+	margin: 2px;
 	font-size: 0.6rem;
 	color: #1B1C1E;
 	cursor: default;
-	margin: 5px;
 }
 
 .terminos span {
@@ -406,7 +413,16 @@ body {
 }
 
 .pp {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
 	cursor: default;
+	align-items: flex-end;
+	justify-content: space-between;
+	align-content: flex-end;
+
 }
 
 .pp span {
@@ -414,6 +430,7 @@ body {
 	color: #113aff;
 	text-decoration: underline;
 }
+
 
 .redes .bibi {
 	display: flex;

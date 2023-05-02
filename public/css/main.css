@@ -98,9 +98,9 @@ body {
 	object-fit: cover;
 	width: 100%;
 	height: 230px;
-	margin: 0;
+	margin: 0 0 5px 0;
 	padding: 0;
-	border-radius: 5px;
+	border-radius: 2px;
 }
 
 
@@ -114,12 +114,12 @@ body {
 	cursor: pointer;
 	display: flex;
 	position: relative;
-	flex-direction: column;
+/*	flex-direction: column;*/
 	margin: 0;
 	justify-self: flex-end;
 	height: auto;
 	width: auto;
-	align-self: end;
+/*	align-self: end;*/
 }
 
 
@@ -134,7 +134,7 @@ body {
 	display: flex;
 	position: relative;
 	flex-direction: row;
-	width: 100%;
+	width: auto;
 	margin: 10px;
 	object-position: right;
 /*	background-color: rgba(0, 0, 0, 0.1);*/
@@ -142,6 +142,7 @@ body {
 /*	box-shadow: 1px 1px 3px grey;*/
 	padding: 5px;
 	justify-content: flex-end;
+	align-items: flex-end;
 }
 
 
@@ -171,8 +172,8 @@ body {
 	position: relative;
 	flex-direction: row;
 	z-index: 1000;
-	margin: 10px;
-	gap: 10px;
+/*	margin: 10px;*/
+/*	gap: 10px;*/
 	align-content: flex-end;
 	justify-content: flex-end;
 	justify-items: center;
@@ -209,7 +210,7 @@ body {
 	border-radius: 5px;
 	padding: 0;
 	position: relative;
-	margin: 40px;
+	margin: 30px;
 	display: flex;
 /*	flex-flow: row wrap;*/
 /*	text-align: center;*/
@@ -350,7 +351,7 @@ h4 {
 	text-align: left;
 	text-decoration: none;
 	color: ghostwhite;
-	padding: 15px;
+	padding: 5px;
 	text-decoration: none;
 	user-select: none;
 	width: auto;
@@ -362,14 +363,15 @@ h4 {
 	box-shadow: 1px 2px 1px 1px dimgrey;
 	padding: 1px;
 	text-decoration: none;
-	transition: 0.2s;
+/*	transition: 0.2s;*/
 }
 
-/*.social i {
+.social i {
 	color: white;
 	margin: 2px;
-	font-size: large;
-}*/
+	font-size: 1.2rem;
+/*	font-size: large;*/
+}
 
 
 .bibi i:hover {
@@ -630,7 +632,7 @@ h4 {
 /*	justify-self: center;*/
 	margin: 0 auto;
 /*	bottom: 20%;*/
-top: 0;
+	top: 0;
 	width: 100%;
 	height: 100%;
 /*	justify-content: center;
@@ -680,8 +682,8 @@ top: 0;
 
 .bibi a i {
 	display: block;
-	margin: 5px;
-	gap: 10px;
+/*	margin: 5px;*/
+/*	gap: 10px;*/
 	color: white;
 	text-decoration: none;
 }
@@ -1512,7 +1514,18 @@ text-align: center;
 }
 
 
+
+
+
+
 @media screen and (min-width: 100px) and (max-width: 900px) {
+
+/*	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: content-box;
+	}
+*/
 
 	body {
 		overflow-x: hidden;
@@ -1653,18 +1666,18 @@ text-align: center;
 		flex-wrap: wrap;
 	}
 
-	/*.social {
+	.social {
 		display: flex;
 		position: relative;
 		overflow: hidden;
-		align-content: space-between;
+		/*align-content: space-between;
 		justify-content: space-between;
-		justify-items: space-between;
+		justify-items: space-between;*/
 		width: auto;
 		margin: 0 auto;
 		overflow: auto;
 	}
-*/
+
 	.logoPie {
 		margin: 0;
 		padding: 0;
@@ -1780,18 +1793,18 @@ text-align: center;
 
 
 
-.social {
+/*.social {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: center;
 	text-align: left;
-}
+}*/
 
 
 
 .social {
-	display: inline-block;
+/*	display: inline-block;*/
 	flex-direction: row;
 	position: static;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -1799,12 +1812,13 @@ text-align: center;
 	background-position: center;
 	border-radius: 2px;
 	margin: 0 auto;
+	margin-bottom: 0;
 	padding: 5px;
 	width: 100%;
 	height: auto;
 	justify-content: space-between;
 	align-content: space-between;
-	box-sizing: border-box;
+/*	box-sizing: border-box;*/
 }
 
 .contacto {
@@ -1825,19 +1839,23 @@ text-align: center;
 
 .polt {
 	display: flex;
-	flex-direction: row;
-	width: 100%;
+	width: auto;
 	height: auto;
 	margin: 0 auto;
-	padding: 0;
+	padding: 5px;
 	align-content: space-between;
 	justify-content: space-between;
-	align-items: top;
+	align-items: center;
 }
 
 .polt p {
+	display: block;
+	position: relative;
 	color: #1B1C1E;
 	font-size: 0.7rem;
+/*	align-items: flex-end;*/
+/*	align-content: flex-end;*/
+margin-bottom: 0;
 }
 
 .terminos {
@@ -1847,6 +1865,7 @@ text-align: center;
 	align-content: flex-end;
 	justify-items: end;
 	text-align: right;
+	margin: 2px;
 	font-size: 0.6rem;
 	color: #1B1C1E;
 	cursor: default;
@@ -1859,7 +1878,16 @@ text-align: center;
 }
 
 .pp {
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
 	cursor: default;
+	align-items: flex-end;
+	justify-content: space-between;
+	align-content: flex-end;
+
 }
 
 .pp span {
@@ -1917,11 +1945,11 @@ text-align: center;
 	display: flex;
 	position: relative;
 	vertical-align: middle;
-	margin: 5px;
+/*	margin: 5px;*/
 	justify-content: space-between;
 	display: block;
 	position: relative;
-	padding: 5px;
+	padding: 1px;
 	justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -1976,6 +2004,7 @@ text-align: center;
 	background-color: white;
 }
 
-
-
-
+.pieDos {
+	padding: 0;
+	margin: 0;
+}
