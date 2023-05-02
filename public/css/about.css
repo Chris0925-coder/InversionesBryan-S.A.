@@ -1,21 +1,21 @@
-/** {
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}*/
+}
 
-/*html {
+body {
 	width: 100%;
 	height: 100lvh;
-}*/
+}
 
 .navbar {
 	display: flex;
 	position: relative;
-/*	align-content: space-between;*/
+	align-content: space-between;
 	justify-items: center;
 	justify-content: space-between;
-	width: 100%;
+	width: auto;
 	height: 150px;
 }
 
@@ -160,7 +160,7 @@
 	position: relative;
 	padding: 0;
 	margin: 0 auto;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	justify-content: center;
 	align-content: center;
@@ -173,7 +173,7 @@
 .mision-cajas {
 	display: flex;
 	position: relative;
-	margin: 180px 0;
+	margin: 100px 0;
 	padding: 0 200px;
 /*	margin: 80px 0 100px 0;
 /*	align-items: center;*/
@@ -181,7 +181,7 @@
 	height: auto;
 /*	text-align: right;*/
 /*	text-decoration: none;*/
-	justify-content: center;
+/*	justify-content: center;*/
 	
 /*	font-size: 2.5rem;*/
 }
@@ -189,11 +189,27 @@
 .mision-box {
 	display: flex;
 	position: relative;
+	flex-direction: row;
 	width: auto;
 	height: auto;
 	padding: 0 10px;
-	margin: 0 80px;
+	margin: 0;
+	margin-left: 20px;
+/*	columns: 2;
+	column-count: 2;*/
+}
 
+#misVal {
+	/*gap: 1px;
+	column-gap: 1px;
+	row-gap: 1px;*/
+	columns: 2;
+}
+
+#misVal .mision-items{
+	padding: 5px;
+	margin: 0;
+/*	columns: 2;*/
 }
 
 .mision-button > h2 {
@@ -242,9 +258,10 @@
 }
 .imgAbout img {
 	width: 100%;
-	max-height: 800px;
-	background-size: cover;
+	max-height: 366px;
+	background-size: contain;
 	object-fit: fill;
+	object-position: center;
 
 }
 
@@ -349,11 +366,12 @@
 .polt {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	flex-wrap: wrap;
+	width: auto;
 	height: auto;
 	margin: 0 auto;
 	padding: 0;
-	align-content: space-between;
+	align-content: center;
 	justify-content: space-between;
 	align-items: top;
 }
@@ -368,11 +386,12 @@
 	position: relative;
 	justify-content: flex-end;
 	align-content: flex-end;
-	justify-items: end;
+/*	justify-items: end;*/
 	text-align: right;
 	font-size: 0.6rem;
 	color: #1B1C1E;
 	cursor: default;
+	margin: 5px;
 }
 
 .terminos span {
@@ -462,7 +481,7 @@
 		display: block;
 		position: relative;
 		width: auto;
-		margin: 0;
+		margin: 80px 0;
 		padding: 0;
 /*		overflow: auto;*/
 	}
