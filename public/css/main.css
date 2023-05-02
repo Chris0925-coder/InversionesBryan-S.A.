@@ -1238,6 +1238,9 @@ text-align: center;
 	transform: scale(1.0);
 	width: 100%;
 	object-position: center;
+	/*text-align: center;
+	text-align-last: center;*/
+	text-indent: 20px;
 }
 
 
