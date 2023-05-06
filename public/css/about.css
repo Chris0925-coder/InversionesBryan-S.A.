@@ -77,9 +77,9 @@ body {
 /*	right: 40%;*/
 	display: flex;
 	position: relative;
-	flex-direction: column;
-	width: auto;
-	height: auto;
+/*	flex-direction: column;*/
+/*	width: auto;*/
+/*	height: auto;*/
 	margin: 20px;
 	top: 0;
 	margin-top: 0;
@@ -90,11 +90,12 @@ body {
 }
 
 .nav-item {
+	display: block;
 	margin: 40px;
 }
 
 .nav-linka1 {
-	display: flex;
+	display: block;
 	position: relative;
 	padding: 0;
 	text-justify: justify;
@@ -104,9 +105,12 @@ body {
 }
 
 
-/*.nav-link {
+.nav-link {
+	display: block;
+	position: relative;
 	opacity: 1;
-}*/
+
+}
 
 .nav-link.active {
 	border-bottom: 2px solid #303030;
@@ -118,18 +122,20 @@ body {
 	transition: opacity 3s;
 */}
 
-/*.mv {*/
-/*	display: block;*/
-/*	position: relative;*/
-/*}*/
+.mv {
+	display: block;
+	position: relative;
+}
 
 .mv:hover .mv-link {
 	display: block;
-	width: auto;
-	height: auto;
+/*	flex-direction: column;*/
+/*	width: auto;*/
+/*	height: auto;*/
 	text-decoration: none;
 	opacity: 1;
-	position: absolute;
+	position: relative;
+	z-index: 3000;
 /*	transition: opacity 2s ease-in;*/
 	transition-property: opacity;
 	transition-duration: 3s;
@@ -139,7 +145,7 @@ body {
 
 .mv-link {
 	display: none;
-	position: absolute;
+	position: relative;
 	text-decoration: none;
 	justify-content: center;
 	color: #303030;
@@ -509,6 +515,9 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+	.nav-item {
+		margin: 40px auto;
+	}
 	/*html {
 		width: 100%;
 	}*/
