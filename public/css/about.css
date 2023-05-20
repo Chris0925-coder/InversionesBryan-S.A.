@@ -295,6 +295,14 @@ body {
 	text-decoration: none;
 }
 
+.linea {
+	background: dimgray;
+	height: 3px;
+	max-width: none;
+	display: block;
+	margin: 15px 0 0 0;
+}
+
 .photos i {
 	color: gray;
 	filter: opacity(70%);
