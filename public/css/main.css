@@ -1861,9 +1861,9 @@ text-align: center;
 	background-size: cover;
 	background-position: center;
 	border-radius: 2px;
-	margin: 0 auto;
-	margin-bottom: 0;
-	padding: 5px;
+/*	margin: 0 auto;*/
+/*	margin-bottom: 0;*/
+	padding: 3px;
 	width: 100%;
 	height: auto;
 	justify-content: space-between;
@@ -2024,9 +2024,16 @@ margin-bottom: 0;
 }
 
 .redes i:hover {
-	border: 1px solid white;
+	color: blue;
+	border: 1px solid dimgrey;
 	border-radius: 30%;
 	padding: 2px;
+}
+
+#insta i:hover,
+#twit i:hover {
+	color: white;
+	filter: blur(2px);
 }
 
 
