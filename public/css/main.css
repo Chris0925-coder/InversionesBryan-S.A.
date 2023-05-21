@@ -2025,8 +2025,8 @@ margin-bottom: 0;
 
 .redes i:hover {
 	color: blue;
-	border: 1px solid dimgrey;
-	border-radius: 30%;
+	border: 2px solid dimgrey;
+	border-radius: 20%;
 	padding: 2px;
 }
 

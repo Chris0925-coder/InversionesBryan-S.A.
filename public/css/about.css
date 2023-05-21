@@ -475,12 +475,29 @@ body {
 	justify-content: space-between;
 	
 }
-
+/*
 .redes i:hover {
 	border: 1px solid white;
 	border-radius: 30%;
 	padding: 5px;
+}*/
+
+
+.redes i:hover {
+	color: blue;
+	border: 2px solid dimgrey;
+	border-radius: 20%;
+	padding: 2px;
 }
+
+#insta i:hover,
+#twit i:hover {
+	color: white;
+	filter: blur(2px);
+}
+
+
+
 
 .mail a, 
 .num a {
