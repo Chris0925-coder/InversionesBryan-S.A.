@@ -543,28 +543,28 @@ cerrar.addEventListener('click', () => {
 // };
 
 // sliderGaleria();
-let fotos = document.querySelector('.proyectos');
-let load = document.querySelector('#cargando');
+// let fotos = document.querySelector('.proyectos');
+// let load = document.querySelector('#cargando');
 // let bodyW = document.querySelector("body");
-const bodyW = $(document).width();
+// const bodyW = $(document).width();
 // W = fotos.width();
 // console.log(load);
 
 
 
-function displayPhotos() {
+// function displayPhotos() {
     // if (tiempoSlide) {
     
-    load.style.display = 'none';
-    if (bodyW <= 900) {
-        fotos.style.display = 'block';
-    } else {
-        fotos.style.display = 'flex';
-    }
+    // load.style.display = 'none';
+    // if (bodyW <= 900) {
+    //     fotos.style.display = 'block';
+    // } else {
+    //     fotos.style.display = 'flex';
+    // }
     // if (bodyW.width() <= 900) {
     //     fotos.style.display = 'block';
     // }
-};
+// };
 
 
 
@@ -575,4 +575,4 @@ function displayPhotos() {
 
 // displayPhotos();
 // setTimeout(p, 4000);
-setTimeout(displayPhotos,8000);
+// setTimeout(displayPhotos,8000);
