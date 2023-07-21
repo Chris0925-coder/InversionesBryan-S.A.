@@ -83,14 +83,15 @@ body {
 	flex-direction: column;
 	width: 100%;
 	height: auto;
+	justify-content: flex-end;
 /*	bottom: 0;*/
 /*	margin: 20px;*/
 /*	top: 0;*/
 /*	margin-top: 0;*/
 	z-index: 2000;
 	text-align: center;
-/*	left:50%;*/
-	background-color: rgba(250, 250, 250, 0.9);
+/*	left:0;*/
+	
 }
 
 .nav-item {
@@ -546,6 +547,13 @@ body {
 @media screen and (max-width: 900px) {
 	.nav-item {
 		margin: 40px auto;
+	}
+
+	.navbar-nav {
+		position: relative;
+		background-color: rgba(250, 250, 250, 0.9);
+/*		top: -1;*/
+/*	bottom: 100%;*/
 	}
 	/*html {
 		width: 100%;
