@@ -1620,8 +1620,7 @@ text-align: center;
 	font-weight: 400;
 /*	color: #d6d6e0;*/
 	color: #303030;
-	text-justify: inter-word;
-	text-align: justify-all;
+	text-align: justify;
 	margin: 0 10%;
 }
 
@@ -1940,6 +1939,9 @@ text-align: center;
 	}
 
 
+
+
+
 /*FLECHAS FLOTANTES*/
 /*	.arrows .nextt1 {
 		width: 85%;
@@ -1978,13 +1980,28 @@ text-align: center;
 /*		height: 100%;*/
 	}
 
+	.gallery-item {
+		max-height: 600px;
+	}
+
 	.gallery-item:hover {
 		flex-basis: 100%;
 	}
 
 	.item-image {
+		object-position: center;
+		height: 600px;
 		object-fit: cover;
+
 	} 
+
+	.name {
+		font-size: .8rem;
+	}
+
+	.role {
+		font-size: .6rem;
+	}
 
 }
 
@@ -1994,6 +2011,20 @@ text-align: center;
 }*/
 
 
+#caja1:hover,
+#caja2:hover,
+#caja3:hover {
+	border: 1px solid transparent;
+	cursor: pointer;
+	box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
+	padding: 1rem;
+	width: fit-content;
+/*	text-align: center;*/
+/*text-justify: center;*/
+/*	text-align: center;*/
+	margin: 0 auto;
+	border-radius: 1%;
+}
 
 
 

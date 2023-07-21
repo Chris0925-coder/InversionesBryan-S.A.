@@ -20,56 +20,45 @@ $(document).ready(function() {
 //     });
 
 
-let slides = document.querySelectorAll(".pro");
-let slides1 = document.querySelectorAll(".pro1");
-let slides2 = document.querySelectorAll(".pro2");
-// let slides3 = documlastent.querySelectorAll(".pro3");
-let slideIndex = 0;
-let slideIndex1 = 0;
-let slideIndex2 = 0;
-// let slideIndex3 = 0;
+// let slides = document.querySelectorAll(".pro");
+// let slides1 = document.querySelectorAll(".pro1");
+// let slides2 = document.querySelectorAll(".pro2");
+// let slideIndex = 0;
+// let slideIndex1 = 0;
+// let slideIndex2 = 0;
 
 
 
-function showSlides() {
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    // slides1[i].style.display = "none";
-    slides2[i].style.display = "none";
-    // slides3[i].style.display = "none";
-    };
+// function showSlides() {
+//     for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//     slides2[i].style.display = "none";
+//     };
 
-    for (j = 0; j < slides1.length; j++) {
-        slides1[j].style.display = "none";
-    }
+//     for (j = 0; j < slides1.length; j++) {
+//         slides1[j].style.display = "none";
+//     }
 
-    slideIndex++;
-    slideIndex1++;
-    slideIndex2++;
-    // slideIndex3++;
+//     slideIndex++;
+//     slideIndex1++;
+//     slideIndex2++;
 
-    if(slideIndex > slides.length) {
-        slideIndex = 1;
-        // slideIndex1 = 1;
-        slideIndex2 = 1;
-        // slideIndex3 = 1;
-};
+//     if(slideIndex > slides.length) {
+//         slideIndex = 1;
+//         slideIndex2 = 1;
+// };
 
-    if(slideIndex1 > slides1.length) {
-        // slideIndex = 1;
-        slideIndex1 = 1;
-        // slideIndex2 = 1;
-        // slideIndex3 = 1;
-};
+//     if(slideIndex1 > slides1.length) {
+//         slideIndex1 = 1;
+// };
 
 
-    slides[slideIndex-1].style.display = "block";
-    slides1[slideIndex1-1].style.display = "block";
-    slides2[slideIndex2-1].style.display = "block";
-    // slides3[slideIndex3-1].style.display = "block";
-};
+//     slides[slideIndex-1].style.display = "block";
+//     slides1[slideIndex1-1].style.display = "block";
+//     slides2[slideIndex2-1].style.display = "block";
+// };
 
-let tiempoSlide = setInterval(showSlides, 8000);
+// let tiempoSlide = setInterval(showSlides, 8000);
 
 
 
