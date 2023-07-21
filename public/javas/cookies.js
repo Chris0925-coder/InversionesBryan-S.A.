@@ -182,74 +182,56 @@ function ventana2(url) {
 //         more.style.display = 'flex'; 
 // });
 
-let slideIndexA = 0;
+// let slideIndexA = 0;
 
 
-function plusSlidesA() {
-    clearInterval(tiempoSlide);
-    // if(true) {
+// function plusSlidesA() {
+//     clearInterval(tiempoSlide);
+//         for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//         slides2[i].style.display = "none";
         
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-        // slides1[i].style.display = "none";
-        slides2[i].style.display = "none";
-        // slides3[i].style.display = "none";
-        };
+//         };
 
-        for (j = 0; j < slides1.length; j++) {
-        // slides[i].style.display = "none";
-        slides1[j].style.display = "none";
-        // slides2[i].style.display = "none";
-        // slides3[i].style.display = "none";
-        };
-    // };
+//         for (j = 0; j < slides1.length; j++) {
+        
+//         slides1[j].style.display = "none";
+//         };
 
-    slideIndex++;
-    slideIndexA++;
-    // };
+//     slideIndex++;
+//     slideIndexA++;
 
-    if (slideIndex > slides.length) {slideIndex = 1};
-    if (slideIndexA > slides1.length) {slideIndexA = 1};
-    slides[slideIndex-1].style.display = "block";
-    slides1[slideIndexA-1].style.display = "block";
-    slides2[slideIndex-1].style.display = "block";
-    // slides3[slideIndex-1].style.display = "block";
-};
+//     if (slideIndex > slides.length) {slideIndex = 1};
+//     if (slideIndexA > slides1.length) {slideIndexA = 1};
+//     slides[slideIndex-1].style.display = "block";
+//     slides1[slideIndexA-1].style.display = "block";
+//     slides2[slideIndex-1].style.display = "block";
+// };
 
-function plusSlidesB() {
-    clearInterval(tiempoSlide);
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    // slides1[i].style.display = "none";
-    slides2[i].style.display = "none";
-    // slides3[i].style.display = "none";
-    };
+// function plusSlidesB() {
+//     clearInterval(tiempoSlide);
+//     for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//     slides2[i].style.display = "none";
+//     };
 
-    for (j = 0; j < slides1.length; j++) {
-    // slides[i].style.display = "none";
-    slides1[j].style.display = "none";
-    // console.log(slides1[j]);
-    // slides2[i].style.display = "none";
-    // slides3[i].style.display = "none";
-    };
+//     for (j = 0; j < slides1.length; j++) {
+//     slides1[j].style.display = "none";
+//     };
 
-    slideIndex--;
-    slideIndexA--;
+//     slideIndex--;
+//     slideIndexA--;
 
-    if(slideIndex < 0) {
-        // slides[slideIndex];
-        // slides1[slideIndex1];
-        slideIndex = 2;
-        // slideIndexA = 3;
-    };
-    if(slideIndexA < 0) {
-        slideIndexA = 3;
-    }
-    slides[slideIndex].style.display = "block";
-    slides1[slideIndexA].style.display = "block";
-    slides2[slideIndex].style.display = "block";
-    // slides3[slideIndex-1].style.display = "block";
-};
+//     if(slideIndex < 0) {
+//         slideIndex = 2;
+//     };
+//     if(slideIndexA < 0) {
+//         slideIndexA = 3;
+//     }
+//     slides[slideIndex].style.display = "block";
+//     slides1[slideIndexA].style.display = "block";
+//     slides2[slideIndex].style.display = "block";
+// };
 
 
 
