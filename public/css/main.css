@@ -1653,13 +1653,17 @@ text-align: center;
 	
 /*	transform: ;*/
 /*z-index: 2000;*/
-/*	transition-delay: .3s;*/
+	transition: flex .6s, opacity 0.30s;
+	transition-delay: .2s;
+/*	object-fit: fill;*/
 /*	transition-timing-function: .4s;*/
 
 }
 
 .gallery-item:not(:hover) {
 	opacity: 0.95;
+	transition: flex .4s, opacity 0.30s;
+
 	
 }
 
@@ -2024,6 +2028,7 @@ text-align: center;
 /*	text-align: center;*/
 	margin: 0 auto;
 	border-radius: 1%;
+	transition: box-shadow 2s, padding .4s;
 }
 
 
