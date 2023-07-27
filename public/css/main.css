@@ -1979,25 +1979,46 @@ text-align: center;
 	}
 
 	.gallery-wrapper {
-/*		flex-direction: column;*/
-/*		height: 100lvh;*/
+		flex-direction: column;
+/*		margin: 0 auto;*/
+		height: 70vh;
 /*		height: 100%;*/
 	}
 
 	.gallery-item {
 		max-height: 600px;
+		margin: 0;
 	}
 
 	.gallery-item:hover {
 		flex-basis: 100%;
+/*		display: block;*/
+/*		border: 1px solid white;*/
+/*		height: 900px;*/
+		object-fit: fill;
+/*		z-index: 2000;*/
+/*		scale: 1;*/
+/*		flex: noneauto;*/
+/*		margin: 0;*/
 	}
 
 	.item-image {
-		object-position: center;
-		height: 600px;
-		object-fit: cover;
+/*		background-size: cover;*/
+/*		object-position: center;*/
+		max-height: 600px;
+/*		object-fit: fill;*/
+/*		margin: 0;*/
+	}
 
-	} 
+	.item-image:hover {
+/*		position: absolute;*/
+/*		height: 600px;*/
+/*		z-index: 2000;*/
+		object-fit: fill;
+/*		scale: 1;*/
+		padding: 10px;
+/*		border: 5px solid white;*/
+	}
 
 	.name {
 		font-size: .8rem;
