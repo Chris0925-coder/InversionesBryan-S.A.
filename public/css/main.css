@@ -1601,6 +1601,7 @@ text-align: center;
 
 
 .titulo {
+	margin-top: 20px;
 	margin-bottom: 50px;
 }
 
@@ -1645,6 +1646,7 @@ text-align: center;
 	opacity: 1;
 	overflow: hidden;
 	transition: flex 0.5, opacity 0.25s;
+	margin-bottom: 20px;
 
 }
 
@@ -1989,6 +1991,7 @@ text-align: center;
 	.gallery-item {
 		max-height: 600px;
 		margin: 0;
+/*		margin-bottom: 20px;*/
 	}
 
 	.gallery-item:hover {
