@@ -7,14 +7,15 @@
 }
 
 html {
-	overflow-x: hidden;
+	height: fit-content;
+/*	overflow-x: hidden;*/
 }
 
 body {
 /* 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
 	font-family: 'Arial', serif;
 /*	overflow-x: hidden;*/
-	height: 100lvh;
+/*	height: auto;*/
 }
 
 /*.div_class {
@@ -1144,9 +1145,9 @@ text-align: center;
 
 
 .galeria  {
-	display: block;
+/*	display: block;*/
 /*	visibility: none;*/
-	position: absolute;
+/*	position: absolute;*/
 /*	margin: 0;*/
 /*	justify-content: center;*/
 /*	align-content: stretch;*/
@@ -1724,9 +1725,9 @@ text-align: center;
 
 @media screen and (max-width: 768px) {
 
-	body {
+	/*body {
 		overflow-x: hidden;
-	}
+	}*/
 
 	.publicidadIB {
 		width: 200px;
@@ -1883,24 +1884,7 @@ text-align: center;
 		width: 70%;
 	}
 
-	.galeria {
-		align-content: center;
-		justify-content: center;
-		margin: auto;
-		align-items: center;
-/*		object-position: center;*/
-		position: absolute;
-/*		justify-content: center;*/
-/*		align-content: center;*/
-/*		width: auto;
-		height: auto;*/
-/*		justify-items: ;*/
-/*		margin-bottom: 0;*/
-/*		row-gap: 100px;*/
-/*		border: 1px solid red;*/
-		padding: 100px 0; 
-/*		background-color: black;*/
-	}
+	
 
 	.proyectos {
 		display: block;
