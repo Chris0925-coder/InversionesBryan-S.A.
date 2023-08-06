@@ -456,7 +456,7 @@ function addPhotos() {
     // for (i = 0; i < slidePhoto.length; i++) {
     // if (album < slidePhoto.length) { 
         //    if (j < slidePhoto[i]) {
-            // light.style.display = "flex";
+        // light.style.display = "flex";
         //     slidePhoto[j];
         // };
     // };
@@ -573,3 +573,84 @@ cerrar.addEventListener('click', () => {
 
 
 // count();
+let count = 0;
+let count1 = 0;
+let count2 = 0;
+
+let primaryGallery = document.getElementById("image1");
+let primaryGallery1 = document.getElementById("image3");
+let primaryGallery2 = document.getElementById("image2");
+// console.log(primaryGallery);
+
+
+let p1 = [
+    // 'public/img/remode1.jpg',
+    '<img src=public/img/Mejorandoelcampo-n.jpg class="item-image">',
+    '<img src=public/img/camino.jpg class="item-image">',
+    '<img src=public/img/Mejorandocaminos-n.jpg class="item-image">'
+    // 'public/img/remode5.jpg'
+];
+
+let p2 = [
+    // 'public/img/remode1.jpg',
+    '<img src=public/img/casap3-n.jpg class="item-image">',
+    '<img src=public/img/remode1-n.jpg class="item-image">',
+    '<img src=public/img/casap1new.png class="item-image">'
+    // 'public/img/remode5.jpg'
+];
+
+let p3 = [
+    // 'public/img/remode1.jpg',
+    '<img src=public/img/pbrisas.jpg class="item-image">',
+    '<img src=public/img/proyecto9-n.jpg class="item-image">',
+    '<img src=public/img/proyecto4.jpg class="item-image">'
+    // 'public/img/remode5.jpg'
+];
+
+
+function slideCaminos() {
+
+    for (i=0;i < p1.length; i++) {
+        primaryGallery.innerHTML = p1[i];
+        // console.log(p1[i]);
+    }
+    count++
+
+    if (count > p1.length) {count = 1};
+    primaryGallery.innerHTML = p1[count-1];
+    // setInterval(7000);
+};
+
+
+function slideCaminos1() {
+
+    for (i=0;i < p2.length; i++) {
+        primaryGallery2.innerHTML = p2[i];
+        // console.log(p1[i]);
+    }
+    count1++
+
+    if (count1 > p2.length) {count1 = 1};
+    primaryGallery2.innerHTML = p2[count1-1];
+    // setInterval(7000);
+};
+
+
+function slideCaminos2() {
+
+    for (i=0;i < p3.length; i++) {
+        primaryGallery1.innerHTML = p3[i];
+        // console.log(p1[i]);
+    }
+    count2++
+
+    if (count2 > p3.length) {count2 = 1};
+    primaryGallery1.innerHTML = p3[count2-1];
+    // setInterval(7000);
+};
+
+
+setInterval(slideCaminos, 7000);
+setInterval(slideCaminos1, 7000);
+setInterval(slideCaminos2, 7000);
+// slideCaminos();
