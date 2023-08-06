@@ -547,3 +547,29 @@ cerrar.addEventListener('click', () => {
 // displayPhotos();
 // setTimeout(p, 4000);
 // setTimeout(displayPhotos,8000);
+
+// let countVisites = 0;
+// let visit = document.querySelector("body");
+// console.log(visit); 
+// function count() {
+
+    // visit = 0;
+    // if (visit) {
+        // visit = Number;
+    //     if(countVisites <= 500){
+            // countVisites++;
+    //         countVisites--;
+        // visit.insertAdjacentHTML("afterend", countVisites);
+    //     }
+        // for(i=0;i<countVisites;i++) {
+        
+        // }
+        // visit = 0;
+        // visit++;
+        // ++countVisites;
+        // console.log(visit)
+//     }
+// };
+
+
+// count();
