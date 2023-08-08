@@ -13,7 +13,7 @@ html {
 
 body {
 /* 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
-	font-family: 'Arial', serif;
+	font-family: 'Arial', sans-serif;
 /*	overflow-x: hidden;*/
 /*	height: auto;*/
 }
@@ -133,13 +133,13 @@ body {
 
 .navbar .navbar-nav {
 	display: flex;
-	position: relative;
+	position: absolute;
 	flex-direction: row;
 	width: auto;
-	margin: 10px;
+	margin: 5px;
 	object-position: right;
-/*	background-color: rgba(0, 0, 0, 0.1);*/
-	background-size: contain;
+/*	background-color: rgba(250, 250, 250, 0.2);*/
+/*	background-size: contain;*/
 /*	box-shadow: 1px 1px 3px grey;*/
 	padding: 5px;
 	justify-content: flex-end;
@@ -998,7 +998,7 @@ h4 {
 /*	width: 60%;*/
 	height: auto;
 /*	text-justify: justify;*/
-text-align: center;
+	text-align: center;
 	margin: 10px;
 	columns: 2;
 	font-size: 0.8rem;
@@ -1610,11 +1610,13 @@ text-align: center;
 	display: block;
 }
 
-.titulo .primary {
+.titulo .primary,
+#closed h3 {
 	font-size: clamp(26px, 5vw, 52px);
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #303030;
+/*	color: #303030;*/
+	color: #771100;
 	text-align: center;
 }
 
@@ -1623,6 +1625,7 @@ text-align: center;
 	font-weight: 400;
 /*	color: #d6d6e0;*/
 	color: #303030;
+
 	text-align: justify;
 	margin: 0 5%;
 }
@@ -1979,12 +1982,13 @@ text-align: center;
 	.gallery-wrapper {
 		flex-direction: column;
 /*		margin: 0 auto;*/
-		height: 70lvh;
-/*		height: 100%;*/
+/*		height: 70lvh;*/
+/*	width: auto;*/
+		height: 700px;
 	}
 
 	.gallery-item {
-		max-height: 600px;
+		height: 1600px;
 		margin: 0;
 /*		margin-bottom: 20px;*/
 	}
@@ -2004,7 +2008,7 @@ text-align: center;
 	.item-image {
 /*		background-size: cover;*/
 /*		object-position: center;*/
-		max-height: 600px;
+		max-height: 1600px;
 /*		object-fit: fill;*/
 /*		margin: 0;*/
 	}
@@ -2035,15 +2039,15 @@ text-align: center;
 }*/
 
 
-#caja1:hover,
-#caja2:hover,
-#caja3:hover {
+#titulo1:hover,
+#titulo2:hover,
+#titulo3:hover {
 	border: 1px solid transparent;
-	cursor: pointer;
+	cursor: default;
 	box-shadow: 2px 2px 2px 1.5px rgba(0, 0, 0, 0.4);
 	padding: 1rem;
 	width: fit-content;
-/*	text-align: center;*/
+/*	text-align: center;
 /*text-justify: center;*/
 /*	text-align: center;*/
 	margin: 0 auto;
@@ -2183,8 +2187,9 @@ margin-bottom: 0;
 	font-weight: 700;
 	margin-top: 30px;
 	text-align: left;
-	color: #2B2B2B;;
+	color: #771100;;
 	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
+	cursor: default;
 }
 
 .closePhoto,
@@ -2250,16 +2255,37 @@ margin-bottom: 0;
 }
 
 .redes i:hover {
-	color: blue;
-	border: 2px solid dimgrey;
+/*	color: #3b5998;*/
+/*	border: 2px solid dimgrey;*/
 	border-radius: 20%;
 	padding: 2px;
+/*	transition: color 0.9s;*/
 }
 
-#insta i:hover,
 #twit i:hover {
-	color: white;
+	color: #1DA1F2;
+/*	color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+/*	color: white;*/
 	filter: blur(2px);
+	transition: filter 0.8s;
+}
+
+#insta i:hover {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(2px);
+  transition: filter 0.8s;
+}
+
+#faceb i:hover{
+	color: #3b5998;
+/*	color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+/*	color: white;*/
+/*	filter: blur(2px);*/
+	transition: color 0.8s;
 }
 
 
