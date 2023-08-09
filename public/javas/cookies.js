@@ -573,10 +573,10 @@ cerrar.addEventListener('click', () => {
 
 // let count = 0;
 // let count1 = 0;
-// let count2 = 0;
+let count2 = 0;
 
 // let primaryGallery = document.getElementById("image1");
-// let primaryGallery1 = document.getElementById("image3");
+let primaryGallery1 = document.getElementById("image3");
 // let primaryGallery2 = document.getElementById("image2");
 
 
@@ -592,11 +592,11 @@ cerrar.addEventListener('click', () => {
 //     '<img src=public/img/casap1new.png class="item-image">'
 // ];
 
-// let p3 = [
-//     '<img src=public/img/pbrisas.jpg class="item-image">',
-//     '<img src=public/img/proyecto9-n.jpg class="item-image">',
-//     '<img src=public/img/proyecto4.jpg class="item-image">'
-// ];
+let p3 = [
+    '<img src=public/img/pbrisas.jpg class="item-image">',
+    '<img src=public/img/proyecto9-n.jpg class="item-image">',
+    '<img src=public/img/proyecto4.jpg class="item-image">'
+];
 
 
 // function slideCaminos() {
@@ -623,19 +623,23 @@ cerrar.addEventListener('click', () => {
 // };
 
 
-// function slideCaminos2() {
+function slideCaminos2() {
 
-//     for (i=0;i < p3.length; i++) {
-//         primaryGallery1.innerHTML = p3[i];
-//     }
-//     count2++
+    for (i=0;i < p3.length; i++) {
+        primaryGallery1.innerHTML = p3[i];
+    }
+    count2++
 
-//     if (count2 > p3.length) {count2 = 1};
-//     primaryGallery1.innerHTML = p3[count2-1];
-// };
+    if (count2 > p3.length) {count2 = 1};
+    primaryGallery1.innerHTML = p3[count2-1];
+};
 
 
 // setInterval(slideCaminos, 7000);
 // setInterval(slideCaminos1, 7000);
 // setInterval(slideCaminos2, 7000);
 // slideCaminos();
+primaryGallery1.addEventListener('touchmove', () => {
+    slideCaminos2();
+
+});
