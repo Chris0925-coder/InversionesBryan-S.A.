@@ -639,7 +639,7 @@ function slideCaminos2() {
 // setInterval(slideCaminos1, 7000);
 // setInterval(slideCaminos2, 7000);
 // slideCaminos();
-primaryGallery1.addEventListener('touchmove', () => {
+primaryGallery1.addEventListener('touchstart', () => {
     slideCaminos2();
 
 });
