@@ -573,30 +573,31 @@ cerrar.addEventListener('click', () => {
 
 // let count = 0;
 // let count1 = 0;
-// let count2 = 0;
-// let itemImage = document.querySelector("#i1");
+let count2 = 0;
+let itemImage = document.querySelector(".i1");
+// console.log(itemImage);
 // let primaryGallery = document.getElementById("image1");
 // let primaryGallery1 = document.getElementById("image3");
 // let primaryGallery2 = document.getElementById("image2");
 
 
-// let p1 = [
-//     '<img src=public/img/Mejorandoelcampo-n.jpg class="item-image">',
-//     '<img src=public/img/camino.jpg class="item-image">',
-//     '<img src=public/img/Mejorandocaminos-n.jpg class="item-image">'
-// ];
+let p1 = [
+    '<img src=public/img/Mejorandoelcampo-n.jpg class="item-image">',
+    '<img src=public/img/camino.jpg class="item-image">',
+    '<img src=public/img/Mejorandocaminos-n.jpg class="item-image">'
+];
 
-// let p2 = [
-//     '<img src=public/img/casap3-n.jpg class="item-image">',
-//     '<img src=public/img/remode1-n.jpg class="item-image">',
-//     '<img src=public/img/casap1new.png class="item-image">'
-// ];
+let p2 = [
+    '<img src=public/img/casap3-n.jpg class="item-image">',
+    '<img src=public/img/remode1-n.jpg class="item-image">',
+    '<img src=public/img/casap1new.png class="item-image">'
+];
 
-// let p3 = [
-//     '<img src=public/img/pbrisas.jpg class="item-image">',
-//     '<img src=public/img/proyecto9-n.jpg class="item-image">',
-//     '<img src=public/img/proyecto4.jpg class="item-image">'
-// ];
+let p3 = [
+    '<img src=public/img/pbrisas.jpg class="item-image i1" >',
+    '<img src=public/img/proyecto9-n.jpg class="item-image i1">',
+    '<img src=public/img/proyecto4.jpg class="item-image i1">'
+];
 
 
 // function slideCaminos() {
@@ -623,36 +624,85 @@ cerrar.addEventListener('click', () => {
 // };
 
 
-// function slideCaminos2() {
-    // itemImage.style.opacity = "0";
-    // itemImage.style.transition = "opacity 21.1s";
-    // for (i=0;i < p3.length; i++) {
-    //     primaryGallery1.innerHTML = p3[i];
-        
-         // itemImage.style.opacity = "0";
 
-     // itemImage.style.opacity = "1";         // itemImage[i].style.filter = "opacity 1.1s";
-    // }
-    // count2++;
 
-    // if (count2 > p3.length) {count2 = 1};
-    // primaryGallery1.innerHTML = p3[count2-1];
-    // itemImage.style.opacity = "0";
-// };
+
+
+function slideCaminos2(a, caja) {
+
+    for (i=0;i < a.length; i++) {
+        caja.innerHTML = a[i];
+        itemImage.style.animation = "mover-izq-der 3s 1";
+
+        itemImage.style.transition = "all 0.2s ease";
+    }
+    count2++;
+
+    if (count2 > a.length) {count2 = 1};
+    caja.innerHTML = a[count2-1];
+};
+// slideCaminos2();
+
+
+
+
 
 
 // setInterval(slideCaminos, 7000);
 // setInterval(slideCaminos1, 7000);
 // setInterval(slideCaminos2, 7000);
 // slideCaminos();
-// primaryGallery1.addEventListener('touchmove', () => {
-//     for (i=0;i>p3.length; i--) {
-//         primaryGallery1.style.visibility = "visible";
-//         primaryGallery1.style.opacity = "0";
-//         primaryGallery1.style.transition = "opacity 5s linear";
-//     }
-//     primaryGallery1.style.visibility = "visible";
-//     primaryGallery1.style.opacity = "0";
-//     primaryGallery1.style.transition = "opacity 5s linear";
-//     slideCaminos2();
+
+caja1.addEventListener('touchmove', moveToRight => {
+    // slideCaminos2();
+        // for (i=0;i>p3.length; i--) {
+            // primaryGallery1.style.visibility = "visible";
+            // primaryGallery1.style.opacity = "0";
+            // primaryGallery1.style.transition = "opacity 5s linear";
+        // }
+        // primaryGallery1.style.visibility = "visible";
+        // itemImage[-i].style.opacity = "0";
+        // itemImage[i].style.opacity = "1";
+        slideCaminos2(p3, caja1);
+        // itemImage.style.transition = "all .5s ease";
+        
+        
+    });
+
+caja2.addEventListener('touchmove', moveToRight => {
+        slideCaminos2(p2, caja2);
+    });
+
+caja3.addEventListener('touchmove', moveToRight => {
+        slideCaminos2(p1, caja3);
+    });
+
+//  $(document).ready(function(){
+//   $('.owl-carousel').owlCarousel(loop:true,
+//     margin:10,
+//     nav:true,
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     });
 // });
+
+// const webpack = require('webpack');
+
+// plugins: [
+//     new webpack.ProvidePlugin({
+//       $: 'jquery',
+//       jQuery: 'jquery',
+//       'window.jQuery': 'jquery'
+//     }),
+// ];
+
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
