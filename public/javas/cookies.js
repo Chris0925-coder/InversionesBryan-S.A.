@@ -628,22 +628,27 @@ let p3 = [
 
 
 
-function slideCaminos2(a, caja) {
+// function slideCaminos2(a, caja) {
 
-    for (i=0;i < a.length; i++) {
-        caja.innerHTML = a[i];
-        itemImage.style.animation = "mover-izq-der 3s 1";
+//     for (i=0;i < a.length; i++) {
+//         caja.innerHTML = a[i];
+//         itemImage.style.animation = "mover-izq-der 3s 1";
 
-        itemImage.style.transition = "all 0.2s ease";
-    }
-    count2++;
+//         itemImage.style.transition = "all 0.2s ease";
+//         itemImage.style.animationFillMode = "forwards";
+//     }
+//     count2++;
 
-    if (count2 > a.length) {count2 = 1};
-    caja.innerHTML = a[count2-1];
-};
+//     if (count2 > a.length) {count2 = 1};
+//     caja.innerHTML = a[count2-1];
+// };
 // slideCaminos2();
 
 
+
+// var ancho = 978;
+// var x1;
+// var x2;
 
 
 
@@ -653,29 +658,26 @@ function slideCaminos2(a, caja) {
 // setInterval(slideCaminos2, 7000);
 // slideCaminos();
 
-caja1.addEventListener('touchmove', moveToRight => {
-    // slideCaminos2();
-        // for (i=0;i>p3.length; i--) {
-            // primaryGallery1.style.visibility = "visible";
-            // primaryGallery1.style.opacity = "0";
-            // primaryGallery1.style.transition = "opacity 5s linear";
-        // }
-        // primaryGallery1.style.visibility = "visible";
-        // itemImage[-i].style.opacity = "0";
-        // itemImage[i].style.opacity = "1";
-        slideCaminos2(p3, caja1);
-        // itemImage.style.transition = "all .5s ease";
+// caja1.addEventListener('touchstart', () => {
+    // slideCaminos2(p3, caja1);
         
-        
-    });
+    // });
+// caja1.addEventListener('touchend', () => {
+//     slideCaminos2(p3, caja1);
+    // });
 
-caja2.addEventListener('touchmove', moveToRight => {
-        slideCaminos2(p2, caja2);
-    });
 
-caja3.addEventListener('touchmove', moveToRight => {
-        slideCaminos2(p1, caja3);
-    });
+
+
+
+
+// caja2.addEventListener('touchmove', moveToRight => {
+//         slideCaminos2(p2, caja2);
+//     });
+
+// caja3.addEventListener('touchmove', moveToRight => {
+//         slideCaminos2(p1, caja3);
+//     });
 
 //  $(document).ready(function(){
 //   $('.owl-carousel').owlCarousel(loop:true,
