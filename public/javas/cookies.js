@@ -573,31 +573,31 @@ cerrar.addEventListener('click', () => {
 
 // let count = 0;
 // let count1 = 0;
-let count2 = 0;
-let itemImage = document.querySelector(".i1");
+// let count2 = 0;
+// let itemImage = document.querySelector(".i1");
 // console.log(itemImage);
 // let primaryGallery = document.getElementById("image1");
 // let primaryGallery1 = document.getElementById("image3");
 // let primaryGallery2 = document.getElementById("image2");
 
 
-let p1 = [
-    '<img src=public/img/Mejorandoelcampo-n.jpg class="item-image">',
-    '<img src=public/img/camino.jpg class="item-image">',
-    '<img src=public/img/Mejorandocaminos-n.jpg class="item-image">'
-];
+// let p1 = [
+//     '<img src=public/img/Mejorandoelcampo-n.jpg class="item-image">',
+//     '<img src=public/img/camino.jpg class="item-image">',
+//     '<img src=public/img/Mejorandocaminos-n.jpg class="item-image">'
+// ];
 
-let p2 = [
-    '<img src=public/img/casap3-n.jpg class="item-image">',
-    '<img src=public/img/remode1-n.jpg class="item-image">',
-    '<img src=public/img/casap1new.png class="item-image">'
-];
+// let p2 = [
+//     '<img src=public/img/casap3-n.jpg class="item-image">',
+//     '<img src=public/img/remode1-n.jpg class="item-image">',
+//     '<img src=public/img/casap1new.png class="item-image">'
+// ];
 
-let p3 = [
-    '<img src=public/img/pbrisas.jpg class="item-image i1" >',
-    '<img src=public/img/proyecto9-n.jpg class="item-image i1">',
-    '<img src=public/img/proyecto4.jpg class="item-image i1">'
-];
+// let p3 = [
+//     '<img src=public/img/pbrisas.jpg class="item-image i1" >',
+//     '<img src=public/img/proyecto9-n.jpg class="item-image i1">',
+//     '<img src=public/img/proyecto4.jpg class="item-image i1">'
+// ];
 
 
 // function slideCaminos() {

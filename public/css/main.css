@@ -1979,22 +1979,44 @@ h4 {
 		background: none;
 	}
 
+/*	.new-content {
+		overflow: scroll;
+	}
+*/
 	.gallery-wrapper {
-		flex-direction: column;
+		flex-direction: row;
 /*		margin: 0 auto;*/
 /*		height: 70lvh;*/
-/*	width: auto;*/
-		height: 700px;
+		/*width: auto;
+		height: auto;
+*/
+
+
+/*		overflow: scroll;*/
+		/*display: flex;
+		position: relative;
+		flex-direction: row;
+		width: 100%;*/
+/*		width: 600px;*/
+
 	}
 
 	.gallery-item {
-		height: 1600px;
+		max-height: 1900px;
 		margin: 0;
+/*		overflow: scroll;*/
 /*		margin-bottom: 20px;*/
+
+	/*	width: 1600px;
+		height: auto;*/
+		/*display: flex;
+		position: relative;
+		flex-direction: row;
+		width: 100%;*/
 	}
 
 	.gallery-item:hover {
-		flex-basis: 100%;
+/*		flex-basis: 100%;*/
 /*		display: block;*/
 /*		border: 1px solid white;*/
 /*		height: 900px;*/
@@ -2003,14 +2025,24 @@ h4 {
 /*		scale: 1;*/
 /*		flex: noneauto;*/
 /*		margin: 0;*/
+
+
+/*		width: 100%;*/
 	}
 
 	.item-image {
+		
 /*		background-size: cover;*/
 /*		object-position: center;*/
-		max-height: 1600px;
+		max-height: 1900px;
 /*		object-fit: fill;*/
 /*		margin: 0;*/
+
+		/*display: flex;
+		position: relative;
+		flex-direction: row;*/
+		/*width: 100%;
+		height: auto;*/
 	}
 
 	.item-image:hover {
@@ -2242,21 +2274,25 @@ h4 {
 	place-content: center;
 	width: auto;
 	height: auto;*/
-	/*place-content: center;
-	align-content: flex-end;*/
-	justify-content: center;
+/*	place-content: center;*/
+/*	align-content: flex-end;*/
+	justify-content: flex-end;
+	width: auto;
+	height: 100%;
 /*	gap: 20px;*/
 }
 
-.redes i {
+.bibi span {
 	display: flex;
 	position: relative;
-	vertical-align: middle;
+	flex-direction: column;
+/*	vertical-align: middle;*/
 /*	margin: 5px;*/
-	justify-content: space-between;
-	display: block;
+/*	justify-content: space-between;*/
+/*	display: block;*/
 	position: relative;
 	padding: 1px;
+	height: 100%;
 	/*justify-content: center;
 	align-content: center;
 	align-items: center;
@@ -2264,7 +2300,8 @@ h4 {
 	
 }
 
-.redes i:hover {
+
+.bibi i:hover {
 /*	color: #3b5998;*/
 /*	border: 2px solid dimgrey;*/
 	border-radius: 20%;
