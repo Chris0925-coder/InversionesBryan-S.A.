@@ -291,10 +291,16 @@ let atras = document.querySelector(".back");
 let caja1 = document.querySelector('.caja1');
 let caja2 = document.querySelector('.caja2');
 let caja3 = document.querySelector('.caja3');
+let caja4 = document.querySelector('.caja4');
+let caja5 = document.querySelector('.caja5');
+let caja6 = document.querySelector('.caja6');
 // let caja4 = document.querySelector('#caja4');
 // let lightcierre = document.querySelector(".lightcierre")
  
-caja1.addEventListener('click', () => {
+
+function cage1(a){ 
+
+    a.addEventListener('click', () => {
     addPhotos();
     
 
@@ -318,7 +324,13 @@ caja1.addEventListener('click', () => {
             imageX.style.backgroundImage = `url(${slidePhoto[album]})`;   
     });
 });
-caja2.addEventListener('click', () => {
+};
+cage1(caja1);
+cage1(caja4);
+
+
+function cage2(b){
+b.addEventListener('click', () => {
     addPhotos();
     // album = 0;
     // album = 2;
@@ -354,8 +366,14 @@ caja2.addEventListener('click', () => {
         imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;   
     });
 });
+};
+cage2(caja2);
+cage2(caja5);
 
-caja3.addEventListener('click', () => {
+
+
+function cage3(c){
+c.addEventListener('click', () => {
     addPhotos();
     // album = 0;
     slidePhoto = [
@@ -383,7 +401,9 @@ caja3.addEventListener('click', () => {
         imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;   
     });
 });
-
+};
+cage3(caja3);
+cage3(caja6);
 // caja4.addEventListener('click', () => {
 //     addPhotos();
 //     imageX.style.backgroundImage = "url('public/img/remode5.jpg')";
