@@ -1521,7 +1521,7 @@ h4 {
 	align-content: center;*/
 /*	margin: 0;*/
 	position: relative;
-	text-align: left;
+/*	text-align: left;*/
 /*	color: black;*/
 	list-style: none;
 	text-decoration: none;
@@ -1548,7 +1548,8 @@ h4 {
 /*	list-style-position: outside;*/
 	list-style-type: none;
 /*	margin: 5px 0;*/
-	margin: 5px;
+/*	margin: 5px;*/
+	margin-left: 0;
 	padding-left: 0;
 	color: #303030;
 }
