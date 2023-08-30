@@ -561,33 +561,47 @@ body {
 
 @media screen and (max-width: 900px) {
 	.head-row {
-		display: block;
-/*		position: relative;*/
-/*		justify-content: space-between;*/
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		align-items: flex-end;
 /*		flex-direction: column;*/
+/*	align-items: flex-end;*/
 	}
 
 	.navbar {
-		display: flex;
-		position: relative;
-		flex-direction: row-reverse;
-		width: 100%;
-		height: auto;
-/*		justify-content: flex-end;*/
+		/*display: flex;
+		position: relative;*/
+/*		flex-direction: row;*/
+		width: auto;
+		height: 100%;
+		justify-content: flex-end;
+		align-items: flex-end;
 /*		align-content: flex-end;*/
 	}
 
 
+	.collapse {
+		width: auto;
+		height: 100%;
+	}
+
 	.navbar-toggler {
 		display: flex;
 		position: relative;
-		flex-direction: row;
-		width: 100%;
+/*		flex-direction: column;*/
+		width: auto;
 		height: 100%;
+		margin: 0;
+		padding: 0;
 		justify-content: flex-end;
+		align-content: flex-end;
+		align-items: flex-end;
+		justify-self: flex-end;
+		align-self: flex-end;
 /*		bottom: 0;*/
 /*		align-items: flex-end;*/
-		margin: 10px;
+/*		margin: 10px;*/
 /*		right: 0;*/
 /*		z-index: 3000;*/
 /*		flex-direction: column;*/
@@ -604,26 +618,45 @@ body {
 	.navbar-nav {
 		display: none;
 		position: absolute;
-		flex-direction: column;
+/*		flex-direction: column;*/
 		background-color: white;
 		
 		z-index: 2000;
+/*		padding: 20px;*/
+/*		gap: 80px;*/
+		
+/*		height: 50vh;*/
+/*		margin:;*/
 		padding: 20px;
-		gap: 40px;
+/*		padding-left: 0;*/
+		text-align: right;
+/*		align-items: center;*/
+/*		justify-content: flex-end;*/
 		top:100%;
+		right: 0;
 		width: 100%;
 		height: 50vh;
-		margin: 0 auto;
-		margin-left: 0;
-/*		text-align: right;*/
-/*		position: absolute;*/
+		/*		position: absolute;*/
 
 	}
 	.navbar-nav_visible {
-		display: flex;
+		display: block;
+		width: auto;
+		height: auto;
+/*		padding: 40px;*/
 /*		justify-content: flex-end;*/
 /*		flex-direction: row-reverse;*/
 	}
+
+	.nav-item {
+		margin: 20px;
+	}
+	.logo img {
+		width: 100%;
+		height: 100%;
+
+	}	
+
 	.cont-mision   {
 		display: block;
 		position: relative;
