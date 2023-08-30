@@ -319,15 +319,15 @@ body {
 }
 
 h4 {
-	/*font-family: serif;	*/
-	font-weight: 700;
-  background-color: rgba(248, 248, 255, 0.5);
-  text-align: center;
-  background-size: contain;
-  padding: 5px;
-/*  font-size: 20px;*/
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  border-radius: 3px;
+	font-size: clamp(10px, 5vw, 22px);
+	font-weight: 400;
+	text-transform: uppercase;
+/*	color: #303030;*/
+	color: #ffff;
+	text-align: center;
+	background-color: #30303099;
+	padding: 10px;
+	border-radius: 2%;
 }
 
 
@@ -1598,7 +1598,7 @@ h4 {
 }
 
 .titulo .primary,
-#closed h3 {
+#closed h1 {
 	font-size: clamp(26px, 5vw, 52px);
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2195,13 +2195,13 @@ h4 {
 
 
 #closed h1, h1 {
-	text-indent: 15px;
-	font-weight: 600;
-	margin-top: 30px;
-	text-align: left;
-	color: #771100;;
-	border-bottom: 1px solid rgb(169, 169, 169, 0.4);
-	cursor: default;
+	font-size: clamp(26px, 5vw, 52px);
+	font-weight: 700;
+	text-transform: uppercase;
+/*	color: #303030;*/
+	color: #771100;
+	text-align: center;
+
 }
 
 .closePhoto,
