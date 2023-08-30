@@ -2194,9 +2194,9 @@ h4 {
 }
 
 
-#closed h3 {
-	text-indent: 20px;
-	font-weight: 700;
+#closed h1, h1 {
+	text-indent: 15px;
+	font-weight: 600;
 	margin-top: 30px;
 	text-align: left;
 	color: #771100;;

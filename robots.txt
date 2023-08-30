@@ -1,7 +1,12 @@
 User-agent: Googlebot
-Disallow: /terminosycondiciones/cookies/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /scripts/
 
-User-agent: *
-Allow: /
+
+User-agent: * 
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /scripts/
 
 Sitemap: https://www.inversionesbryan.es/sitemap.xml

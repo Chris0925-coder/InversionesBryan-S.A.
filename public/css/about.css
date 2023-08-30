@@ -252,11 +252,11 @@ body {
 /*	columns: 2;*/
 }
 
-.mision-button > h2 {
+.mision-button h1 {
 	position: relative;
 	text-align: right;
 	padding: 5px;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	color: #771100;
 }
 
@@ -270,7 +270,7 @@ body {
 /*	font-size: 4rem;*/
 }
 
-.mision-box a {
+.mision-box span {
 	color: #303030;
 	text-decoration: none;
 /*	text-justify: justify;*/
