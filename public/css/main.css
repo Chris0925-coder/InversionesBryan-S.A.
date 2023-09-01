@@ -1600,7 +1600,7 @@ h4 {
 }
 
 .titulo .primary {
-	font-size: clamp(26px, 5vw, 52px);
+	font-size: clamp(20px, 5vw, 40px);
 	font-weight: 700;
 	text-transform: uppercase;
 /*	color: #303030;*/
@@ -2223,13 +2223,14 @@ h4 {
 
 
 #closed h1 {
-	font-size: clamp(26px, 5vw, 52px);
+	font-size: clamp(22px, 5vw, 42px);
 	font-weight: 700;
 	text-transform: uppercase;
 /*	color: #303030;*/
 	text-indent: 15px;
 	color: #771100;
 	margin-top: 20px;
+	cursor: default;
 /*	text-align: center;*/
 
 }
@@ -2240,6 +2241,7 @@ h4 {
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
+	cursor: default;
 }
 
 .closePhoto,
