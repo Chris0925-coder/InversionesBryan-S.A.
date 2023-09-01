@@ -2,25 +2,25 @@
  "name": "App",
  "icons": [
   {
-   "src": "https://www.inversionesbryan.es/favicon-32px.png",
+   "src": "https://www.inversionesbryan.es/favicon200px.png",
    "sizes": "36x36",
    "type": "image\/png",
    "density": "0.75"
   },
   {
-   "src": "https://www.inversionesbryan.es/favicon-48px.png",
+   "src": "https://www.inversionesbryan.es/favicon200px.png",
    "sizes": "48x48",
    "type": "image\/png",
    "density": "1.0"
   },
   {
-   "src": "https://www.inversionesbryan.es/favicon-96px.png",
+   "src": "https://www.inversionesbryan.es/favicon200px.png",
    "sizes": "72x72",
    "type": "image\/png",
    "density": "1.5"
   },
   {
-   "src": "https://www.inversionesbryan.es/favicon-96px.png",
+   "src": "https://www.inversionesbryan.es/favicon200px.png",
    "sizes": "96x96",
    "type": "image\/png",
    "density": "2.0"
