@@ -110,9 +110,10 @@ function ventana(url) {
         localStorage.aceptaCookies === 'false';
         // history.go(-1);
         // let one = 
-        window.open("https://www.google.com/", "_self");
-        
         window.close();
+        // window.open("https://www.google.com/", "_self");
+        
+        
         // return false;
     }
     // return false;
@@ -128,9 +129,10 @@ function ventana2(url) {
         localStorage.aceptaCookies === 'false';
         // history.go(-1);
         // let one = 
-        window.open("https://www.google.com/", "_self");
-        
         window.close();
+        // window.open("https://www.google.com/", "_self");
+        
+        
         // return false;
     }
     
