@@ -111,7 +111,7 @@ function ventana(url) {
         // history.go(-1);
         // let one = 
         window.close();
-        // window.open("https://www.google.com/", "_self");
+        window.open("https://www.google.com/", "_self");
         
         
         // return false;
@@ -130,7 +130,7 @@ function ventana2(url) {
         // history.go(-1);
         // let one = 
         window.close();
-        // window.open("https://www.google.com/", "_self");
+        window.open("https://www.google.com/", "_self");
         
         
         // return false;
