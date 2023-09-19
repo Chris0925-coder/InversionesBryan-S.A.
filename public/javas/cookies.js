@@ -9,13 +9,13 @@ const cajaCookies = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies")
 
 function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies == 'true') {
+    if (localStorage.aceptaCookies == true) {
         cajaCookies.style.display = 'none';
     }
 };
 
 function aceptarCookies() {
-    localStorage.aceptaCookies == 'true';
+    localStorage.aceptaCookies == true;
         cajaCookies.style.display = 'none';
 };
 

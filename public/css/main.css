@@ -2418,12 +2418,13 @@ h4 {
 	background-color: #30303090;
 	bottom: 0;
 	width: 100%;
-	height: 5%;
+	height: 7%;
 	z-index: 6000;
-	justify-content: flex-end;
+	justify-content: space-between;
 	padding: 10px;
 	gap: 10px;
 	color: #ffff;
+	font-size: 0.6rem;
 }
 
 .btn-cookies {
@@ -2431,5 +2432,6 @@ h4 {
 	position: relative;
 	width: auto;
 	height: auto;
-	padding: 10px;
+	font-size: .7rem;
+	padding: 5px;
 }
