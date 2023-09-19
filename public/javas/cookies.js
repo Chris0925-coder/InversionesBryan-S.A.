@@ -5,20 +5,27 @@ navToggle.addEventListener("click", () => {
     navLink.classList.toggle("navbar-nav_visible")
 });
 
+const cajaCookies = document.querySelector(".cookies");
+const btnCookies = document.querySelector(".btn-cookies")
 
 function compruebaAceptaCookies() {
     if (localStorage.aceptaCookies == 'true') {
-        cajacookies.style.display = 'none';
+        cajaCookies.style.display = 'none';
     }
 };
 
 function aceptarCookies() {
     localStorage.aceptaCookies == 'true';
-        cajacookies.style.display = 'none';
+        cajaCookies.style.display = 'none';
 };
 
 $(document).ready(function() {
     compruebaAceptaCookies();
+});
+
+
+btnCookies.addEventListener('click', () => {
+    aceptarCookies();
 });
 
 // let about = document.querySelector('.about');
