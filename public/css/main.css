@@ -2413,7 +2413,7 @@ h4 {
 }
 
 .cookies {
-	display: flex;
+	display: none;
 	position: fixed;
 	background-color: #30303090;
 	bottom: 0;

@@ -7,21 +7,25 @@ navToggle.addEventListener("click", () => {
 
 const cajaCookies = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies")
-
-function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies == true) {
-        cajaCookies.style.display = 'none';
-    }
-};
-
-function aceptarCookies() {
-    localStorage.aceptaCookies == true;
-        cajaCookies.style.display = 'none';
-};
+const aceptaCookies = document.cookie;
 
 $(document).ready(function() {
     compruebaAceptaCookies();
 });
+
+function compruebaAceptaCookies() {
+    if (localStorage.aceptaCookies != 'true') {
+        cajaCookies.style.display = 'flex';
+        // localStorage.a === true;
+    }
+};
+
+function aceptarCookies() {
+    localStorage.aceptaCookies = 'true';
+    cajaCookies.style.display = 'none';
+};
+
+
 
 
 btnCookies.addEventListener('click', () => {
