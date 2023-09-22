@@ -255,7 +255,8 @@ body {
 	justify-content: center;
 	justify-items: center;
 	object-fit: fill;
-	image-rendering: optimizeQuality;
+/*	image-rendering: ;*/
+	cursor: default;
 }
 
 
