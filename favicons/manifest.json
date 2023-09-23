@@ -40,6 +40,7 @@
   }
  ],
  "scope": "/",
-  "start_url": "/index.html",
-  "display": "fullscreen"
+ "id": "inversbryan",
+ "start_url": "/index.html",
+ "display": "fullscreen"
 }
