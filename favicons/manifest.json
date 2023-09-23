@@ -1,8 +1,9 @@
 {
- "name": "App",
+ "name": "Inversiones Bryan, S.A.",
+ "short_name": "Inversiones Bryan",
  "icons": [
   {
-   "src": "\/favicons/favicon-32x32.png",
+   "src": "\/favicons/android-chrome-36x36.png",
    "sizes": "36x36",
    "type": "image\/png",
    "density": "0.75"
@@ -14,7 +15,7 @@
    "density": "1.0"
   },
   {
-   "src": "\/favicons/favicon-48px.png",
+   "src": "\/favicons/android-chrome-72x72.png",
    "sizes": "72x72",
    "type": "image\/png",
    "density": "1.5"
@@ -26,7 +27,7 @@
    "density": "2.0"
   },
   {
-   "src": "\/favicons/logo-128px.ico",
+   "src": "\/favicons/android-chrome-144x144.png",
    "sizes": "144x144",
    "type": "image\/x-icon",
    "density": "3.0"
@@ -37,5 +38,8 @@
    "type": "image\/png",
    "density": "4.0"
   }
- ]
+ ],
+ "scope": "/",
+  "start_url": "/index.html",
+  "display": "fullscreen",
 }
