@@ -290,6 +290,8 @@ let slidePhoto = [
     'public/img/remode5.jpg'
 ];
 
+localStorage.setItem("img", slidePhoto);
+
 let album = 0;
 let album1 = 0;
 let album2 = 0;
