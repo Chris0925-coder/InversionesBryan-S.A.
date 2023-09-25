@@ -44,5 +44,6 @@
  "scope": "/",
  "id": "inversbryan",
  "start_url": "/index.html",
- "display": "fullscreen"
+ "display": "fullscreen",
+ "orientation": "portrait"
 }

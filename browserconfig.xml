@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="https://www.inversionesbryan.es/favicons/favicon-48px.png"/><square150x150logo src="https://www.inversionesbryan.es/favicons/logo-128px.ico"/><square310x310logo src="https://www.inversionesbryan.es/favicons/favicon200px.png"/><TileColor>#ffffff</TileColor>
+            <square70x70logo src="https://www.inversionesbryan.es/favicons/favicon-70px.png"/><square150x150logo src="https://www.inversionesbryan.es/favicons/favicon-150px.png"/><square310x310logo src="https://www.inversionesbryan.es/favicons/favicon-310px.png"/><TileColor>#ffffff</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
