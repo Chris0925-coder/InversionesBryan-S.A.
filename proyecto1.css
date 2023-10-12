@@ -1,0 +1,136 @@
+h2 {
+	text-align: center;
+	font-size: xx-large;
+	color: darkgray;
+    border-style: outset;
+    border-radius: 5px;
+    border-width: 10px;
+}
+
+#fondo {
+    background-position: right;
+	height: 120px;
+	width: 200px;
+	background-image: url('img/logo2.png');
+	background-color: rgba(248,248,255,0.8);
+ 	background-repeat: no-repeat;
+    background-size: contain;
+        
+}
+
+#fondo2 {
+	background-size: cover;
+	height: 250px;
+	background-image: url('img/Pisosymallas.jpg');
+    background-repeat: no-repeat;
+	background-position: center;
+}
+/*
+#imagen {
+	background-color: gainsboro;
+	border-radius: 5px;
+	background-position: center;
+	background-image: url('img/logo2.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	opacity: 0.9;
+	border-style: groove;
+	background-position: right;
+
+}
+*/
+#imagen1 {
+	background-color: gainsboro;
+	border-width: thin;
+	border-color: darkgrey;
+	text-align: center;
+	image-rendering: optimizeQuality;
+	align-content: center;
+	animation: ease;
+	padding: 5px;
+	margin: 10px;
+    border-style: solid;
+
+}
+
+h1 {
+	color: blanchedalmond;
+	font-display: fallback;
+	/*text-decoration-line: underline;*/
+	font-style: oblique;
+	text-transform: capitalize;
+	flood-color: darkgray;
+	text-shadow: rgba(0, 0, 0, 0.9);
+	/*text-decoration-style: double;*/
+}
+
+.logo9 {
+	opacity: 0.9;
+	background-blend-mode: luminosity;
+	align-content: flex-end;
+    text-align: center;
+	background-position: center;
+	/*background-image: url('img/logo2.png');*/
+	background-size: ;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 10px;
+	background-color: rgba(128,128,128,0.9);
+	border-style: inset;
+    border-radius: 10px;
+    border-width: 5px;
+	object-position: top;
+	text-shadow: black;
+    color: ghostwhite;
+}
+
+.number {
+	border-style: outset;
+	border-width: 5px;
+	border-color: darkgray;
+	border-radius: 5px;
+	background-color: gray;
+	background-size: contain;
+	padding: 5px;
+	height: 150px;
+}
+
+.tituc {
+	column-rule-style: solid;
+	text-align: center;
+	color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 70px;
+    border-style: outset;
+    border-color: darkgray;
+    border-width: 3px;
+}
+
+.tituca {
+	column-rule-style: solid;
+	text-align: center;
+	color: ghostwhite;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 70px;
+    border-style: outset;
+    border-color: darkgray;
+    border-width: 3px;
+}
+
+.td1 {
+    background-color: ghostwhite;
+    text-align: center;
+    
+}
+
+#whats {   
+	background-color: dimgray;
+    background-color: rgba(248,248,255,0.4);
+    background-position: right;
+    background-size: contain;
+    padding: 20px;
+    border: solid;
+    border-style: outset;
+    border-radius: 20px;
+    
+}
