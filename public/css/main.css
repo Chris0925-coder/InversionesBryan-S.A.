@@ -7,13 +7,16 @@
 }
 
 html {
+	font-display: optional;
+/*	font-family:'Times New Roman', sans-serif;*/
 	height: fit-content;
 /*	font-family:'Gill Sans', sans-serif;*/
 /*	overflow-x: hidden;*/
 }
 
 body {
-	font-family:'Times News Roman', sans-serif;
+	font-display: optional;
+	font-family:'Poppins', sans-serif;
 /* 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
 /*	font-family: cursive;*/
 /*	overflow-x: hidden;*/
@@ -40,7 +43,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	background-image: url('../img/terrenonew.png') !important;
+	background-image: url('../img/terreno.svg') !important;
 	image-rendering: optimizeSpeed;
 /*	image-rendering: ;*/
 	background-position: top;
@@ -95,7 +98,7 @@ body {
 #imagen2 {
 	display: flex;
 	position: relative;
-	background-image: url('../img/pisosymallas.jpg');
+	background-image: url('../img/pisosymallas.png');
 	background-size: cover;
 	background-position: center;
 	object-fit: cover;
@@ -155,17 +158,18 @@ body {
 	margin: 0 10px;
 }
 
-.nav-item{
+.nav-item {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 /*	position: relative;*/
 	list-style: none;
-		margin: 0;
+	margin: 0;
 	padding-left: 0;
 /*	border: 1px solid black;*/
 	min-width: 100px;
 	height: auto;
+	border-bottom: 2px solid #30303000;
 /*	justify-content: flex-end;*/
 
 }
@@ -207,19 +211,18 @@ body {
 /*	border-radius: 3px;*/
 /*  background-color: rgba(140, 150, 160, 0.1);*/
   padding: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 1.0);
+  border-bottom: 2px solid #1c1c1c;
   opacity: 0.8;
 }
 
 .nav-item a:hover:not(.active) {
 /*	position: absolute;*/
 /*  background-color: rgba(170, 170, 170, 0.6);*/
-  top: 100%;
-/*  transform: ;*/
-  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
-  transition: border-bottom 3s ease-in-out;
+  top: 100%;  
+  transition: all 0.5s ease-in-out;
+  border-bottom: 2px solid #30303070;
 /*	transform-style: flat;*/
-	transition-delay: 0.3s;
+/*	transition-delay: 0.8s;*/
 /*	transition-property: border-bottom;*/
 }
 
@@ -249,15 +252,22 @@ body {
 .logo {
 	display: flex;
 	position: relative;
-	height: 170px;
-	width: 300px;
+	height: auto;
+	width: auto;
 	margin: 0;
+	margin-left: 10px;
 	align-content: center;
 	justify-content: center;
 	justify-items: center;
 	object-fit: fill;
 /*	image-rendering: ;*/
 	cursor: default;
+/*	border: 1px solid green;*/
+}
+
+.logo img {
+	width: 300px;
+	height: 170px;
 }
 
 
