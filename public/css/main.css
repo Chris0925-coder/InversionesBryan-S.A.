@@ -8,11 +8,12 @@
 
 html {
 	height: fit-content;
-	font-family:'Gill Sans', sans-serif;
+/*	font-family:'Gill Sans', sans-serif;*/
 /*	overflow-x: hidden;*/
 }
 
 body {
+	font-family:'Times News Roman', sans-serif;
 /* 	background: linear-gradient(to left, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/
 /*	font-family: cursive;*/
 /*	overflow-x: hidden;*/
@@ -1658,8 +1659,6 @@ h4 {
 .gallery-item:not(:hover) {
 	opacity: 0.95;
 	transition: flex 0.4s, opacity 0.30s;
-
-	
 }
 
 .item-image {
