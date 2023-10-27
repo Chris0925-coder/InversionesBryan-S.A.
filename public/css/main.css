@@ -253,23 +253,27 @@ body {
 	display: flex;
 	position: relative;
 	height: 170px;
-	width: 300px;
+	width: 400px;
 	margin: 0;
 	margin-left: 10px;
 	align-content: center;
 	justify-content: center;
 	justify-items: center;
 	object-fit: fill;
-/*	image-rendering: ;*/
+	background-image: url("../img/logo.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	image-rendering: optimizeQuality;
 	cursor: default;
 /*	border: 1px solid green;*/
 }
 
-.logo img {
+/*.logo img {
 	width: auto;
 	height: auto;
 	image-rendering: optimizeQuality;
-}
+}*/
 
 
  /*"Arial",*/
@@ -1820,11 +1824,18 @@ h4 {
 	.nav-item {
 		margin: 20px;
 	}
-	.logo img {
+
+	.logo {
+		background-size: contain;
+/*		border: 1px solid green;*/
+		width: 300px;
+		
+	}
+	/*.logo img {
 		width: 100%;
 		height: 100%;
 
-	}
+	}*/
 	
 	/*body {
 		overflow-x: hidden;
