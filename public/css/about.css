@@ -9,19 +9,24 @@ body {
 	height: 100lvh;
 }
 
-.logo img {
+.logo {
 	display: flex;
 	position: relative;
-	width: auto;
 	height: 170px;
-/*	width: fit-content;*/
+	width: 400px;
 	margin: 0;
-/*	align-content: center;*/
-/*	justify-content: center;*/
-/*	justify-items: center;*/
+	margin-left: 10px;
+	align-content: center;
+	justify-content: center;
+	justify-items: center;
 	object-fit: fill;
-/*	image-rendering: optimizeQuality;*/
-/*	border: 1px solid dimgrey;*/
+	background-image: url("../img/logo.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	image-rendering: optimizeQuality;
+	cursor: default;
+/*	border: 1px solid green;*/
 }
 
 .head-row {
