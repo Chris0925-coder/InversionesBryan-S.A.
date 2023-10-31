@@ -1668,7 +1668,7 @@ h4 {
 /*	color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
 /*	color: white;*/
 	filter: blur(2px);
-	transition: filter 0.8s;
+	transition: all 0.8s;
 }
 
 #insta i:hover {
@@ -1678,7 +1678,7 @@ h4 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: blur(2px);
-  transition: filter 0.8s;
+  transition: all 0.8s;
 }
 
 #faceb i:hover{
