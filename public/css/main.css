@@ -218,7 +218,8 @@ body {
   height: 170px;
 	width: 400px;	
 	margin-left: 20px;
-	object-fit: contain;
+	object-fit: fill;
+	filter: contrast(110%);
 	background-image: url("../img/logo.svg");
 	background-size: cover;
 	background-position: center;
