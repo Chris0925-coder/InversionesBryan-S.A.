@@ -813,6 +813,8 @@ body {
 	font-size: 0.9rem;
 }
 
+
+
 .social i {
 	color: white;
 	margin: 2px;
@@ -952,4 +954,54 @@ body {
 .mv-link li:hover {
 	background-color: rgba(80, 80, 80, 0.1);
 /*	color: #f1f1f1;*/
+}
+
+
+.num {
+	display: flex;
+/*	position: relative;*/
+/*	border: 1px solid white;*/
+/*	justify-content: space-evenly;*/
+	width: auto;
+	height: auto;
+	align-items: center;
+	gap: 1em;
+	border-bottom: 1px solid #ffffff00;
+/*	border: 1px solid white;*/
+}
+
+.num:hover {
+	border-bottom: 1px solid #ffff;
+	transition: all .4s;
+/*	box-shadow: 1px 1px 5px #25D366;*/
+}
+
+.whatsapp {
+	display: block;
+	position: relative;
+	width: auto;
+	height: auto;
+/*	border-radius: 50%;*/
+/*	padding: 1%;*/
+	color: white;
+/*	border: 1px solid white;*/
+}
+
+.whatsapp-icon {
+	display: flex;
+/*	position: relative;*/
+	/*background-image: url('../img/whatsapp.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;*/
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin: 10%;
+	background-color: #25D366;
+	background-image: url('../img/whatsapp.svg');
+	background-size: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+/*	background-color: linear-gradient(45deg, #E5FFCC, #1EBEA5, #00E676, #D0E9EA, #EDF8F5, #ffffff);*/
 }
