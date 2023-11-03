@@ -966,14 +966,20 @@ body {
 	height: auto;
 	align-items: center;
 	gap: 1em;
-	border-bottom: 1px solid #ffffff00;
+/*	border-bottom: 1px solid #ffffff00;*/
 /*	border: 1px solid white;*/
 }
 
-.num:hover {
-	border-bottom: 1px solid #ffff;
+
+.mail a:hover,
+.num a:hover {
+	border-radius: 1px;
+	box-sizing: content-box;
+	box-shadow: 1px 2px 5px 1px dimgrey;
+	padding: 5px;
+	text-decoration: none;
 	transition: all .4s;
-/*	box-shadow: 1px 1px 5px #25D366;*/
+/*	transition: 0.2s;*/
 }
 
 .whatsapp {
