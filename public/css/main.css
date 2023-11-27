@@ -73,12 +73,12 @@ body {
 	display: flex;
 	position: relative;
 	background-image: url('../img/pisosymallas.png');
-	background-size: cover;
+	background-size: 100% 100%;
 	background-position: center;
-	object-fit: cover;
-	width: 100%;
+	object-fit: fill;
+	width: auto;
 	height: 230px;
-	margin: 0 0 5px 0;
+	margin: 0 0 0.2em 0;
 	padding: 0;
 	border-radius: 2px;
 }
