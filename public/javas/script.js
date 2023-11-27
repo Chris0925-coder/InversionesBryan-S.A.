@@ -14,7 +14,7 @@ function compruebaAceptaCookies() {
 
 function aceptarCookies() {
     localStorage.aceptaCookies == 'true';
-        cajacookies.style.display = 'none';
+    cajacookies.style.display = 'none';
 };
 
 $(document).ready(function() {
@@ -383,3 +383,16 @@ send.addEventListener("click", () => {
 // };
 
 // preventDefault();
+
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    if (response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:darkred;">This field is required.</span>';
+        return false;
+    };
+    return true;
+};
+
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+};

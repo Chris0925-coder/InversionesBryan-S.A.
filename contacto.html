@@ -66,6 +66,9 @@
   <!-- <script type='text/javascript' src='//pl18354010.highcpmrevenuenetwork.com/7e/64/91/7e649166d7d04dfa087232def38c2811.js'></script> -->
   <script defer type="text/JavaScript" src="public/javas/script.js"></script>
 
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
   <main>
@@ -148,14 +151,14 @@
   <div class="container-fluid">
     <div class="bann ms-auto">
       <div class="p5">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-8 offset-md-10">
           <div class="card">
             <div class="card-header bg-dark text-white text-center">
               <h1>CONTACTO</h1>
             </div>
             <div class="card-body" id="formulario">
               <!-- action="https://formsubmit.co/a35ced8a00684427b681258063fdcbaa" -->
-              <form action="https://formsubmit.co/a151fc117062d9f8403bb11fb85552f0" method="post" id="form1">
+              <form action="https://formsubmit.co/a151fc117062d9f8403bb11fb85552f0" method="post" id="form1" onsubmit="return submitUserForm()">
                 <div class="form-group">
                   <input class="form-control" type="email" name="email"  placeholder="Email" autocomplete="on">
                 </div>
@@ -164,6 +167,17 @@
               <!-- <form action="" class="formulario"> -->
                 <div class="form-group">
                   <textarea class="form-control" type="text"  name="control"  placeholder="Comentarios" cols="30" rows="10" required></textarea>
+                </div>
+                <!-- <div class="form-group">
+                  <label>Envía tu curriculum</label> <br>
+                  <input class="form-control" type="file"  name="file"  placeholder="CV">
+                </div> -->
+                <div class="form-group">
+                    <!-- <div id="html_element"></div> -->
+                    <div class="g-recaptcha form-control" data-sitekey="6Le1UBwpAAAAAHzagcQvjzbPGK2g7TvoJiLyNSO5" data-callback="verifyCaptcha">   
+                    </div>
+                    <div id="g-recaptcha-error"></div>
+
                 </div>
               <br>
                 <div class="form-group">
