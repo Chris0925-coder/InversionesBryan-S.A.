@@ -131,8 +131,9 @@ send.addEventListener("click", () => {
     // const mail = document.getElementsByName("mail").value;
     // const control = document.getElementsByName("control").value;
     localStorage.aceptaCookies === "true";
-    
-    if (mail !== "" || message !== "") {
+    response = grecaptcha.getResponse();
+    console.log(response);
+    if (mail !== "" && message !== "" && response.length !== 0) {
 
         // comm = document.querySelector("#task");
         // const enviarFormulario = (event) => {
@@ -173,12 +174,13 @@ send.addEventListener("click", () => {
     comm.append(div);
 
 
-
+    // return true;
     // mes.insertAdjacentHTML("afterend", message1);
     
 } else {
+    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
     alert("Rellene los espacios en blanco");
-    
+    // return;
 }
 });
 
@@ -332,24 +334,12 @@ send.addEventListener("click", () => {
 // bien.addEventListener("", () => {
 //     come.classList.toggle("#");
 // });
-
-
-
-
-
 // const arrow = document.querySelectorAll(".arrow");
 // const pro = document.querySelectorAll(".proyectos1");
 
 // arrow.addEventListener("click", () => {
 //     pro.classList.toggle("proyecto")
 // });
-
-
-
-
-
-
-
 
 // function sendMail(name, email, subject, message) {
 //   const myHeaders = new Headers();
@@ -387,7 +377,7 @@ send.addEventListener("click", () => {
 function submitUserForm() {
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:darkred;">This field is required.</span>';
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
         return false;
     };
     return true;
