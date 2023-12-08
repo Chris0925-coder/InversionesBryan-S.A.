@@ -36,7 +36,7 @@ btnCookies.addEventListener('click', () => {
 const body = document.querySelector('body');
 
 const crearNieve = () => {
-    let copo = document.createElement('i');
+    let copo = document.createElement('small');
     let x = innerWidth * Math.random();
     let size = (Math.random() * 8) + 2;
     let z = Math.round(Math.random()) * 100;
@@ -51,7 +51,7 @@ const crearNieve = () => {
     copo.style.animationDuration = anima + 's';
 
     body.appendChild(copo);
-    
+
     setTimeout(() => {
         copo.remove();
     }, anima * 1000);
