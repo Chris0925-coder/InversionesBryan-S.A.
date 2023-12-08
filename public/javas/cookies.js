@@ -40,7 +40,7 @@ const crearNieve = () => {
     let x = innerWidth * Math.random();
     let size = (Math.random() * 8) + 2;
     let z = Math.round(Math.random()) * 100;
-    let delay = Math.random() * 5;
+    let delay = Math.random() * 15;
     let anima = (Math.random() * 10) + 5;
 
     copo.style.left = x + 'px';
