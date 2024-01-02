@@ -237,6 +237,20 @@ small {
 	cursor: default;
 }
 
+/*.navidad {
+	display: block;
+	position: absolute;
+	background-image: url("../img/navidad.jpg");
+	background-size: contain;
+	object-fit: fill;
+	border-radius: 40%;
+	opacity: 0.9;
+	right: 10%;
+	bottom: 7%;
+	width: 10px;
+	height: 10px;
+}
+*/
  /*"Arial",*/
 .name1 {
 	display: flex;
@@ -1144,6 +1158,11 @@ h4 {
 .primary-gallery {
 		display: none;
 	}
+
+
+/*.date {
+	text-decoration: none;
+}*/
 
 @media screen and (max-width: 768px) {
 	.head-row {

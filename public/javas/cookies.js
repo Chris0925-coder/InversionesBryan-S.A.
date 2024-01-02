@@ -33,31 +33,41 @@ btnCookies.addEventListener('click', () => {
 });
 
 
-const body = document.querySelector('body');
 
-const crearNieve = () => {
-    let copo = document.createElement('small');
-    let x = innerWidth * Math.random();
-    let size = (Math.random() * 8) + 2;
-    let z = Math.round(Math.random()) * 100;
-    let delay = Math.random() * 10;
-    let anima = (Math.random() * 10) + 5;
 
-    copo.style.left = x + 'px';
-    copo.style.width = size + 'px';
-    copo.style.height = size + 'px';
-    copo.style.zIndex = z;
-    copo.style.animationDelay = delay + 's';
-    copo.style.animationDuration = anima + 's';
 
-    body.appendChild(copo);
+// SNOW
+// const body = document.querySelector('body');
+// const crearNieve = () => {
+//     let copo = document.createElement('small');
+//     let x = innerWidth * Math.random();
+//     let size = (Math.random() * 8) + 2;
+//     let z = Math.round(Math.random()) * 100;
+//     let delay = Math.random() * 10;
+//     let anima = (Math.random() * 10) + 5;
 
-    setTimeout(() => {
-        copo.remove();
-    }, anima * 1000);
-};
+//     copo.style.left = x + 'px';
+//     copo.style.width = size + 'px';
+//     copo.style.height = size + 'px';
+//     copo.style.zIndex = z;
+//     copo.style.animationDelay = delay + 's';
+//     copo.style.animationDuration = anima + 's';
 
-setInterval(crearNieve, 500);
+//     body.append(copo);
+
+//     setTimeout(() => {
+//         copo.remove();
+//     }, anima * 1000);
+// };
+
+// setInterval(crearNieve, 500);
+// SNOW
+
+
+
+
+
+
 
 // let about = document.querySelector('.about');
 // let sobre = document.querySelector('.sobre');
@@ -568,6 +578,10 @@ cerrar.addEventListener('click', () => {
     light.style.display = 'none';
 });
 
+
+let date = document.querySelector('.date');
+
+date.append(new Date ().getFullYear ());
 
 // function plusSlidesA() {
 

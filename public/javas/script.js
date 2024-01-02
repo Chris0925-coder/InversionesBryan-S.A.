@@ -6,20 +6,20 @@ navToggle.addEventListener("click", () => {
 });
 
 
-function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies == 'true') {
-        cajacookies.style.display = 'none';
-    }
-};
+// function compruebaAceptaCookies() {
+//     if (localStorage.aceptaCookies == 'true') {
+//         cajacookies.style.display = 'none';
+//     }
+// };
 
-function aceptarCookies() {
-    localStorage.aceptaCookies == 'true';
-    cajacookies.style.display = 'none';
-};
+// function aceptarCookies() {
+//     localStorage.aceptaCookies == 'true';
+//     cajacookies.style.display = 'none';
+// };
 
-$(document).ready(function() {
-    compruebaAceptaCookies();
-});
+// $(document).ready(function() {
+//     compruebaAceptaCookies();
+// });
 
 // let st = setTimeout(showSlides,6000);
 
@@ -386,3 +386,8 @@ function submitUserForm() {
 function verifyCaptcha() {
     document.getElementById('g-recaptcha-error').innerHTML = '';
 };
+
+
+let date = document.querySelector('.date');
+
+date.append(new Date ().getFullYear ());
