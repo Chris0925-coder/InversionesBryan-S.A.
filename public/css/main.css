@@ -192,7 +192,7 @@ body {
 
 
 .navbar-nav a.active {
-  padding: 3px;
+  padding: 0.3em;
   border-bottom: 2px solid #1c1c1c;
   opacity: 0.8;
 }
@@ -233,9 +233,11 @@ body {
 	object-fit: fill;
 	filter: contrast(110%);
 	background-image: url("../img/logo.svg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	aspect-ratio: 3/2;
+	mix-blend-mode: color-dodge;
 /*	image-rendering: optimizeQuality;*/
 	cursor: default;
 }
