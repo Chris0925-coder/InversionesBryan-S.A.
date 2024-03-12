@@ -273,7 +273,7 @@ h1, h4 {
   padding: 2px;
   background-size: contain;
   margin: 2px;
-  /*object-position: center;*/
+  object-position: center;
   /*overflow: auto;*/
   object-fit: cover;
   max-width: 100%;
