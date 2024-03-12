@@ -351,7 +351,7 @@ body {
 	isolation: isolate;
 	display: flex;
 	flex: 1;
-	height: 700px;
+	height: 500px;
 /*	background: linear-gradient(336deg, rgba(0, 0, 0, .6)0%, rgba(0, 0, 0, 0.0)100%);*/
 	padding: 25px;
 	opacity: 1;
@@ -524,7 +524,7 @@ body {
 .imagenX {
 	display: flex;
 	position: relative;
-	background-image: url('');
+/*	background-image: url('');*/
 	background-size: contain;
 	background-position: center;
 /*	background: center;*/

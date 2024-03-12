@@ -324,7 +324,8 @@ let slidePhoto = [
     'public/img/remode2.jpg',
     'public/img/remode3.jpg',
     'public/img/remode4.jpg',
-    'public/img/remode5.jpg'
+    'public/img/remode5.jpg',
+    'public/img/cocina.jpg'
 ];
 
 localStorage.setItem("img", slidePhoto);
@@ -349,6 +350,25 @@ let caja6 = document.querySelector('.caja6');
 // let caja4 = document.querySelector('#caja4');
 // let lightcierre = document.querySelector(".lightcierre")
  
+ function back(a) {
+    atras.addEventListener('click', () => {
+            for (i = 0; i < slidePhoto.length; i++) {
+                // console.log(i);
+                imageX.style.backgroundImage = `url(${slidePhoto[i]})`;
+            };
+        //     slidePhoto = [
+        //     'public/img/casap1.jpg',
+        //     'public/img/casap2.jpg',
+        //     'public/img/casapenonome.jpg',
+        //     'public/img/casap3.jpg'
+        // ];
+            // slidePhoto;
+            // album = 0;
+            album1--;
+            if (album1 < 0) {album1 = a};
+            imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
+        });
+ }
 
 function cage1(a){ 
 
@@ -368,13 +388,15 @@ function cage1(a){
         'public/img/proyecto8.jpg',
         'public/img/proyecto4.jpg'
     ];
+
+    back(8); 
     // retroceso();
     // album = 2;
-    atras.addEventListener('click', () => {
-        album--;
-        if (album < 0) {album = 8};
-            imageX.style.backgroundImage = `url(${slidePhoto[album]})`;   
-    });
+    // atras.addEventListener('click', () => {
+    //     album--;
+    //     if (album < 0) {album = 8};
+    //         imageX.style.backgroundImage = `url(${slidePhoto[album]})`;   
+    // });
 });
 };
 cage1(caja1);
@@ -382,42 +404,44 @@ cage1(caja4);
 
 
 function cage2(b){
-b.addEventListener('click', () => {
-    addPhotos();
-    // album = 0;
-    // album = 2;
-    slidePhoto = [
-        'public/img/casap1.jpg',
-        'public/img/casap2.jpg',
-        'public/img/casapenonome.jpg',
-        'public/img/remode1.jpg',
-        'public/img/remode2.jpg',
-        'public/img/remode3.jpg',
-        'public/img/remode4.jpg',
-        'public/img/remode5.jpg',
-        'public/img/casap3.jpg'
-    ];
-
-    imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
-    // album = 0;
-    atras.addEventListener('click', () => {
-        // for (i = 0; i < slidePhoto.length; i++) {
-            // console.log(i);
-        //     imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
-        // };
-    //     slidePhoto = [
-    //     'public/img/casap1.jpg',
-    //     'public/img/casap2.jpg',
-    //     'public/img/casapenonome.jpg',
-    //     'public/img/casap3.jpg'
-    // ];
-        // slidePhoto;
+    b.addEventListener('click', () => {
+        addPhotos();
         // album = 0;
-        album1--;
-        if (album1 < 0) {album1 = 8};
-        imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;   
+        // album = 2;
+        slidePhoto = [
+            'public/img/casap1.jpg',
+            'public/img/casap2.jpg',
+            'public/img/cocina.jpg',
+            'public/img/casapenonome.jpg',
+            'public/img/remode1.jpg',
+            'public/img/remode2.jpg',
+            'public/img/remode3.jpg',
+            'public/img/remode4.jpg',
+            'public/img/remode5.jpg',
+            'public/img/casap3.jpg'
+        ];
+
+        imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
+        // album = 0;
+        back(9);
+        // atras.addEventListener('click', () => {
+            // for (i = 0; i < slidePhoto.length; i++) {
+                // console.log(i);
+                // imageX.style.backgroundImage = `url(${slidePhoto[i]})`;
+            // };
+        //     slidePhoto = [
+        //     'public/img/casap1.jpg',
+        //     'public/img/casap2.jpg',
+        //     'public/img/casapenonome.jpg',
+        //     'public/img/casap3.jpg'
+        // ];
+            // slidePhoto;
+            // album = 0;
+            // album1--;
+            // if (album1 < 0) {album1 = 9};
+            // imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
+        // });
     });
-});
 };
 cage2(caja2);
 cage2(caja5);
@@ -425,34 +449,34 @@ cage2(caja5);
 
 
 function cage3(c){
-c.addEventListener('click', () => {
-    addPhotos();
-    // album = 0;
-    slidePhoto = [
-        'public/img/Mejorandocaminos.jpg',
-        'public/img/camino.jpg',
-        'public/img/Mejorandoelcampo.jpg'
-    ];
-    imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;
-    
-    // album = 2;
-    // album++;
-     atras.addEventListener('click', () => {
-        // for (i = 0; i < slidePhoto.length; i++) {
-            // console.log(i);
-        //     imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
-        // };
-    //     slidePhoto = [
-    //     'public/img/Mejorandocaminos.jpg',
-    //     'public/img/camino.jpg',
-    //     'public/img/Mejorandoelcampo.jpg'
-    // ];
-    // album = 0;
-        album2--;
-        if (album2 < 0) {album2 = 2};
-        imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;   
+    c.addEventListener('click', () => {
+        addPhotos();
+        // album = 0;
+        slidePhoto = [
+            'public/img/Mejorandocaminos.jpg',
+            'public/img/Mejorandoelcampo.jpg',
+            'public/img/camino.jpg'
+        ];
+        imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;
+        back(2); 
+        // album = 2;
+        // album++;
+         // atras.addEventListener('click', () => {
+            // for (i = 0; i < slidePhoto.length; i++) {
+                // console.log(i);
+            //     imageX.style.backgroundImage = `url(${slidePhoto[i-1]})`;
+            // };
+        //     slidePhoto = [
+        //     'public/img/Mejorandocaminos.jpg',
+        //     'public/img/camino.jpg',
+        //     'public/img/Mejorandoelcampo.jpg'
+        // ];
+        // album = 0;
+        //     album2--;
+        //     if (album2 < 0) {album2 = 2};
+        //     imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;   
+        // });
     });
-});
 };
 cage3(caja3);
 cage3(caja6);
@@ -480,6 +504,8 @@ cage3(caja6);
 // let crear = document.createElement("div");
 //         crear.className = "light-box";
         // article += crear;
+
+
         
 next.addEventListener('click', () => {
     // let i = 0;
