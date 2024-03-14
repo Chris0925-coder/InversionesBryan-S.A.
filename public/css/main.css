@@ -358,7 +358,6 @@ body {
 	overflow: hidden;
 	transition: flex 0.5, opacity 0.25s;
 	margin-bottom: 20px;
-
 }
 
 .gallery-item:hover {
@@ -954,18 +953,16 @@ body {
 		flex-direction: row;
 	}
 
-	.gallery-wrapper {
-		flex-direction: row;
-	}
-
 	.gallery-item {
 		max-height: 1900px;
 		margin: 0;
+/*		object-fit: cover;*/
 	}
 
-	.gallery-item:hover {
-		object-fit: fill;
-	}
+/*	.gallery-item:hover {*/
+/*		object-fit: fill;*/
+/*		transition: all .8s ease-in-out;*/
+/*	}*/
 
 	.item-image {
 		max-height: 1900px;
@@ -974,12 +971,18 @@ body {
 	.item-image:hover {
 		object-fit: fill;
 		padding: 5px;
-		animation: mover-izq-der 3s 1;
+/*		animation: mover-izq-der 3s 1;*/
+		transition: all .5s ease-in-out;
 	}
 
-	.item-image {
-		transform: translateY(10px);
+	.item-image:not(:hover) {
+		object-fit: cover;
+		transition: all .5s ease-in-out;
 	}
+
+	/*.item-image {
+		transform: translateY(10px);
+	}*/
 
 	.name {
 		font-size: 1.1rem;

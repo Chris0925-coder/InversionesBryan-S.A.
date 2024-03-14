@@ -347,6 +347,8 @@ let caja3 = document.querySelector('.caja3');
 let caja4 = document.querySelector('.caja4');
 let caja5 = document.querySelector('.caja5');
 let caja6 = document.querySelector('.caja6');
+let caja7 = document.querySelector('.caja7');
+let caja8 = document.querySelector('.caja8');
 // let caja4 = document.querySelector('#caja4');
 // let lightcierre = document.querySelector(".lightcierre")
  
@@ -400,7 +402,7 @@ function cage1(a){
 });
 };
 cage1(caja1);
-cage1(caja4);
+cage1(caja5);
 
 
 function cage2(b){
@@ -411,19 +413,19 @@ function cage2(b){
         slidePhoto = [
             'public/img/casap1.jpg',
             'public/img/casap2.jpg',
-            'public/img/cocina.jpg',
+            // 'public/img/cocina.jpg',
             'public/img/casapenonome.jpg',
-            'public/img/remode1.jpg',
-            'public/img/remode2.jpg',
-            'public/img/remode3.jpg',
-            'public/img/remode4.jpg',
-            'public/img/remode5.jpg',
+            // 'public/img/remode1.jpg',
+            // 'public/img/remode2.jpg',
+            // 'public/img/remode3.jpg',
+            // 'public/img/remode4.jpg',
+            // 'public/img/remode5.jpg',
             'public/img/casap3.jpg'
         ];
 
         imageX.style.backgroundImage = `url(${slidePhoto[album1]})`;
         // album = 0;
-        back(9);
+        back(3);
         // atras.addEventListener('click', () => {
             // for (i = 0; i < slidePhoto.length; i++) {
                 // console.log(i);
@@ -444,11 +446,29 @@ function cage2(b){
     });
 };
 cage2(caja2);
-cage2(caja5);
-
-
+cage2(caja6);
 
 function cage3(c){
+    c.addEventListener('click', () => {
+        addPhotos();
+        // album = 0;
+        slidePhoto = [
+            'public/img/remode1-n.jpg',
+            'public/img/cocina.jpg',
+            'public/img/remode3-n.jpg',
+            'public/img/remode2-n.jpg',
+            'public/img/remode5.jpg'
+        ];
+        imageX.style.backgroundImage = `url(${slidePhoto[album2]})`;
+        back(4);
+    });
+};
+cage3(caja3);
+cage3(caja7);
+
+
+
+function cage4(c){
     c.addEventListener('click', () => {
         addPhotos();
         // album = 0;
@@ -478,8 +498,8 @@ function cage3(c){
         // });
     });
 };
-cage3(caja3);
-cage3(caja6);
+cage4(caja4);
+cage4(caja8);
 // caja4.addEventListener('click', () => {
 //     addPhotos();
 //     imageX.style.backgroundImage = "url('public/img/remode5.jpg')";
