@@ -635,3 +635,9 @@ h1, h4 {
 	cursor: pointer;
 	color: #113aff;
 }
+
+.ads {
+	display: grid;
+	place-content: center;
+	overflow: hidden;
+}
