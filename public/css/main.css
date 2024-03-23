@@ -53,6 +53,7 @@ body {
 	width: 300px;
 	height: 600px;
 	padding: 5px;
+	top: 10%;
 	margin: 0;
 	object-position: center;
 }
@@ -79,15 +80,16 @@ body {
 	display: none;
 	position: fixed;
 	flex-direction: row-reverse;
-	color: #2B2B2B;;
+	color: #2B2B2B;
 	background-color: rgba(250, 250, 250, 1.0);
 	height: fit-content;
 	cursor: context-menu;
 	right: 0;
+	top: 10%;
 	padding: 2px;
 	transform: rotateZ(45deg);
 	font-size: 0.5rem;
-	z-index: 3000;
+	z-index: 2000;
 }
 
 .head-row {
@@ -294,7 +296,7 @@ body {
 	object-fit: cover;
 	background-repeat: no-repeat;
 	color: white;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	margin: 0;
 	position: relative;
 /*	background-image: linear-gradient(180deg, #0000008c 0%, #ffffff7c 100%), url('../img/bannerdef.png');*/
@@ -923,6 +925,7 @@ body {
 /*		margin-top: 0;*/
 		padding-top: 0;
 		object-fit: contain;
+		top: 10%;
 	}
 
 	.publicidadIB figcaption {
@@ -933,13 +936,13 @@ body {
 		margin: 0;
 	}
 
-	.terreno_invisible {
+	/*.terreno_invisible {
 		top: 80px;
-	}
+	}*/
 
-	.closeP {
+	/*.closeP {
 		top: 80px;
-	}
+	}*/
 
 	.logoPie {
 		margin: 0;
