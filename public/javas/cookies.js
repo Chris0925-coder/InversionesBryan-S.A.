@@ -141,9 +141,9 @@ close.addEventListener('click', () => {
 });
 
 terreno.addEventListener('click', () => {
-    window.open("https://api.whatsapp.com/send?phone=50762926292?text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno", "ventana", "width=120 height=300 scrollbars=YES");
+    window.open("https://api.whatsapp.com/send?phone=50762926292&text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno", "ventana", "width=120 height=300 scrollbars=YES");
 });
-
+// %20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno
 // let myPage = ("https://www.inversionesbryan.com/");
 
 
