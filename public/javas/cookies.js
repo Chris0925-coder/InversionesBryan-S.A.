@@ -25,16 +25,9 @@ function aceptarCookies() {
     cajaCookies.style.display = 'none';
 };
 
-
-
-
 btnCookies.addEventListener('click', () => {
     aceptarCookies();
 });
-
-
-
-
 
 // SNOW
 // const body = document.querySelector('body');
@@ -143,9 +136,6 @@ close.addEventListener('click', () => {
 terreno.addEventListener('click', () => {
     window.open("https://api.whatsapp.com/send?phone=50762926292&text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno", "ventana", "width=120 height=300 scrollbars=YES");
 });
-// %20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno
-// let myPage = ("https://www.inversionesbryan.com/");
-
 
 
 function ventana(url) {
@@ -161,10 +151,8 @@ function ventana(url) {
         window.close();
         window.open("https://www.google.com/", "_self");
         
-        
-        // return false;
     }
-    // return false;
+
 };
 
 function ventana2(url) {
@@ -185,130 +173,6 @@ function ventana2(url) {
     }
     
 };
-// let vix = document.querySelector(".ver");
-// let cajaProjectos =document.querySelector(".proyectos");
-
-
-
-
-
-
-
-// ***BOTON DE VER MAS***
-
-// let more = document.querySelector(".more");
-// let more1 = document.querySelector(".more1");
-// let remodelaciones = document.querySelector(".remodelaciones");
-// let suma = 1;
-
-// more.addEventListener('click', () => {
-//     cajaProjectos.classList.toggle("ver");
-//     remodelaciones.classList.toggle("re");
-//     suma++;
-//     console.log(suma );
-//     if (suma % 2 == 0) {
-//         more.innerHTML = "Regresar";
-//     } else {
-//         more.innerHTML = "Más";
-//     }
-// });
-
-
-// ***BOTON DE VER MAS***
-
-
-
-
-
-
-
-// more1.addEventListener('click', () => {
-//     remodelaciones.style.display = 'none';
-//     cajaProjectos.style.display = 'block';
-//         more1.style.display = 'none';
-//         more.style.display = 'flex'; 
-// });
-
-// let slideIndexA = 0;
-
-
-// function plusSlidesA() {
-//     clearInterval(tiempoSlide);
-//         for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//         slides2[i].style.display = "none";
-        
-//         };
-
-//         for (j = 0; j < slides1.length; j++) {
-        
-//         slides1[j].style.display = "none";
-//         };
-
-//     slideIndex++;
-//     slideIndexA++;
-
-//     if (slideIndex > slides.length) {slideIndex = 1};
-//     if (slideIndexA > slides1.length) {slideIndexA = 1};
-//     slides[slideIndex-1].style.display = "block";
-//     slides1[slideIndexA-1].style.display = "block";
-//     slides2[slideIndex-1].style.display = "block";
-// };
-
-// function plusSlidesB() {
-//     clearInterval(tiempoSlide);
-//     for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//     slides2[i].style.display = "none";
-//     };
-
-//     for (j = 0; j < slides1.length; j++) {
-//     slides1[j].style.display = "none";
-//     };
-
-//     slideIndex--;
-//     slideIndexA--;
-
-//     if(slideIndex < 0) {
-//         slideIndex = 2;
-//     };
-//     if(slideIndexA < 0) {
-//         slideIndexA = 3;
-//     }
-//     slides[slideIndex].style.display = "block";
-//     slides1[slideIndexA].style.display = "block";
-//     slides2[slideIndex].style.display = "block";
-// };
-
-
-
-
-
-
-
-
-
-
-
-// let fotos = document.getElementsByClassName("fotos");
-
-// galeria.addEventListener('click', sliderGaleria); 
-
-
-// function sliderGaleria() {
-
-//     let lightBox = document.querySelectorAll(".light-box");
-//     let light = document.querySelector(".light");
-//     light.style.display = "flex";
-// };
-
-
-// sliderGaleria();
-
-
-
-// const photos = document.querySelector('#photo');
-
 
 let slidePhoto = [
     'public/img/proyecto9-n.jpg',
@@ -328,7 +192,9 @@ let slidePhoto = [
     'public/img/cocina.jpg'
 ];
 
-localStorage.setItem("img", slidePhoto);
+let images = JSON.stringify(slidePhoto);
+
+localStorage.setItem("HomeIMGs", images);
 
 let album = 0;
 let album1 = 0;
@@ -355,7 +221,7 @@ let caja8 = document.querySelector('.caja8');
  function back(a) {
     atras.addEventListener('click', () => {
             for (i = 0; i < slidePhoto.length; i++) {
-                // console.log(i);
+
                 imageX.style.backgroundImage = `url(${slidePhoto[i]})`;
             };
         //     slidePhoto = [
@@ -528,13 +394,9 @@ cage4(caja8);
 
         
 next.addEventListener('click', () => {
-    // let i = 0;
-    // if (i < slidePhoto.length)  {
-        // do {
-        // i++;
-        
+
     for (i = 0; i < slidePhoto.length; i++) {
-        // console.log(i);
+
         imageX.style.backgroundImage = `url(${slidePhoto[i]})`;
     };
 
