@@ -428,6 +428,6 @@ function verifyCaptcha() {
 };
 
 
-let date = document.querySelector('.date');
+// let date = document.querySelector('.date');
 
-date.append(new Date ().getFullYear ());
+// date.append(new Date ().getFullYear ());
