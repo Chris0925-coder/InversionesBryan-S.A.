@@ -1,33 +1,25 @@
-let navToggle = document.querySelector(".navbar-toggler");
-let navLink = document.querySelector(".navbar-nav");
 
-navToggle.addEventListener("click", () => {
-    navLink.classList.toggle("navbar-nav_visible")
-});
 
-const cajaCookies = document.querySelector(".cookies");
-const btnCookies = document.querySelector(".btn-cookies")
-const aceptaCookies = document.cookie;
 
-$(document).ready(function() {
-    compruebaAceptaCookies();
-});
+// $(document).ready(function() {
+//     compruebaAceptaCookies();
+// });
 
-function compruebaAceptaCookies() {
-    if (localStorage.aceptaCookies != 'true') {
-        cajaCookies.style.display = 'flex';
-        // localStorage.a === true;
-    }
-};
+// function compruebaAceptaCookies() {
+//     if (localStorage.aceptaCookies != 'true') {
+//         cajaCookies.style.display = 'flex';
+//         // localStorage.a === true;
+//     }
+// };
 
-function aceptarCookies() {
-    localStorage.aceptaCookies = 'true';
-    cajaCookies.style.display = 'none';
-};
+// function aceptarCookies() {
+//     localStorage.aceptaCookies = 'true';
+//     cajaCookies.style.display = 'none';
+// };
 
-btnCookies.addEventListener('click', () => {
-    aceptarCookies();
-});
+// btnCookies.addEventListener('click', () => {
+//     aceptarCookies();
+// });
 
 // SNOW
 // const body = document.querySelector('body');

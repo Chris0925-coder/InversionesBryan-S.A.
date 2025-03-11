@@ -1,4 +1,4 @@
-function compruebaAceptaCookies() {
+/*function compruebaAceptaCookies() {
     if (localStorage.aceptaCookies == 'true') {
         cajacookies.style.display = 'none';
     }
@@ -34,16 +34,16 @@ function ventana2(url) {
         window.close("https://www.inversionesbryan.es/aboutus.html");
     }
     
-};
+};*/
 
 
-let navToggle = document.querySelector(".navbar-toggler");
-let navLink = document.querySelector(".navbar-nav");
+// let navToggle = document.querySelector(".navbar-toggler");
+// let navLink = document.querySelector(".navbar-nav");
 
-navToggle.addEventListener("click", () => {
-    navLink.classList.toggle("navbar-nav_visible");
-});
+// navToggle.addEventListener("click", () => {
+//     navLink.classList.toggle("navbar-nav_visible");
+// });
 
-let date = document.querySelector('.date');
+// let date = document.querySelector('.date');
 
-date.append(new Date ().getFullYear ());
+// date.append(new Date ().getFullYear ());

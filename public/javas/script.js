@@ -6,6 +6,49 @@ navToggle.addEventListener("click", () => {
 });
 
 
+
+
+function compruebaAceptaCookies() {
+    if (localStorage.aceptaCookies == 'true') {
+        cajacookies.style.display = 'none';
+    }
+};
+
+function aceptarCookies() {
+    localStorage.aceptaCookies == 'true';
+        cajacookies.style.display = 'none';
+};
+
+// $(document).ready(function() {
+    compruebaAceptaCookies();
+// });
+
+function ventana(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Política de privacidad");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.es/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        window.close("https://www.inversionesbryan.es/aboutus.html");
+    }
+};
+
+function ventana2(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Términos y Condiciones");
+    if (show === true) {
+
+        let uno = window.open("https://www.inversionesbryan.es/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        window.close("https://www.inversionesbryan.es/aboutus.html");
+    }
+    
+};
+
+
+
+
 // function compruebaAceptaCookies() {
 //     if (localStorage.aceptaCookies == 'true') {
 //         cajacookies.style.display = 'none';
@@ -24,31 +67,28 @@ navToggle.addEventListener("click", () => {
 // let st = setTimeout(showSlides,6000);
 
 
-function ventana(url) {
-    localStorage.aceptaCookies === 'true';
-    let show = window.confirm("Política de privacidad");
-    if (show === true) {
+// function ventana(url) {
+//     localStorage.aceptaCookies === 'true';
+//     let show = window.confirm("Política de privacidad");
+//     if (show === true) {
 
-        window.open("https://www.inversionesbryan.es/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
-    } else {
-        window.close();
-        // history.back()
-        // window.close("https://www.inversionesbryan.com");
-    }
-};
+//         window.open("https://www.inversionesbryan.es/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
+//     } else {
+//         window.close();
+//     }
+// };
 
-function ventana2(url) {
-    localStorage.aceptaCookies === 'true';
-    let show = window.confirm("Términos y Condiciones");
-    if (show === true) {
+// function ventana2(url) {
+//     localStorage.aceptaCookies === 'true';
+//     let show = window.confirm("Términos y Condiciones");
+//     if (show === true) {
 
-        let uno = window.open("https://www.inversionesbryan.es/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
-    } else {
-        window.close();
-        // window.close("https://www.inversionesbryan.com");
-    }
+//         let uno = window.open("https://www.inversionesbryan.es/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+//     } else {
+//         window.close();
+//     }
     
-};
+// };
 
 // let comment = document.querySelector(".btn"); 
 // let ff = document.querySelector("form-control"); 
