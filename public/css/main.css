@@ -561,7 +561,7 @@ body {
 #imagen2 {
 	display: flex;
 	position: relative;
-	background-image: url('../img/pisosymallas.png');
+	background-image: url('../img/avif/pisosymallas.avif');
 	background-size: 100% 100%;
 	background-position: center;
 	object-fit: fill;
