@@ -50,7 +50,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	background-image: url('../img/terreno.svg');
+	background-image: url('../img/webp/terreno.webp');
 	image-rendering: optimizeSpeed;
 	background-position: top;
 	background-size: contain;
@@ -296,7 +296,7 @@ body {
 .imagen {
 	height: 366px;
 	width: 100%;
-	background-image: url("../img/bannerdef.png");
+	background-image: url("../img/webp/bannerdef.webp");
 	background-size: cover;
 	background-position: center;
 	display: flex;
@@ -730,7 +730,7 @@ body {
 }
 
 .pieDos {
-	background-color: white;"
+	background-color: white;
 	padding: 0;
 	margin: 0;
 }
@@ -751,7 +751,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	background-image: url('../img/logo2.png');
+	background-image: url('../img/webp/logo2.webp');
 	background-size: contain;
 	background-position: top;
 	background-repeat: no-repeat;
@@ -961,6 +961,7 @@ body {
 		background-size: contain;
 		object-fit: contain;
 		width: 70%;
+		height: 110px;
 	}
 
 	.gallery-wrapper {
