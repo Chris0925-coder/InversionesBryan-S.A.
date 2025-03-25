@@ -14,11 +14,15 @@ body {
 	line-height: 20px;*/
 }
 
-/*p {
+p {
 	max-width: 75ch;
 	letter-spacing: .05ch;
 	line-height: 20px;
-}*/
+	font-weight:100;
+/*	max-width: 75ch;*/
+/*	letter-spacing: .05ch;*/
+/*	line-height: 20px;*/
+}
 
 
 /*NIEVE*/
