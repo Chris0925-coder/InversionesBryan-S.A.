@@ -753,14 +753,14 @@ body {
 	position: relative;
 	background-image: url('../img/webp/logo2.webp');
 	background-size: contain;
-	background-position: top;
+	background-position: center;
 	background-repeat: no-repeat;
 	object-fit: fill;
 	margin: 0;
 	padding: 0;
 	object-position: right;
 	width: 300px;
-	height: 200px;
+	height: 220px;
 }
 
 .polt {
