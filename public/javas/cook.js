@@ -127,6 +127,43 @@ navToggle.addEventListener("click", () => {
 });
 
 
+function ventana(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Política de privacidad");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.es/pages/cookies.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        localStorage.aceptaCookies === 'false';
+        // history.go(-1);
+        // let one = 
+        window.close();
+        window.open("https://www.google.com/", "_self");
+        
+    }
+
+};
+
+function ventana2(url) {
+    localStorage.aceptaCookies === 'true';
+    let show = window.confirm("Términos y Condiciones");
+    if (show === true) {
+
+        window.open("https://www.inversionesbryan.es/pages/terminosycondiciones.html", "ventana", "width=120 height=300 scrollbars=YES");
+    } else {
+        localStorage.aceptaCookies === 'false';
+        // history.go(-1);
+        // let one = 
+        window.close();
+        window.open("https://www.google.com/", "_self");
+        
+        
+        // return false;
+    }
+    
+};
+
+
 
 
 let date = document.querySelector('.date');
