@@ -93,11 +93,12 @@
     }
   </script>
 
-  <link rel="stylesheet" type="text/css" href="public/css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="public/css/fonts.css">
 
-  <link rel="preload" href="https://www.inversionesbryan.es/public/css/fonts.css" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="https://www.inversionesbryan.es/public/img/logo.svg" as="image" crossorigin>
+  <link rel="stylesheet" type="text/css" href="public/css/main.css">
+
+  <link rel="preload" href="/public/css/fonts.css" as="font" type="font/ttf">
+  <link rel="preload" href="/public/img/logo.svg" as="image">
 
   <script src="public/javas/cook.js" defer></script>
 
@@ -153,26 +154,26 @@
     <div class="head-row">
       <span class="logo"></span>
       <nav class="navbar navbar-expand-lg navbar- bg-white">     
-        <button class="navbar-toggler navbar-nav_visible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="bi bi-list"></i></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-icon__list"></span></button>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i> Inicio </a>
+              <a class="nav-link active" aria-current="page" href="index.html"><span class="navbar-icon__house"></span> Inicio </a>
             </li>
             <li class="nav-item">
-              <span class="mv"><a class="nav-link" href="aboutus.html"><i class="bi bi-people"></i> Nosotros 
+              <div class="mv"><a class="nav-link" href="aboutus.html"><span class="navbar-icon__people"></span> Nosotros 
                 <ol class="mv-link">
                   <li>Mision y Vision</li>
                   <li>Historia</li> 
                 </ol>
-               </a></span>
+               </a></div>
                            
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html"><i class="bi bi-envelope"></i> Contacto</a>
+              <a class="nav-link" href="contacto.html"><span class="navbar-icon__envelope"></span> Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="galeria1.html"><i class="bi bi-images"></i> Galería </a>
+              <a class="nav-link" href="galeria1.html"><span class="navbar-icon__images"></span> Galería </a>
             </li>
           </ul>
         </div>
@@ -410,14 +411,16 @@
       </article>
     </section>
 
-    <div class="galeria">  
+    <div class="galeria">
+
+
       <div class="light lightcierre">
         <article class="light-box" id="image1">
-          <span href="#image11" class="back"><i class="bi bi-box-arrow-in-left"></i></span>
+          <div class="closePhoto2"><span class="btn-close"></span></div> 
+          <span href="#image11" class="back"></span>
           <!-- <img src="" width="300" loading="lazy" alt="fotocamino"> -->
           <span class="imagenX"></span>
-          <span class="next"><i class="bi bi-box-arrow-in-right"></i></span>
-          <article class="closePhoto2"><i class="bi bi-x-circle"></i></article> 
+          <span class="next"></span>
         </article>
 
           <!-- public/img/Mejorandoelcampo-n.jpg -->
@@ -444,29 +447,28 @@
         <div class="social">
           <!-- <span class="col"> -->
             <div class="contacto poli foot"> 
-              <span> 
+              <article> 
                 <h3> CONTACTO </h3>
                 <br>
                 <article class="mail">
-                  <i class="bi bi-envelope-fill" style="color:white;"></i>
-                  <a href="mailto:inversbryan@gmail.com" target="_blank"> inversbryan@gmail.com </a>
+                  <a href="mailto:inversbryan@gmail.com" target="_blank"><span class="footer-icon__envelope-fill"></span> inversbryan@gmail.com</a>
                 </article>
                 <article class="num">
-                  <span class="whatsapp"><i class="whatsapp-icon"></i></span>
+                  
                   <!-- <img src="public/img/whatsapp.png" width="20" height="20" alt="logoWhatsApp" alt="LogoDeWhatsApp"> -->
-                  <a target="_blank" href="https://api.whatsapp.com/send?phone=50760267234"> +507 6026-7234 </a>
+                  <a target="_blank" href="https://api.whatsapp.com/send?phone=50760267234"><span class="footer-icon__whatsapp"></span> +507 6026-7234 </a>
                 </article>
-              </span>
+              </article>
               <div class="redes">
                 <article class="bibi">
-                  <span target="_blank" id="insta"><i class="bi bi-instagram"></i></span>
-                  <span id="faceb"><a href="https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249" target="_blank" aria-label="FACEBOOK"><i class="bi bi-facebook"></i></a></span>
+                  <div target="_blank" id="insta"><span class="footer-icon__instagram"></span></div>
+                  <div id="faceb"><a href="https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249" target="_blank" aria-label="FACEBOOK"><span class="footer-icon__facebook"></span></a></div>
                   <!-- <span>
                   <address style="display: none;">
                     <p>Brisas del Golf Arraiján, Arraiján, Panamá Oeste, Panamá</p>
                   </address>
                   </span> -->
-                  <span id="twit"><i class="bi bi-twitter-x"></i></span>
+                  <div id="twit"><span class="footer-icon__x"></span></div>
                 </article>
               </div>
             </div>
