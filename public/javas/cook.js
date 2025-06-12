@@ -113,7 +113,7 @@ function count() {
 
 init();
 
-if(d) count();
+count();
 
 function init(){
     bloqueRGPD = document.querySelector('.cookies');
@@ -126,11 +126,11 @@ function init(){
     }else{
         btnCookies.addEventListener("click", () => {
             eliminarBloqueRGPD();
-            navigator.sendBeacon(url, JSON.stringify({
-                id: 4,
-                count: 1,
-                domain: dominio,
-            }));
+            // navigator.sendBeacon(url, JSON.stringify({
+            //     id: 4,
+            //     count: 1,
+            //     domain: dominio,
+            // }));
             setCookie("rgpdOK",1,365);
         });
     }
