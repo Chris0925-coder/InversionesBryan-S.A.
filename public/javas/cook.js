@@ -1,7 +1,8 @@
 
 // const bloqueRGPD = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies");
-const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+// const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const url = `https://visits-christian-guardias-projects.vercel.app/`;
 // const aceptaCookies = document.cookie;
 
 
