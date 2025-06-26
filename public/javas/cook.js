@@ -2,7 +2,7 @@
 // const bloqueRGPD = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies");
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
-const url = `https://visits-christian-guardias-projects.vercel.app/count`;
+// const url = `https://visits-christian-guardias-projects.vercel.app/count`;
 // const aceptaCookies = document.cookie;
 
 
@@ -96,25 +96,23 @@ function detectCookie(cname) {
     return false;
 };
 
-const dominio = window.location.origin;
-let d = localStorage.getItem("acceptedCookies");
+// const dominio = window.location.origin;
+// let d = localStorage.getItem("acceptedCookies");
 
-function count() {
-    let analyticsData = {
-        id: 4,
-        count: 1,
-        domain: dominio,
-    };
+// function count() {
+//     let analyticsData = {
+//         id: 4,
+//         count: 1,
+//         domain: dominio,
+//     };
 
-    window.addEventListener("load", function() {
-      navigator.sendBeacon(url, JSON.stringify(analyticsData));
-    });
+//     window.addEventListener("load", function() {
+//       navigator.sendBeacon(url, JSON.stringify(analyticsData));
+//     });
 
-};
+// };
 
 init();
-
-count();
 
 function init(){
     bloqueRGPD = document.querySelector('.cookies');

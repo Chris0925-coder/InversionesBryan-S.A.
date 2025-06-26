@@ -172,7 +172,7 @@ send.addEventListener("click", () => {
     // const control = document.getElementsByName("control").value;
     localStorage.aceptaCookies === "true";
     response = grecaptcha.getResponse();
-    console.log(response);
+    // console.log(response);
     if (mail !== "" && message !== "" && response.length !== 0) {
 
         // comm = document.querySelector("#task");
