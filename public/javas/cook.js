@@ -112,7 +112,7 @@ function detectCookie(cname) {
 
 // };
 
-init();
+document.addEventListener('DOMContentLoaded', init);
 
 function init(){
     bloqueRGPD = document.querySelector('.cookies');
