@@ -7,33 +7,33 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.inversionesbryan.es/public/img/webp/logo2.webp</image:loc>
-      <url>
-        <loc>https://www.inversionesbryan.es/galeria1.html</loc>
-        <lastmod>2025-02-20</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.80</priority>
-        <image:image>
-          <image:loc>https://www.inversionesbryan.es/public/img/webp/pbrisas.webp</image:loc>
-          <url>
-            <loc>https://www.inversionesbryan.es/aboutus.html</loc>
-            <lastmod>2025-02-20</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.80</priority>
-            <image:image>
-              <image:loc>https://www.inversionesbryan.es/public/img/webp/logo2.webp</image:loc>
-              <url>
-                <loc>https://www.inversionesbryan.es/contacto.html</loc>
-                <lastmod>2025-02-20</lastmod>
-                <changefreq>yearly</changefreq>
-                <priority>0.80</priority>
-                <image:image>
-                  <image:loc>https://www.inversionesbryan.es/public/img/webp/terreno.webp</image:loc>
-                </image:image>
-              </url>
-            </image:image>
-          </url>
-        </image:image>
-      </url>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.inversionesbryan.es/galeria1.html</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.inversionesbryan.es/public/img/webp/pbrisas.webp</image:loc> 
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.inversionesbryan.es/aboutus.html</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.inversionesbryan.es/public/img/webp/logo2.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.inversionesbryan.es/contacto.html</loc>
+    <lastmod>2025-02-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.inversionesbryan.es/public/img/webp/terreno.webp</image:loc>
     </image:image>
   </url>
 </urlset>
