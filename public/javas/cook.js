@@ -2,7 +2,7 @@
 // const bloqueRGPD = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies");
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
-// const url = `https://visits-christian-guardias-projects.vercel.app/count`;
+const url = `https://visits-christian-guardias-projects.vercel.app/count`;
 // const aceptaCookies = document.cookie;
 
 
@@ -96,21 +96,19 @@ function detectCookie(cname) {
     return false;
 };
 
-// const dominio = window.location.origin;
-// let d = localStorage.getItem("acceptedCookies");
+const dominio = window.location.origin;
+let d = localStorage.getItem("acceptedCookies");
 
-// function count() {
-//     let analyticsData = {
-//         id: 4,
-//         count: 1,
-//         domain: dominio,
-//     };
+function count() {
+    let analyticsData = {
+        id: 4,
+        count: 1,
+        domain: dominio,
+    };
 
-//     window.addEventListener("load", function() {
-//       navigator.sendBeacon(url, JSON.stringify(analyticsData));
-//     });
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));
+};
 
-// };
 
 document.addEventListener('DOMContentLoaded', init);
 
@@ -125,11 +123,11 @@ function init(){
     }else{
         btnCookies.addEventListener("click", () => {
             eliminarBloqueRGPD();
-            // navigator.sendBeacon(url, JSON.stringify({
-            //     id: 4,
-            //     count: 1,
-            //     domain: dominio,
-            // }));
+            navigator.sendBeacon(url, JSON.stringify({
+                id: 4,
+                count: 1,
+                domain: dominio,
+            }));
             setCookie("rgpdOK",1,365);
         });
     }
@@ -192,3 +190,8 @@ function ventana2(url) {
 let date = document.querySelector('.date');
 
 date.append(new Date ().getFullYear ());
+
+
+window.addEventListener("load", function() {
+    if (d) count();
+});
