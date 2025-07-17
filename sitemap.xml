@@ -6,7 +6,7 @@
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/webp/logo2.webp</image:loc>
+      <image:loc>https://www.inversionesbryan.es/public/img/logo1.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -15,7 +15,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/webp/pbrisas.webp</image:loc> 
+      <image:loc>https://www.inversionesbryan.es/public/img/pbrisas.jpg</image:loc> 
     </image:image>
   </url>
   <url>
@@ -24,7 +24,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/webp/logo2.webp</image:loc>
+      <image:loc>https://www.inversionesbryan.es/public/img/bannerIB.png</image:loc>
     </image:image>
   </url>
   <url>
@@ -33,7 +33,7 @@
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/webp/terreno.webp</image:loc>
+      <image:loc>https://www.inversionesbryan.es/public/img/terreno.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
