@@ -51,8 +51,8 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: fixed;
-	background-image: url('../img/webp/terreno.webp');
-	image-rendering: optimizeSpeed;
+	background-image: url('../img/webp/venta-terreno-puerto-armuelles.webp');
+	/*image-rendering: optimizeSpeed;*/
 	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -73,7 +73,7 @@ body {
 }
 
 
-.publicidadIB figcaption {
+.publicidadIB span {
 	color: white;
 	display: flex;
 	flex-direction: row-reverse;
@@ -496,7 +496,7 @@ body {
 
 .titulo .secondary {
 	font-size: clamp(16px, 2.5vw, 20px);
-	font-weight: 100;
+	/*font-weight: 100;*/
 	line-height: 26px;
 	letter-spacing:0.05ch;
 		/*	color: #d6d6e0;*/
