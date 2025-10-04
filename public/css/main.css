@@ -335,22 +335,57 @@ body {
 /*	color: #f1f1f1;*/
 }
 /*NAVBAR*/
-
 .imagen {
+	/*font-family: Poppins;*/
+	
+	display: block;
+	position: relative;
+	text-align: center;
+	color: #efbb50;
 	height: 366px;
 	width: 100%;
-	background-image: url("../img/webp/bannerdef.webp");
+	overflow: hidden;
+	align-items: center;
+	place-content: center;
+	h1 {
+		font-weight: 500;
+		font-size: 26px;
+		letter-spacing: -.02ch;
+			span {
+				display: block;
+				color: #f0f0f0;
+				font-size: medium;
+				font-weight: 100;
+				letter-spacing: initial;
+
+			}
+		}
+	}
+
+.imagen::before {
+	display: block;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	/*height: 366px;
+	width: 100%;*/
+	/*background-image: url("../img/webp/brisas-del-golf-arraijanB.webp");*/
+	background:url("../img/avif/brisas-del-golf-arraijanB.avif");
+	filter: blur(4px);
 	background-size: cover;
 	background-position: center;
-	display: flex;
+	/*display: flex;*/
 	flex-direction: row;
 	flex-wrap: wrap;
-	object-fit: cover;
+	object-fit: contain;
 	background-repeat: no-repeat;
 	color: white;
+	z-index: -1;
 /*	justify-content: space-between;*/
 	margin: 0;
-	position: relative;
+	/*position: relative;*/
 /*	background-image: linear-gradient(180deg, #0000008c 0%, #ffffff7c 100%), url('../img/bannerdef.png');*/
 }
 
