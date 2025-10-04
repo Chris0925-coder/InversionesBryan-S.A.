@@ -347,10 +347,12 @@ body {
 	overflow: hidden;
 	align-items: center;
 	place-content: center;
+
 	h1 {
 		font-weight: 500;
 		font-size: 26px;
 		letter-spacing: -.02ch;
+		line-height: 1.1;
 			span {
 				display: block;
 				color: #f0f0f0;
@@ -373,13 +375,14 @@ body {
 	width: 100%;*/
 	/*background-image: url("../img/webp/brisas-del-golf-arraijanB.webp");*/
 	background:url("../img/avif/brisas-del-golf-arraijanB.avif");
-	filter: blur(4px);
-	background-size: cover;
+	filter: blur(5px);
+	/*backdrop-filter: blur(5px);*/
+	background-size: 100% 100%;
 	background-position: center;
 	/*display: flex;*/
 	flex-direction: row;
 	flex-wrap: wrap;
-	object-fit: contain;
+	/*object-fit: cover;*/
 	background-repeat: no-repeat;
 	color: white;
 	z-index: -1;
@@ -399,7 +402,7 @@ body {
 
 
 #closed span {
-	font-size: clamp(32px, 3vw, 46px);
+	font-size: clamp(20px, 3vw, 26px);
 	font-weight: 700;
 	text-transform: uppercase;
 /*	color: #303030;*/
@@ -522,7 +525,7 @@ body {
 }
 
 .titulo .primary {
-	font-size: clamp(26px, 3vw, 42px);
+	font-size: clamp(20px, 3vw, 26px);
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #771100;
