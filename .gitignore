@@ -1,4 +1,3 @@
-
 .vscode/
 node_modules/
 src/
@@ -7,3 +6,4 @@ GITHUB-PAGES-SERVER.
 math.html
 politicayprivacidad.html
 www.inversionesbryan.com.
+.well-known/
