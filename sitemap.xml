@@ -36,4 +36,10 @@
       <image:loc>https://www.inversionesbryan.es/public/img/terreno.jpg</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.inversionesbryan.es/favicon.ico</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
