@@ -52,11 +52,11 @@
        "type": "image/png",
        "density": "4.0"
       },
-        {
-            "src": "/favicons/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
+      {
+        "src": "/favicons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
     ],
     "scope": "/",
     "id": "InversBryan",
