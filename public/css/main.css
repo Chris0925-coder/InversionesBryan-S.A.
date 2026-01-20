@@ -217,17 +217,17 @@ body {
 
 .nav-link:not(.active)::after {
 	content: "";
-    position: absolute;
-    height: 2px;
-    width: 0;
-    /*background-color: #dead1c;*/
-    /*background-color: #f7e71d;*/
-    /*background-color: #d79f1f;*/
-    background-color: #2b2b2bb4;
-    bottom: 0;
-    left: 0;
-    /*z-index: 4000;*/
-    transition: width 0.3s ease-in-out;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  /*background-color: #dead1c;*/
+  /*background-color: #f7e71d;*/
+  /*background-color: #d79f1f;*/
+  background-color: #2b2b2bb4;
+  bottom: 0;
+  left: 0;
+  /*z-index: 4000;*/
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-link:hover:not(.active)::after {
