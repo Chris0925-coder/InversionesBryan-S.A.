@@ -3,6 +3,7 @@
 const btnCookies = document.querySelector(".btn-cookies");
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const urlc = `https://visits-christian-guardias-projects.vercel.app/count`;
+const main = document.querySelector("body");
 // https://visits-christian-guardias-projects.vercel.app/count
 // const aceptaCookies = document.cookie;
 
@@ -110,7 +111,7 @@ let dd = new Date().toLocaleDateString("es-PA", {
 
 
 function cli() {
-    blog.addEventListener('click', function (event) {
+    main.addEventListener('click', function (event) {
         if(event.target.tagName === "A" || event.target.tagName === "FIRGURE") {
             // return cb(1);
 
