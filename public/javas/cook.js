@@ -98,7 +98,7 @@ function detectCookie(cname) {
 };
 
 const dominio = window.location.origin;
-let d = localStorage.getItem("acceptedCookies");
+// let d = localStorage.getItem("acceptedCookies");
 let dd = new Date().toLocaleDateString("es-PA", {
   weekday: "long",
   day: "numeric",
@@ -108,18 +108,40 @@ let dd = new Date().toLocaleDateString("es-PA", {
   hour12: true
 });
 
+
+function cli() {
+    blog.addEventListener('click', function (event) {
+        if(event.target.tagName === "A" || event.target.tagName === "FIRGURE") {
+            // return cb(1);
+
+            let analyticsData = {
+                id: 4,
+                count: 0,
+                domain: dominio,
+                date: `desde: 06/2025 | última vista: ${dd}`,
+                clicks: 1,
+            };
+            navigator.sendBeacon(url, JSON.stringify(analyticsData));
+        }
+    })
+}
+
+cli();
+
 function count() {
     let analyticsData = {
         id: 4,
         count: 1,
         domain: dominio,
         date: `desde: 06/2025 | última vista: ${dd}`,
+        clicks: 0,
     };
 
     navigator.sendBeacon(urlc, JSON.stringify(analyticsData));
 };
 
-if(d) count();
+// if(d) 
+count();
 
 
 document.addEventListener('DOMContentLoaded', init);
@@ -142,7 +164,7 @@ function init(){
             // }));
             setCookie("rgpdOK",1,365);
 
-            count();
+            // count();
 
         });
     }
