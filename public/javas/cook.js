@@ -112,7 +112,7 @@ let dd = new Date().toLocaleDateString("es-PA", {
 
 function cli() {
     main.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "FIRGURE") {
+        if(event.target.tagName === "A" || event.target.tagName === "FIRGURE" || event.target.tagName === "SPAN") {
             // return cb(1);
 
             let analyticsData = {
@@ -122,7 +122,7 @@ function cli() {
                 date: `desde: 06/2025 | última vista: ${dd}`,
                 clicks: 1,
             };
-            navigator.sendBeacon(url, JSON.stringify(analyticsData));
+            navigator.sendBeacon(urlc, JSON.stringify(analyticsData));
         }
     })
 }
