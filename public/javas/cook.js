@@ -231,5 +231,6 @@ date.append(new Date ().getFullYear ());
 
 
 window.addEventListener("load", function() {
-    if (d) count();
+    // if (d) 
+    count();
 });
