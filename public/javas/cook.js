@@ -1,9 +1,10 @@
 
 // const bloqueRGPD = document.querySelector(".cookies");
 const btnCookies = document.querySelector(".btn-cookies");
+const main = document.querySelector("body");
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const urlc = `https://visits-christian-guardias-projects.vercel.app/count`;
-const main = document.querySelector("body");
+
 // https://visits-christian-guardias-projects.vercel.app/count
 // const aceptaCookies = document.cookie;
 
@@ -100,26 +101,43 @@ function detectCookie(cname) {
 
 const dominio = window.location.origin;
 // let d = localStorage.getItem("acceptedCookies");
-let dd = new Date().toLocaleDateString("es-PA", {
-  weekday: "long",
-  day: "numeric",
-  month: "short",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true
-});
+// let dd = new Date().toLocaleDateString("es-PA", {
+//   weekday: "long",
+//   day: "numeric",
+//   month: "short",
+//   hour: "numeric",
+//   minute: "numeric",
+//   hour12: true
+// });
 
+const ahora = new Date();
+
+// 1. Obtener el desplazamiento respecto a UTC en minutos
+const offsetMinutos = ahora.getTimezoneOffset(); // Ej: -300 para UTC-5
+const offsetHoras = -offsetMinutos / 60; // Convertir a horas
+
+// 2. Obtener el nombre de la zona horaria local (IANA)
+const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+// 3. Mostrar la fecha y hora formateada con zona horaria
+const formatoConZona = new Intl.DateTimeFormat('es-PA', {
+  dateStyle: 'full',
+  timeStyle: 'long',
+  timeZone: zonaHoraria
+}).format(ahora);
+// console.log(terreno);
+const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 function cli() {
     main.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "FIRGURE" || event.target.tagName === "SPAN") {
+        if(event.target.tagName === "A" || event.target.tagName === "IMG" || event.target.tagName === "ASIDE") {
             // return cb(1);
 
             let analyticsData = {
                 id: 4,
                 count: 0,
                 domain: dominio,
-                date: `desde: 06/2025 | última vista: ${dd}`,
+                date: `desde: 06/2025 | última vista: ${formatoConZona}`,
                 clicks: 1,
             };
             navigator.sendBeacon(urlc, JSON.stringify(analyticsData));
@@ -127,14 +145,12 @@ function cli() {
     })
 }
 
-cli();
-
 function count() {
     let analyticsData = {
         id: 4,
         count: 1,
         domain: dominio,
-        date: `desde: 06/2025 | última vista: ${dd}`,
+        date: `desde: 06/2025 | última vista: ${formatoConZona}`,
         clicks: 0,
     };
 
@@ -234,3 +250,6 @@ window.addEventListener("load", function() {
     // if (d) 
     count();
 });
+
+
+cli();

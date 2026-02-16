@@ -111,11 +111,11 @@ const close = document.querySelector('.closeP');
 
 function showAds() {
     // terreno.style.display = 'flex'
-    close.style.display = 'flex'
+    close.style.display = 'flex';
 };
 
 // showAds();
-setTimeout(showAds,3000);
+setTimeout(showAds,2500);
 close.addEventListener('click', () => {
     let fadeOut = terreno.style.opacity = '0';
     terreno.style.transition = "opacity 3s ease-in-out";
@@ -126,8 +126,10 @@ close.addEventListener('click', () => {
 });
 
 terreno.addEventListener('click', () => {
-    window.open("https://api.whatsapp.com/send?phone=50762926292&text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno", "ventana", "width=120 height=300 scrollbars=YES");
-});
+    if(event.target.tagName === "ASIDE") {
+         window.open("https://api.whatsapp.com/send?phone=50762926292&text=¡Hola!%20Me%20gustaría%20recibir%20información%20sobre%20el%20terreno", "ventana", "width=120 height=300 scrollbars=YES");
+     }
+   });
 
 
 function ventana(url) {
@@ -692,3 +694,29 @@ cerrar.addEventListener('click', () => {
 
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel';
+
+
+// Crear un objeto Date con la fecha y hora actuales
+// const ahora = new Date();
+
+// 1. Obtener el desplazamiento respecto a UTC en minutos
+// const offsetMinutos = ahora.getTimezoneOffset(); 
+// Ej: -300 para UTC-5
+// const offsetHoras = -offsetMinutos / 60; 
+// Convertir a horas
+
+// 2. Obtener el nombre de la zona horaria local (IANA)
+// const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+// 3. Mostrar la fecha y hora formateada con zona horaria
+// const formatoConZona = new Intl.DateTimeFormat('es-ES', {
+//   dateStyle: 'full',
+//   timeStyle: 'long',
+//   timeZone: zonaHoraria
+// }).format(ahora);
+
+// console.log("Fecha y hora actual:", ahora.toString());
+// console.log("Desplazamiento UTC (minutos):", offsetMinutos);
+// console.log("Desplazamiento UTC (horas):", offsetHoras);
+// console.log("Zona horaria local (IANA):", zonaHoraria);
+// console.log("Fecha formateada con zona horaria:", formatoConZona);
