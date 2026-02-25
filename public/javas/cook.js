@@ -117,16 +117,16 @@ const offsetMinutos = ahora.getTimezoneOffset(); // Ej: -300 para UTC-5
 const offsetHoras = -offsetMinutos / 60; // Convertir a horas
 
 // 2. Obtener el nombre de la zona horaria local (IANA)
-const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// const zonaHoraria = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
 
 // 3. Mostrar la fecha y hora formateada con zona horaria
 const formatoConZona = new Intl.DateTimeFormat('es-PA', {
   dateStyle: 'full',
   timeStyle: 'long',
-  timeZone: zonaHoraria
+  timeZone: "America/Panama",
 }).format(ahora);
 // console.log(terreno);
-const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 function cli() {
     main.addEventListener('click', function (event) {
