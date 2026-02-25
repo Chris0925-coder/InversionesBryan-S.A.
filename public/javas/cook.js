@@ -158,7 +158,7 @@ function count() {
 };
 
 // if(d) 
-count();
+// count();
 
 
 document.addEventListener('DOMContentLoaded', init);
