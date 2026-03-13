@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.inversionesbryan.es/</loc>
+    <loc>https://inversionesbryan-s-a.pages.dev/</loc>
     <lastmod>2025-03-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/logo1.png</image:loc>
+      <image:loc>/public/img/logo1.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://www.inversionesbryan.es/galeria1.html</loc>
+    <loc>/galeria1.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/pbrisas.jpg</image:loc> 
+      <image:loc>/public/img/pbrisas.jpg</image:loc> 
     </image:image>
   </url>
   <url>
-    <loc>https://www.inversionesbryan.es/aboutus.html</loc>
+    <loc>/aboutus.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/bannerIB.png</image:loc>
+      <image:loc>/public/img/bannerIB.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://www.inversionesbryan.es/contacto.html</loc>
+    <loc>/contacto.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.inversionesbryan.es/public/img/terreno.jpg</image:loc>
+      <image:loc>/public/img/terreno.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>https://www.inversionesbryan.es/favicon.ico</loc>
+    <loc>/favicon.ico</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

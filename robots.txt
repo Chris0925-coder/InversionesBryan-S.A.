@@ -9,4 +9,4 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /scripts/
 
-Sitemap: https://www.inversionesbryan.es/sitemap.xml
+Sitemap: https://inversionesbryan-s-a.pages.dev/sitemap.xml
