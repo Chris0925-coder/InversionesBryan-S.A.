@@ -6,38 +6,38 @@
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>/public/img/logo1.png</image:loc>
+      <image:loc>https://inversionesbryan-s-a.pages.dev/public/img/logo1.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>/galeria1.html</loc>
+    <loc>https://inversionesbryan-s-a.pages.dev/galeria1.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>/public/img/pbrisas.jpg</image:loc> 
+      <image:loc>https://inversionesbryan-s-a.pages.dev/public/img/pbrisas.jpg</image:loc> 
     </image:image>
   </url>
   <url>
-    <loc>/aboutus.html</loc>
+    <loc>https://inversionesbryan-s-a.pages.dev/aboutus.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>/public/img/bannerIB.png</image:loc>
+      <image:loc>https://inversionesbryan-s-a.pages.dev/public/img/bannerIB.png</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>/contacto.html</loc>
+    <loc>https://inversionesbryan-s-a.pages.dev/contacto.html</loc>
     <lastmod>2025-02-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>/public/img/terreno.jpg</image:loc>
+      <image:loc>https://inversionesbryan-s-a.pages.dev/public/img/terreno.jpg</image:loc>
     </image:image>
   </url>
   <url>
-    <loc>/favicon.ico</loc>
+    <loc>https://inversionesbryan-s-a.pages.dev/favicon.ico</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
