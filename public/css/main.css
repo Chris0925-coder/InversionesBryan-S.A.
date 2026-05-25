@@ -376,7 +376,7 @@ body {
 	align-items: center;
 	place-content: center;
 
-	h1 {
+	p {
 		font-weight: 500;
 		font-size: 26px;
 		letter-spacing: -.02ch;
