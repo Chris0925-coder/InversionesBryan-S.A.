@@ -376,7 +376,7 @@ body {
 	align-items: center;
 	place-content: center;
 
-	p {
+	h1 {
 		font-weight: 500;
 		font-size: 26px;
 		letter-spacing: -.02ch;
@@ -691,16 +691,16 @@ body {
 	background-position: center;
 	cursor: pointer;
 	border-radius: 10px;
-	opacity:0;
+	opacity:0.3;
 	transition: all .5s ease-in-out;
-
+	z-index: 9000;
 }
 
 .next {
 	display: block;
 	position: absolute;
 	/*color: #ffffff;*/
-	opacity:0;
+	opacity:0.3;
 	height: 30px;
 	width: 30px;
 	right: 10%;
@@ -713,6 +713,7 @@ body {
 	cursor: pointer;
 	border-radius: 10px;
 	transition: all .5s ease-in-out;
+	z-index: 9000;
 }
 
 
@@ -1171,9 +1172,20 @@ body {
 	}
 
 	.gallery-item {
-		max-height: 1900px;
+		/*max-height: 1900px;*/
 		margin: 0;
+		padding: 0;
+		/*position: relative;*/
 /*		object-fit: cover;*/
+
+		/*scrollbar-width: none;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		overscroll-behavior-x: contain;
+		scroll-behavior: smooth;
+		width: 95vw;*/
+		/*place-content: center;*/
+		width: 95vw;
 	}
 
 /*	.gallery-item:hover {*/
@@ -1182,7 +1194,14 @@ body {
 /*	}*/
 
 	.item-image {
+		position: relative;
 		max-height: 1900px;
+		width: 350px;
+		/*width: 100%;*/
+		scroll-snap-align: center;
+			scroll-snap-stop: always;
+			/*object-fit: contain;*/
+			/*width: 95vw;*/
 	}
 
 	.item-image:hover {
@@ -1193,16 +1212,64 @@ body {
 	}
 
 	.item-image:not(:hover) {
-		object-fit: cover;
+		object-fit: fill;
 		transition: all .5s ease-in-out;
+	}
+
+	.caja1, .caja2, .caja3, .caja4 {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+
+		scrollbar-width: none;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		overscroll-behavior-x: contain;
+		scroll-behavior: smooth;
+		width: 95vw;
 	}
 
 	/*.item-image {
 		transform: translateY(10px);
 	}*/
 
+	.item-description {
+		position: absolute;
+		text-align: justify;
+		/*text-wrap: balance;*/
+    hyphenate-limit-chars: 7;
+    hyphens: auto;
+		/*top: 0;*/
+		/*left: 0;*/
+	}
+
 	.name {
-		font-size: 1.1rem;
+		/*font-size: 37px;
+		background: linear-gradient(90deg,#303030,#0003);
+		padding-inline: 10px;*/
+		transform: translateY(0);
+		/*text-align: center;*/
+	}
+
+	.role {
+		/*display: inline-block;
+		font-size: 0.8rem;
+		background: linear-gradient(90deg,#303030,#0003);
+		padding: 10px;
+		box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+*/		transform: translateY(0);
+	}
+
+	.name,
+	.role {
+		opacity: 1;
+		/*transition: opacity 0.25s, transform 0.3s;*/
+		/*transition-delay: .35s;*/
+	/*	background-color: none;*/
+	}
+
+	.name {
+		font-size: 1.05rem;
 	}
 
 	.role {
