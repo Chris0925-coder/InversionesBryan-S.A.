@@ -1195,8 +1195,8 @@ body {
 
 	.item-image {
 		position: relative;
-		max-height: 1900px;
-		width: 350px;
+		/*max-height: 1900px;*/
+		width: 400px;
 		/*width: 100%;*/
 		scroll-snap-align: center;
 			scroll-snap-stop: always;
