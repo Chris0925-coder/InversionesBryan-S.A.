@@ -141,7 +141,7 @@ const send = document.querySelector(".btn");
 let comm = document.querySelector("#taskname");
 let mail = document.querySelector("[name=email]").value;
 let message = document.querySelector("[name=control]").value;
-let form = document.querySelector("#form1");
+let form = document.getElementById("form1");
 
 
 // const enviarFormulario = (event) => {
@@ -163,66 +163,45 @@ let form = document.querySelector("#form1");
 // console.log(mail);
 
 
-send.addEventListener("click", () => {
-    mail = document.querySelector("[name=email]").value;
-    message = document.querySelector("[name=control]").value;
-    // mail = document.querySelector("[name=email]").value;
-    // form = document.querySelector("#formulario");
-    // const mail = document.getElementsByName("mail").value;
-    // const control = document.getElementsByName("control").value;
-    localStorage.aceptaCookies === "true";
-    response = grecaptcha.getResponse();
-    // console.log(response);
-    if (mail !== "" && message !== "" && response.length !== 0) {
+// send.addEventListener("click", () => {
+//     mail = document.querySelector("[name=email]").value;
+//     message = document.querySelector("[name=control]").value;
 
-        // comm = document.querySelector("#task");
-        // const enviarFormulario = (event) => {
-        // event.preventDefault();
+//     localStorage.aceptaCookies === "true";
+//     response = grecaptcha.getResponse();
+
+//     if (mail !== "" && message !== "" && response.length !== 0) {
+
+
+//     let message1 =
+//         `<div id="task">
+//             <span id="taskname">
+//                 ${"Usuario: " + mail + "<br>" + "Comenta: " + message}
+//             </span>
+//         </div>`;
     
-        // console.log(
-        //     event.target.email.value, 
-        //     event.target.control.value
-        // );
-    // };
-     
-    let message1 =
-        `<div id="task">
-            <span id="taskname">
-                ${"Usuario: " + mail + "<br>" + "Comenta: " + message}
-            </span>
-        </div>`;
+//     alert("¡GRACIAS POR SU COMENTARIO!");
 
-        // comm = message1;
+//     let div = document.createElement("div");
+//     div.id = "div_id";
+//     div.className = "div_class";
+
+//     div.style = "background-color: rgba(0,0,0,0.7)";
+
+//     div.style.maxWidth = "400px";
+//     div.style.height = "200px";
+
+//     div.innerHTML = `${message1}`;
+//     comm.append(div);
+
 
     
-    alert("¡GRACIAS POR SU COMENTARIO!");
+// } else {
+//     document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+//     alert("Rellene los espacios en blanco");
 
-    let div = document.createElement("div");
-    div.id = "div_id";
-    div.className = "div_class";
-    // div.style.display = "flex";
-    // div.style.position = "relative";
-    // message1.style = "color: white"
-    div.style = "background-color: rgba(0,0,0,0.7)";
-    // message1.style = "align-items: center";
-    div.style.maxWidth = "400px";
-    div.style.height = "200px";
-
-    // div = message1;
-    // div.insertAdjacentHTML("afterend", message1);
-    div.innerHTML = `${message1}`;
-    comm.append(div);
-
-
-    // return true;
-    // mes.insertAdjacentHTML("afterend", message1);
-    
-} else {
-    document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-    alert("Rellene los espacios en blanco");
-    // return;
-}
-});
+// }
+// });
 
 
 // function sendMail(name, email, subject, message) {
@@ -414,20 +393,55 @@ send.addEventListener("click", () => {
 
 // preventDefault();
 
-function submitUserForm() {
-    var response = grecaptcha.getResponse();
-    if (response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-        return false;
-    };
-    return true;
-};
+// function submitUserForm() {
+//     var response = grecaptcha.getResponse();
+//     if (response.length == 0) {
+//         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+//         return false;
+//     };
+//     return true;
+// };
 
-function verifyCaptcha() {
-    document.getElementById('g-recaptcha-error').innerHTML = '';
-};
+// function verifyCaptcha() {
+//     document.getElementById('g-recaptcha-error').innerHTML = '';
+// };
 
 
 // let date = document.querySelector('.date');
 
-// date.append(new Date ().getFullYear ());
+// date.append(new Date ().getFullYear ());onsubmit="return submitUserForm()"
+const url = `https://visits-christian-guardias-projects.vercel.app/submit`;
+
+function formSubmitted() {
+
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); 
+             
+        const formData = new FormData(form);
+
+        // if (formData.get('email').length == 0 || formData.get('control').length == 0) {
+        //     document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:darkred;">Field is required.</span>';
+        //     return false;
+        // } 
+
+          await fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                email: formData.get('email'), 
+                control: formData.get('control'),
+            }),
+          })
+          .then((response) => response.text())
+          .then((data) => console.log(data))
+          .catch((error) => console.error('Error:', error));
+       
+
+
+        alert('Form submitted successfully!');
+
+
+        window.location.href = "https://inversionesbryan-s-a.pages.dev/";
+    });
+}
+
+formSubmitted();
