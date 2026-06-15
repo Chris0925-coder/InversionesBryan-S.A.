@@ -12,106 +12,122 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-      "@type": "Organization",
-      "@id": "https://inversionesbryan-s-a.pages.dev/#organization",
-      "name": "Inversiones Bryan, S.A.",
-      "alternateName": "Inversiones Bryan",
-      "url": "https://inversionesbryan-s-a.pages.dev/",
-      "description": "Empresa panameña dedicada a la construcción desde 2009, especializada en proyectos inmobiliarios, viviendas, remodelaciones y obras en zonas rurales.",
-      "logo": "https://inversionesbryan-s-a.pages.dev/favicons/logo1.png",
-      "image": [
-        "https://inversionesbryan-s-a.pages.dev/public/img/pisosymallas.png",
-        "https://inversionesbryan-s-a.pages.dev/public/img/bannerdef.png",
-        "https://inversionesbryan-s-a.pages.dev/public/img/bannerIB.png"
-      ],
-      "contactPoint": [
+          "@type": "Organization",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#organization",
+          "name": "Inversiones Bryan, S.A.",
+          "alternateName": "Inversiones Bryan",
+          "url": "https://inversionesbryan-s-a.pages.dev/",
+          "description": "Empresa panameña dedicada a la construcción desde 2009, especializada en proyectos inmobiliarios, viviendas, remodelaciones y obras en zonas rurales.",
+          "logo": {
+            "@id": "https://inversionesbryan-s-a.pages.dev/#logo"
+          },
+          "image": [
+            { "@id": "https://inversionesbryan-s-a.pages.dev/#img1" },
+            { "@id": "https://inversionesbryan-s-a.pages.dev/#img2" },
+            { "@id": "https://inversionesbryan-s-a.pages.dev/#img3" }
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+507-6026-7234",
+            "contactType": "customer service",
+            "availableLanguage": ["es"]
+          },
+          "sameAs": [
+            "https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249"
+          ]
+        },
         {
-          "@type": "ContactPoint",
+          "@type": "LocalBusiness",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#localbusiness",
+          "name": "Inversiones Bryan, S.A.",
+          "image": { "@id": "https://inversionesbryan-s-a.pages.dev/#img1" },
           "telephone": "+507-6026-7234",
-          "contactType": "customer service",
-          "availableLanguage": ["Spanish"]
+          "url": "https://inversionesbryan-s-a.pages.dev/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Panamá, Panamá",
+            "addressLocality": "Ciudad de Panamá",
+            "addressRegion": "Panamá",
+            "postalCode": "00000",
+            "addressCountry": "PA"
+          },
+          "priceRange": "$$",
+          "areaServed": {
+            "@type": "Place",
+            "name": "Panamá"
+          }
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#logo",
+          "url": "https://inversionesbryan-s-a.pages.dev/favicons/logo1.png",
+          "contentUrl": "https://inversionesbryan-s-a.pages.dev/favicons/logo1.png",
+          "caption": "Logo Inversiones Bryan, S.A."
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#img1",
+          "url": "https://inversionesbryan-s-a.pages.dev/public/img/pisosymallas.png",
+          "contentUrl": "https://inversionesbryan-s-a.pages.dev/public/img/pisosymallas.png",
+          "caption": "Pisos y mallas — Inversiones Bryan, S.A."
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#img2",
+          "url": "https://inversionesbryan-s-a.pages.dev/public/img/bannerdef.png",
+          "contentUrl": "https://inversionesbryan-s-a.pages.dev/public/img/bannerdef.png",
+          "caption": "Banner Inversiones Bryan, S.A."
+        },
+        {
+          "@type": "ImageObject",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#img3",
+          "url": "https://inversionesbryan-s-a.pages.dev/public/img/bannerIB.png",
+          "contentUrl": "https://inversionesbryan-s-a.pages.dev/public/img/bannerIB.png",
+          "caption": "Banner corporativo Inversiones Bryan, S.A."
+        },
+        {
+          "@type": "Service",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#construction",
+          "serviceType": "Construcción de viviendas",
+          "provider": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#remodelation",
+          "serviceType": "Remodelaciones",
+          "provider": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#realestate",
+          "serviceType": "Proyectos inmobiliarios",
+          "provider": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#ruralworks",
+          "serviceType": "Obras en zonas rurales",
+          "provider": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#website",
+          "url": "https://inversionesbryan-s-a.pages.dev/",
+          "name": "Inversiones Bryan, S.A.",
+          "inLanguage": "es",
+          "publisher": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://inversionesbryan-s-a.pages.dev/#webpage",
+          "url": "https://inversionesbryan-s-a.pages.dev/",
+          "name": "Inicio — Inversiones Bryan, S.A.",
+          "isPartOf": { "@id": "https://inversionesbryan-s-a.pages.dev/#website" },
+          "about": { "@id": "https://inversionesbryan-s-a.pages.dev/#organization" },
+          "inLanguage": "es"
         }
-      ],
-      "sameAs": [
-        "https://es-la.facebook.com/Inversiones-Bryan-SA-194206954051249"
       ]
-      },
-      {
-        "@type": "LocalBusiness",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#localbusiness",
-        "name": "Inversiones Bryan, S.A.",
-        "image": "https://inversionesbryan-s-a.pages.dev/public/img/pisosymallas.png",
-        "telephone":"+5076026-7234",
-        "url": "https://inversionesbryan-s-a.pages.dev/",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Panamá, Panamá",
-          "addressLocality": "Ciudad de Panamá",
-          "addressRegion": "Panamá",
-          "postalCode":"00000",
-          "addressCountry": "PA"
-        },
-        "priceRange": "$$",
-        "areaServed": {
-          "@type": "Place",
-          "name": "Panamá"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#construction",
-        "serviceType": "Construcción de viviendas",
-        "provider": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#organization"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#remodelation",
-        "serviceType": "Remodelaciones",
-        "provider": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#organization"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#realestate",
-        "serviceType": "Proyectos inmobiliarios",
-        "provider": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#organization"
-        }
-      },
-      {
-        "@type": "Service",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#ruralworks",
-        "serviceType": "Obras en zonas rurales",
-        "provider": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#organization"
-        }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#website",
-        "url": "https://inversionesbryan-s-a.pages.dev/",
-        "name": "Inversiones Bryan, S.A.",
-        "publisher": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#organization"
-        }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://inversionesbryan-s-a.pages.dev/#webpage",
-        "url": "https://inversionesbryan-s-a.pages.dev/",
-        "name": "Inicio - Inversiones Bryan, S.A.",
-        "isPartOf": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/#website"
-        },
-        "about": {
-          "@id": "https://inversionesbryan-s-a.pages.dev/aboutus"
-        }
-      }
-    ]
-      }
+    }
     </script>
 
 
