@@ -429,6 +429,7 @@ function formSubmitted() {
             body: JSON.stringify({
                 email: formData.get('email'), 
                 control: formData.get('control'),
+                web: formData.get('web'),
             }),
           })
           .then((response) => response.text())
